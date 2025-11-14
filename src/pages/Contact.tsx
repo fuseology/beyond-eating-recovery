@@ -2,74 +2,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Checkbox } from "@/components/ui/checkbox";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Phone, Mail, MapPin, Clock, CheckCircle } from "lucide-react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
-import { toast } from "@/hooks/use-toast";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-
-const contactSchema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
-  email: z.string().trim().email("Invalid email address").max(255, "Email must be less than 255 characters"),
-  phone: z.string().trim().min(10, "Phone number must be at least 10 digits").max(20, "Phone number must be less than 20 characters"),
-  location: z.string().min(1, "Please select a location"),
-  contactMethod: z.string().min(1, "Please select a preferred contact method"),
-  insuranceProvider: z.string().max(100, "Insurance provider must be less than 100 characters").optional(),
-  message: z.string().trim().min(10, "Message must be at least 10 characters").max(1000, "Message must be less than 1000 characters"),
-  consent: z.boolean().refine((val) => val === true, "You must consent to being contacted")
-});
-
-type ContactFormValues = z.infer<typeof contactSchema>;
+import { Phone, MapPin, Clock, CheckCircle } from "lucide-react";
 
 const Contact = () => {
-  const form = useForm<ContactFormValues>({
-    resolver: zodResolver(contactSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      phone: "",
-      location: "",
-      contactMethod: "",
-      insuranceProvider: "",
-      message: "",
-      consent: false
-    }
-  });
-
-  const onSubmit = async (data: ContactFormValues) => {
-    console.log("Form submitted:", data);
-    toast({
-      title: "Thank you for reaching out!",
-      description: "We'll contact you within 24 hours to schedule your free consultation.",
-    });
-    form.reset();
-  };
-
   const faqs = [
     {
       question: "Do you take insurance?",
@@ -131,161 +72,35 @@ const Contact = () => {
             {/* LEFT COLUMN - Contact Form */}
             <Card className="bg-secondary/30 border-2">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">Request Free Consultation</CardTitle>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="text-2xl text-primary mb-2">BodyExpressions</CardTitle>
+                    <p className="text-foreground/90 font-semibold">Anne Cuthbert MA, LPC, LMHC</p>
+                    <p className="text-sm text-muted-foreground mt-2">
+                      Owner & Practitioner of<br />
+                      <em>"Food Is Not The Enemy Group Practice"</em><br />
+                      <em>Now Serving Portland & Vancouver Locations.</em>
+                    </p>
+                  </div>
+                  <img 
+                    src="https://bodyexpressions.org/wp-content/uploads/2019/02/Love-Tree.png" 
+                    alt="Love Tree" 
+                    className="w-24 h-auto"
+                  />
+                </div>
               </CardHeader>
               <CardContent>
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                    <FormField
-                      control={form.control}
-                      name="name"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Name *</FormLabel>
-                          <FormControl>
-                            <Input placeholder="Your full name" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Email *</FormLabel>
-                          <FormControl>
-                            <Input type="email" placeholder="your.email@example.com" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="phone"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Phone *</FormLabel>
-                          <FormControl>
-                            <Input type="tel" placeholder="(360) 555-0123" {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="location"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Location *</FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
-                            <FormControl>
-                              <SelectTrigger>
-                                <SelectValue placeholder="Select your location" />
-                              </SelectTrigger>
-                            </FormControl>
-                            <SelectContent>
-                              <SelectItem value="portland-or">Portland, OR</SelectItem>
-                              <SelectItem value="vancouver-wa">Vancouver, WA</SelectItem>
-                              <SelectItem value="other">Other</SelectItem>
-                            </SelectContent>
-                          </Select>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="contactMethod"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Preferred Contact Method *</FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
-                            <FormControl>
-                              <SelectTrigger>
-                                <SelectValue placeholder="How should we contact you?" />
-                              </SelectTrigger>
-                            </FormControl>
-                            <SelectContent>
-                              <SelectItem value="phone">Phone</SelectItem>
-                              <SelectItem value="email">Email</SelectItem>
-                              <SelectItem value="text">Text</SelectItem>
-                            </SelectContent>
-                          </Select>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="insuranceProvider"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Insurance Provider (Optional)</FormLabel>
-                          <FormControl>
-                            <Input placeholder="e.g., Aetna, Blue Cross, etc." {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="message"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Message *</FormLabel>
-                          <FormControl>
-                            <Textarea 
-                              placeholder="Tell us how we can help..." 
-                              className="min-h-[120px]"
-                              {...field} 
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
-                    <FormField
-                      control={form.control}
-                      name="consent"
-                      render={({ field }) => (
-                        <FormItem className="flex flex-row items-start space-x-3 space-y-0">
-                          <FormControl>
-                            <Checkbox
-                              checked={field.value}
-                              onCheckedChange={field.onChange}
-                            />
-                          </FormControl>
-                          <div className="space-y-1 leading-none">
-                            <FormLabel className="text-sm font-normal">
-                              I consent to being contacted by Beyond Eating Recovery *
-                            </FormLabel>
-                            <FormMessage />
-                          </div>
-                        </FormItem>
-                      )}
-                    />
-
-                    <p className="text-sm text-muted-foreground">
-                      Your information is confidential and HIPAA-compliant. We'll respond within 24 hours.
-                    </p>
-
-                    <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90">
-                      Request Free Consultation
-                    </Button>
-                  </form>
-                </Form>
+                <div className="w-full">
+                  <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true" 
+                    width="100%" 
+                    height="1700" 
+                    style={{ border: 0 }}
+                    className="w-full"
+                  >
+                    Loading…
+                  </iframe>
+                </div>
               </CardContent>
             </Card>
 
