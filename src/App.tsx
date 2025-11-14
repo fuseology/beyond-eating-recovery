@@ -10,6 +10,7 @@ import Conditions from "./pages/Conditions";
 import Philosophy from "./pages/Philosophy";
 import Workshop from "./pages/Workshop";
 import Contact from "./pages/Contact";
+import Resources from "./pages/Resources";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/philosophy" element={<Philosophy />} />
           <Route path="/workshop" element={<Workshop />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resources" element={<Resources />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
