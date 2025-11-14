@@ -32,7 +32,9 @@ const WorkshopSection = () => {
                 </p>
                 <div className="space-y-3">
                   <Button className="w-full bg-accent hover:bg-accent/90">
-                    Learn More About the Workshop
+                    <a href="/workshop" className="w-full h-full flex items-center justify-center">
+                      Learn More About the Workshop
+                    </a>
                   </Button>
                   <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">
                     <Phone className="w-4 h-4" />
