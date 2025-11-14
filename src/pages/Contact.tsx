@@ -320,8 +320,9 @@ const Contact = () => {
                     <div>
                       <h3 className="text-xl font-semibold text-primary mb-2">Portland Office</h3>
                       <p className="text-foreground/80">
-                        123 Main Street, Suite 200<br />
-                        Portland, OR 97201
+                        Beyond Eating Recovery of Portland<br />
+                        1235 Southeast Division Street<br />
+                        Portland, Oregon 97202
                       </p>
                       <p className="text-sm text-muted-foreground mt-2">In-Person Appointments Available</p>
                     </div>
