@@ -20,6 +20,9 @@ const Header = () => {
           <Link to="/services" className="text-foreground/80 hover:text-primary transition-colors">
             Services
           </Link>
+          <Link to="/conditions" className="text-foreground/80 hover:text-primary transition-colors">
+            Conditions
+          </Link>
           <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">
             Contact
           </a>

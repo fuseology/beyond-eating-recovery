@@ -56,6 +56,11 @@ const Footer = () => {
                 </a>
               </li>
               <li>
+                <a href="/conditions" className="hover:text-white transition-colors">
+                  Conditions Treated
+                </a>
+              </li>
+              <li>
                 <a href="#insurance" className="hover:text-white transition-colors">
                   Insurance
                 </a>
