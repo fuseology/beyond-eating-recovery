@@ -26,9 +26,9 @@ const Header = () => {
           <Link to="/philosophy" className="text-foreground/80 hover:text-primary transition-colors">
             Philosophy
           </Link>
-          <a href="#contact" className="text-foreground/80 hover:text-primary transition-colors">
+          <Link to="/contact" className="text-foreground/80 hover:text-primary transition-colors">
             Contact
-          </a>
+          </Link>
         </nav>
 
         <Button variant="default" className="bg-accent hover:bg-accent/90">
