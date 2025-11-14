@@ -223,104 +223,158 @@ const Header = () => {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] bg-white overflow-y-auto">
-              <nav className="flex flex-col gap-4 mt-8">
-                <Link to="/" onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                  Home
+            <SheetContent side="right" className="w-[320px] bg-white overflow-y-auto p-0">
+              {/* Menu Header */}
+              <div className="bg-primary text-white p-6 text-center border-b-2 border-white/20">
+                <h2 className="text-lg font-bold">BEYOND EATING RECOVERY</h2>
+              </div>
+
+              {/* Menu Content */}
+              <nav className="flex flex-col p-6">
+                <Link 
+                  to="/" 
+                  onClick={() => setIsOpen(false)} 
+                  className="flex items-center gap-3 py-3 text-lg font-medium text-primary hover:text-accent transition-colors border-b"
+                >
+                  <span>🏠</span> Home
                 </Link>
                 
-                <div className="space-y-2">
-                  <Link to="/about" onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                    About
+                <div className="border-b py-3">
+                  <Link to="/about" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                    <span>👥</span> About
                   </Link>
-                  <div className="pl-4 space-y-2">
-                    {aboutLinks.map((link) => (
-                      <Link key={link.title} to={link.href} onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                        {link.title}
-                      </Link>
-                    ))}
+                  <div className="pl-8 space-y-2">
+                    <Link to="/about" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Anne Cuthbert
+                    </Link>
+                    <Link to="/about" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Our Team
+                    </Link>
+                    <Link to="/about" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Our Approach
+                    </Link>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Link to="/services" onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                    Services
+                <div className="border-b py-3">
+                  <Link to="/services" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                    <span>💙</span> Services
                   </Link>
-                  <div className="pl-4 space-y-2">
-                    {serviceLinks.map((link) => (
-                      <Link key={link.title} to={link.href} onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                        {link.title}
-                      </Link>
-                    ))}
+                  <div className="pl-8 space-y-2">
+                    <Link to="/services" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Individual Therapy
+                    </Link>
+                    <Link to="/services" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Group Therapy
+                    </Link>
+                    <Link to="/services" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Family Therapy
+                    </Link>
+                    <Link to="/services" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Dietitian Services
+                    </Link>
+                    <Link to="/services" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Virtual/Telehealth
+                    </Link>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Link to="/workshop" onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                    Workshops
+                <div className="border-b py-3">
+                  <Link to="/workshop" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                    <span>🎓</span> Workshops
                   </Link>
-                  <div className="pl-4 space-y-2">
-                    {workshopLinks.map((link) => (
-                      <Link key={link.title} to={link.href} onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                        {link.title}
-                      </Link>
-                    ))}
+                  <div className="pl-8 space-y-2">
+                    <Link to="/workshop" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Loveable At Any Size
+                    </Link>
+                    <Link to="/workshop" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Body Image Workshops
+                    </Link>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Link to="/conditions" onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                    Conditions
+                <div className="border-b py-3">
+                  <Link to="/conditions" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                    <span>📋</span> Conditions
                   </Link>
-                  <div className="pl-4 space-y-2">
-                    {conditionLinks.map((link) => (
-                      <Link key={link.title} to={link.href} onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                        {link.title}
-                      </Link>
-                    ))}
+                  <div className="pl-8 space-y-2">
+                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Anorexia
+                    </Link>
+                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Bulimia
+                    </Link>
+                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Binge Eating
+                    </Link>
+                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → More...
+                    </Link>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Link to="/philosophy" onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                    Our Approach
+                <div className="border-b py-3">
+                  <Link to="/philosophy" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                    <span>🌱</span> Our Approach
                   </Link>
-                  <div className="pl-4 space-y-2">
-                    {approachLinks.map((link) => (
-                      <Link key={link.title} to={link.href} onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                        {link.title}
-                      </Link>
-                    ))}
+                  <div className="pl-8 space-y-2">
+                    <Link to="/philosophy" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → HAES
+                    </Link>
+                    <Link to="/philosophy" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Intuitive Eating
+                    </Link>
+                    <Link to="/philosophy" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Fat Acceptance
+                    </Link>
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Link to="/resources" onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                    Resources
+                <div className="border-b py-3">
+                  <Link to="/resources" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                    <span>📚</span> Resources
                   </Link>
-                  <div className="pl-4 space-y-2">
-                    {resourceLinks.map((link) => (
-                      <Link key={link.title} to={link.href} onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                        {link.title}
-                      </Link>
-                    ))}
+                  <div className="pl-8 space-y-2">
+                    <Link to="/resources" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Blog
+                    </Link>
+                    <Link to="/resources" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Articles
+                    </Link>
+                    <Link to="/resources" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Videos
+                    </Link>
+                    <Link to="/resources" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Tools
+                    </Link>
                   </div>
                 </div>
 
-                <Link to="/contact" onClick={() => setIsOpen(false)} className="text-lg font-medium text-primary hover:text-accent transition-colors">
-                  Contact
+                <Link 
+                  to="/contact" 
+                  onClick={() => setIsOpen(false)} 
+                  className="flex items-center gap-3 py-3 text-lg font-medium text-primary hover:text-accent transition-colors border-b"
+                >
+                  <span>📞</span> Contact
                 </Link>
 
-                <div className="pt-4 border-t space-y-3">
+                {/* Menu Footer */}
+                <div className="pt-6 mt-4 border-t-2 space-y-4 text-center">
+                  <a 
+                    href="tel:3607264141" 
+                    className="flex items-center justify-center gap-2 text-xl font-bold text-primary hover:text-accent"
+                  >
+                    📞 360-726-4141
+                  </a>
                   <Link to="/contact" onClick={() => setIsOpen(false)}>
                     <Button className="w-full bg-accent hover:bg-accent/90 text-white">
                       Book Consultation
                     </Button>
                   </Link>
-                  <a href="tel:3607264141" className="flex items-center justify-center gap-2 text-primary font-semibold">
-                    <Phone className="w-4 h-4" />
-                    360-726-4141
-                  </a>
+                  <p className="text-sm text-muted-foreground">
+                    Serving Portland, OR<br />
+                    & Vancouver, WA
+                  </p>
                 </div>
               </nav>
             </SheetContent>
