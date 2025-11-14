@@ -16,7 +16,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const aboutLinks = [
-    { title: "Anne Cuthbert, MA, LPC, LMHC", href: "/about" },
+    { title: "Anne Cuthbert, MA, LPC, LMHC", href: "/about/anne-cuthbert" },
     { title: "Our Team", href: "/about" },
     { title: "Our Approach", href: "/about" },
   ];
