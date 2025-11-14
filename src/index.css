@@ -42,6 +42,9 @@ All colors MUST be HSL.
     --healing-blue: 217 69% 33%;
     --warm-orange: 34 89% 60%;
     --soft-bg: 217 30% 98%;
+    --light-gray-bg: 210 17% 98%;
+    --card-border: 0 0% 88%;
+    --body-text: 0 0% 20%;
     --calm-shadow: 217 20% 80%;
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
