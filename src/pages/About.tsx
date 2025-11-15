@@ -2,7 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, Users, Sparkles, Shield, Target, CheckCircle } from "lucide-react";
+import { Heart, Users, Sparkles, Shield, Target, CheckCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import anneCuthbert from "@/assets/anne-cuthbert.jpg";
 import baileyBenn from "@/assets/bailey-benn.jpg";
 
@@ -21,13 +22,57 @@ const About = () => {
       name: "Anne Cuthbert, MA, LPC, LMHC",
       title: "Founder & Clinical Director",
       image: anneCuthbert,
-      bio: "Anne brings over 15 years of experience in eating disorder treatment, specializing in the Health At Every Size approach. She is passionate about helping clients break free from diet culture and develop compassionate relationships with food and their bodies."
+      link: "/about/anne-cuthbert",
+      bio: "With 23+ years of experience, Anne specializes in eating disorder treatment using HAES, Intuitive Eating, and fat acceptance. Author of 'If Your Hunger Could Talk,' she's dedicated to helping clients find freedom from diet culture."
     },
     {
-      name: "Bailey Benn",
-      title: "Team Member",
+      name: "Bailey Benn, MA, LPC, LMHC",
+      title: "Licensed Professional Counselor",
       image: baileyBenn,
-      bio: "Bailey is dedicated to creating safe, affirming spaces for clients of all backgrounds. With specialized training in trauma-informed care and LGBTQIA+ affirming practices, Bailey helps clients navigate their unique healing journeys."
+      link: "/about/bailey-benn",
+      bio: "Bailey provides LGBTQIA+ affirming, trauma-informed therapy specializing in eating disorders, body image, and identity. Creating safe spaces for healing is at the heart of Bailey's practice."
+    },
+    {
+      name: "Alyssa Pataki, MA, LMFT",
+      title: "Licensed Marriage & Family Therapist",
+      image: "/placeholder.svg",
+      link: "/about/alyssa-pataki",
+      bio: "Alyssa specializes in relational healing, couples therapy, and eating disorder treatment. With training in EFT and EMDR, she helps clients heal attachment wounds and transform relationships."
+    },
+    {
+      name: "Kiandra Cole, MA",
+      title: "Associate Therapist",
+      image: "/placeholder.svg",
+      link: "/about/kiandra-cole",
+      bio: "Kiandra brings warmth and authenticity to therapy, specializing in eating disorders, body image, and LGBTQIA+ affirming care. Personal recovery experience informs her compassionate approach."
+    },
+    {
+      name: "Rachel Bennett, MA",
+      title: "QMHP-A Therapist | Professional Counselor Associate",
+      image: "/placeholder.svg",
+      link: "/about/rachel-bennett",
+      bio: "Rachel offers an eclectic approach integrating IFS, CBT, EFT, and ACT from a person-centered lens. With personal recovery experience and body positive programming expertise, she creates truly safe spaces."
+    },
+    {
+      name: "Annie Calhoun Randall, MA, NTP",
+      title: "Professional Counselor Associate | Certified Nutrition Therapy Practitioner",
+      image: "/placeholder.svg",
+      link: "/about/annie-calhoun-randall",
+      bio: "Annie combines counseling, nutrition therapy, and athletic experience. Specializing in athlete eating disorders, she uses body-centered approaches (EFIT, SE, IFS) informed by her own recovery journey."
+    },
+    {
+      name: "Sara Kranich, MA",
+      title: "Associate Therapist | Mindfulness Specialist",
+      image: "/placeholder.svg",
+      link: "/about/sara-kranich",
+      bio: "Sara integrates mindfulness and meditation into trauma-informed, person-centered therapy. Drawing from personal recovery experience, she guides clients toward self-awareness and self-acceptance through HAES principles."
+    },
+    {
+      name: "Stephanie Okumura, MS, RDN",
+      title: "Registered Dietitian Nutritionist",
+      image: "/placeholder.svg",
+      link: "/about/stephanie-okumura",
+      bio: "Stephanie provides weight-neutral, culturally responsive nutrition counseling. As a HAES® practitioner and Intuitive Eating specialist with Japanese heritage, she honors all cultural food traditions in eating disorder recovery."
     }
   ];
 
@@ -76,32 +121,39 @@ const About = () => {
       {/* Team Section */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary">
             Meet Our Team
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <p className="text-center text-lg text-foreground/80 mb-12 max-w-3xl mx-auto">
+            Our diverse team of therapists and dietitian brings together specialized expertise, lived experience, and deep commitment to weight-neutral, affirming care.
+          </p>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {teamMembers.map((member, index) => (
-              <Card key={index} className="overflow-hidden border-2 hover:shadow-lg transition-shadow">
-                <CardHeader className="text-center pb-4">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-accent/20">
-                    <img 
-                      src={member.image} 
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <CardTitle className="text-xl text-primary">{member.name}</CardTitle>
-                  <p className="text-accent font-semibold">{member.title}</p>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-foreground/80 mb-4 leading-relaxed">
-                    {member.bio}
-                  </p>
-                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-                    Learn More
-                  </Button>
-                </CardContent>
-              </Card>
+              <Link key={index} to={member.link} className="block group">
+                <Card className="overflow-hidden border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
+                  <CardHeader className="text-center pb-4">
+                    <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-accent/20 group-hover:border-accent/40 transition-colors">
+                      <img 
+                        src={member.image} 
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <CardTitle className="text-primary text-lg mb-2">{member.name}</CardTitle>
+                    <p className="text-accent font-medium text-sm">{member.title}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-foreground/80 text-center text-sm leading-relaxed mb-4">
+                      {member.bio}
+                    </p>
+                    <div className="flex items-center justify-center gap-2 text-primary group-hover:text-accent transition-colors font-medium text-sm">
+                      <span>Learn more</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
