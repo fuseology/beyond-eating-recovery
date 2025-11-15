@@ -204,6 +204,14 @@ const Header = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
+                <Link to="/careers">
+                  <NavigationMenuLink className="px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors">
+                    Careers
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
                 <Link to="/contact">
                   <NavigationMenuLink className="px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors">
                     Contact
@@ -359,6 +367,14 @@ const Header = () => {
                     </Link>
                   </div>
                 </div>
+
+                <Link 
+                  to="/careers" 
+                  onClick={() => setIsOpen(false)} 
+                  className="flex items-center gap-3 py-3 text-lg font-medium text-primary hover:text-accent transition-colors border-b"
+                >
+                  <span>💼</span> Careers
+                </Link>
 
                 <Link 
                   to="/contact" 
