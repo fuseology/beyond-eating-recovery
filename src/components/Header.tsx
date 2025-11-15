@@ -20,6 +20,7 @@ const Header = () => {
     { title: "Bailey Benn, MA, LPC, LMHC", href: "/about/bailey-benn" },
     { title: "Alyssa Pataki, MA, LMFT", href: "/about/alyssa-pataki" },
     { title: "Kiandra Cole, MA", href: "/about/kiandra-cole" },
+    { title: "Rachel Bennett, MA", href: "/about/rachel-bennett" },
     { title: "Our Team", href: "/about" },
     { title: "Our Approach", href: "/about" },
   ];

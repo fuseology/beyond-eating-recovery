@@ -670,7 +670,7 @@ const AlyssaPataki = () => {
             Meet Our Other Therapists
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* Anne Cuthbert Card */}
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-6 text-center">
@@ -710,6 +710,52 @@ const AlyssaPataki = () => {
                 <p className="text-sm text-[#666666] mb-2">MA, LPC, LMHC</p>
                 <p className="text-sm text-[#333333] mb-4">HAES-informed therapist with creative approach</p>
                 <Link to="/about/bailey-benn">
+                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white">
+                    View Profile
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+            
+            {/* Kiandra Cole Card */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <div className="w-32 h-32 mx-auto mb-4">
+                  <img 
+                    src={anneImage} 
+                    alt="Kiandra Cole"
+                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-[#1a428a] mb-1">
+                  Kiandra Cole, MA
+                </h3>
+                <p className="text-sm text-[#666666] mb-2">MA</p>
+                <p className="text-sm text-[#333333] mb-4">Social justice advocate and lived experience therapist</p>
+                <Link to="/about/kiandra-cole">
+                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white">
+                    View Profile
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+            
+            {/* Rachel Bennett Card */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <div className="w-32 h-32 mx-auto mb-4">
+                  <img 
+                    src={anneImage} 
+                    alt="Rachel Bennett"
+                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
+                  />
+                </div>
+                <h3 className="text-xl font-bold text-[#1a428a] mb-1">
+                  Rachel Bennett, MA
+                </h3>
+                <p className="text-sm text-[#666666] mb-2">MA, QMHP-A</p>
+                <p className="text-sm text-[#333333] mb-4">Body positive specialist with personal recovery experience</p>
+                <Link to="/about/rachel-bennett">
                   <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white">
                     View Profile
                   </Button>

@@ -796,6 +796,29 @@ const KiandraCole = () => {
                 </Link>
               </CardContent>
             </Card>
+            
+            {/* Rachel Bennett Card */}
+            <Card className="hover:shadow-xl transition-shadow">
+              <CardContent className="p-6 text-center">
+                <div className="w-32 h-32 mx-auto mb-4">
+                  <img 
+                    src={anneImage} 
+                    alt="Rachel Bennett"
+                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
+                  />
+                </div>
+                <h3 className="text-lg font-bold text-[#1a428a] mb-1">
+                  Rachel Bennett
+                </h3>
+                <p className="text-xs text-[#666666] mb-2">MA, QMHP-A</p>
+                <p className="text-sm text-[#333333] mb-4">Body Positive Therapist</p>
+                <Link to="/about/rachel-bennett">
+                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
+                    View Profile
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
           </div>
 
           <div className="text-center mt-8">
