@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 import AnneCuthbert from "./pages/about/AnneCuthbert";
 import BaileyBenn from "./pages/about/BaileyBenn";
 import EmMenghini from "./pages/about/EmMenghini";
+import AlyssaPataki from "./pages/about/AlyssaPataki";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/about/anne-cuthbert" element={<AnneCuthbert />} />
           <Route path="/about/bailey-benn" element={<BaileyBenn />} />
           <Route path="/about/em-menghini" element={<EmMenghini />} />
+          <Route path="/about/alyssa-pataki" element={<AlyssaPataki />} />
           <Route path="/services" element={<Services />} />
           <Route path="/conditions" element={<Conditions />} />
           <Route path="/philosophy" element={<Philosophy />} />
