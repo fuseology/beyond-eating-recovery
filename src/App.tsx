@@ -22,6 +22,7 @@ import SaraKranich from "./pages/about/SaraKranich";
 import StephanieOkumura from "./pages/about/StephanieOkumura";
 import MichelleCommons from "./pages/about/MichelleCommons";
 import MichelleSullins from "./pages/about/MichelleSullins";
+import MaryCooper from "./pages/about/MaryCooper";
 
 const queryClient = new QueryClient();
 
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/about/stephanie-okumura" element={<StephanieOkumura />} />
           <Route path="/about/michelle-commons" element={<MichelleCommons />} />
           <Route path="/about/michelle-sullins" element={<MichelleSullins />} />
+          <Route path="/about/mary-cooper" element={<MaryCooper />} />
           <Route path="/services" element={<Services />} />
           <Route path="/conditions" element={<Conditions />} />
           <Route path="/philosophy" element={<Philosophy />} />
