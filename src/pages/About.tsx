@@ -90,6 +90,13 @@ const About = () => {
       image: "/placeholder.svg",
       link: "/about/michelle-sullins",
       bio: "With over 10 years as a Certified Professional Medical Coder, Michelle ensures accurate billing and maximizes your insurance benefits. She navigates the complex world of medical coding and insurance so you can focus on your healing journey."
+    },
+    {
+      name: "Mary Cooper",
+      title: "Marketing Administrator",
+      image: "/placeholder.svg",
+      link: "/about/mary-cooper",
+      bio: "Mary works behind the scenes connecting people with eating disorder treatment through thoughtful, ethical marketing and community outreach. She ensures accurate information reaches those seeking compassionate, evidence-based care in Portland and Vancouver."
     }
   ];
 
