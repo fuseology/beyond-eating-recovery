@@ -537,12 +537,12 @@ const BaileyBenn = () => {
 
       {/* Meet Other Therapists */}
       <section className="py-12 bg-[#1a428a]/5 border-t border-[#1a428a]/10">
-        <div className="container mx-auto px-4 max-w-4xl">
+        <div className="container mx-auto px-4">
           <h3 className="text-2xl font-bold text-[#1a428a] text-center mb-8">Meet Our Other Therapists</h3>
           
-          <div className="flex justify-center">
+          <div className="grid md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <Link to="/about/anne-cuthbert">
-              <Card className="border-0 shadow-md hover:shadow-xl transition-all hover:scale-105 w-64">
+              <Card className="border-0 shadow-md hover:shadow-xl transition-all hover:scale-105">
                 <CardContent className="pt-6 text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
@@ -554,6 +554,57 @@ const BaileyBenn = () => {
                   <h4 className="text-lg font-bold text-[#1a428a] mb-1">Anne Cuthbert</h4>
                   <p className="text-sm text-[#333333] mb-2">MA, LPC, LMHC</p>
                   <p className="text-xs text-[#333333]/70">Owner & Practitioner</p>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link to="/about/alyssa-pataki">
+              <Card className="border-0 shadow-md hover:shadow-xl transition-all hover:scale-105">
+                <CardContent className="pt-6 text-center">
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src="/src/assets/anne-cuthbert.jpg" 
+                      alt="Alyssa Pataki" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-[#1a428a] mb-1">Alyssa Pataki</h4>
+                  <p className="text-sm text-[#333333] mb-2">MA, LMFT</p>
+                  <p className="text-xs text-[#333333]/70">Family Therapist</p>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link to="/about/kiandra-cole">
+              <Card className="border-0 shadow-md hover:shadow-xl transition-all hover:scale-105">
+                <CardContent className="pt-6 text-center">
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src="/src/assets/anne-cuthbert.jpg" 
+                      alt="Kiandra Cole" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-[#1a428a] mb-1">Kiandra Cole</h4>
+                  <p className="text-sm text-[#333333] mb-2">MA</p>
+                  <p className="text-xs text-[#333333]/70">Social Justice Advocate</p>
+                </CardContent>
+              </Card>
+            </Link>
+            
+            <Link to="/about/rachel-bennett">
+              <Card className="border-0 shadow-md hover:shadow-xl transition-all hover:scale-105">
+                <CardContent className="pt-6 text-center">
+                  <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src="/src/assets/anne-cuthbert.jpg" 
+                      alt="Rachel Bennett" 
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold text-[#1a428a] mb-1">Rachel Bennett</h4>
+                  <p className="text-sm text-[#333333] mb-2">MA</p>
+                  <p className="text-xs text-[#333333]/70">Body Positive Therapist</p>
                 </CardContent>
               </Card>
             </Link>
