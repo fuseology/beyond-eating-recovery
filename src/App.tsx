@@ -12,6 +12,7 @@ import OurApproach from "./pages/OurApproach";
 import Workshop from "./pages/Workshop";
 import Contact from "./pages/Contact";
 import Resources from "./pages/Resources";
+import BattleOfTheBinge from "./pages/BattleOfTheBinge";
 import NotFound from "./pages/NotFound";
 import AnneCuthbert from "./pages/about/AnneCuthbert";
 import BaileyBenn from "./pages/about/BaileyBenn";
@@ -55,6 +56,7 @@ const App = () => (
           <Route path="/workshop" element={<Workshop />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/battle-of-the-binge" element={<BattleOfTheBinge />} />
           <Route path="/careers" element={<Careers />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

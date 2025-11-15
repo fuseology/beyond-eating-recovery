@@ -63,6 +63,7 @@ const Header = () => {
   ];
 
   const resourceLinks = [
+    { title: "Battle of the Binge Program", href: "/battle-of-the-binge" },
     { title: "Blog", href: "/resources" },
     { title: "Articles", href: "/resources" },
     { title: "Videos", href: "/resources" },
