@@ -76,6 +76,16 @@ const About = () => {
     }
   ];
 
+  const supportStaff = [
+    {
+      name: "Michelle Commons",
+      title: "Admin Support | Your First Point of Contact",
+      image: "/placeholder.svg",
+      link: "/about/michelle-commons",
+      bio: "Michelle brings friendly, compassionate administrative support to Beyond Eating Recovery. With over two decades in personal development, she's passionate about helping people become better versions of themselves. When you reach out, you'll likely connect with Michelle first."
+    }
+  ];
+
   const approachPoints = [
     "We work from the inside out",
     "Address underlying emotional challenges",
@@ -146,6 +156,47 @@ const About = () => {
                   <CardContent>
                     <p className="text-foreground/80 text-center text-sm leading-relaxed mb-4">
                       {member.bio}
+                    </p>
+                    <div className="flex items-center justify-center gap-2 text-primary group-hover:text-accent transition-colors font-medium text-sm">
+                      <span>Learn more</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Support Staff Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-primary">
+            Support Staff
+          </h2>
+          <p className="text-center text-lg text-foreground/80 mb-12 max-w-3xl mx-auto">
+            Making your experience welcoming and seamless from your first contact.
+          </p>
+          
+          <div className="max-w-2xl mx-auto">
+            {supportStaff.map((staff, index) => (
+              <Link key={index} to={staff.link} className="block group">
+                <Card className="overflow-hidden border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                  <CardHeader className="text-center pb-4">
+                    <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-accent/20 group-hover:border-accent/40 transition-colors">
+                      <img 
+                        src={staff.image} 
+                        alt={staff.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <CardTitle className="text-primary text-lg mb-2">{staff.name}</CardTitle>
+                    <p className="text-accent font-medium text-sm">{staff.title}</p>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-foreground/80 text-center text-sm leading-relaxed mb-4">
+                      {staff.bio}
                     </p>
                     <div className="flex items-center justify-center gap-2 text-primary group-hover:text-accent transition-colors font-medium text-sm">
                       <span>Learn more</span>
