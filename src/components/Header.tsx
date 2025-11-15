@@ -28,7 +28,7 @@ const Header = () => {
     { title: "Michelle Sullins", href: "/about/michelle-sullins" },
     { title: "Mary Cooper", href: "/about/mary-cooper" },
     { title: "Our Team", href: "/about" },
-    { title: "Our Approach", href: "/about" },
+    { title: "Our Approach", href: "/our-approach" },
   ];
 
   const serviceLinks = [
@@ -55,6 +55,7 @@ const Header = () => {
   ];
 
   const approachLinks = [
+    { title: "Our 6-Step Approach", href: "/our-approach" },
     { title: "Health At Every Size", href: "/philosophy" },
     { title: "Intuitive Eating", href: "/philosophy" },
     { title: "Fat Acceptance", href: "/philosophy" },
@@ -332,10 +333,13 @@ const Header = () => {
                 </div>
 
                 <div className="border-b py-3">
-                  <Link to="/philosophy" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                  <Link to="/our-approach" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
                     <span>🌱</span> Our Approach
                   </Link>
                   <div className="pl-8 space-y-2">
+                    <Link to="/our-approach" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Our 6-Step Approach
+                    </Link>
                     <Link to="/philosophy" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
                       → HAES
                     </Link>
