@@ -4,9 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
-import emImage from "@/assets/em-menghini.jpg";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
+// TODO: Replace with actual Em Menghini photo when available
+const emImage = anneImage; // Temporary placeholder
 
 const EmMenghini = () => {
   return (
