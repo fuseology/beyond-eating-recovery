@@ -83,6 +83,13 @@ const About = () => {
       image: "/placeholder.svg",
       link: "/about/michelle-commons",
       bio: "Michelle brings friendly, compassionate administrative support to Beyond Eating Recovery. With over two decades in personal development, she's passionate about helping people become better versions of themselves. When you reach out, you'll likely connect with Michelle first."
+    },
+    {
+      name: "Michelle Sullins",
+      title: "Billing Support | Certified Professional Medical Coder",
+      image: "/placeholder.svg",
+      link: "/about/michelle-sullins",
+      bio: "With over 10 years as a Certified Professional Medical Coder, Michelle ensures accurate billing and maximizes your insurance benefits. She navigates the complex world of medical coding and insurance so you can focus on your healing journey."
     }
   ];
 
@@ -179,10 +186,10 @@ const About = () => {
             Making your experience welcoming and seamless from your first contact.
           </p>
           
-          <div className="max-w-2xl mx-auto">
+          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
             {supportStaff.map((staff, index) => (
               <Link key={index} to={staff.link} className="block group">
-                <Card className="overflow-hidden border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <Card className="overflow-hidden border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 h-full">
                   <CardHeader className="text-center pb-4">
                     <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-accent/20 group-hover:border-accent/40 transition-colors">
                       <img 
