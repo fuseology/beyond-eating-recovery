@@ -18,7 +18,6 @@ const Header = () => {
   const aboutLinks = [
     { title: "Anne Cuthbert, MA, LPC, LMHC", href: "/about/anne-cuthbert" },
     { title: "Bailey Benn, MA, LPC, LMHC", href: "/about/bailey-benn" },
-    { title: "Em Menghini, MS, LPC, LMHC", href: "/about/em-menghini" },
     { title: "Alyssa Pataki, MA, LMFT", href: "/about/alyssa-pataki" },
     { title: "Kiandra Cole, MA", href: "/about/kiandra-cole" },
     { title: "Our Team", href: "/about" },

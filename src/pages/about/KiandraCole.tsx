@@ -8,8 +8,7 @@ import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
 // TODO: Replace with actual Kiandra Cole photo when available
 const kiandraImage = anneImage;
-// TODO: Replace with actual Em Menghini and Alyssa photos
-const emImage = anneImage;
+// TODO: Replace with actual Alyssa photo
 const alyssaImage = anneImage;
 
 const KiandraCole = () => {
@@ -768,29 +767,6 @@ const KiandraCole = () => {
                 <p className="text-xs text-[#666666] mb-2">MA, LPC, LMHC</p>
                 <p className="text-sm text-[#333333] mb-4">HAES Therapist</p>
                 <Link to="/about/bailey-benn">
-                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
-                    View Profile
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            {/* Em Menghini Card */}
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-4">
-                  <img 
-                    src={emImage} 
-                    alt="Em Menghini"
-                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
-                  />
-                </div>
-                <h3 className="text-lg font-bold text-[#1a428a] mb-1">
-                  Em Menghini
-                </h3>
-                <p className="text-xs text-[#666666] mb-2">MS, LPC, LMHC</p>
-                <p className="text-sm text-[#333333] mb-4">Clinical Therapist</p>
-                <Link to="/about/em-menghini">
                   <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
                     View Profile
                   </Button>
