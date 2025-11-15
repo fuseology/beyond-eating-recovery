@@ -9,7 +9,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, ExternalLink } from "lucide-react";
+import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
+import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
 const OurApproach = () => {
   return (
@@ -89,12 +91,28 @@ const OurApproach = () => {
             <div className="space-y-6">
               <div className="bg-muted/50 p-8 rounded-lg">
                 <img 
-                  src="/src/assets/anne-cuthbert.jpg" 
+                  src={anneCuthbertPhoto} 
                   alt="Anne Cuthbert, MA, LPC, LMHC - Founder and Clinical Director" 
-                  className="w-full rounded-lg mb-4 shadow-lg"
+                  className="w-full rounded-lg mb-6 shadow-lg"
                 />
-                <p className="text-sm text-center text-muted-foreground italic">
-                  Look for Anne's forthcoming book: <span className="font-semibold">If Your Hunger Could Talk</span>
+                <a 
+                  href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                >
+                  <img 
+                    src={bookCover} 
+                    alt="If Your Hunger Could Talk: Real Steps to Finding Freedom from Food & Weight Obsession by Anne Cuthbert" 
+                    className="w-full rounded-lg mb-4 shadow-xl transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="flex items-center justify-center gap-2 text-accent hover:text-accent/80 transition-colors">
+                    <span className="font-semibold">Available on Amazon</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
+                </a>
+                <p className="text-sm text-center text-muted-foreground italic mt-4">
+                  <span className="font-semibold">If Your Hunger Could Talk:</span> Real Steps to Finding Freedom from Food & Weight Obsession
                 </p>
               </div>
             </div>
