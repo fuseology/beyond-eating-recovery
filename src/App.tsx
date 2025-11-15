@@ -23,6 +23,7 @@ import StephanieOkumura from "./pages/about/StephanieOkumura";
 import MichelleCommons from "./pages/about/MichelleCommons";
 import MichelleSullins from "./pages/about/MichelleSullins";
 import MaryCooper from "./pages/about/MaryCooper";
+import Careers from "./pages/Careers";
 
 const queryClient = new QueryClient();
 
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/workshop" element={<Workshop />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/careers" element={<Careers />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
