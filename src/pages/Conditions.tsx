@@ -43,7 +43,7 @@ const Conditions = () => {
       icon: Puzzle,
       title: "OSFED",
       description: "Other Specified Feeding or Eating Disorder includes serious eating disorder symptoms that don't fit other categories but cause significant distress and impairment. Just as severe as other eating disorders.",
-      link: "/conditions"
+      link: "/conditions/osfed"
     },
     {
       id: "orthorexia",
@@ -78,7 +78,7 @@ const Conditions = () => {
       icon: AlertCircle,
       title: "Body Dysmorphia / Body Image Issues",
       description: "Obsessive focus on perceived flaws in appearance, often accompanied by distorted perception of one's body. Can occur with or without an eating disorder.",
-      link: "/conditions"
+      link: "/conditions/body-dysmorphia"
     },
     {
       id: "exercise-addiction",
@@ -92,7 +92,7 @@ const Conditions = () => {
       icon: User,
       title: "Eating Disorders in Men",
       description: "Men experience eating disorders at significant rates but are often overlooked. Learn about how eating disorders present in men and why they may go undiagnosed.",
-      link: "/conditions"
+      link: "/conditions/men-eating-disorders"
     },
     {
       id: "eating-disorders-lgbtqia",
