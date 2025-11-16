@@ -43,6 +43,7 @@ import BodyDysmorphia from "./pages/conditions/BodyDysmorphia";
 import ExerciseAddiction from "./pages/conditions/ExerciseAddiction";
 import MenEatingDisorders from "./pages/conditions/MenEatingDisorders";
 import LGBTQIAEatingDisorders from "./pages/conditions/LGBTQIAEatingDisorders";
+import AthletesEatingDisorders from "./pages/conditions/AthletesEatingDisorders";
 
 const queryClient = new QueryClient();
 
@@ -91,6 +92,7 @@ const App = () => (
           <Route path="/conditions/exercise-addiction" element={<ExerciseAddiction />} />
           <Route path="/conditions/men-eating-disorders" element={<MenEatingDisorders />} />
           <Route path="/conditions/lgbtqia-eating-disorders" element={<LGBTQIAEatingDisorders />} />
+          <Route path="/conditions/athletes-eating-disorders" element={<AthletesEatingDisorders />} />
           <Route path="/body-shame" element={<BodyShame />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
