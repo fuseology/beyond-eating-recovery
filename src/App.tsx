@@ -33,6 +33,8 @@ import BulimiaNervosa from "./pages/conditions/BulimiaNervosa";
 import BingeEatingDisorder from "./pages/conditions/BingeEatingDisorder";
 import CoOccurringIssues from "./pages/conditions/CoOccurringIssues";
 import ARFID from "./pages/conditions/ARFID";
+import OSFED from "./pages/conditions/OSFED";
+import Orthorexia from "./pages/conditions/Orthorexia";
 import BodyShame from "./pages/BodyShame";
 
 const queryClient = new QueryClient();
@@ -73,6 +75,8 @@ const App = () => (
           <Route path="/conditions/binge-eating-disorder" element={<BingeEatingDisorder />} />
           <Route path="/conditions/co-occurring-issues" element={<CoOccurringIssues />} />
           <Route path="/conditions/arfid" element={<ARFID />} />
+          <Route path="/conditions/osfed" element={<OSFED />} />
+          <Route path="/conditions/orthorexia" element={<Orthorexia />} />
           <Route path="/body-shame" element={<BodyShame />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
