@@ -22,7 +22,7 @@ const Conditions = () => {
       icon: Activity,
       title: "Bulimia Nervosa",
       description: "Characterized by cycles of binge eating followed by compensatory behaviors such as purging, excessive exercise, or fasting. Often accompanied by feelings of shame and loss of control.",
-      link: "/conditions"
+      link: "/conditions/bulimia-nervosa"
     },
     {
       id: "binge-eating-disorder",
