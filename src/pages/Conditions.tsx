@@ -64,7 +64,7 @@ const Conditions = () => {
       icon: Heart,
       title: "Disordered Eating",
       description: "Problematic eating behaviors and thoughts that cause distress but may not meet full diagnostic criteria. Includes chronic dieting, food preoccupation, and rigid food rules.",
-      link: "/conditions"
+      link: "/conditions/disordered-eating"
     },
     {
       id: "emotional-eating",
