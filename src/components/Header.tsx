@@ -53,6 +53,7 @@ const Header = () => {
     { title: "Exercise Addiction", href: "/conditions/exercise-addiction" },
     { title: "Eating Disorders in Men", href: "/conditions/men-eating-disorders" },
     { title: "Eating Disorders in LGBTQIA+ Individuals", href: "/conditions/lgbtqia-eating-disorders" },
+    { title: "Eating Disorders in Athletes", href: "/conditions/athletes-eating-disorders" },
     { title: "Co-Occurring Issues", href: "/conditions/co-occurring-issues" },
   ];
 

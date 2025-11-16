@@ -106,7 +106,7 @@ const Conditions = () => {
       icon: Trophy,
       title: "Eating Disorders in Athletes",
       description: "Athletes face unique pressures related to performance, body composition, and weight requirements. Learn about eating disorders in sports and specialized treatment approaches.",
-      link: "/conditions"
+      link: "/conditions/athletes-eating-disorders"
     }
   ];
 
