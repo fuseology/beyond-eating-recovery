@@ -57,7 +57,7 @@ const Conditions = () => {
       icon: Users,
       title: "Atypical Anorexia",
       description: "All the features of anorexia nervosa (restriction, fear of weight gain, body image distortion) but the person is not underweight. Just as serious and medically dangerous as anorexia.",
-      link: "/conditions"
+      link: "/conditions/atypical-anorexia"
     },
     {
       id: "disordered-eating",

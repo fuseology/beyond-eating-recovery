@@ -45,6 +45,7 @@ const Header = () => {
     { title: "Binge Eating Disorder", href: "/conditions/binge-eating-disorder" },
     { title: "ARFID", href: "/conditions/arfid" },
     { title: "OSFED", href: "/conditions/osfed" },
+    { title: "Atypical Anorexia", href: "/conditions/atypical-anorexia" },
     { title: "Body Dysmorphic Disorder", href: "/conditions" },
     { title: "Orthorexia", href: "/conditions/orthorexia" },
     { title: "Body Image Issues", href: "/conditions" },
