@@ -48,9 +48,11 @@ const Header = () => {
     { title: "Atypical Anorexia", href: "/conditions/atypical-anorexia" },
     { title: "Disordered Eating", href: "/conditions/disordered-eating" },
     { title: "Emotional Eating / Compulsive Overeating", href: "/conditions/emotional-eating" },
-    { title: "Body Dysmorphic Disorder", href: "/conditions" },
+    { title: "Body Dysmorphia", href: "/conditions/body-dysmorphia" },
     { title: "Orthorexia", href: "/conditions/orthorexia" },
-    { title: "Body Image Issues", href: "/conditions" },
+    { title: "Exercise Addiction", href: "/conditions/exercise-addiction" },
+    { title: "Eating Disorders in Men", href: "/conditions/men-eating-disorders" },
+    { title: "Eating Disorders in LGBTQIA+ Individuals", href: "/conditions/lgbtqia-eating-disorders" },
     { title: "Co-Occurring Issues", href: "/conditions/co-occurring-issues" },
   ];
 
