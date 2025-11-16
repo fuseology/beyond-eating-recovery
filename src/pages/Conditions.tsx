@@ -36,7 +36,7 @@ const Conditions = () => {
       icon: Apple,
       title: "ARFID",
       description: "Avoidant/Restrictive Food Intake Disorder involves extremely limited food preferences or avoidance not related to weight concerns. Can lead to nutritional deficiencies and growth problems.",
-      link: "/conditions"
+      link: "/conditions/arfid"
     },
     {
       id: "osfed",
