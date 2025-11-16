@@ -1,23 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Calendar, Phone, Mail, MapPin, AlertCircle, ExternalLink } from "lucide-react";
+import { Calendar, Phone, Mail, MapPin, AlertCircle, ExternalLink, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
+import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
 const CoOccurringIssues = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
+      
       {/* Breadcrumb */}
-      <div className="bg-muted/30 py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-            <span>/</span>
-            <Link to="/conditions" className="hover:text-primary transition-colors">Eating Disorders</Link>
-            <span>/</span>
-            <span className="text-foreground">Co-Occurring Issues</span>
-          </div>
-        </div>
-      </div>
+      <nav className="container mx-auto px-4 py-4">
+        <ol className="flex items-center space-x-2 text-sm text-muted-foreground">
+          <li><Link to="/" className="hover:text-primary">Home</Link></li>
+          <ChevronRight className="h-4 w-4" />
+          <li><Link to="/conditions" className="hover:text-primary">Eating Disorders</Link></li>
+          <ChevronRight className="h-4 w-4" />
+          <li className="text-foreground">Co-Occurring Issues</li>
+        </ol>
+      </nav>
 
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-[2fr,1fr] gap-8">
@@ -968,7 +972,7 @@ const CoOccurringIssues = () => {
               
               <div className="mb-4">
                 <img 
-                  src="/src/assets/anne-cuthbert.jpg" 
+                  src={anneCuthbertPhoto}
                   alt="Anne Cuthbert, MA, LPC, LMHC - Integrated Treatment Specialist"
                   className="w-full rounded-lg mb-4"
                 />
@@ -1013,6 +1017,14 @@ const CoOccurringIssues = () => {
 
             {/* Book CTA Card */}
             <Card className="p-6 bg-accent/5">
+              <div className="mb-4">
+                <img 
+                  src={bookCover}
+                  alt="If Your Hunger Could Talk book cover by Anne Cuthbert"
+                  className="w-full rounded-lg"
+                />
+              </div>
+              
               <h3 className="text-xl font-bold text-primary mb-2">Understand the Emotional Roots</h3>
               <p className="text-sm font-semibold text-foreground mb-4">Free Chapter: Beyond Food—What Your Eating Disorder Is Really About</p>
               
@@ -1110,6 +1122,8 @@ const CoOccurringIssues = () => {
           </aside>
         </div>
       </div>
+      
+      <Footer />
     </div>
   );
 };
