@@ -56,7 +56,7 @@ const Header = () => {
 
   const approachLinks = [
     { title: "Our 6-Step Approach", href: "/our-approach" },
-    { title: "Health At Every Size", href: "/philosophy" },
+    { title: "Health At Every Size®", href: "/health-at-every-size" },
     { title: "Intuitive Eating", href: "/philosophy" },
     { title: "Fat Acceptance", href: "/philosophy" },
     { title: "Non-Diet Philosophy", href: "/philosophy" },

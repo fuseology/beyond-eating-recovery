@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Conditions from "./pages/Conditions";
 import Philosophy from "./pages/Philosophy";
+import HealthAtEverySize from "./pages/HealthAtEverySize";
 import OurApproach from "./pages/OurApproach";
 import Workshop from "./pages/Workshop";
 import Contact from "./pages/Contact";
@@ -52,6 +53,7 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/conditions" element={<Conditions />} />
           <Route path="/philosophy" element={<Philosophy />} />
+          <Route path="/health-at-every-size" element={<HealthAtEverySize />} />
           <Route path="/our-approach" element={<OurApproach />} />
           <Route path="/workshop" element={<Workshop />} />
           <Route path="/contact" element={<Contact />} />
