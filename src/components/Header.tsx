@@ -46,6 +46,7 @@ const Header = () => {
     { title: "ARFID", href: "/conditions/arfid" },
     { title: "OSFED", href: "/conditions/osfed" },
     { title: "Atypical Anorexia", href: "/conditions/atypical-anorexia" },
+    { title: "Disordered Eating", href: "/conditions/disordered-eating" },
     { title: "Body Dysmorphic Disorder", href: "/conditions" },
     { title: "Orthorexia", href: "/conditions/orthorexia" },
     { title: "Body Image Issues", href: "/conditions" },
