@@ -16,6 +16,8 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const aboutLinks = [
+    { title: "Our Team", href: "/about" },
+    { title: "Our Approach", href: "/our-approach" },
     { title: "Anne Cuthbert, MA, LPC, LMHC", href: "/about/anne-cuthbert" },
     { title: "Bailey Benn, MA, LPC, LMHC", href: "/about/bailey-benn" },
     { title: "Alyssa Pataki, MA, LMFT", href: "/about/alyssa-pataki" },
@@ -27,8 +29,6 @@ const Header = () => {
     { title: "Michelle Commons", href: "/about/michelle-commons" },
     { title: "Michelle Sullins", href: "/about/michelle-sullins" },
     { title: "Mary Cooper", href: "/about/mary-cooper" },
-    { title: "Our Team", href: "/about" },
-    { title: "Our Approach", href: "/our-approach" },
   ];
 
   const serviceLinks = [
