@@ -28,6 +28,7 @@ import MichelleCommons from "./pages/about/MichelleCommons";
 import MichelleSullins from "./pages/about/MichelleSullins";
 import MaryCooper from "./pages/about/MaryCooper";
 import Careers from "./pages/Careers";
+import AnorexiaNervosa from "./pages/conditions/AnorexiaNervosa";
 
 const queryClient = new QueryClient();
 
@@ -62,6 +63,7 @@ const App = () => (
           <Route path="/faq" element={<FAQ />} />
           <Route path="/battle-of-the-binge" element={<BattleOfTheBinge />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/conditions/anorexia-nervosa" element={<AnorexiaNervosa />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

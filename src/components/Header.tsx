@@ -40,7 +40,7 @@ const Header = () => {
   ];
 
   const conditionLinks = [
-    { title: "Anorexia Nervosa", href: "/conditions" },
+    { title: "Anorexia Nervosa", href: "/conditions/anorexia-nervosa" },
     { title: "Bulimia Nervosa", href: "/conditions" },
     { title: "Binge Eating Disorder", href: "/conditions" },
     { title: "Body Dysmorphic Disorder", href: "/conditions" },
