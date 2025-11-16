@@ -99,7 +99,7 @@ const Conditions = () => {
       icon: Rainbow,
       title: "Eating Disorders in LGBTQIA+ Individuals",
       description: "LGBTQIA+ individuals have higher rates of eating disorders due to minority stress, discrimination, and identity-related challenges. We provide affirming, inclusive care.",
-      link: "/conditions"
+      link: "/conditions/lgbtqia-eating-disorders"
     },
     {
       id: "eating-disorders-athletes",
