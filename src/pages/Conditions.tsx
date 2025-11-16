@@ -29,7 +29,7 @@ const Conditions = () => {
       icon: Utensils,
       title: "Binge Eating Disorder (BED)",
       description: "The most common eating disorder, involving recurrent episodes of eating large amounts of food with feelings of loss of control and significant distress. No regular compensatory behaviors.",
-      link: "/conditions"
+      link: "/conditions/binge-eating-disorder"
     },
     {
       id: "arfid",
