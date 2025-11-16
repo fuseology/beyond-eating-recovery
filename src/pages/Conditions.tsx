@@ -50,7 +50,7 @@ const Conditions = () => {
       icon: Sparkles,
       title: "Orthorexia",
       description: "Obsession with eating only 'pure,' 'clean,' or 'healthy' foods that leads to malnutrition, social isolation, and significant impairment. Often disguised as wellness or healthy eating.",
-      link: "/conditions"
+      link: "/conditions/orthorexia"
     },
     {
       id: "atypical-anorexia",
