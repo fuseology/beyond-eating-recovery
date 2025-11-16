@@ -39,11 +39,6 @@ const Header = () => {
     { title: "Virtual/Telehealth", href: "/services" },
   ];
 
-  const workshopLinks = [
-    { title: "Loveable At Any Size", href: "/workshop" },
-    { title: "Body Image Workshops", href: "/workshop" },
-  ];
-
   const conditionLinks = [
     { title: "Anorexia Nervosa", href: "/conditions" },
     { title: "Bulimia Nervosa", href: "/conditions" },
@@ -63,6 +58,8 @@ const Header = () => {
   ];
 
   const resourceLinks = [
+    { title: "Loveable At Any Size Workshop", href: "/workshop" },
+    { title: "Body Image Workshops", href: "/workshop" },
     { title: "Battle of the Binge Program", href: "/battle-of-the-binge" },
     { title: "Blog", href: "/resources" },
     { title: "Articles", href: "/resources" },
@@ -117,25 +114,6 @@ const Header = () => {
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 bg-white">
                     {serviceLinks.map((link) => (
-                      <li key={link.title}>
-                        <Link to={link.href}>
-                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                            <div className="text-sm font-medium leading-none text-primary">{link.title}</div>
-                          </NavigationMenuLink>
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent text-white/90 hover:text-white hover:bg-white/10">
-                  Workshops
-                </NavigationMenuTrigger>
-                <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 bg-white">
-                    {workshopLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
                           <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
@@ -300,20 +278,6 @@ const Header = () => {
                 </div>
 
                 <div className="border-b py-3">
-                  <Link to="/workshop" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
-                    <span>🎓</span> Workshops
-                  </Link>
-                  <div className="pl-8 space-y-2">
-                    <Link to="/workshop" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                      → Loveable At Any Size
-                    </Link>
-                    <Link to="/workshop" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                      → Body Image Workshops
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="border-b py-3">
                   <Link to="/conditions" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
                     <span>📋</span> Conditions
                   </Link>
@@ -358,6 +322,15 @@ const Header = () => {
                     <span>📚</span> Resources
                   </Link>
                   <div className="pl-8 space-y-2">
+                    <Link to="/workshop" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Loveable At Any Size
+                    </Link>
+                    <Link to="/workshop" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Body Image Workshops
+                    </Link>
+                    <Link to="/battle-of-the-binge" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Battle of the Binge
+                    </Link>
                     <Link to="/resources" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
                       → Blog
                     </Link>
