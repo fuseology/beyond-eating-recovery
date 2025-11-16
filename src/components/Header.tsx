@@ -47,6 +47,7 @@ const Header = () => {
     { title: "OSFED", href: "/conditions/osfed" },
     { title: "Atypical Anorexia", href: "/conditions/atypical-anorexia" },
     { title: "Disordered Eating", href: "/conditions/disordered-eating" },
+    { title: "Emotional Eating / Compulsive Overeating", href: "/conditions/emotional-eating" },
     { title: "Body Dysmorphic Disorder", href: "/conditions" },
     { title: "Orthorexia", href: "/conditions/orthorexia" },
     { title: "Body Image Issues", href: "/conditions" },

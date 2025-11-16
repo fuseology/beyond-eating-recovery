@@ -37,6 +37,7 @@ import OSFED from "./pages/conditions/OSFED";
 import Orthorexia from "./pages/conditions/Orthorexia";
 import AtypicalAnorexia from "./pages/conditions/AtypicalAnorexia";
 import DisorderedEating from "./pages/conditions/DisorderedEating";
+import EmotionalEating from "./pages/conditions/EmotionalEating";
 import BodyShame from "./pages/BodyShame";
 
 const queryClient = new QueryClient();
@@ -81,6 +82,7 @@ const App = () => (
           <Route path="/conditions/orthorexia" element={<Orthorexia />} />
           <Route path="/conditions/atypical-anorexia" element={<AtypicalAnorexia />} />
           <Route path="/conditions/disordered-eating" element={<DisorderedEating />} />
+          <Route path="/conditions/emotional-eating" element={<EmotionalEating />} />
           <Route path="/body-shame" element={<BodyShame />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

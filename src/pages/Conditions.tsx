@@ -71,7 +71,7 @@ const Conditions = () => {
       icon: Brain,
       title: "Compulsive Overeating / Emotional Eating",
       description: "Using food to cope with emotions, stress, or difficult feelings rather than physical hunger. Often leads to feelings of guilt, shame, and loss of control around food.",
-      link: "/conditions"
+      link: "/conditions/emotional-eating"
     },
     {
       id: "body-dysmorphia",
