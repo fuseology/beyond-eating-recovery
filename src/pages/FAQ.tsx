@@ -4,9 +4,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Brain, LogIn, Compass, DollarSign, MessageSquare, Building, Search } from "lucide-react";
+import { Brain, LogIn, Compass, DollarSign, MessageSquare, Search } from "lucide-react";
 
 const FAQ = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -16,22 +16,22 @@ const FAQ = () => {
       id: "understanding",
       title: "Understanding Eating Disorders",
       icon: Brain,
-      count: 8,
+      count: 3,
       samples: ["What is an eating disorder?", "Do I have an eating disorder?", "Types of eating disorders"],
     },
     {
       id: "getting-started",
       title: "Getting Started with Treatment",
       icon: LogIn,
-      count: 6,
-      samples: ["How do I know if I need help?", "What's the first step?", "What happens in the first session?"],
+      count: 1,
+      samples: ["How do I get started?", "What's the first step?"],
     },
     {
       id: "treatment-approach",
       title: "Our Treatment Approach",
       icon: Compass,
-      count: 7,
-      samples: ["What is HAES®?", "What is Intuitive Eating?", "How long does treatment take?"],
+      count: 5,
+      samples: ["What is HAES®?", "Will you give me a meal plan?", "Do you weigh clients?"],
     },
     {
       id: "insurance",
@@ -41,18 +41,11 @@ const FAQ = () => {
       samples: ["Do you accept insurance?", "What does treatment cost?", "What is a Good Faith Estimate?"],
     },
     {
-      id: "therapy",
-      title: "Therapy & Counseling Questions",
+      id: "what-to-expect",
+      title: "What to Expect in Treatment",
       icon: MessageSquare,
-      count: 6,
-      samples: ["What happens in therapy?", "Individual vs. group therapy?", "Teletherapy options?"],
-    },
-    {
-      id: "about-practice",
-      title: "About Our Practice",
-      icon: Building,
-      count: 4,
-      samples: ["Who are your therapists?", "Where are you located?", "How do I contact you?"],
+      count: 3,
+      samples: ["Is therapy confidential?", "Support between sessions?", "Can I switch therapists?"],
     },
   ];
 
@@ -164,39 +157,6 @@ const FAQ = () => {
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
                   <p>An eating disorder is a serious mental health condition characterized by persistent disturbances in eating behaviors, thoughts, and emotions. Eating disorders involve a preoccupation with food, body weight, and shape that significantly impacts physical health, emotional well-being, and daily functioning.</p>
-                  
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Common characteristics include:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Intense fear of weight gain or being 'fat'</li>
-                      <li>Distorted body image</li>
-                      <li>Using food (restricting, binging, purging) to cope with emotions</li>
-                      <li>Obsessive thoughts about food, calories, weight, or body shape</li>
-                      <li>Rituals around eating or exercise</li>
-                      <li>Social isolation related to eating or body concerns</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Eating disorders are NOT:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>A choice or phase</li>
-                      <li>About vanity or wanting attention</li>
-                      <li>Just about food or weight</li>
-                      <li>Something you can just 'get over' with willpower</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">They ARE:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Complex mental health conditions</li>
-                      <li>Often rooted in trauma, genetics, and environmental factors</li>
-                      <li>Treatable with proper support</li>
-                      <li>Serious conditions that require professional help</li>
-                    </ul>
-                  </div>
-
                   <p className="italic">If you're questioning whether your relationship with food and your body is healthy, that question itself is often a sign that it's worth exploring further with a professional.</p>
                 </AccordionContent>
               </AccordionItem>
@@ -206,38 +166,7 @@ const FAQ = () => {
                   <span className="font-semibold">Do I have an eating disorder? How do I know if I need help?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>Many people struggle with the question of whether their eating or body image concerns 'count' as an eating disorder. You don't need a formal diagnosis to benefit from help.</p>
-                  
-                  <p className="font-semibold text-foreground">Consider seeking support if you:</p>
-                  
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Regarding Food & Eating:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Find yourself at the fridge over and over again, never full and never fully satisfied</li>
-                      <li>Think about food and eating much more than you want to or know you should</li>
-                      <li>Eat in secret or hide food</li>
-                      <li>Feel out of control around certain foods</li>
-                      <li>Have rigid food rules (good/bad foods, forbidden foods, must eat at certain times)</li>
-                      <li>Engage in binge eating episodes</li>
-                      <li>Restrict food intake severely or skip meals regularly</li>
-                      <li>Feel intense guilt or shame after eating</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Regarding Body Image:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Obsess over your weight, shape, or appearance</li>
-                      <li>Avoid mirrors or, conversely, check your appearance constantly</li>
-                      <li>Compare your body to others constantly</li>
-                      <li>Avoid social situations due to body shame</li>
-                      <li>Believe your worth is determined by your weight or appearance</li>
-                      <li>Experience significant distress about your body</li>
-                    </ul>
-                  </div>
-
-                  <p className="font-semibold text-foreground mt-4">The bottom line:</p>
-                  <p>If your relationship with food or your body is causing you distress, interfering with your life, or occupying significant mental space—you deserve support. You don't have to wait until things get 'bad enough.' Early intervention leads to better outcomes.</p>
+                  <p>You don't need a formal diagnosis to benefit from help. If your relationship with food or your body is causing you distress, interfering with your life, or occupying significant mental space—you deserve support. You don't have to wait until things get 'bad enough.'</p>
                 </AccordionContent>
               </AccordionItem>
 
@@ -246,55 +175,9 @@ const FAQ = () => {
                   <span className="font-semibold">What are the different types of eating disorders?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>Eating disorders exist on a spectrum and can look different for different people. We treat all types of eating disorders and disordered eating patterns.</p>
-                  
-                  <div>
-                    <p className="font-semibold text-foreground">Anorexia Nervosa:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Severe restriction of food intake</li>
-                      <li>Intense fear of weight gain</li>
-                      <li>Distorted body image</li>
-                      <li>Significantly low body weight relative to individual needs</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground">Bulimia Nervosa:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Cycles of binge eating followed by compensatory behaviors</li>
-                      <li>Purging behaviors (vomiting, laxatives, diuretics, excessive exercise)</li>
-                      <li>Self-evaluation heavily influenced by body shape and weight</li>
-                      <li>Can occur at any body size</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground">Binge Eating Disorder (BED):</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Recurrent episodes of eating large amounts of food</li>
-                      <li>Feeling out of control during binges</li>
-                      <li>Significant distress about binge eating</li>
-                      <li>NO regular compensatory behaviors (unlike bulimia)</li>
-                      <li>Most common eating disorder in the US</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground">Other Types:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>ARFID (Avoidant/Restrictive Food Intake Disorder)</li>
-                      <li>OSFED (Other Specified Feeding or Eating Disorder)</li>
-                      <li>Disordered eating patterns</li>
-                      <li>Compulsive overeating</li>
-                      <li>Emotional eating</li>
-                    </ul>
-                  </div>
-
-                  <p className="italic font-semibold text-foreground">Important note: You don't need to fit perfectly into a diagnostic category to deserve help. If you're struggling with food, eating, or body image—we're here to support you.</p>
+                  <p>We treat Anorexia Nervosa, Bulimia Nervosa, Binge Eating Disorder (BED), ARFID, OSFED, and all forms of disordered eating and emotional eating patterns.</p>
                 </AccordionContent>
               </AccordionItem>
-
-              {/* Continue with remaining questions in this category... */}
               
             </Accordion>
           </div>
@@ -309,43 +192,9 @@ const FAQ = () => {
                   <span className="font-semibold">How do I get started? What's the first step?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>Taking the first step toward recovery can feel overwhelming, but we've made the process as simple and welcoming as possible.</p>
-                  
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Step 1: Contact Us</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Call us: <a href="tel:360-726-4141" className="text-primary hover:underline">360-726-4141</a></li>
-                      <li>Email us through our contact form</li>
-                      <li>We'll respond within 1-2 business days</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Step 2: Initial Consultation</p>
-                    <p>We'll schedule a consultation to:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Learn about your concerns and goals</li>
-                      <li>Explain our treatment approach</li>
-                      <li>Discuss which services might be right for you</li>
-                      <li>Answer your questions</li>
-                      <li>Determine if we're a good fit</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Step 3: Schedule Your First Appointment</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li>Match you with an appropriate therapist or dietitian</li>
-                      <li>Schedule your first full session</li>
-                      <li>Send intake paperwork</li>
-                    </ul>
-                  </div>
-
-                  <p className="italic">You don't have to have everything figured out. Just reach out, and we'll guide you through the process.</p>
+                  <p>Call us at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> for an initial consultation. We'll learn about your concerns, explain our approach, and match you with the right provider.</p>
                 </AccordionContent>
               </AccordionItem>
-
-              {/* Add more questions... */}
 
             </Accordion>
           </div>
@@ -357,28 +206,10 @@ const FAQ = () => {
               
               <AccordionItem value="q15" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">What is Health At Every Size® (HAES®)? Why do you use this approach?</span>
+                  <span className="font-semibold">What is Health At Every Size® (HAES®)?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>Health At Every Size® (HAES®) is a weight-neutral, evidence-based approach to health that focuses on well-being rather than weight loss.</p>
-                  
-                  <div>
-                    <p className="font-semibold text-foreground mb-2">Core HAES® principles:</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li><strong>Weight Inclusivity:</strong> Accept and respect body diversity</li>
-                      <li><strong>Health Enhancement:</strong> Support practices that improve well-being</li>
-                      <li><strong>Respectful Care:</strong> End weight discrimination and bias</li>
-                      <li><strong>Eating for Well-being:</strong> Flexible eating based on hunger and satisfaction</li>
-                      <li><strong>Life-Enhancing Movement:</strong> Physical activity for enjoyment, not weight loss</li>
-                    </ul>
-                  </div>
-
-                  <p>
-                    To learn more about our HAES® approach, visit our{" "}
-                    <Link to="/health-at-every-size" className="text-primary hover:underline font-semibold">
-                      Health At Every Size® page
-                    </Link>
-                  </p>
+                  <p>HAES® is a weight-neutral, evidence-based approach focusing on well-being rather than weight loss. <Link to="/health-at-every-size" className="text-primary hover:underline font-semibold">Learn more about HAES®</Link></p>
                 </AccordionContent>
               </AccordionItem>
 
@@ -387,24 +218,337 @@ const FAQ = () => {
                   <span className="font-semibold">How long will treatment take?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>This is one of the most common questions—and also one of the most difficult to answer with a specific timeline because recovery is highly individual.</p>
+                  <p>Recovery timelines vary widely: 3-6 months for symptom reduction, 6-12 months for significant improvement, 1-3+ years for full recovery. It's highly individual based on many factors.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q19" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">Will you give me a meal plan or tell me what to eat?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p className="font-semibold text-foreground">No—we do NOT provide prescriptive meal plans. Here's why:</p>
                   
                   <div>
-                    <p className="font-semibold text-foreground mb-2">General timelines (approximate):</p>
-                    <ul className="list-disc pl-6 space-y-1">
-                      <li><strong>Symptom reduction:</strong> 3-6 months - Many clients notice decreased eating disorder symptoms</li>
-                      <li><strong>Significant improvement:</strong> 6-12 months - Substantial progress in eating patterns, body image, coping skills</li>
-                      <li><strong>Full recovery:</strong> 1-3+ years - Complete freedom from eating disorder thoughts and behaviors</li>
+                    <p className="font-semibold text-foreground">Why we don't use traditional meal plans:</p>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li><strong>Meal plans reinforce the problem:</strong> External rules about eating are PART of what creates eating disorders. They teach you NOT to trust yourself and keep you dependent on outside control.</li>
+                      <li><strong>They don't address root causes:</strong> They focus on symptoms (what you eat) not causes (why you struggle with food).</li>
+                      <li><strong>One-size-fits-all doesn't work:</strong> Your body's needs are unique and constantly changing. Rigid plans can't account for hunger variability or life circumstances.</li>
+                      <li><strong>Our goal is AUTONOMY:</strong> We want you to trust YOURSELF, not a meal plan. True recovery means internal guidance, not external rules.</li>
                     </ul>
                   </div>
 
-                  <p className="font-semibold text-foreground">Important notes:</p>
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">What we do instead:</p>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li><strong>Intuitive Eating guidance:</strong> Learn to recognize and honor hunger and fullness, give yourself unconditional permission to eat</li>
+                      <li><strong>General nutrition education:</strong> Understanding how foods affect your body using gentle nutrition principles (not rigid rules)</li>
+                      <li><strong>Structured flexibility:</strong> For those very disconnected from hunger/fullness, temporary general structure as a bridge while rebuilding internal awareness</li>
+                      <li><strong>Meal support:</strong> Working through challenging food situations, addressing fear foods gradually, practical strategies individualized to YOU</li>
+                      <li><strong>Addressing emotional roots:</strong> Why you struggle with food—emotional patterns, using food to cope, perfectionism</li>
+                      <li><strong>Building coping skills:</strong> Managing emotions without food, tolerating discomfort, self-compassion</li>
+                    </ul>
+                  </div>
+
+                  <p className="italic mt-4">We're here to help you learn to eat intuitively, trust your body, and make food decisions based on YOUR needs—not to give you another set of rules to follow. This may feel scary at first if you're used to external control, but the freedom you gain is worth it.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q20" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">Do you weigh clients? What if I don't want to be weighed?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p className="font-semibold text-foreground">Our practice is weight-neutral and HAES®-aligned—weight is NOT a focus of treatment.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">Our standard practice:</p>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>We do NOT routinely weigh clients—weight is not a measure of health or recovery progress</li>
+                      <li>You can be weighed "blind" (backwards, without seeing the number) if medically necessary for monitoring</li>
+                      <li>You can decline weighing—we respect your boundaries and you always have the right to refuse</li>
+                      <li>Weight is not discussed or focused on in sessions</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">Why we don't focus on weight:</p>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li>Weight is not a reliable indicator of health</li>
+                      <li>Weight focus reinforces eating disorders and creates anxiety</li>
+                      <li>Weight-neutral approach works better—reduces shame, improves outcomes</li>
+                      <li>Your body will find its natural weight when you stop restricting and binging</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">What we focus on INSTEAD:</p>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li><strong>Behaviors:</strong> Eating patterns, binge/purge frequency, exercise balance</li>
+                      <li><strong>Physical health:</strong> Energy levels, digestion, strength, medical markers if needed</li>
+                      <li><strong>Mental well-being:</strong> Mood, anxiety, food thoughts, body image</li>
+                      <li><strong>Relationship with food and body:</strong> Trust with hunger/fullness, food flexibility, body acceptance</li>
+                      <li><strong>Quality of life:</strong> Engaging in relationships and activities, pursuing values</li>
+                    </ul>
+                  </div>
+
+                  <p className="italic mt-4">You will not be pressured to weigh yourself or know your weight. Our focus is on your well-being, recovery, and building a peaceful relationship with your body—not on numbers on a scale.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q21" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">Can I see a therapist and a dietitian at the same time?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p className="font-semibold text-foreground">Yes—and we strongly recommend it! Combined treatment is most effective for eating disorders.</p>
+                  
+                  <p>Eating disorders have both psychological/emotional and behavioral/nutritional dimensions. Therapists and dietitians address different but overlapping aspects.</p>
+
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">Therapists focus on:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Root causes (trauma, perfectionism, emotional avoidance)</li>
+                      <li>Emotional coping skills and processing</li>
+                      <li>Body image work and challenging shame</li>
+                      <li>Mental health concerns (depression, anxiety)</li>
+                      <li>Why you use food the way you do</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">Dietitians focus on:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Rebuilding trust with hunger and fullness signals</li>
+                      <li>Nutrition education and food flexibility</li>
+                      <li>Challenging food rules and fears</li>
+                      <li>Intuitive Eating principles</li>
+                      <li>Practical meal support</li>
+                      <li>How to nourish your body</li>
+                    </ul>
+                  </div>
+
+                  <p className="mt-4">Together, they provide comprehensive care addressing both the "why" and "how" of recovery. They coordinate (with your consent) to ensure consistent messaging and faster progress.</p>
+                  
+                  <p className="italic mt-4">If you can only afford one provider initially, we can discuss which to start with based on your needs. The goal is to add the other when possible for most effective treatment.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+            </Accordion>
+          </div>
+
+          {/* Category 4: Insurance & Financial */}
+          <div id="insurance" className="mb-16 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-8 text-primary">Insurance & Financial Information</h2>
+            <Accordion type="single" collapsible className="space-y-4">
+              
+              <AccordionItem value="q22" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">Do you accept insurance? Which plans?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>Yes, we accept many insurance plans for both therapy and dietitian services. Coverage varies by plan and provider.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">What we commonly accept:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Most major insurance plans</li>
+                      <li>PPO plans (typically better coverage for out-of-network)</li>
+                      <li>Medicare (select providers)</li>
+                      <li>Oregon Health Plan/Medicaid (limited availability)</li>
+                    </ul>
+                  </div>
+
+                  <p>Call us at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> with your insurance info and we'll verify your coverage, explain your benefits, and estimate your out-of-pocket costs.</p>
+                  
+                  <p>We provide detailed superbills for out-of-network reimbursement and help with authorization processes.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q23" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">How much does treatment cost if I don't use insurance?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>Self-pay rates vary by provider and service type. Contact us for specific pricing information.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">Financial assistance options:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Sliding scale fees (limited availability based on demonstrated need)</li>
+                      <li>Payment plans to spread costs over time</li>
+                      <li>HSA/FSA accepted (use pre-tax dollars, saves 20-40%)</li>
+                      <li>Out-of-network insurance reimbursement (PPO plans often reimburse 50-80%)</li>
+                      <li>Group therapy (more affordable than individual)</li>
+                      <li>Reduced session frequency options</li>
+                    </ul>
+                  </div>
+
+                  <p>Don't let cost concerns prevent you from reaching out. We'll work with you to explore all possible options for making treatment accessible. Call <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> to discuss your situation.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q24" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">What is a Good Faith Estimate?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>A Good Faith Estimate is a document showing the expected costs of your healthcare services, required by federal law (the No Surprises Act).</p>
+                  
+                  <p>You'll receive an estimate before starting treatment showing:</p>
                   <ul className="list-disc pl-6 space-y-1">
-                    <li>Recovery is non-linear with ups and downs</li>
-                    <li>Quality matters more than speed</li>
-                    <li>Session frequency decreases as you progress</li>
-                    <li>You won't be in intensive therapy forever</li>
+                    <li>Expected service types and frequency</li>
+                    <li>Cost per session</li>
+                    <li>Total expected costs</li>
                   </ul>
+
+                  <p className="mt-4"><strong>Your rights:</strong> If you're billed $400 or more over the Good Faith Estimate, you can dispute the bill through a federal resolution process.</p>
+                  
+                  <p>Learn more: <a href="http://www.cms.gov/nosurprises" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.cms.gov/nosurprises</a> or call (800) 368-1019</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q25" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">Do you offer sliding scale or reduced fees?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>Yes, we offer a limited number of sliding scale spots for clients experiencing financial hardship.</p>
+                  
+                  <p>Sliding scale is based on demonstrated financial need (household income, dependents, expenses, etc.). Availability varies as spots fill quickly.</p>
+
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">Other affordable options:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Group therapy—significantly more affordable than individual</li>
+                      <li>Reduced session frequency (every other week)</li>
+                      <li>Payment plans to spread costs</li>
+                      <li>Battle of the Binge self-study course</li>
+                      <li>HSA/FSA to use pre-tax dollars</li>
+                      <li>Out-of-network insurance reimbursement</li>
+                    </ul>
+                  </div>
+                  
+                  <p>Call <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> to discuss your financial situation and available options. We believe everyone deserves quality care.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q26" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">Can I use my HSA or FSA for treatment?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p className="font-semibold text-foreground">Yes! HSAs (Health Savings Accounts) and FSAs (Flexible Spending Accounts) typically cover eating disorder treatment.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">What's typically covered:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Individual therapy with licensed mental health providers</li>
+                      <li>Group therapy for medical/mental health conditions</li>
+                      <li>Dietitian services (medical nutrition therapy for eating disorders)</li>
+                      <li>Couples/family therapy (if related to eating disorder treatment)</li>
+                      <li>Copays, deductibles, and coinsurance amounts</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">How to use your HSA/FSA:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li><strong>Option 1:</strong> Use your HSA/FSA debit card at time of service</li>
+                      <li><strong>Option 2:</strong> Pay out of pocket and submit receipts for reimbursement</li>
+                    </ul>
+                  </div>
+
+                  <p className="mt-4">We provide detailed documentation with all required information for your HSA/FSA. <strong>Using pre-tax dollars saves you 20-40% depending on your tax bracket!</strong></p>
+                  
+                  <p className="italic">Questions? Contact your HSA/FSA administrator or our billing coordinator at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a>.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+            </Accordion>
+          </div>
+
+          {/* Category 5: What to Expect */}
+          <div id="what-to-expect" className="mb-16 scroll-mt-24">
+            <h2 className="text-3xl font-bold mb-8 text-primary">What to Expect in Treatment</h2>
+            <Accordion type="single" collapsible className="space-y-4">
+              
+              <AccordionItem value="q27" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">Is therapy confidential? Who will know I'm in treatment?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p className="font-semibold text-foreground">Yes, therapy is confidential. What you share in therapy stays in therapy, with specific legal exceptions.</p>
+                  
+                  <p>Everything you share, the fact that you're in treatment, your diagnosis, and your records are protected by law. We cannot share information without your written permission.</p>
+
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">Legal exceptions (we MUST break confidentiality):</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Imminent danger to self (serious, immediate suicide risk)</li>
+                      <li>Imminent danger to others (credible, specific threat)</li>
+                      <li>Child abuse or neglect</li>
+                      <li>Elder or dependent adult abuse</li>
+                      <li>Valid court orders</li>
+                    </ul>
+                  </div>
+
+                  <p className="mt-4"><strong>Insurance note:</strong> Using insurance requires sharing your diagnosis and treatment information with the insurance company. This becomes part of your medical record. Some clients choose self-pay for complete privacy—we can discuss pros and cons.</p>
+                  
+                  <p className="italic mt-4">Your privacy is protected by federal law (HIPAA) and our professional ethics. Your therapy is a safe, private space. Questions about confidentiality? Ask during your first session.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q28" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">What if I need support between sessions?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>For non-emergencies, email your provider or leave a voicemail at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a>. We respond within 24-48 business hours for brief check-ins or questions.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">In crisis or emergency situations:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li><strong>CALL 988</strong> - Suicide & Crisis Lifeline (free, 24/7, confidential)</li>
+                      <li><strong>CALL 911</strong> or go to nearest Emergency Room if in immediate danger</li>
+                      <li><strong>NEDA Helpline:</strong> Call/Text (800) 931-2237</li>
+                      <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
+                      <li><strong>Trevor Project (LGBTQIA+ Youth):</strong> 1-866-488-7386</li>
+                    </ul>
+                  </div>
+
+                  <p className="mt-4">We'll help you develop between-session coping strategies and create a safety plan. If you frequently need crisis support, we can discuss increasing session frequency or whether more intensive treatment is appropriate.</p>
+                  
+                  <p className="italic">Most therapy actually happens BETWEEN sessions—practicing skills, trying new behaviors, reflecting on insights. Some discomfort is normal and part of growth.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q29" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">Can I switch therapists if it's not a good fit?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p className="font-semibold text-foreground">Absolutely yes! Therapeutic fit is crucial to effective treatment, and we fully support switching if needed.</p>
+                  
+                  <p>Research shows the therapeutic relationship is one of the strongest predictors of treatment success. "Fit" matters as much as or more than specific techniques used.</p>
+
+                  <div>
+                    <p className="font-semibold text-foreground mt-4">Signs it might not be a good fit:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>You don't feel heard or understood</li>
+                      <li>You don't trust your therapist</li>
+                      <li>Their approach doesn't resonate with you</li>
+                      <li>You feel judged or uncomfortable</li>
+                      <li>Something just feels "off"</li>
+                    </ul>
+                  </div>
+
+                  <p className="mt-4"><strong>Important distinction:</strong> Discomfort with the WORK (exploring difficult emotions, changing behaviors) is normal and different from discomfort with the THERAPIST. Therapy should feel challenging sometimes—but you should still feel supported.</p>
+
+                  <p className="mt-4"><strong>How to switch:</strong> Contact us at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> and we'll help match you with a different therapist in our practice. We'll facilitate a smooth transition—you won't have to start completely over.</p>
+                  
+                  <p className="italic mt-4">You don't need to explain in detail why you're switching. Give it 3-4 sessions before deciding, but trust your gut. We want you to get the help that works for YOU.</p>
                 </AccordionContent>
               </AccordionItem>
 
@@ -418,25 +562,21 @@ const FAQ = () => {
       <section className="py-16 bg-gradient-to-br from-primary to-primary/80 text-white">
         <div className="container mx-auto px-4 text-center max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to End the Diet Cycle and Embrace Health At Every Size®?
+            Still Have Questions?
           </h2>
           <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
-            You don't have to spend another day trapped in diet culture, hating your body, or believing that your worth is determined by your weight.
-          </p>
-          <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto">
-            Our entire practice is built on HAES® principles. We're here to support you in this paradigm shift—from diet mentality to body liberation.
+            We're here to help. Don't let unanswered questions prevent you from getting the support you deserve.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-secondary text-primary hover:bg-secondary/90">
               <Link to="/contact">Schedule a Consultation</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-white/10 hover:bg-white/20 text-white border-white/20">
-              <Link to="/about">Meet Our HAES®-Aligned Team</Link>
+              <a href="tel:360-726-4141">Call 360-726-4141</a>
             </Button>
           </div>
           <p className="mt-8 text-white/80">
-            Questions? Call us at <a href="tel:360-726-4141" className="underline hover:text-white">360-726-4141</a> or{" "}
-            <Link to="/contact" className="underline hover:text-white">contact us through our form</Link>.
+            Or <Link to="/contact" className="underline hover:text-white">send us a message</Link> and we'll get back to you within 1-2 business days.
           </p>
         </div>
       </section>
