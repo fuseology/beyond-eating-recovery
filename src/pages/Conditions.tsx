@@ -85,7 +85,7 @@ const Conditions = () => {
       icon: Dumbbell,
       title: "Exercise Addiction / Compulsive Exercise",
       description: "Exercising compulsively or excessively to the point where it interferes with health, relationships, and daily life. Often used to compensate for eating or control weight.",
-      link: "/conditions"
+      link: "/conditions/exercise-addiction"
     },
     {
       id: "eating-disorders-men",
