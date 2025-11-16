@@ -58,6 +58,7 @@ const Header = () => {
   ];
 
   const resourceLinks = [
+    { title: "FAQ", href: "/faq" },
     { title: "Loveable At Any Size Workshop", href: "/workshop" },
     { title: "Body Image Workshops", href: "/workshop" },
     { title: "Battle of the Binge Program", href: "/battle-of-the-binge" },
@@ -322,6 +323,9 @@ const Header = () => {
                     <span>📚</span> Resources
                   </Link>
                   <div className="pl-8 space-y-2">
+                    <Link to="/faq" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → FAQ
+                    </Link>
                     <Link to="/workshop" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
                       → Loveable At Any Size
                     </Link>
