@@ -41,12 +41,12 @@ const Header = () => {
 
   const conditionLinks = [
     { title: "Anorexia Nervosa", href: "/conditions/anorexia-nervosa" },
-    { title: "Bulimia Nervosa", href: "/conditions" },
-    { title: "Binge Eating Disorder", href: "/conditions" },
+    { title: "Bulimia Nervosa", href: "/conditions/bulimia-nervosa" },
+    { title: "Binge Eating Disorder", href: "/conditions/binge-eating-disorder" },
     { title: "Body Dysmorphic Disorder", href: "/conditions" },
     { title: "Orthorexia", href: "/conditions" },
     { title: "Body Image Issues", href: "/conditions" },
-    { title: "Co-Occurring Disorders", href: "/conditions" },
+    { title: "Co-Occurring Issues", href: "/conditions/co-occurring-issues" },
   ];
 
   const approachLinks = [
