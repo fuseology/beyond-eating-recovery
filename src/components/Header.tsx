@@ -252,7 +252,7 @@ const Header = () => {
           </NavigationMenu>
 
           {/* CTA Buttons - Desktop */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex flex-col items-center gap-2">
             <Link to="/contact">
               <Button className="bg-accent hover:bg-accent/90 text-white">
                 Book Consultation
