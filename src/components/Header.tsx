@@ -68,6 +68,7 @@ const Header = () => {
   ];
 
   const resourceLinks = [
+    { title: "5 Steps to Exit the Diet Roller Coaster", href: "/resources/5-steps-diet-roller-coaster" },
     { title: "FAQ", href: "/faq" },
     { title: "Loveable At Any Size Workshop", href: "/workshop" },
     { title: "Battle of the Binge Program", href: "/battle-of-the-binge" },
