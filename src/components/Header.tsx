@@ -70,7 +70,6 @@ const Header = () => {
   const resourceLinks = [
     { title: "FAQ", href: "/faq" },
     { title: "Loveable At Any Size Workshop", href: "/workshop" },
-    { title: "Body Image Workshops", href: "/workshop" },
     { title: "Battle of the Binge Program", href: "/battle-of-the-binge" },
     { title: "Blog", href: "/resources" },
     { title: "Articles", href: "/resources" },
