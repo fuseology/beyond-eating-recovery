@@ -106,6 +106,13 @@ const About = () => {
       image: maryCooper,
       link: "/about/mary-cooper",
       bio: "Mary works behind the scenes connecting people with eating disorder treatment through thoughtful, ethical marketing and community outreach. She ensures accurate information reaches those seeking compassionate, evidence-based care in Portland and Vancouver."
+    },
+    {
+      name: "Emery Pederson",
+      title: "Admin Support",
+      image: "/placeholder.svg",
+      link: "/about/emery-pederson",
+      bio: "Emery creates welcoming, inclusive environments for clients seeking eating disorder treatment. With a BS in Psychology from WSU-Vancouver and research experience in eating disorders and mental health, she ensures every person feels seen, valued, and supported from their first interaction."
     }
   ];
 
