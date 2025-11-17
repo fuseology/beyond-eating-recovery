@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import emeryImage from "@/assets/emery-pederson.webp";
 
 const EmeryPederson = () => {
   return (
@@ -18,7 +19,7 @@ const EmeryPederson = () => {
               {/* Photo */}
               <div className="w-full md:w-2/5">
                 <img 
-                  src="/placeholder.svg" 
+                  src={emeryImage} 
                   alt="Emery Pederson - Admin Support at Beyond Eating Recovery"
                   className="w-full max-w-md mx-auto rounded-lg shadow-lg"
                 />
