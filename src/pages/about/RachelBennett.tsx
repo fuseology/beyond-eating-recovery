@@ -5,8 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
-// TODO: Replace with actual Rachel Bennett photo when available
-const rachelImage = anneImage;
+import rachelImage from "@/assets/rachel-bennett.webp";
 // TODO: Replace with actual Alyssa and Kiandra photos
 const alyssaImage = anneImage;
 const kiandraImage = anneImage;
