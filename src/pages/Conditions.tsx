@@ -1,9 +1,12 @@
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
 import { 
   ChevronRight, 
   Phone, 
@@ -22,117 +25,186 @@ import {
   User, 
   Rainbow, 
   Trophy,
-  GitBranch
+  GitBranch,
+  Search,
+  X
 } from "lucide-react";
 
 const Conditions = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [selectedPopulation, setSelectedPopulation] = useState<string>("all");
   const conditionCards = [
     {
       id: "anorexia-nervosa",
       icon: Scale,
       title: "Anorexia Nervosa",
       description: "Characterized by food restriction, intense fear of weight gain, and body image distortion. Anorexia is a serious eating disorder that requires specialized treatment addressing both physical and psychological components.",
-      link: "/conditions/anorexia-nervosa"
+      link: "/conditions/anorexia-nervosa",
+      category: "diagnosed",
+      population: ["general"]
     },
     {
       id: "bulimia-nervosa",
       icon: Activity,
       title: "Bulimia Nervosa",
       description: "Involves cycles of binge eating followed by compensatory behaviors (purging, excessive exercise, fasting). Bulimia creates physical and emotional distress that requires comprehensive treatment.",
-      link: "/conditions/bulimia-nervosa"
+      link: "/conditions/bulimia-nervosa",
+      category: "diagnosed",
+      population: ["general"]
     },
     {
       id: "binge-eating-disorder",
       icon: Utensils,
       title: "Binge Eating Disorder",
       description: "The most common eating disorder, characterized by recurrent episodes of eating large amounts with loss of control. BED causes significant distress and is highly treatable with appropriate care.",
-      link: "/conditions/binge-eating-disorder"
+      link: "/conditions/binge-eating-disorder",
+      category: "diagnosed",
+      population: ["general"]
     },
     {
       id: "atypical-anorexia",
       icon: Users,
       title: "Atypical Anorexia Nervosa",
       description: "All symptoms of anorexia nervosa except low weight. Just as medically and psychologically serious as 'typical' anorexia, but often missed due to weight bias. You deserve care at any size.",
-      link: "/conditions/atypical-anorexia"
+      link: "/conditions/atypical-anorexia",
+      category: "diagnosed",
+      population: ["general"]
     },
     {
       id: "arfid",
       icon: Apple,
       title: "ARFID (Avoidant/Restrictive Food Intake Disorder)",
       description: "Food avoidance or restriction not motivated by weight concerns—may be sensory-based, fear-based, or lack of interest in eating. Common in neurodivergent individuals and can cause nutritional deficiencies.",
-      link: "/conditions/arfid"
+      link: "/conditions/arfid",
+      category: "diagnosed",
+      population: ["general"]
     },
     {
       id: "osfed",
       icon: Puzzle,
       title: "OSFED (Other Specified Feeding or Eating Disorder)",
       description: "Includes atypical presentations and subthreshold eating disorders that don't meet full diagnostic criteria but cause significant distress. Just as serious and deserving of treatment as formally diagnosed disorders.",
-      link: "/conditions/osfed"
+      link: "/conditions/osfed",
+      category: "diagnosed",
+      population: ["general"]
     },
     {
       id: "orthorexia",
       icon: Sparkles,
       title: "Orthorexia",
       description: "Obsession with 'healthy' or 'clean' eating that becomes consuming and rigid. Often disguised as wellness but creates distress, social isolation, and nutritional imbalances. A growing concern in diet culture.",
-      link: "/conditions/orthorexia"
+      link: "/conditions/orthorexia",
+      category: "other",
+      population: ["general"]
     },
     {
       id: "disordered-eating",
       icon: Heart,
       title: "Disordered Eating",
       description: "A range of irregular eating patterns and behaviors that may not meet diagnostic criteria but cause distress. Extremely common in diet culture—you don't need a diagnosis to deserve help.",
-      link: "/conditions/disordered-eating"
+      link: "/conditions/disordered-eating",
+      category: "other",
+      population: ["general"]
     },
     {
       id: "emotional-eating",
       icon: Brain,
       title: "Emotional Eating / Compulsive Overeating",
       description: "Using food to cope with emotions, stress, or distress—often followed by shame and guilt. A learned coping mechanism that can be healed through addressing root causes and building emotional capacity.",
-      link: "/conditions/emotional-eating"
+      link: "/conditions/emotional-eating",
+      category: "other",
+      population: ["general"]
     },
     {
       id: "body-dysmorphia",
       icon: Eye,
       title: "Body Dysmorphia (Body Dysmorphic Disorder)",
       description: "Obsessive preoccupation with perceived flaws in appearance that others don't see. Often co-occurs with eating disorders. Highly treatable with specialized therapy like CBT and ERP.",
-      link: "/conditions/body-dysmorphia"
+      link: "/conditions/body-dysmorphia",
+      category: "related",
+      population: ["general"]
     },
     {
       id: "exercise-addiction",
       icon: Dumbbell,
       title: "Exercise Addiction / Compulsive Exercise",
       description: "Rigid, compulsive exercise that continues despite negative consequences. Often praised as 'dedication' in fitness culture but causes physical and psychological harm. Frequently co-occurs with eating disorders.",
-      link: "/conditions/exercise-addiction"
+      link: "/conditions/exercise-addiction",
+      category: "related",
+      population: ["general", "athletes"]
     },
     {
       id: "co-occurring-issues",
       icon: GitBranch,
       title: "Co-Occurring Mental Health Issues",
       description: "Eating disorders rarely exist alone—they frequently co-occur with depression, anxiety, trauma, OCD, substance use, and other conditions. Integrated treatment addressing all issues simultaneously is most effective.",
-      link: "/conditions/co-occurring-issues"
+      link: "/conditions/co-occurring-issues",
+      category: "related",
+      population: ["general"]
     },
     {
       id: "eating-disorders-men",
       icon: User,
       title: "Eating Disorders in Men",
       description: "At least 25% of people with eating disorders are men, yet they face stigma, underdiagnosis, and lack of appropriate treatment. Men experience all types of eating disorders and deserve specialized, affirming care.",
-      link: "/conditions/men-eating-disorders"
+      link: "/conditions/men-eating-disorders",
+      category: "population",
+      population: ["men"]
     },
     {
       id: "eating-disorders-lgbtqia",
       icon: Rainbow,
       title: "Eating Disorders in LGBTQIA+ Individuals",
       description: "LGBTQIA+ people face significantly higher eating disorder risk due to minority stress, discrimination, and unique body image pressures. Affirming, knowledgeable treatment addressing these factors is essential.",
-      link: "/conditions/lgbtqia-eating-disorders"
+      link: "/conditions/lgbtqia-eating-disorders",
+      category: "population",
+      population: ["lgbtqia"]
     },
     {
       id: "eating-disorders-athletes",
       icon: Trophy,
       title: "Eating Disorders in Athletes",
       description: "Athletes face unique eating disorder risks from performance pressure, weight requirements, sport culture, and body scrutiny. Specialized treatment can support recovery while honoring athletic identity and facilitating return to sport.",
-      link: "/conditions/athletes-eating-disorders"
+      link: "/conditions/athletes-eating-disorders",
+      category: "population",
+      population: ["athletes"]
     }
   ];
+
+  const categories = [
+    { value: "all", label: "All Conditions" },
+    { value: "diagnosed", label: "Diagnosed Eating Disorders" },
+    { value: "other", label: "Other Eating Issues" },
+    { value: "related", label: "Related Conditions" },
+    { value: "population", label: "Population-Specific" }
+  ];
+
+  const populations = [
+    { value: "all", label: "All Populations" },
+    { value: "men", label: "Men" },
+    { value: "lgbtqia", label: "LGBTQIA+" },
+    { value: "athletes", label: "Athletes" }
+  ];
+
+  const filteredCards = conditionCards.filter(card => {
+    const matchesSearch = searchQuery === "" || 
+      card.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      card.description.toLowerCase().includes(searchQuery.toLowerCase());
+    
+    const matchesCategory = selectedCategory === "all" || card.category === selectedCategory;
+    
+    const matchesPopulation = selectedPopulation === "all" || 
+      card.population.includes(selectedPopulation);
+
+    return matchesSearch && matchesCategory && matchesPopulation;
+  });
+
+  const clearFilters = () => {
+    setSearchQuery("");
+    setSelectedCategory("all");
+    setSelectedPopulation("all");
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -165,10 +237,101 @@ const Conditions = () => {
         </div>
       </section>
 
+      {/* Filter and Search Section */}
+      <section className="container mx-auto px-4 py-8 max-w-7xl">
+        <div className="bg-card border rounded-lg p-6 mb-8">
+          {/* Search Bar */}
+          <div className="relative mb-6">
+            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+            <Input
+              type="text"
+              placeholder="Search eating disorders by name or symptoms..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="pl-10 pr-10"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery("")}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 text-muted-foreground hover:text-foreground"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            )}
+          </div>
+
+          {/* Category Filters */}
+          <div className="mb-4">
+            <label className="text-sm font-semibold text-foreground mb-2 block">
+              Filter by Condition Type
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {categories.map((cat) => (
+                <Badge
+                  key={cat.value}
+                  variant={selectedCategory === cat.value ? "default" : "outline"}
+                  className="cursor-pointer hover:scale-105 transition-transform"
+                  onClick={() => setSelectedCategory(cat.value)}
+                >
+                  {cat.label}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          {/* Population Filters */}
+          <div className="mb-4">
+            <label className="text-sm font-semibold text-foreground mb-2 block">
+              Filter by Population
+            </label>
+            <div className="flex flex-wrap gap-2">
+              {populations.map((pop) => (
+                <Badge
+                  key={pop.value}
+                  variant={selectedPopulation === pop.value ? "default" : "outline"}
+                  className="cursor-pointer hover:scale-105 transition-transform"
+                  onClick={() => setSelectedPopulation(pop.value)}
+                >
+                  {pop.label}
+                </Badge>
+              ))}
+            </div>
+          </div>
+
+          {/* Clear Filters */}
+          {(searchQuery || selectedCategory !== "all" || selectedPopulation !== "all") && (
+            <div className="flex items-center justify-between pt-4 border-t">
+              <p className="text-sm text-muted-foreground">
+                Showing {filteredCards.length} of {conditionCards.length} conditions
+              </p>
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={clearFilters}
+                className="gap-2"
+              >
+                <X className="h-4 w-4" />
+                Clear All Filters
+              </Button>
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* Condition Cards Grid */}
-      <section className="container mx-auto px-4 py-16 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {conditionCards.map((condition, index) => {
+      <section className="container mx-auto px-4 pb-16 max-w-7xl">
+        {filteredCards.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-lg text-muted-foreground mb-4">
+              No conditions match your search criteria.
+            </p>
+            <Button onClick={clearFilters} variant="outline">
+              Clear Filters
+            </Button>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredCards.map((condition, index) => {
             const IconComponent = condition.icon;
             return (
               <Card 
@@ -198,7 +361,8 @@ const Conditions = () => {
               </Card>
             );
           })}
-        </div>
+          </div>
+        )}
       </section>
 
       {/* Our Approach Section */}
