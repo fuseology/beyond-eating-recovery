@@ -9,6 +9,7 @@ import baileyBenn from "@/assets/bailey-benn-new.webp";
 import alyssaPataki from "@/assets/alyssa-pataki.webp";
 import kiandraCole from "@/assets/kiandra-cole.webp";
 import rachelBennett from "@/assets/rachel-bennett.webp";
+import annieCalhounRandall from "@/assets/annie-calhoun-randall.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -59,7 +60,7 @@ const About = () => {
     {
       name: "Annie Calhoun Randall, MA, NTP",
       title: "Professional Counselor Associate | Certified Nutrition Therapy Practitioner",
-      image: "/placeholder.svg",
+      image: annieCalhounRandall,
       link: "/about/annie-calhoun-randall",
       bio: "Annie combines counseling, nutrition therapy, and athletic experience. Specializing in athlete eating disorders, she uses body-centered approaches (EFIT, SE, IFS) informed by her own recovery journey."
     },
