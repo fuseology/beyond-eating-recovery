@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, MapPin, GraduationCap, Award, Briefcase, Leaf, Heart, UserCheck, Brain, MessageCircle, Palette, Rainbow, Handshake, Target, Sprout, CheckCircle, Scale, Clock, Users, CreditCard, Compass } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import baileyBennPhoto from "@/assets/bailey-benn.jpg";
+import baileyBennPhoto from "@/assets/bailey-benn-new.webp";
 import { Link } from "react-router-dom";
 
 const BaileyBenn = () => {
