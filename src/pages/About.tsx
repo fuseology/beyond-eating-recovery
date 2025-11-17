@@ -6,6 +6,7 @@ import { Heart, Users, Sparkles, Shield, Target, CheckCircle, ArrowRight } from 
 import { Link } from "react-router-dom";
 import anneCuthbert from "@/assets/anne-cuthbert.jpg";
 import baileyBenn from "@/assets/bailey-benn-new.webp";
+import alyssaPataki from "@/assets/alyssa-pataki.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -35,7 +36,7 @@ const About = () => {
     {
       name: "Alyssa Pataki, MA, LMFT",
       title: "Licensed Marriage & Family Therapist",
-      image: "/placeholder.svg",
+      image: alyssaPataki,
       link: "/about/alyssa-pataki",
       bio: "Alyssa specializes in relational healing, couples therapy, and eating disorder treatment. With training in EFT and EMDR, she helps clients heal attachment wounds and transform relationships."
     },
