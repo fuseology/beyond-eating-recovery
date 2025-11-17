@@ -12,6 +12,7 @@ import rachelBennett from "@/assets/rachel-bennett.webp";
 import annieCalhounRandall from "@/assets/annie-calhoun-randall.webp";
 import saraKranich from "@/assets/sara-kranich.webp";
 import stephanieOkumura from "@/assets/stephanie-okumura.webp";
+import michelleCommons from "@/assets/michelle-commons.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -86,7 +87,7 @@ const About = () => {
     {
       name: "Michelle Commons",
       title: "Admin Support | Your First Point of Contact",
-      image: "/placeholder.svg",
+      image: michelleCommons,
       link: "/about/michelle-commons",
       bio: "Michelle brings friendly, compassionate administrative support to Beyond Eating Recovery. With over two decades in personal development, she's passionate about helping people become better versions of themselves. When you reach out, you'll likely connect with Michelle first."
     },
