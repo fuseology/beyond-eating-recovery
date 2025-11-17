@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { ChevronRight, Video, Lock } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert.jpg";
 import { useEffect } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const FiveStepsDietRollerCoaster = () => {
   // Load Constant Contact form script
@@ -31,6 +33,8 @@ const FiveStepsDietRollerCoaster = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background-light">
+        <Header />
+        
         {/* Breadcrumb Navigation */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-6">
           <nav className="text-sm text-muted-foreground max-w-[1000px] mx-auto mb-8">
@@ -246,25 +250,7 @@ const FiveStepsDietRollerCoaster = () => {
           </div>
         </section>
 
-        {/* Footer Navigation */}
-        <footer className="py-8 bg-white border-t border-border">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <nav className="flex flex-wrap justify-center gap-4 md:gap-6 text-sm mb-6">
-                <Link to="/" className="text-muted-foreground hover:text-primary">Home</Link>
-                <span className="text-muted-foreground">|</span>
-                <Link to="/about/anne-cuthbert" className="text-muted-foreground hover:text-primary">About Anne</Link>
-                <span className="text-muted-foreground">|</span>
-                <Link to="/services" className="text-muted-foreground hover:text-primary">Services</Link>
-                <span className="text-muted-foreground">|</span>
-                <Link to="/contact" className="text-muted-foreground hover:text-primary">Contact</Link>
-              </nav>
-              <p className="text-sm text-muted-foreground">
-                © 2024 Beyond Eating Recovery | Portland, OR & Vancouver, WA | (360) 726-4141
-              </p>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>
   );
