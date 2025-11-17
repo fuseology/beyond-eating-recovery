@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import anneCuthbert from "@/assets/anne-cuthbert.jpg";
 import baileyBenn from "@/assets/bailey-benn-new.webp";
 import alyssaPataki from "@/assets/alyssa-pataki.webp";
+import kiandraCole from "@/assets/kiandra-cole.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -43,7 +44,7 @@ const About = () => {
     {
       name: "Kiandra Cole, MA",
       title: "Associate Therapist",
-      image: "/placeholder.svg",
+      image: kiandraCole,
       link: "/about/kiandra-cole",
       bio: "Kiandra brings warmth and authenticity to therapy, specializing in eating disorders, body image, and LGBTQIA+ affirming care. Personal recovery experience informs her compassionate approach."
     },

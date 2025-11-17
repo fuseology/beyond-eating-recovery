@@ -6,8 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
-// TODO: Replace with actual Kiandra Cole photo when available
-const kiandraImage = anneImage;
+import kiandraImage from "@/assets/kiandra-cole.webp";
 // TODO: Replace with actual Alyssa photo
 const alyssaImage = anneImage;
 
