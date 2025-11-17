@@ -9,67 +9,66 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 217 69% 20%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 217 69% 20%;
+    --card-foreground: 0 0% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 217 69% 20%;
+    --popover-foreground: 0 0% 20%;
 
-    --primary: 217 69% 33%;
+    --primary: 217 68% 32%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 30% 95%;
-    --secondary-foreground: 217 69% 33%;
+    --secondary: 210 20% 98%;
+    --secondary-foreground: 217 68% 32%;
 
-    --muted: 217 20% 96%;
-    --muted-foreground: 217 20% 45%;
+    --muted: 210 20% 98%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 34 89% 60%;
+    --accent: 31 89% 59%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 217 20% 90%;
-    --input: 217 20% 90%;
-    --ring: 217 69% 33%;
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 217 68% 32%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens for therapeutic design */
-    --healing-blue: 217 69% 33%;
-    --warm-orange: 34 89% 60%;
-    --soft-bg: 217 30% 98%;
-    --light-gray-bg: 210 17% 98%;
-    --card-border: 0 0% 88%;
-    --body-text: 0 0% 20%;
-    --calm-shadow: 217 20% 80%;
+    /* Beyond Eating Recovery Brand Colors */
+    --brand-blue: 217 68% 32%;
+    --brand-blue-hover: 217 68% 28%;
+    --brand-orange: 31 89% 59%;
+    --brand-orange-hover: 31 89% 54%;
+    --text-dark: 0 0% 20%;
+    --background-light: 210 20% 98%;
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 217 69% 15%;
+    --background: 217 68% 15%;
     --foreground: 0 0% 95%;
 
-    --card: 217 69% 18%;
+    --card: 217 68% 18%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 217 69% 18%;
+    --popover: 217 68% 18%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 217 69% 33%;
+    --primary: 217 68% 32%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 217 30% 25%;
     --secondary-foreground: 0 0% 95%;
 
     --muted: 217 30% 25%;
-    --muted-foreground: 217 20% 65%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 34 89% 60%;
+    --accent: 31 89% 59%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 40%;
@@ -77,7 +76,7 @@ All colors MUST be HSL.
 
     --border: 217 30% 25%;
     --input: 217 30% 25%;
-    --ring: 34 89% 60%;
+    --ring: 31 89% 59%;
   }
 }
 
