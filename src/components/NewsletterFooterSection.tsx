@@ -1,23 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Check } from "lucide-react";
 
 const NewsletterFooterSection = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  // Load Constant Contact form script
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = '//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    return () => {
-      if (document.body.contains(script)) {
-        document.body.removeChild(script);
-      }
-    };
-  }, []);
 
   return (
     <section 
