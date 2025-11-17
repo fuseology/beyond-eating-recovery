@@ -3,23 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ChevronRight, Video, Lock } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert.jpg";
-import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const FiveStepsDietRollerCoaster = () => {
-  // Load Constant Contact form script
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = '//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <>
