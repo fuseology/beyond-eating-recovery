@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Users, Sparkles, Shield, Target, CheckCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import anneCuthbert from "@/assets/anne-cuthbert.jpg";
-import baileyBenn from "@/assets/bailey-benn.jpg";
+import baileyBenn from "@/assets/bailey-benn-new.webp";
 
 const About = () => {
   const philosophyPoints = [
