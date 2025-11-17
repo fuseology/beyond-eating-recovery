@@ -70,15 +70,6 @@ const BookSection = () => {
           </div>
         </div>
 
-        {/* About Anne Cuthbert */}
-        <div className="mt-16 max-w-4xl mx-auto bg-card rounded-lg p-8 shadow-lg border border-border">
-          <h3 className="text-2xl font-bold mb-4 text-foreground text-center">
-            About the Author
-          </h3>
-          <p className="text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">Anne Cuthbert</strong>, a mental health counselor, owns the group practice Beyond Eating Recovery located in Portland, Oregon and Vancouver, WA. She has worked with people with eating disorders for over twenty years. She has confronted and recovered from her own eating disorder behaviors and learned to enjoy the full range of emotions. Anne's mission is to teach others how to feel so they too can live an authentic life.
-          </p>
-        </div>
       </div>
     </section>
   );
