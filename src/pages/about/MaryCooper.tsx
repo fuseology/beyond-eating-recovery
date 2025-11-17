@@ -2,6 +2,7 @@ import { Phone, Megaphone, Heart, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import maryImage from "@/assets/mary-cooper.webp";
 
 const MaryCooper = () => {
   return (
@@ -11,27 +12,41 @@ const MaryCooper = () => {
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary">
-              Mary Cooper
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-accent font-medium">
-              Marketing Administrator
-            </p>
-            
-            <p className="text-lg text-foreground leading-relaxed max-w-3xl mx-auto">
-              I work behind the scenes to help connect people with the eating disorder treatment and support they need. Through thoughtful marketing and community outreach, I ensure our practice reaches those who are seeking compassionate, evidence-based care in the Portland and Vancouver areas.
-            </p>
-            
-            <div className="pt-4 space-y-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
-                Contact Our Office
-              </Button>
-              <p className="text-primary text-lg font-semibold">
-                <Phone className="inline-block mr-2 h-5 w-5" />
-                (360) 726-4141
-              </p>
+          <div className="max-w-5xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+              {/* Photo */}
+              <div className="w-full md:w-2/5">
+                <img 
+                  src={maryImage} 
+                  alt="Mary Cooper - Marketing Administrator at Beyond Eating Recovery"
+                  className="w-full max-w-md mx-auto rounded-lg shadow-lg"
+                />
+              </div>
+              
+              {/* Info */}
+              <div className="w-full md:w-3/5 text-center md:text-left space-y-6">
+                <h1 className="text-4xl md:text-5xl font-bold text-primary">
+                  Mary Cooper
+                </h1>
+                
+                <p className="text-xl md:text-2xl text-accent font-medium">
+                  Marketing Administrator
+                </p>
+                
+                <p className="text-lg text-foreground leading-relaxed">
+                  I work behind the scenes to help connect people with the eating disorder treatment and support they need. Through thoughtful marketing and community outreach, I ensure our practice reaches those who are seeking compassionate, evidence-based care in the Portland and Vancouver areas.
+                </p>
+                
+                <div className="pt-4 space-y-4">
+                  <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
+                    Contact Our Office
+                  </Button>
+                  <p className="text-primary text-lg font-semibold">
+                    <Phone className="inline-block mr-2 h-5 w-5" />
+                    (360) 726-4141
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

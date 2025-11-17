@@ -14,6 +14,7 @@ import saraKranich from "@/assets/sara-kranich.webp";
 import stephanieOkumura from "@/assets/stephanie-okumura.webp";
 import michelleCommons from "@/assets/michelle-commons.webp";
 import michelleSullins from "@/assets/michelle-sullins.png";
+import maryCooper from "@/assets/mary-cooper.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -102,7 +103,7 @@ const About = () => {
     {
       name: "Mary Cooper",
       title: "Marketing Administrator",
-      image: "/placeholder.svg",
+      image: maryCooper,
       link: "/about/mary-cooper",
       bio: "Mary works behind the scenes connecting people with eating disorder treatment through thoughtful, ethical marketing and community outreach. She ensures accurate information reaches those seeking compassionate, evidence-based care in Portland and Vancouver."
     }
