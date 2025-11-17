@@ -104,6 +104,14 @@ const Header = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 bg-white">
+                    <li className="border-b pb-3 mb-2">
+                      <Link to="/about">
+                        <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors bg-accent/5 hover:bg-accent/15 focus:bg-accent focus:text-accent-foreground border border-accent/20">
+                          <div className="text-sm font-bold leading-none text-primary">→ View All About</div>
+                          <p className="text-xs text-muted-foreground mt-1">Meet our team and learn our story</p>
+                        </NavigationMenuLink>
+                      </Link>
+                    </li>
                     {aboutLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
@@ -123,6 +131,14 @@ const Header = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 bg-white">
+                    <li className="border-b pb-3 mb-2">
+                      <Link to="/services">
+                        <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors bg-accent/5 hover:bg-accent/15 focus:bg-accent focus:text-accent-foreground border border-accent/20">
+                          <div className="text-sm font-bold leading-none text-primary">→ View All Services</div>
+                          <p className="text-xs text-muted-foreground mt-1">Explore our full range of treatment options</p>
+                        </NavigationMenuLink>
+                      </Link>
+                    </li>
                     {serviceLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
@@ -169,6 +185,14 @@ const Header = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 bg-white">
+                    <li className="border-b pb-3 mb-2">
+                      <Link to="/our-approach">
+                        <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors bg-accent/5 hover:bg-accent/15 focus:bg-accent focus:text-accent-foreground border border-accent/20">
+                          <div className="text-sm font-bold leading-none text-primary">→ View Our Approach</div>
+                          <p className="text-xs text-muted-foreground mt-1">Learn about our philosophy and methods</p>
+                        </NavigationMenuLink>
+                      </Link>
+                    </li>
                     {approachLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
@@ -188,6 +212,14 @@ const Header = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 bg-white">
+                    <li className="border-b pb-3 mb-2">
+                      <Link to="/resources">
+                        <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors bg-accent/5 hover:bg-accent/15 focus:bg-accent focus:text-accent-foreground border border-accent/20">
+                          <div className="text-sm font-bold leading-none text-primary">→ View All Resources</div>
+                          <p className="text-xs text-muted-foreground mt-1">Access helpful tools and information</p>
+                        </NavigationMenuLink>
+                      </Link>
+                    </li>
                     {resourceLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
