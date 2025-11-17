@@ -13,6 +13,7 @@ import annieCalhounRandall from "@/assets/annie-calhoun-randall.webp";
 import saraKranich from "@/assets/sara-kranich.webp";
 import stephanieOkumura from "@/assets/stephanie-okumura.webp";
 import michelleCommons from "@/assets/michelle-commons.webp";
+import michelleSullins from "@/assets/michelle-sullins.png";
 
 const About = () => {
   const philosophyPoints = [
@@ -94,7 +95,7 @@ const About = () => {
     {
       name: "Michelle Sullins",
       title: "Billing Support | Certified Professional Medical Coder",
-      image: "/placeholder.svg",
+      image: michelleSullins,
       link: "/about/michelle-sullins",
       bio: "With over 10 years as a Certified Professional Medical Coder, Michelle ensures accurate billing and maximizes your insurance benefits. She navigates the complex world of medical coding and insurance so you can focus on your healing journey."
     },
