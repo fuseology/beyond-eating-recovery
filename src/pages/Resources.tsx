@@ -13,6 +13,7 @@ import blog2 from "@/assets/blog-2.jpg";
 import blog3 from "@/assets/blog-3.jpg";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
+import { Link } from "react-router-dom";
 
 const Resources = () => {
   const [email, setEmail] = useState("");
@@ -176,6 +177,77 @@ const Resources = () => {
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
             Knowledge is power. Explore our library of articles, tools, and resources to support your journey.
           </p>
+        </div>
+      </section>
+
+      {/* Featured: 5 Steps Video Series */}
+      <section className="py-16 bg-accent/10 border-y-4 border-accent">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <Badge className="bg-accent text-white mb-4 text-sm">Featured Free Resource</Badge>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                  5 Steps to Exiting the Diet Roller Coaster
+                </h2>
+                <p className="text-lg text-foreground/80 mb-6 leading-relaxed">
+                  Get Anne Cuthbert's free video series delivered to your inbox. Learn practical steps to end your obsession with food and weight, and find lasting peace and freedom with food and body image.
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-start gap-2">
+                    <Video className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                    <span className="text-foreground/90">5 educational videos delivered over time</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Video className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                    <span className="text-foreground/90">Actionable steps you can practice immediately</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Video className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
+                    <span className="text-foreground/90">Compassionate, weight-neutral approach</span>
+                  </li>
+                </ul>
+                <Button 
+                  size="lg" 
+                  className="bg-accent hover:bg-accent/90 text-white"
+                  asChild
+                >
+                  <Link to="/resources/5-steps-diet-roller-coaster">
+                    Get Free Video Series
+                    <ExternalLink className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+              </div>
+              <div className="bg-white rounded-lg shadow-xl p-8 border-2 border-accent/20">
+                <h3 className="text-xl font-semibold text-primary mb-4">What You'll Learn:</h3>
+                <ol className="space-y-3 text-foreground/90">
+                  <li className="flex gap-3">
+                    <span className="font-bold text-accent flex-shrink-0">1.</span>
+                    <span>Understanding Diet Culture</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="font-bold text-accent flex-shrink-0">2.</span>
+                    <span>Recognizing Your Patterns</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="font-bold text-accent flex-shrink-0">3.</span>
+                    <span>Challenging Food Rules</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="font-bold text-accent flex-shrink-0">4.</span>
+                    <span>Healing Your Relationship with Your Body</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="font-bold text-accent flex-shrink-0">5.</span>
+                    <span>Building Lasting Freedom</span>
+                  </li>
+                </ol>
+                <p className="text-sm text-muted-foreground mt-6 italic">
+                  💌 Videos delivered every few days so you have time to practice each step.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
