@@ -5,8 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
-// TODO: Replace with actual Sara Kranich photo when available
-const saraImage = anneImage;
+import saraImage from "@/assets/sara-kranich.webp";
 // TODO: Replace with actual team photos
 const alyssaImage = anneImage;
 const kiandraImage = anneImage;
