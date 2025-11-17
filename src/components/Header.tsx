@@ -142,6 +142,14 @@ const Header = () => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 bg-white">
+                    <li className="border-b pb-3 mb-2">
+                      <Link to="/conditions">
+                        <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors bg-accent/5 hover:bg-accent/15 focus:bg-accent focus:text-accent-foreground border border-accent/20">
+                          <div className="text-sm font-bold leading-none text-primary">→ View All Conditions</div>
+                          <p className="text-xs text-muted-foreground mt-1">Browse our complete conditions directory</p>
+                        </NavigationMenuLink>
+                      </Link>
+                    </li>
                     {conditionLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
@@ -292,17 +300,20 @@ const Header = () => {
                     <span>📋</span> Conditions
                   </Link>
                   <div className="pl-8 space-y-2">
-                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                      → Anorexia
+                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-accent font-semibold hover:underline">
+                      → View All Conditions
                     </Link>
-                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                      → Bulimia
+                    <Link to="/conditions/anorexia-nervosa" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Anorexia Nervosa
                     </Link>
-                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                      → Binge Eating
+                    <Link to="/conditions/bulimia-nervosa" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Bulimia Nervosa
                     </Link>
-                    <Link to="/conditions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
-                      → More...
+                    <Link to="/conditions/binge-eating-disorder" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Binge Eating Disorder
+                    </Link>
+                    <Link to="/conditions/arfid" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → ARFID
                     </Link>
                   </div>
                 </div>
