@@ -41,6 +41,7 @@ All colors MUST be HSL.
     /* Beyond Eating Recovery Brand Colors */
     --brand-blue: 217 68% 32%;
     --brand-blue-hover: 217 68% 28%;
+    --brand-blue-dark: 217 68% 24%;
     --brand-orange: 31 89% 59%;
     --brand-orange-hover: 31 89% 54%;
     --text-dark: 0 0% 20%;
