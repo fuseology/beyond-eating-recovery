@@ -6,8 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
-// TODO: Replace with actual Alyssa Pataki photo when available
-const alyssaImage = anneImage;
+import alyssaImage from "@/assets/alyssa-pataki.webp";
 
 const AlyssaPataki = () => {
   return (
