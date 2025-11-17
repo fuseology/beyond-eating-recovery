@@ -10,6 +10,7 @@ import alyssaPataki from "@/assets/alyssa-pataki.webp";
 import kiandraCole from "@/assets/kiandra-cole.webp";
 import rachelBennett from "@/assets/rachel-bennett.webp";
 import annieCalhounRandall from "@/assets/annie-calhoun-randall.webp";
+import saraKranich from "@/assets/sara-kranich.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -67,7 +68,7 @@ const About = () => {
     {
       name: "Sara Kranich, MA",
       title: "Associate Therapist | Mindfulness Specialist",
-      image: "/placeholder.svg",
+      image: saraKranich,
       link: "/about/sara-kranich",
       bio: "Sara integrates mindfulness and meditation into trauma-informed, person-centered therapy. Drawing from personal recovery experience, she guides clients toward self-awareness and self-acceptance through HAES principles."
     },
