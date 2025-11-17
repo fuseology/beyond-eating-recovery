@@ -76,7 +76,7 @@ const BookSection = () => {
             About the Author
           </h3>
           <p className="text-muted-foreground leading-relaxed">
-            <strong className="text-foreground">Anne Cuthbert</strong>, a mental health counselor, owns the group practice Body Expressions located in Portland, Oregon and Vancouver, WA. She has worked with people with eating disorders for over twenty years. She has confronted and recovered from her own eating disorder behaviors and learned to enjoy the full range of emotions. Anne's mission is to teach others how to feel so they too can live an authentic life.
+            <strong className="text-foreground">Anne Cuthbert</strong>, a mental health counselor, owns the group practice Beyond Eating Recovery located in Portland, Oregon and Vancouver, WA. She has worked with people with eating disorders for over twenty years. She has confronted and recovered from her own eating disorder behaviors and learned to enjoy the full range of emotions. Anne's mission is to teach others how to feel so they too can live an authentic life.
           </p>
         </div>
       </div>
