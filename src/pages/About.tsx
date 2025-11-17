@@ -8,6 +8,7 @@ import anneCuthbert from "@/assets/anne-cuthbert.jpg";
 import baileyBenn from "@/assets/bailey-benn-new.webp";
 import alyssaPataki from "@/assets/alyssa-pataki.webp";
 import kiandraCole from "@/assets/kiandra-cole.webp";
+import rachelBennett from "@/assets/rachel-bennett.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -51,7 +52,7 @@ const About = () => {
     {
       name: "Rachel Bennett, MA",
       title: "QMHP-A Therapist | Professional Counselor Associate",
-      image: "/placeholder.svg",
+      image: rachelBennett,
       link: "/about/rachel-bennett",
       bio: "Rachel offers an eclectic approach integrating IFS, CBT, EFT, and ACT from a person-centered lens. With personal recovery experience and body positive programming expertise, she creates truly safe spaces."
     },
