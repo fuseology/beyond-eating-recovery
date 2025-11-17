@@ -45,6 +45,7 @@ import ExerciseAddiction from "./pages/conditions/ExerciseAddiction";
 import MenEatingDisorders from "./pages/conditions/MenEatingDisorders";
 import LGBTQIAEatingDisorders from "./pages/conditions/LGBTQIAEatingDisorders";
 import AthletesEatingDisorders from "./pages/conditions/AthletesEatingDisorders";
+import FiveStepsDietRollerCoaster from "./pages/FiveStepsDietRollerCoaster";
 
 const queryClient = new QueryClient();
 
@@ -96,6 +97,7 @@ const App = () => (
           <Route path="/conditions/lgbtqia-eating-disorders" element={<LGBTQIAEatingDisorders />} />
           <Route path="/conditions/athletes-eating-disorders" element={<AthletesEatingDisorders />} />
           <Route path="/body-shame" element={<BodyShame />} />
+          <Route path="/resources/5-steps-diet-roller-coaster" element={<FiveStepsDietRollerCoaster />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
