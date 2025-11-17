@@ -7,6 +7,7 @@ import BookSection from "@/components/BookSection";
 import ConditionsAccordionSection from "@/components/ConditionsAccordionSection";
 import WorkshopSection from "@/components/WorkshopSection";
 import TrustIndicators from "@/components/TrustIndicators";
+import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,13 +15,14 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <HeroSection />
+      <TrustIndicators />
       <NotAloneSection />
       <HowWeHelpSection />
-      <VideoSection />
       <BookSection />
-      <ConditionsAccordionSection />
       <WorkshopSection />
-      <TrustIndicators />
+      <VideoSection />
+      <ConditionsAccordionSection />
+      <FinalCTASection />
       <Footer />
     </div>
   );
