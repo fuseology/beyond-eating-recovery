@@ -11,6 +11,7 @@ import kiandraCole from "@/assets/kiandra-cole.webp";
 import rachelBennett from "@/assets/rachel-bennett.webp";
 import annieCalhounRandall from "@/assets/annie-calhoun-randall.webp";
 import saraKranich from "@/assets/sara-kranich.webp";
+import stephanieOkumura from "@/assets/stephanie-okumura.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -75,7 +76,7 @@ const About = () => {
     {
       name: "Stephanie Okumura, MS, RDN",
       title: "Registered Dietitian Nutritionist",
-      image: "/placeholder.svg",
+      image: stephanieOkumura,
       link: "/about/stephanie-okumura",
       bio: "Stephanie provides weight-neutral, culturally responsive nutrition counseling. As a HAES® practitioner and Intuitive Eating specialist with Japanese heritage, she honors all cultural food traditions in eating disorder recovery."
     }

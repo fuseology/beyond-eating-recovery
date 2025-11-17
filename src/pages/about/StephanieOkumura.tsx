@@ -2,6 +2,7 @@ import { Phone, GraduationCap, Award, Heart, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import stephanieImage from "@/assets/stephanie-okumura.webp";
 
 const StephanieOkumura = () => {
   return (
@@ -14,7 +15,7 @@ const StephanieOkumura = () => {
           <div className="max-w-6xl mx-auto grid md:grid-cols-5 gap-12 items-center">
             <div className="md:col-span-2">
               <img 
-                src="/placeholder.svg" 
+                src={stephanieImage} 
                 alt="Stephanie Okumura, MS, RDN - Registered Dietitian at Beyond Eating Recovery"
                 className="w-full rounded-lg shadow-xl"
               />
