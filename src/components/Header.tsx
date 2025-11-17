@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone, Menu } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/beyond-eating-recovery-logo.png";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -84,8 +85,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="text-xl md:text-2xl font-bold text-white hover:text-white/90 transition-colors">
-            Beyond Eating Recovery
+          <Link to="/" className="flex items-center hover:opacity-90 transition-opacity">
+            <img 
+              src={logo} 
+              alt="Beyond Eating Recovery" 
+              className="h-16 md:h-20 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
