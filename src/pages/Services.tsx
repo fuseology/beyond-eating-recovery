@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import { Button } from "@/components/ui/button";
 import { Check, User, Apple, Users, Heart, Phone, ExternalLink } from "lucide-react";
 
@@ -386,6 +387,7 @@ const Services = () => {
         </div>
       </section>
 
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );
