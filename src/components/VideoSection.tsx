@@ -16,7 +16,7 @@ const VideoSection = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/xX1NzHsiQrs"
               title="Is Food Really the Problem?"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -27,8 +27,8 @@ const VideoSection = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Steps to Make Peace with Food"
+              src="https://www.youtube.com/embed/XNWe9twazyo"
+              title="If Your Hunger Could Talk"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full"
