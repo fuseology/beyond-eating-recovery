@@ -15,6 +15,7 @@ import stephanieOkumura from "@/assets/stephanie-okumura.webp";
 import michelleCommons from "@/assets/michelle-commons.webp";
 import michelleSullins from "@/assets/michelle-sullins.png";
 import maryCooper from "@/assets/mary-cooper.webp";
+import emeryPederson from "@/assets/emery-pederson.webp";
 
 const About = () => {
   const philosophyPoints = [
@@ -110,7 +111,7 @@ const About = () => {
     {
       name: "Emery Pederson",
       title: "Admin Support",
-      image: "/placeholder.svg",
+      image: emeryPederson,
       link: "/about/emery-pederson",
       bio: "Emery creates welcoming, inclusive environments for clients seeking eating disorder treatment. With a BS in Psychology from WSU-Vancouver and research experience in eating disorders and mental health, she ensures every person feels seen, valued, and supported from their first interaction."
     }
