@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
+import logo from "@/assets/beyond-eating-recovery-logo.png";
 
 const HeroSection = () => {
   return (
@@ -20,6 +21,12 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-16 text-center text-white">
+        <img 
+          src={logo} 
+          alt="Beyond Eating Recovery" 
+          className="h-24 md:h-32 w-auto mx-auto mb-8"
+        />
+        
         <Badge variant="secondary" className="mb-6 bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30">
           <MapPin className="w-4 h-4 mr-1" />
           Serving Portland, OR & Vancouver, WA
