@@ -100,7 +100,7 @@ const OurApproach = () => {
                   href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block group"
+                  className="block group max-w-md mx-auto"
                 >
                   <img 
                     src={bookCover} 
