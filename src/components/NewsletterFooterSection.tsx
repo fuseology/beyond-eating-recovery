@@ -1,8 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Check } from "lucide-react";
 
 const NewsletterFooterSection = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    const selector = '.ctct-inline-form[data-form-id="1e4bff82-8959-4098-ba51-ed75e027a11c"]';
+    const el = document.querySelector(selector) as HTMLElement | null;
+    const alreadyRendered = !!el && el.children.length > 0;
+    if (alreadyRendered) return;
+
+    if (!(window as any).__ctctReinitTriggered) {
+      (window as any).__ctctReinitTriggered = true;
+      (window as any)._ctct_m = "9ec9c776cead1cd42af6640d7a07a35e";
+      const existing = document.getElementById("signupScript") as HTMLScriptElement | null;
+      const script = document.createElement("script");
+      script.src = existing?.src || "//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js";
+      script.async = true;
+      script.defer = true;
+      script.id = "signupScript-dup";
+      document.body.appendChild(script);
+    }
+  }, []);
 
   return (
     <section 
