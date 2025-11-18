@@ -32,14 +32,6 @@ const BookSection = () => {
                 className="w-full rounded-lg shadow-xl"
               />
               
-              <blockquote className="text-foreground/90 italic border-l-4 border-primary pl-6 pr-4">
-                "I know first hand what it is like to deal with food and body issues. For years, I struggled with food issues and hating my body. I compared myself to every woman I saw and resisted exercising refusing to give into what other people told me I should do and how I should look. I ate to hide how I was feeling and to avoid being close to anyone. I thought I couldn't be loved if I was fat."
-              </blockquote>
-              
-              <p className="text-lg text-muted-foreground">
-                Leading expert in eating disorders with over 20 years of experience helping people heal their relationship with food
-              </p>
-              
               <div className="text-center">
                 <p className="text-muted-foreground mb-4">
                   Available on Amazon in Paperback or Kindle
