@@ -7,9 +7,12 @@ const BookSection = () => {
     <section className="py-16 md:py-24 bg-gradient-to-br from-background to-secondary/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
-            Featured Book by Anne Cuthbert
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-foreground">
+            If Your Hunger Could Talk
           </h2>
+          <p className="text-xl text-muted-foreground mb-4">
+            By Anne Cuthbert MA, LPC, LMHC
+          </p>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Leading expert in eating disorders with over 20 years of experience helping people heal their relationship with food
           </p>

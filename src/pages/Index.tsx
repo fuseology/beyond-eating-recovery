@@ -19,17 +19,6 @@ const Index = () => {
       <TrustIndicators />
       <NotAloneSection />
       <HowWeHelpSection />
-      
-      {/* Book Title */}
-      <div className="py-8 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-          If Your Hunger Could Talk
-        </h2>
-        <p className="text-lg text-muted-foreground">
-          By Anne Cuthbert MA, LPC, LMHC
-        </p>
-      </div>
-      
       <BookSection />
       <WorkshopSection />
       <VideoSection />
