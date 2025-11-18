@@ -92,8 +92,8 @@ All colors MUST be HSL.
 }
 
 /* Newsletter Footer Custom Styles for Constant Contact Form */
-.newsletter-footer-form .ctct-inline-form input[type="email"],
-.newsletter-footer-form .ctct-inline-form input[type="text"] {
+.newsletter-footer .ctct-inline-form input[type="email"],
+.newsletter-footer .ctct-inline-form input[type="text"] {
   background: white !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   border-radius: 6px !important;
@@ -103,14 +103,14 @@ All colors MUST be HSL.
   color: #333333 !important;
 }
 
-.newsletter-footer-form .ctct-inline-form input:focus {
+.newsletter-footer .ctct-inline-form input:focus {
   border-color: hsl(var(--accent)) !important;
   outline: none !important;
   box-shadow: 0 0 0 3px rgba(244, 154, 57, 0.2) !important;
 }
 
-.newsletter-footer-form .ctct-inline-form button[type="submit"],
-.newsletter-footer-form .ctct-inline-form input[type="submit"] {
+.newsletter-footer .ctct-inline-form button[type="submit"],
+.newsletter-footer .ctct-inline-form input[type="submit"] {
   background-color: hsl(var(--accent)) !important;
   color: white !important;
   border: none !important;
@@ -123,20 +123,20 @@ All colors MUST be HSL.
   transition: all 0.3s ease !important;
 }
 
-.newsletter-footer-form .ctct-inline-form button[type="submit"]:hover,
-.newsletter-footer-form .ctct-inline-form input[type="submit"]:hover {
+.newsletter-footer .ctct-inline-form button[type="submit"]:hover,
+.newsletter-footer .ctct-inline-form input[type="submit"]:hover {
   background-color: #e88a28 !important;
   transform: translateY(-2px) !important;
   box-shadow: 0 4px 12px rgba(244, 154, 57, 0.4) !important;
 }
 
-.newsletter-footer-form .ctct-inline-form label {
+.newsletter-footer .ctct-inline-form label {
   color: white !important;
   font-weight: 600 !important;
   font-size: 16px !important;
 }
 
-.newsletter-footer-form .ctct-inline-form a {
+.newsletter-footer .ctct-inline-form a {
   color: hsl(var(--accent)) !important;
   text-decoration: underline !important;
 }

@@ -9,22 +9,48 @@ import Footer from "@/components/Footer";
 
 const FiveStepsDietRollerCoaster = () => {
   useEffect(() => {
-    const selector = '.ctct-inline-form[data-form-id="1e4bff82-8959-4098-ba51-ed75e027a11c"]';
-    const el = document.querySelector(selector) as HTMLElement | null;
-    const alreadyRendered = !!el && el.children.length > 0;
-    if (alreadyRendered) return;
+    const FORM_ID = "1e4bff82-8959-4098-ba51-ed75e027a11c";
+    const selector = `.ctct-inline-form[data-form-id="${FORM_ID}"]`;
 
-    if (!(window as any).__ctctReinitTriggered) {
-      (window as any).__ctctReinitTriggered = true;
+    let attempts = 0;
+    const maxAttempts = 6;
+    let timer: number | undefined;
+
+    const isRendered = () => {
+      const el = document.querySelector(selector) as HTMLElement | null;
+      return !!el && el.children.length > 0;
+    };
+
+    const load = () => {
       (window as any)._ctct_m = "9ec9c776cead1cd42af6640d7a07a35e";
-      const existing = document.getElementById("signupScript") as HTMLScriptElement | null;
-      const script = document.createElement("script");
-      script.src = existing?.src || "//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js";
-      script.async = true;
-      script.defer = true;
-      script.id = "signupScript-dup";
-      document.body.appendChild(script);
-    }
+      const src = "https://static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js";
+
+      const prev = document.getElementById("signupScript-retry") as HTMLScriptElement | null;
+      if (prev) prev.remove();
+
+      const s = document.createElement("script");
+      s.src = src;
+      s.async = true;
+      s.defer = true;
+      s.id = "signupScript-retry";
+      document.body.appendChild(s);
+    };
+
+    const tick = () => {
+      if (isRendered() || attempts >= maxAttempts) {
+        if (timer) window.clearInterval(timer);
+        return;
+      }
+      attempts += 1;
+      if (attempts === 1 || attempts === 3) load();
+    };
+
+    timer = window.setInterval(tick, 800);
+    tick();
+
+    return () => {
+      if (timer) window.clearInterval(timer);
+    };
   }, []);
 
   return (
