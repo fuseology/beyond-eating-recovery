@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Youtube, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -44,7 +45,7 @@ const Footer = () => {
                   <Linkedin className="w-4 h-4" />
                 </a>
                 <a 
-                  href="http://www.youtube.com/user/foodisnottheenemy?feature=guide" 
+                  href="https://www.youtube.com/user/foodisnottheenemy?feature=guide" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-8 h-8 rounded-full bg-white/10 hover:bg-accent flex items-center justify-center transition-colors"
@@ -84,44 +85,44 @@ const Footer = () => {
             <h4 className="font-semibold mb-3 text-lg">Quick Links</h4>
             <ul className="space-y-2 text-sm text-white/80">
               <li>
-                <a href="/" className="hover:text-white transition-colors">
+                <Link to="/" className="hover:text-white transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="hover:text-white transition-colors">
+                <Link to="/about" className="hover:text-white transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="hover:text-white transition-colors">
+                <Link to="/services" className="hover:text-white transition-colors">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/conditions" className="hover:text-white transition-colors">
+                <Link to="/conditions" className="hover:text-white transition-colors">
                   Conditions Treated
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/philosophy" className="hover:text-white transition-colors">
+                <Link to="/philosophy" className="hover:text-white transition-colors">
                   Our Philosophy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/resources" className="hover:text-white transition-colors">
+                <Link to="/resources" className="hover:text-white transition-colors">
                   Resources
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy-notice" className="hover:text-white transition-colors">
+                <Link to="/privacy-notice" className="hover:text-white transition-colors">
                   Privacy Notice
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="hover:text-white transition-colors">
+                <Link to="/contact" className="hover:text-white transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -143,7 +144,7 @@ const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="http://www.eatingdisordersdirectory.com/united-states/portland/therapists/anne-cuthbert" 
+                  href="https://www.eatingdisordersdirectory.com/united-states/portland/therapists/anne-cuthbert" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-white transition-colors flex items-center gap-1"
