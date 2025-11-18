@@ -13,6 +13,7 @@ import { Network, Heart, CheckCircle2, BookOpen, Home, Users, TrendingUp, Chevro
 import { useState } from "react";
 import teamTrainingImage from "@/assets/team-training.webp";
 import officeSpaceImage from "@/assets/office-space.webp";
+import inclusiveTherapyImage from "@/assets/inclusive-therapy.jpg";
 
 const Careers = () => {
   const scrollToPositions = () => {
@@ -151,8 +152,12 @@ const Careers = () => {
                   Our team includes practitioners of various sizes, colors, gender identities, sexual orientations, and lived experiences. We value neurodivergence, celebrate cultural diversity, and recognize that diverse teams provide better care. Your whole self is welcome here.
                 </p>
               </div>
-              <div className="bg-primary/5 rounded-lg h-64 flex items-center justify-center">
-                <Users className="w-24 h-24 text-primary/20" />
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={inclusiveTherapyImage} 
+                  alt="Inclusive therapy session demonstrating body-positive, affirming care at Beyond Eating Recovery"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
