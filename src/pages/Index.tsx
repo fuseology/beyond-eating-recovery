@@ -8,6 +8,7 @@ import ConditionsAccordionSection from "@/components/ConditionsAccordionSection"
 import WorkshopSection from "@/components/WorkshopSection";
 import TrustIndicators from "@/components/TrustIndicators";
 import FinalCTASection from "@/components/FinalCTASection";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
       <WorkshopSection />
       <ConditionsAccordionSection />
       <FinalCTASection />
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );
