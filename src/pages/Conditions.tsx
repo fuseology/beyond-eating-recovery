@@ -211,8 +211,49 @@ const Conditions = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Eating Disorders We Treat | Beyond Eating Recovery Portland & Vancouver</title>
-        <meta name="description" content="Comprehensive eating disorder treatment for anorexia, bulimia, binge eating, ARFID, orthorexia, and more. Weight-neutral, HAES®-aligned care throughout Oregon and Washington. Call 360-726-4141." />
+        <meta 
+          name="description" 
+          content="Comprehensive eating disorder treatment for anorexia, bulimia, binge eating, ARFID, orthorexia, and more. Weight-neutral, HAES®-aligned care throughout Oregon and Washington. Call 360-726-4141." 
+        />
         <meta name="keywords" content="eating disorder treatment, anorexia treatment Portland, bulimia therapy Vancouver WA, binge eating disorder help, ARFID treatment, orthorexia counseling, eating disorder types, HAES therapist, weight-neutral treatment, telehealth Oregon Washington" />
+        <link rel="canonical" href="https://beyondeatingrecovery.com/conditions" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalWebPage",
+            "@id": "https://beyondeatingrecovery.com/conditions#webpage",
+            "url": "https://beyondeatingrecovery.com/conditions",
+            "name": "Eating Disorders We Treat",
+            "description": "Comprehensive guide to eating disorders treated at Beyond Eating Recovery",
+            "specialty": "Eating Disorder Treatment",
+            "about": [
+              {
+                "@type": "MedicalCondition",
+                "name": "Anorexia Nervosa",
+                "alternateName": "Anorexia"
+              },
+              {
+                "@type": "MedicalCondition",
+                "name": "Bulimia Nervosa",
+                "alternateName": "Bulimia"
+              },
+              {
+                "@type": "MedicalCondition",
+                "name": "Binge Eating Disorder",
+                "alternateName": "BED"
+              },
+              {
+                "@type": "MedicalCondition",
+                "name": "ARFID",
+                "alternateName": "Avoidant/Restrictive Food Intake Disorder"
+              },
+              {
+                "@type": "MedicalCondition",
+                "name": "Orthorexia"
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Header />
