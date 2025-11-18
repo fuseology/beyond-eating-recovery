@@ -14,6 +14,7 @@ import { useState } from "react";
 import teamTrainingImage from "@/assets/team-training.webp";
 import officeSpaceImage from "@/assets/office-space.webp";
 import inclusiveTherapyImage from "@/assets/inclusive-therapy.jpg";
+import benefitsWellnessImage from "@/assets/benefits-wellness.webp";
 
 const Careers = () => {
   const scrollToPositions = () => {
@@ -162,8 +163,12 @@ const Careers = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="bg-primary/5 rounded-lg h-64 flex items-center justify-center md:order-first">
-                <TrendingUp className="w-24 h-24 text-primary/20" />
+              <div className="rounded-lg overflow-hidden shadow-lg md:order-first">
+                <img 
+                  src={benefitsWellnessImage} 
+                  alt="Wellness and professional growth opportunities at Beyond Eating Recovery"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <TrendingUp className="w-10 h-10 text-accent mb-4" />
