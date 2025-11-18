@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Heart, Utensils, Users, Scale, Shield, Sparkles, CheckCircle } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Heart, Utensils, Users, Scale, Shield, Sparkles, CheckCircle, Phone, MapPin, Clock } from "lucide-react";
+import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
+import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
 const Philosophy = () => {
   const haesprinciples = [
@@ -52,10 +55,10 @@ const Philosophy = () => {
       </section>
 
       {/* Main Content - Two Column Layout */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="flex flex-col lg:flex-row gap-8 max-w-7xl mx-auto">
-          {/* Main Content Column - 70% */}
-          <div className="lg:w-[70%] space-y-12">
+      <div className="container mx-auto px-4 py-12 max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
+          {/* Main Content Column */}
+          <main className="space-y-12">
             {/* HAES Section */}
             <section>
               <div className="flex flex-col md:flex-row items-center gap-8">
@@ -191,63 +194,93 @@ const Philosophy = () => {
                 </CardContent>
               </Card>
             </section>
-          </div>
+          </main>
 
-          {/* Sidebar - 30% */}
-          <aside className="lg:w-[30%] space-y-6">
-            {/* Expert Profile Card */}
-            <Card className="border-accent/20">
-              <CardContent className="p-6">
-                <div className="flex flex-col items-center text-center mb-4">
-                  <img 
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400"
-                    alt="Anne Cuthbert"
-                    className="w-24 h-24 rounded-full object-cover mb-4 border-4 border-accent/20"
-                  />
-                  <h3 className="font-semibold text-lg text-primary">Anne Cuthbert</h3>
-                  <p className="text-sm text-muted-foreground">MA, LPC, LMHC</p>
+          {/* Sidebar */}
+          <aside className="space-y-6">
+            {/* Anne Cuthbert Profile */}
+            <Card className="border-l-4 border-primary">
+              <CardHeader>
+                <CardTitle className="text-xl">Meet Anne Cuthbert</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <img 
+                  src={anneCuthbertPhoto} 
+                  alt="Anne Cuthbert, MA, LPC, LMHC - Founder and Clinical Director" 
+                  className="w-32 h-32 rounded-full mx-auto object-cover"
+                />
+                <div className="text-center">
+                  <h3 className="font-bold text-lg">Anne Cuthbert, MA, LPC, LMHC</h3>
                   <p className="text-sm text-muted-foreground">Founder & Clinical Director</p>
+                  <div className="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                    20+ Years Experience
+                  </div>
                 </div>
-                <p className="text-sm text-foreground/80 leading-relaxed mb-4">
-                  Anne has dedicated over 23 years to helping people find freedom from eating disorders using HAES, Intuitive Eating, and body acceptance approaches.
+                <p className="text-sm text-muted-foreground">
+                  Anne is a licensed therapist specializing in eating disorders and body image with over 20 years of experience. As someone with personal recovery experience, Anne brings deep empathy and understanding to her work.
                 </p>
-              </CardContent>
-            </Card>
-
-            {/* Book CTA Card */}
-            <Card className="bg-accent/5 border-accent/20">
-              <CardContent className="p-6">
-                <div className="text-center mb-4">
-                  <img 
-                    src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400"
-                    alt="If Your Hunger Could Talk Book"
-                    className="w-32 h-48 object-cover mx-auto mb-4 rounded shadow-lg"
-                  />
-                  <h3 className="font-semibold text-primary mb-2">If Your Hunger Could Talk</h3>
-                  <p className="text-sm text-foreground/80 mb-4">
-                    Anne's groundbreaking book on listening to what your hunger is really telling you.
-                  </p>
-                  <Button variant="outline" size="sm" className="w-full" asChild>
-                    <a href="#book">Learn More</a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Schedule Consultation Card */}
-            <Card className="border-primary/20 bg-primary/5">
-              <CardContent className="p-6 text-center">
-                <h3 className="font-semibold text-primary mb-2">Ready to Start Your Journey?</h3>
-                <p className="text-sm text-foreground/80 mb-4">
-                  Schedule a free consultation to learn more about our approach.
-                </p>
-                <Button className="w-full mb-2" asChild>
-                  <a href="/contact">Schedule Consultation</a>
+                <Button className="w-full bg-[#f49a39] hover:bg-[#e38929]" asChild>
+                  <Link to="/about/anne-cuthbert">Learn More About Anne</Link>
                 </Button>
-                <p className="text-xs text-muted-foreground">
-                  Portland, OR & Vancouver, WA<br />
-                  (503) 908-1474
+              </CardContent>
+            </Card>
+
+            {/* Book CTA */}
+            <Card className="bg-[#FFF4E6]">
+              <CardHeader>
+                <CardTitle className="text-xl text-[#1a428a]">If Your Hunger Could Talk</CardTitle>
+                <p className="text-sm text-muted-foreground">Real Steps to Finding Freedom from Food & Weight Obsession</p>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <img 
+                  src={bookCover} 
+                  alt="If Your Hunger Could Talk book cover by Anne Cuthbert" 
+                  className="w-full rounded-lg shadow-md"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Anne's book explores the deeper meanings behind eating struggles and offers compassionate guidance for healing your relationship with food.
                 </p>
+                <div className="text-center">
+                  <a 
+                    href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#f49a39] hover:underline"
+                  >
+                    View on Amazon →
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Schedule Consultation */}
+            <Card className="bg-[#1a428a] text-white">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <Clock className="h-5 w-5" />
+                  Ready to Start Your Journey?
+                </CardTitle>
+                <p className="text-sm text-white/90">Free 15-Minute Consultation</p>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-white/90">
+                  Take the first step toward freedom. Schedule a free consultation to learn how we can support your healing journey.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-start gap-2">
+                    <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <a href="tel:+13039223262" className="hover:underline">(303) 922-3262</a>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                    <div>Denver, CO</div>
+                  </div>
+                </div>
+                <Button className="w-full bg-[#f49a39] hover:bg-[#e38929]" asChild>
+                  <Link to="/contact">Schedule Free Consultation</Link>
+                </Button>
               </CardContent>
             </Card>
           </aside>
