@@ -13,6 +13,7 @@ import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 const BulimiaNervosa = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       {/* Breadcrumb Navigation */}
       <div className="bg-muted/30 py-4">
         <div className="container mx-auto px-4">
