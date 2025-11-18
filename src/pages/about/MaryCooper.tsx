@@ -2,6 +2,7 @@ import { Phone, Megaphone, Heart, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import maryImage from "@/assets/mary-cooper.webp";
 
 const MaryCooper = () => {
@@ -320,6 +321,7 @@ const MaryCooper = () => {
         </div>
       </section>
 
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );

@@ -2,6 +2,7 @@ import { Phone, Clipboard, Heart, Globe, Music } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import michelleImage from "@/assets/michelle-commons.webp";
 
 const MichelleCommons = () => {
@@ -219,6 +220,7 @@ const MichelleCommons = () => {
         </div>
       </section>
 
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );

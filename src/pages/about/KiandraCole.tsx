@@ -4,6 +4,7 @@ import { Phone, MapPin, GraduationCap, Award, Calendar, Handshake, Heart, CheckC
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
 import kiandraImage from "@/assets/kiandra-cole.webp";
@@ -828,6 +829,7 @@ const KiandraCole = () => {
         </div>
       </section>
 
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );

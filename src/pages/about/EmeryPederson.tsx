@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import { Link } from "react-router-dom";
 import emeryImage from "@/assets/emery-pederson.webp";
 
@@ -366,6 +367,7 @@ const EmeryPederson = () => {
         </div>
       </section>
 
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );

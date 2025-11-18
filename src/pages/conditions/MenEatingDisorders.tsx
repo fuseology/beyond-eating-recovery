@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, AlertCircle, ExternalLink, CheckCircle, XCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -950,6 +951,7 @@ const MenEatingDisorders = () => {
           </div>
         </main>
 
+        <NewsletterFooterSection />
         <Footer />
       </div>
     </>

@@ -4,6 +4,7 @@ import { Calendar, Phone, Mail, MapPin, AlertCircle, ExternalLink, ChevronRight 
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -1123,6 +1124,7 @@ const CoOccurringIssues = () => {
         </div>
       </div>
       
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );

@@ -2,6 +2,7 @@ import { Phone, FileCheck, Award, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import michelleImage from "@/assets/michelle-sullins.png";
 
 const MichelleSullins = () => {
@@ -312,6 +313,7 @@ const MichelleSullins = () => {
         </div>
       </section>
 
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );
