@@ -1,13 +1,155 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ChevronRight, Download, Phone, Mail, Clock } from "lucide-react";
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 
 const PrivacyNotice = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalOrganization",
+        "@id": "https://beyondeatingrecovery.com/#organization",
+        "name": "Beyond Eating Recovery",
+        "url": "https://beyondeatingrecovery.com",
+        "logo": "https://beyondeatingrecovery.com/logo.png",
+        "description": "Compassionate eating disorder treatment in Portland, OR & Vancouver, WA",
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "1235 SE Division Street, Suite 104",
+            "addressLocality": "Portland",
+            "addressRegion": "OR",
+            "postalCode": "97202",
+            "addressCountry": "US"
+          },
+          {
+            "@type": "PostalAddress",
+            "streetAddress": "400 E. Evergreen Blvd, Suite 309",
+            "addressLocality": "Vancouver",
+            "addressRegion": "WA",
+            "postalCode": "98660",
+            "addressCountry": "US"
+          }
+        ],
+        "telephone": "+1-360-726-4141",
+        "email": "info@beyondeating.com",
+        "medicalSpecialty": "Eating Disorder Treatment",
+        "areaServed": ["Portland, OR", "Vancouver, WA"]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://beyondeatingrecovery.com/privacy-notice#webpage",
+        "url": "https://beyondeatingrecovery.com/privacy-notice",
+        "name": "Notice of Privacy Practice | HIPAA Privacy Rights | Beyond Eating Recovery",
+        "description": "Review Beyond Eating Recovery's Notice of Privacy Practice. Learn about your HIPAA rights, how we protect your health information, and download the full privacy notice.",
+        "isPartOf": {
+          "@id": "https://beyondeatingrecovery.com/#website"
+        },
+        "about": {
+          "@id": "https://beyondeatingrecovery.com/#organization"
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2024-01-01",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "item": {
+                "@id": "https://beyondeatingrecovery.com",
+                "name": "Home"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "item": {
+                "@id": "https://beyondeatingrecovery.com/resources",
+                "name": "Resources"
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "item": {
+                "@id": "https://beyondeatingrecovery.com/privacy-notice",
+                "name": "Notice of Privacy Practice"
+              }
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "Article",
+          "@id": "https://beyondeatingrecovery.com/privacy-notice#article",
+          "headline": "Notice of Privacy Practice",
+          "description": "Your Information. Your Rights. Our Responsibilities. HIPAA Notice of Privacy Practices.",
+          "author": {
+            "@id": "https://beyondeatingrecovery.com/#organization"
+          },
+          "publisher": {
+            "@id": "https://beyondeatingrecovery.com/#organization"
+          },
+          "genre": "Legal Document",
+          "keywords": "HIPAA, Privacy Notice, Health Information Privacy, Patient Rights, Medical Records, Protected Health Information",
+          "datePublished": "2024-01-01",
+          "dateModified": "2024-01-01",
+          "articleSection": "Legal & Compliance",
+          "about": [
+            {
+              "@type": "Thing",
+              "name": "HIPAA Compliance"
+            },
+            {
+              "@type": "Thing",
+              "name": "Patient Privacy Rights"
+            },
+            {
+              "@type": "Thing",
+              "name": "Protected Health Information"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://beyondeatingrecovery.com/#website",
+        "url": "https://beyondeatingrecovery.com",
+        "name": "Beyond Eating Recovery",
+        "publisher": {
+          "@id": "https://beyondeatingrecovery.com/#organization"
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Notice of Privacy Practice | HIPAA Privacy Rights | Beyond Eating Recovery</title>
+        <meta 
+          name="description" 
+          content="Review Beyond Eating Recovery's Notice of Privacy Practice. Learn about your HIPAA rights, how we protect your health information, and download the full privacy notice." 
+        />
+        <meta name="keywords" content="HIPAA privacy notice, patient privacy rights, medical records access, health information privacy, Beyond Eating Recovery privacy policy, Vancouver WA therapist privacy, Portland OR eating disorder privacy" />
+        <link rel="canonical" href="https://beyondeatingrecovery.com/privacy-notice" />
+        
+        {/* Open Graph / Social Media */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Notice of Privacy Practice | Beyond Eating Recovery" />
+        <meta property="og:description" content="Learn about your HIPAA rights and how we protect your health information." />
+        <meta property="og:url" content="https://beyondeatingrecovery.com/privacy-notice" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+      
       <Header />
       
       {/* Breadcrumb Navigation */}
