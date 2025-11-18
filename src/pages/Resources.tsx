@@ -82,6 +82,12 @@ const Resources = () => {
 
   const downloadables = [
     {
+      title: "Notice of Privacy Practice",
+      description: "Your rights and our responsibilities under HIPAA",
+      type: "PDF Form",
+      link: "/privacy-notice"
+    },
+    {
       title: "What is Intuitive Eating?",
       description: "Comprehensive guide to the 10 principles",
       type: "PDF Guide"
@@ -356,10 +362,18 @@ const Resources = () => {
                       <h3 className="font-semibold text-primary mb-1">{resource.title}</h3>
                       <p className="text-sm text-muted-foreground mb-2">{resource.type}</p>
                       <p className="text-sm text-foreground/80 mb-3">{resource.description}</p>
-                      <Button size="sm" className="bg-accent hover:bg-accent/90">
-                        <Download className="w-4 h-4 mr-2" />
-                        Download
-                      </Button>
+                      {resource.link ? (
+                        <Link to={resource.link}>
+                          <Button size="sm" className="bg-accent hover:bg-accent/90">
+                            View Page
+                          </Button>
+                        </Link>
+                      ) : (
+                        <Button size="sm" className="bg-accent hover:bg-accent/90">
+                          <Download className="w-4 h-4 mr-2" />
+                          Download
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </CardContent>
