@@ -258,7 +258,7 @@ const OurApproach = () => {
 
       {/* 6 Steps Section */}
       <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container mx-auto px-4 max-w-5xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
             The Six Steps to Making Peace with Food
           </h2>
@@ -266,7 +266,9 @@ const OurApproach = () => {
             Our treatment approach follows a proven, sequential pathway designed to help you finally make peace with food, love your body, and trust yourself. Each step builds on the previous one, creating lasting transformation rather than temporary fixes.
           </p>
           
-          <Accordion type="single" collapsible defaultValue="step1" className="space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
+            <main>
+              <Accordion type="single" collapsible defaultValue="step1" className="space-y-4">
             {/* Step 1 */}
             <AccordionItem value="step1" className="bg-background border-2 border-accent/20 rounded-lg overflow-hidden shadow-sm">
               <AccordionTrigger className="px-6 py-4 hover:no-underline hover:bg-accent/5">
@@ -610,7 +612,7 @@ const OurApproach = () => {
                 </div>
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
+              </Accordion>
             </main>
 
             {/* Sidebar */}
@@ -717,8 +719,7 @@ const OurApproach = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
             <main className="space-y-8">
-          
-          <div className="bg-muted/50 p-8 rounded-lg mb-8">
+              <div className="bg-muted/50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-primary mb-4">When to Use Teletherapy</h3>
             <div className="space-y-4 text-foreground/90 leading-relaxed">
               <p>
@@ -961,6 +962,97 @@ const OurApproach = () => {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
+            </main>
+
+            {/* Sidebar */}
+            <aside className="space-y-6">
+              {/* Anne Cuthbert Profile */}
+              <Card className="border-l-4 border-primary">
+                <CardHeader>
+                  <CardTitle className="text-xl">Meet Anne Cuthbert</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <img 
+                    src={anneCuthbertPhoto} 
+                    alt="Anne Cuthbert, MA, LPC, LMHC - Founder and Clinical Director" 
+                    className="w-32 h-32 rounded-full mx-auto object-cover"
+                  />
+                  <div className="text-center">
+                    <h3 className="font-bold text-lg">Anne Cuthbert, MA, LPC, LMHC</h3>
+                    <p className="text-sm text-muted-foreground">Founder & Clinical Director</p>
+                    <div className="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                      20+ Years Experience
+                    </div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    Anne is a licensed therapist specializing in eating disorders and body image with over 20 years of experience. As someone with personal recovery experience, Anne brings deep empathy and understanding to her work.
+                  </p>
+                  <Button className="w-full bg-[#f49a39] hover:bg-[#e38929]" asChild>
+                    <Link to="/about/anne-cuthbert">Learn More About Anne</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              {/* Book CTA */}
+              <Card className="bg-[#FFF4E6]">
+                <CardHeader>
+                  <CardTitle className="text-xl text-[#1a428a]">If Your Hunger Could Talk</CardTitle>
+                  <p className="text-sm text-muted-foreground">Real Steps to Finding Freedom from Food & Weight Obsession</p>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <img 
+                    src={bookCover} 
+                    alt="If Your Hunger Could Talk book cover by Anne Cuthbert" 
+                    className="w-full rounded-lg shadow-md"
+                  />
+                  <p className="text-sm text-muted-foreground">
+                    Anne's book explores the deeper meanings behind eating struggles and offers compassionate guidance for healing your relationship with food.
+                  </p>
+                  <div className="text-center">
+                    <a 
+                      href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm text-[#f49a39] hover:underline"
+                    >
+                      View on Amazon →
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Schedule Consultation */}
+              <Card className="bg-[#1a428a] text-white">
+                <CardHeader>
+                  <CardTitle className="text-xl flex items-center gap-2">
+                    <Clock className="h-5 w-5" />
+                    Ready to Start Your Journey?
+                  </CardTitle>
+                  <p className="text-sm text-white/90">Free 15-Minute Consultation</p>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-sm text-white/90">
+                    Take the first step toward freedom. Schedule a free consultation to learn how we can support your healing journey.
+                  </p>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex items-start gap-2">
+                      <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                      <div>
+                        <a href="tel:+13039223262" className="hover:underline">(303) 922-3262</a>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
+                      <div>Denver, CO</div>
+                    </div>
+                  </div>
+                  <Button className="w-full bg-[#f49a39] hover:bg-[#e38929]" asChild>
+                    <Link to="/contact">Schedule Free Consultation</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            </aside>
+          </div>
         </div>
       </section>
 
