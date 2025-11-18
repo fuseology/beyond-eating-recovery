@@ -17,9 +17,6 @@ const BookSection = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto italic">
             In order to make permanent changes you need to get to the root of the problem and find healthier ways to meet your needs. In the end, counseling will help you overcome your problems with food and how you feel about your body.
           </p>
-          <blockquote className="mt-6 max-w-3xl mx-auto text-foreground/90 italic border-l-4 border-primary pl-6 pr-4">
-            "I know first hand what it is like to deal with food and body issues. For years, I struggled with food issues and hating my body. I compared myself to every woman I saw and resisted exercising refusing to give into what other people told me I should do and how I should look. I ate to hide how I was feeling and to avoid being close to anyone. I thought I couldn't be loved if I was fat."
-          </blockquote>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
