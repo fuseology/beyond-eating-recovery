@@ -709,6 +709,8 @@ const BattleOfTheBinge = () => {
         </div>
       </section>
 
+      </main>
+
       <NewsletterFooterSection />
       <Footer />
     </div>
