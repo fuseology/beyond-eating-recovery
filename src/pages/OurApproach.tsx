@@ -94,39 +94,47 @@ const OurApproach = () => {
                 <img 
                   src={anneCuthbertPhoto} 
                   alt="Anne Cuthbert, MA, LPC, LMHC - Founder and Clinical Director" 
-                  className="w-full rounded-lg mb-6 shadow-lg"
+                  className="w-full rounded-lg shadow-lg"
                 />
-                <a 
-                  href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block group max-w-md mx-auto"
-                >
-                  <img 
-                    src={bookCover} 
-                    alt="If Your Hunger Could Talk: Real Steps to Finding Freedom from Food & Weight Obsession by Anne Cuthbert" 
-                    className="w-full rounded-lg mb-4 shadow-xl transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="flex items-center justify-center gap-2 text-accent hover:text-accent/80 transition-colors">
-                    <span className="font-semibold">Available on Amazon</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </div>
-                </a>
-                <p className="text-sm text-center text-muted-foreground italic mt-4">
-                  <span className="font-semibold">If Your Hunger Could Talk:</span> Real Steps to Finding Freedom from Food & Weight Obsession
-                </p>
               </div>
             </div>
           </div>
           
-          <div className="space-y-6 text-foreground/90 leading-relaxed">
-            <p>
-              My approach goes beyond traditional talk therapy. I help you develop healthier coping skills around food, your body, and your life in general. We'll address the root causes of your problems with food—because food issues and poor body image are symptoms of deeper needs that haven't been met.
-            </p>
+          <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
+            <div className="space-y-6 text-foreground/90 leading-relaxed">
+              <p>
+                My approach goes beyond traditional talk therapy. I help you develop healthier coping skills around food, your body, and your life in general. We'll address the root causes of your problems with food—because food issues and poor body image are symptoms of deeper needs that haven't been met.
+              </p>
+              
+              <p>
+                Through step-by-step changes in counseling, you'll overcome your problems around food and develop a richer, more satisfying life. In the end, you won't just change your relationship with food—you'll transform your entire relationship with yourself.
+              </p>
+            </div>
             
-            <p>
-              Through step-by-step changes in counseling, you'll overcome your problems around food and develop a richer, more satisfying life. In the end, you won't just change your relationship with food—you'll transform your entire relationship with yourself.
-            </p>
+            <div>
+              <a 
+                href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group max-w-md mx-auto"
+              >
+                <img 
+                  src={bookCover} 
+                  alt="If Your Hunger Could Talk: Real Steps to Finding Freedom from Food & Weight Obsession by Anne Cuthbert" 
+                  className="w-full rounded-lg mb-4 shadow-xl transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="flex items-center justify-center gap-2 text-accent hover:text-accent/80 transition-colors">
+                  <span className="font-semibold">Available on Amazon</span>
+                  <ExternalLink className="w-4 h-4" />
+                </div>
+              </a>
+              <p className="text-sm text-center text-muted-foreground italic mt-4">
+                <span className="font-semibold">If Your Hunger Could Talk:</span> Real Steps to Finding Freedom from Food & Weight Obsession
+              </p>
+            </div>
+          </div>
+          
+          <div className="space-y-6 text-foreground/90 leading-relaxed mt-12">
             
             <div className="bg-primary/5 p-8 rounded-lg mt-8">
               <h3 className="text-2xl font-bold text-primary mb-4">My Credentials & Experience:</h3>
