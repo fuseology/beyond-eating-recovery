@@ -71,7 +71,7 @@ const HomepageFourBlockNavigation = () => {
                 className="nav-card group relative block overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-3 focus:ring-accent focus:ring-offset-2"
                 aria-label={card.ariaLabel}
               >
-                <div className="card-image-container relative aspect-[4/3]">
+                <div className="card-image-container relative aspect-[3/4]">
                   {/* Background Image */}
                   <img
                     src={card.image}
