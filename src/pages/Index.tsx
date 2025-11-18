@@ -7,7 +7,7 @@ import BookSection from "@/components/BookSection";
 import ConditionsAccordionSection from "@/components/ConditionsAccordionSection";
 import WorkshopSection from "@/components/WorkshopSection";
 import TrustIndicators from "@/components/TrustIndicators";
-import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import FinalCTASection from "@/components/FinalCTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -22,7 +22,7 @@ const Index = () => {
       <BookSection />
       <WorkshopSection />
       <ConditionsAccordionSection />
-      <NewsletterFooterSection />
+      <FinalCTASection />
       <Footer />
     </div>
   );
