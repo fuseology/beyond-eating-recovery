@@ -4,13 +4,15 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { ChevronDown, ExternalLink } from "lucide-react";
+import { ChevronDown, ExternalLink, Phone, MapPin, Clock, AlertTriangle } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -36,7 +38,7 @@ const OurApproach = () => {
 
       {/* Anne's Philosophy Section */}
       <section className="py-16 md:py-24 bg-background">
-        <div className="container mx-auto px-4 max-w-6xl">
+        <div className="container mx-auto px-4 max-w-7xl">
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
             Anne Cuthbert's Approach: From Personal Experience to Professional Expertise
           </h2>
@@ -44,99 +46,64 @@ const OurApproach = () => {
             Combining lived experience with over 20 years of clinical expertise
           </p>
           
-          <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
-            <div className="space-y-6 text-foreground/90 leading-relaxed">
-              <p className="text-lg font-semibold text-primary">
-                I know firsthand what it's like to struggle with food and body issues.
-              </p>
-              
-              <p>
-                For years, I battled my own demons—comparing myself to every woman I saw, using food to hide my feelings, avoiding intimacy, and believing I couldn't be loved if I was fat. I resisted exercise as an act of rebellion against what others told me I should do and how I should look. Food became my primary coping mechanism, and hating my body became my constant companion.
-              </p>
-              
-              <p className="font-semibold text-lg">
-                But all that has changed.
-              </p>
-              
-              <p>
-                Now, I no longer use food to cope. I feel good about myself, my body, and my life. This personal transformation ignited my passion for helping others recover. I love that my work as a counselor involves helping you eat whatever you want and feel genuinely good about it.
-              </p>
-              
-              <div className="bg-accent/10 p-6 rounded-lg border-l-4 border-accent">
-                <p className="font-semibold text-lg mb-3">As your therapist, I will help you discover how to:</p>
-                <ul className="space-y-2">
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Eat and enjoy the foods you really love, without worrying about gaining weight</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Accept and even like your body</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Find and maintain your natural healthy weight by uncovering the underlying causes for your behaviors</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Focus on and improve your relationships by moving away from blaming food and your body</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-accent mr-2">•</span>
-                    <span>Learn to like yourself—your whole self</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="space-y-6">
-              <div className="bg-muted/50 p-8 rounded-lg max-w-md mx-auto">
-                <img 
-                  src={anneCuthbertPhoto} 
-                  alt="Anne Cuthbert, MA, LPC, LMHC - Founder and Clinical Director" 
-                  className="w-full rounded-lg shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-12 items-center mt-12">
-            <div className="space-y-6 text-foreground/90 leading-relaxed">
-              <p>
-                My approach goes beyond traditional talk therapy. I help you develop healthier coping skills around food, your body, and your life in general. We'll address the root causes of your problems with food—because food issues and poor body image are symptoms of deeper needs that haven't been met.
-              </p>
-              
-              <p>
-                Through step-by-step changes in counseling, you'll overcome your problems around food and develop a richer, more satisfying life. In the end, you won't just change your relationship with food—you'll transform your entire relationship with yourself.
-              </p>
-            </div>
-            
-            <div>
-              <a 
-                href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block group max-w-xs mx-auto"
-              >
-                <img 
-                  src={bookCover} 
-                  alt="If Your Hunger Could Talk: Real Steps to Finding Freedom from Food & Weight Obsession by Anne Cuthbert" 
-                  className="w-full rounded-lg mb-4 shadow-xl transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="flex items-center justify-center gap-2 text-accent hover:text-accent/80 transition-colors">
-                  <span className="font-semibold">Available on Amazon</span>
-                  <ExternalLink className="w-4 h-4" />
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
+            {/* Main Content */}
+            <main className="space-y-8">
+              <div className="space-y-6 text-foreground/90 leading-relaxed">
+                <p className="text-lg font-semibold text-primary">
+                  I know firsthand what it's like to struggle with food and body issues.
+                </p>
+                
+                <p>
+                  For years, I battled my own demons—comparing myself to every woman I saw, using food to hide my feelings, avoiding intimacy, and believing I couldn't be loved if I was fat. I resisted exercise as an act of rebellion against what others told me I should do and how I should look. Food became my primary coping mechanism, and hating my body became my constant companion.
+                </p>
+                
+                <p className="font-semibold text-lg">
+                  But all that has changed.
+                </p>
+                
+                <p>
+                  Now, I no longer use food to cope. I feel good about myself, my body, and my life. This personal transformation ignited my passion for helping others recover. I love that my work as a counselor involves helping you eat whatever you want and feel genuinely good about it.
+                </p>
+                
+                <div className="bg-accent/10 p-6 rounded-lg border-l-4 border-accent">
+                  <p className="font-semibold text-lg mb-3">As your therapist, I will help you discover how to:</p>
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <span className="text-accent mr-2">•</span>
+                      <span>Eat and enjoy the foods you really love, without worrying about gaining weight</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-accent mr-2">•</span>
+                      <span>Accept and even like your body</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-accent mr-2">•</span>
+                      <span>Find and maintain your natural healthy weight by uncovering the underlying causes for your behaviors</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-accent mr-2">•</span>
+                      <span>Focus on and improve your relationships by moving away from blaming food and your body</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-accent mr-2">•</span>
+                      <span>Learn to like yourself—your whole self</span>
+                    </li>
+                  </ul>
                 </div>
-              </a>
-              <p className="text-sm text-center text-muted-foreground italic mt-4">
-                <span className="font-semibold">If Your Hunger Could Talk:</span> Real Steps to Finding Freedom from Food & Weight Obsession
-              </p>
-            </div>
-          </div>
-          
-          <div className="space-y-6 text-foreground/90 leading-relaxed mt-12">
-            
-            <div className="bg-primary/5 p-8 rounded-lg mt-8">
+              </div>
+
+              <div className="space-y-6 text-foreground/90 leading-relaxed">
+                <p>
+                  My approach goes beyond traditional talk therapy. I help you develop healthier coping skills around food, your body, and your life in general. We'll address the root causes of your problems with food—because food issues and poor body image are symptoms of deeper needs that haven't been met.
+                </p>
+                
+                <p>
+                  Through step-by-step changes in counseling, you'll overcome your problems around food and develop a richer, more satisfying life. In the end, you won't just change your relationship with food—you'll transform your entire relationship with yourself.
+                </p>
+              </div>
+
+              <div className="bg-primary/5 p-8 rounded-lg mt-8">
               <h3 className="text-2xl font-bold text-primary mb-4">My Credentials & Experience:</h3>
               <ul className="space-y-2 text-foreground/90">
                 <li className="flex items-start">
@@ -190,7 +157,102 @@ const OurApproach = () => {
                 — Anne
               </p>
             </div>
-          </div>
+          </main>
+
+          {/* Sidebar */}
+          <aside className="space-y-6">
+            {/* Anne Cuthbert Profile */}
+            <Card className="border-l-4 border-primary">
+              <CardHeader>
+                <CardTitle className="text-xl">Meet Anne Cuthbert</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <img 
+                  src={anneCuthbertPhoto} 
+                  alt="Anne Cuthbert, MA, LPC, LMHC - Founder and Clinical Director" 
+                  className="w-32 h-32 rounded-full mx-auto object-cover"
+                />
+                <div className="text-center">
+                  <h3 className="font-bold text-lg">Anne Cuthbert, MA, LPC, LMHC</h3>
+                  <p className="text-sm text-muted-foreground">Founder & Clinical Director</p>
+                  <div className="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full mt-2">
+                    20+ Years Experience
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Anne is a licensed therapist specializing in eating disorders and body image with over 20 years of experience. As someone with personal recovery experience, Anne brings deep empathy and understanding to her work.
+                </p>
+                <Button className="w-full bg-[#f49a39] hover:bg-[#e38929]" asChild>
+                  <Link to="/about/anne-cuthbert">Learn More About Anne</Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Book CTA */}
+            <Card className="bg-[#FFF4E6]">
+              <CardHeader>
+                <CardTitle className="text-xl text-[#1a428a]">If Your Hunger Could Talk</CardTitle>
+                <p className="text-sm text-muted-foreground">Real Steps to Finding Freedom from Food & Weight Obsession</p>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <img 
+                  src={bookCover} 
+                  alt="If Your Hunger Could Talk book cover by Anne Cuthbert" 
+                  className="w-full rounded-lg shadow-md"
+                />
+                <p className="text-sm text-muted-foreground">
+                  Anne's book explores the deeper meanings behind eating struggles and offers compassionate guidance for healing your relationship with food.
+                </p>
+                <div className="text-center">
+                  <a 
+                    href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-[#f49a39] hover:underline"
+                  >
+                    View on Amazon →
+                  </a>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Schedule Consultation */}
+            <Card className="bg-[#1a428a] text-white">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <Clock className="h-5 w-5" />
+                  Ready to Start Your Journey?
+                </CardTitle>
+                <p className="text-sm text-white/90">Free 15-Minute Consultation</p>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <p className="text-sm text-white/90">
+                  Take the first step toward freedom. Schedule a free consultation to learn how we can support your healing journey.
+                </p>
+                <div className="space-y-2 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4" />
+                    <a href="tel:3607264141" className="hover:underline">360-726-4141</a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4" />
+                    <span>Portland, OR & Vancouver, WA</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="h-4 w-4" />
+                    <span>Monday - Friday: 9am - 5pm</span>
+                  </div>
+                </div>
+                <Button className="w-full bg-[#f49a39] hover:bg-[#e38929] text-white" size="lg" asChild>
+                  <Link to="/contact">Schedule Free Consultation</Link>
+                </Button>
+                <p className="text-xs text-white/80 text-center">
+                  We accept insurance and offer self-pay options • Teletherapy Available
+                </p>
+              </CardContent>
+            </Card>
+          </aside>
+        </div>
         </div>
       </section>
 
