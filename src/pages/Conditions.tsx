@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -257,15 +258,7 @@ const Conditions = () => {
       </Helmet>
 
       <Header />
-
-      {/* Breadcrumb */}
-      <nav className="container mx-auto px-4 py-4">
-        <ol className="flex items-center space-x-2 text-sm text-muted-foreground">
-          <li><Link to="/" className="hover:text-primary">Home</Link></li>
-          <li><ChevronRight className="h-4 w-4" /></li>
-          <li className="text-foreground">Eating Disorders</li>
-        </ol>
-      </nav>
+      <Breadcrumbs />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-primary/5 to-background py-16">

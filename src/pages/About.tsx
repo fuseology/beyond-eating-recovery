@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Users, Sparkles, Shield, Target, CheckCircle, ArrowRight } from "lucide-react";
@@ -175,6 +176,7 @@ const About = () => {
         </script>
       </Helmet>
       <Header />
+      <Breadcrumbs />
       {/* Hero Section */}
       <section className="bg-primary text-white py-20">
         <div className="container mx-auto px-4 text-center">

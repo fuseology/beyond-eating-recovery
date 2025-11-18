@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -12,20 +13,9 @@ const BodyShame = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      <Breadcrumbs />
       
       <main className="flex-grow">
-        {/* Breadcrumb */}
-        <div className="bg-secondary/30 py-3">
-          <div className="container mx-auto px-4">
-            <nav className="text-sm">
-              <Link to="/" className="text-primary hover:underline">Home</Link>
-              <span className="mx-2 text-muted-foreground">/</span>
-              <Link to="/our-approach" className="text-primary hover:underline">Our Approach</Link>
-              <span className="mx-2 text-muted-foreground">/</span>
-              <span className="text-foreground">Body Shame Counseling</span>
-            </nav>
-          </div>
-        </div>
 
         {/* Hero Section */}
         <section className="py-16 bg-gradient-to-b from-secondary/30 to-background">

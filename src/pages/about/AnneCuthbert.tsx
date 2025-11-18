@@ -4,12 +4,14 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Phone, MapPin, GraduationCap, Award, Clock, Users, Heart, Brain, Leaf, UserCheck, Sparkles, Utensils, PuzzleIcon, MessageCircle, Dumbbell, Star, BookOpen, CheckCircle } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert.jpg";
 
 const AnneCuthbert = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
+      <Breadcrumbs />
       
       {/* Hero Section */}
       <section className="relative bg-[#1a428a] text-white py-16 md:py-24">

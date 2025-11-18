@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const PrivacyNotice = () => {
   const structuredData = {
@@ -151,19 +152,7 @@ const PrivacyNotice = () => {
       </Helmet>
       
       <Header />
-      
-      {/* Breadcrumb Navigation */}
-      <div className="bg-muted/30 py-4">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <Link to="/" className="hover:text-primary transition-colors">Home</Link>
-            <ChevronRight className="h-4 w-4" />
-            <Link to="/resources" className="hover:text-primary transition-colors">Resources</Link>
-            <ChevronRight className="h-4 w-4" />
-            <span className="text-foreground">Notice of Privacy Practice</span>
-          </div>
-        </div>
-      </div>
+      <Breadcrumbs />
 
       <div className="container mx-auto px-4 py-12 max-w-[900px]">
         {/* Page Header */}

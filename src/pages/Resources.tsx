@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -174,6 +175,7 @@ const Resources = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <Breadcrumbs />
 
       {/* Hero Section */}
       <section className="bg-primary text-white py-20">

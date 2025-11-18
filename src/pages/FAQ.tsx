@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -58,6 +59,7 @@ const FAQ = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <Breadcrumbs />
       
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary to-primary/80">
