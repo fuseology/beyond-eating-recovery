@@ -3,7 +3,6 @@ import HeroSection from "@/components/HeroSection";
 import NotAloneSection from "@/components/NotAloneSection";
 import HowWeHelpSection from "@/components/HowWeHelpSection";
 import HomepageFourBlockNavigation from "@/components/HomepageFourBlockNavigation";
-import VideoSection from "@/components/VideoSection";
 import BookSection from "@/components/BookSection";
 import ConditionsAccordionSection from "@/components/ConditionsAccordionSection";
 import WorkshopSection from "@/components/WorkshopSection";
@@ -23,7 +22,6 @@ const Index = () => {
       <HomepageFourBlockNavigation />
       <BookSection />
       <WorkshopSection />
-      <VideoSection />
       <ConditionsAccordionSection />
       <FinalCTASection />
       <NewsletterFooterSection />
