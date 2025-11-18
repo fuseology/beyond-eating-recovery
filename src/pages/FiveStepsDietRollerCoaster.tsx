@@ -6,6 +6,7 @@ import { ChevronRight, Video, Lock } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const FiveStepsDietRollerCoaster = () => {
   useEffect(() => {
@@ -66,17 +67,7 @@ const FiveStepsDietRollerCoaster = () => {
 
       <div className="min-h-screen bg-background-light">
         <Header />
-        
-        {/* Breadcrumb Navigation */}
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-          <nav className="text-sm text-muted-foreground max-w-[1000px] mx-auto mb-8">
-            <Link to="/" className="text-primary hover:underline">Home</Link>
-            <ChevronRight className="inline w-4 h-4 mx-2" />
-            <Link to="/resources" className="text-primary hover:underline">Resources</Link>
-            <ChevronRight className="inline w-4 h-4 mx-2" />
-            <span>5 Steps to Exiting the Diet Roller Coaster</span>
-          </nav>
-        </div>
+        <Breadcrumbs />
 
         {/* Hero Section */}
         <section className="py-12 md:py-16">

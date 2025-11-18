@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Heart, Utensils, Users, Scale, Shield, Sparkles, CheckCircle, Phone, MapPin, Clock } from "lucide-react";
@@ -41,6 +42,7 @@ const Philosophy = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <Breadcrumbs />
 
       {/* Hero Section */}
       <section className="bg-primary text-white py-20">

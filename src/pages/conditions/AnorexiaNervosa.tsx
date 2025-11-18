@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, Mail, MapPin, AlertCircle, ExternalLink } from "lucide-react";
@@ -12,17 +13,7 @@ const AnorexiaNervosa = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-
-      {/* Breadcrumb */}
-      <nav className="container mx-auto px-4 py-4">
-        <ol className="flex items-center space-x-2 text-sm text-muted-foreground">
-          <li><Link to="/" className="hover:text-primary">Home</Link></li>
-          <ChevronRight className="h-4 w-4" />
-          <li><Link to="/conditions" className="hover:text-primary">Eating Disorders</Link></li>
-          <ChevronRight className="h-4 w-4" />
-          <li className="text-foreground">Anorexia Nervosa</li>
-        </ol>
-      </nav>
+      <Breadcrumbs />
 
       <div className="container mx-auto px-4 py-8">
         <div className="grid lg:grid-cols-[1fr_400px] gap-8">
