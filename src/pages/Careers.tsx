@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/collapsible";
 import { Network, Heart, CheckCircle2, BookOpen, Home, Users, TrendingUp, ChevronDown } from "lucide-react";
 import { useState } from "react";
+import teamTrainingImage from "@/assets/team-training.webp";
 
 const Careers = () => {
   const scrollToPositions = () => {
@@ -111,8 +112,12 @@ const Careers = () => {
                   Access regular case consultation, specialized training opportunities, and continuing education support. Associates receive high-quality clinical supervision. We invest in your professional development because we believe in lifelong learning.
                 </p>
               </div>
-              <div className="bg-primary/5 rounded-lg h-64 flex items-center justify-center">
-                <BookOpen className="w-24 h-24 text-primary/20" />
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src={teamTrainingImage} 
+                  alt="Team members engaging in professional training and collaboration at Beyond Eating Recovery"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
