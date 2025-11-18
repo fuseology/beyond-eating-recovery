@@ -23,7 +23,7 @@ const BookSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center max-w-6xl mx-auto">
-          {/* Left Column: Description + Anne's Photo */}
+          {/* Left Column: Anne's Photo + Description */}
           <div className="order-1">
             <div className="space-y-6">
               <img
