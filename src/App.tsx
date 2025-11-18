@@ -46,6 +46,7 @@ import MenEatingDisorders from "./pages/conditions/MenEatingDisorders";
 import LGBTQIAEatingDisorders from "./pages/conditions/LGBTQIAEatingDisorders";
 import AthletesEatingDisorders from "./pages/conditions/AthletesEatingDisorders";
 import FiveStepsDietRollerCoaster from "./pages/FiveStepsDietRollerCoaster";
+import PrivacyNotice from "./pages/PrivacyNotice";
 
 const queryClient = new QueryClient();
 
@@ -78,6 +79,7 @@ const App = () => (
           <Route path="/workshop" element={<Workshop />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/privacy-notice" element={<PrivacyNotice />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/battle-of-the-binge" element={<BattleOfTheBinge />} />
           <Route path="/careers" element={<Careers />} />
