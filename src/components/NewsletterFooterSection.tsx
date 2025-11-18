@@ -65,8 +65,9 @@ const NewsletterFooterSection = () => {
             <div className="md:col-span-2">
               {!isSubmitted ? (
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 md:p-8 border border-white/20">
-                  {/* Constant Contact Form */}
-                  <div className="ctct-inline-form newsletter-footer-form" data-form-id="1e4bff82-8959-4098-ba51-ed75e027a11c"></div>
+                  {/* Begin Constant Contact Inline Form Code */}
+                  <div className="ctct-inline-form" data-form-id="1e4bff82-8959-4098-ba51-ed75e027a11c"></div>
+                  {/* End Constant Contact Inline Form Code */}
                   
                   <p className="text-xs md:text-sm text-white/70 text-center mt-4">
                     🔒 We respect your privacy. Unsubscribe anytime.
