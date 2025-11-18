@@ -79,6 +79,12 @@ const Header = () => {
     { title: "Support Resources", href: "/resources" },
   ];
 
+  const formLinks = [
+    { title: "Notice of Privacy Practice", href: "/privacy-notice" },
+    { title: "Client Intake Forms", href: "/contact" },
+    { title: "Consent Forms", href: "/contact" },
+  ];
+
   return (
     <header className="bg-brand-blue-dark text-white border-b sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -222,6 +228,25 @@ const Header = () => {
                       </Link>
                     </li>
                     {resourceLinks.map((link) => (
+                      <li key={link.title}>
+                        <Link to={link.href}>
+                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                            <div className="text-sm font-medium leading-none text-primary">{link.title}</div>
+                          </NavigationMenuLink>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="bg-transparent text-white/90 hover:text-white hover:bg-white/10">
+                  Forms
+                </NavigationMenuTrigger>
+                <NavigationMenuContent>
+                  <ul className="grid w-[400px] gap-3 p-4 bg-white">
+                    {formLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
                           <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
@@ -403,7 +428,24 @@ const Header = () => {
                   </div>
                 </div>
 
-                <Link 
+                <div className="border-b py-3">
+                  <Link to="/privacy-notice" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                    <span>📋</span> Forms
+                  </Link>
+                  <div className="pl-8 space-y-2">
+                    <Link to="/privacy-notice" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Privacy Notice
+                    </Link>
+                    <Link to="/contact" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Client Intake Forms
+                    </Link>
+                    <Link to="/contact" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Consent Forms
+                    </Link>
+                  </div>
+                </div>
+
+                <Link
                   to="/careers" 
                   onClick={() => setIsOpen(false)} 
                   className="flex items-center gap-3 py-3 text-lg font-medium text-primary hover:text-accent transition-colors border-b"
