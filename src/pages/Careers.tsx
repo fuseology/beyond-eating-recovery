@@ -123,11 +123,11 @@ const Careers = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="rounded-lg overflow-hidden shadow-lg md:order-first">
+              <div className="rounded-lg overflow-hidden shadow-lg md:order-first max-w-md mx-auto">
                 <img 
                   src={officeSpaceImage} 
                   alt="Comfortable, client-ready therapy office space at Beyond Eating Recovery"
-                  className="w-full h-full object-cover"
+                  className="w-full h-auto object-cover"
                 />
               </div>
               <div>
