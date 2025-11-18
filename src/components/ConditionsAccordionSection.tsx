@@ -223,25 +223,6 @@ const ConditionsAccordionSection = () => {
             </div>
           ))}
         </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-16">
-          <h3 className="text-2xl font-bold text-foreground mb-3">
-            Ready to Begin Your Healing Journey?
-          </h3>
-          <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Schedule a free consultation to discuss which treatment approach is right for you.
-          </p>
-          <Button 
-            asChild
-            size="lg"
-            className="bg-[#f49a39] hover:bg-[#e88a28] text-white font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all"
-          >
-            <Link to="/contact">
-              Schedule Free Consultation
-            </Link>
-          </Button>
-        </div>
       </div>
     </section>
   );
