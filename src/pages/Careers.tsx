@@ -12,6 +12,7 @@ import {
 import { Network, Heart, CheckCircle2, BookOpen, Home, Users, TrendingUp, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import teamTrainingImage from "@/assets/team-training.webp";
+import officeSpaceImage from "@/assets/office-space.webp";
 
 const Careers = () => {
   const scrollToPositions = () => {
@@ -122,8 +123,12 @@ const Careers = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="bg-primary/5 rounded-lg h-64 flex items-center justify-center md:order-first">
-                <Home className="w-24 h-24 text-primary/20" />
+              <div className="rounded-lg overflow-hidden shadow-lg md:order-first">
+                <img 
+                  src={officeSpaceImage} 
+                  alt="Comfortable, client-ready therapy office space at Beyond Eating Recovery"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <Home className="w-10 h-10 text-accent mb-4" />
