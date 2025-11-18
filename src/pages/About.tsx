@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
@@ -19,6 +20,39 @@ import maryCooper from "@/assets/mary-cooper.webp";
 import emeryPederson from "@/assets/emery-pederson.webp";
 
 const About = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": "https://beyondeatingrecovery.com/about#webpage",
+    "url": "https://beyondeatingrecovery.com/about",
+    "name": "About Our Team | Beyond Eating Recovery",
+    "description": "Meet our compassionate team of eating disorder specialists in Portland & Vancouver. Licensed therapists and dietitians using HAES, intuitive eating, and trauma-informed approaches.",
+    "mainEntity": {
+      "@type": "MedicalBusiness",
+      "@id": "https://beyondeatingrecovery.com/#organization",
+      "name": "Beyond Eating Recovery",
+      "founder": {
+        "@type": "Person",
+        "name": "Anne Cuthbert",
+        "jobTitle": "MA, LPC, LMHC",
+        "description": "Founder and eating disorder specialist with expertise in anorexia, bulimia, and binge eating disorder treatment"
+      },
+      "employee": [
+        { "@type": "Person", "name": "Bailey Benn", "jobTitle": "MA, LPC, LMHC" },
+        { "@type": "Person", "name": "Alyssa Pataki", "jobTitle": "MA, LMFT" },
+        { "@type": "Person", "name": "Kiandra Cole", "jobTitle": "MA" },
+        { "@type": "Person", "name": "Rachel Bennett", "jobTitle": "MA" },
+        { "@type": "Person", "name": "Annie Calhoun Randall", "jobTitle": "MA" },
+        { "@type": "Person", "name": "Sara Kranich", "jobTitle": "MA" },
+        { "@type": "Person", "name": "Stephanie Okumura", "jobTitle": "MS, RDN" },
+        { "@type": "Person", "name": "Michelle Commons", "jobTitle": "Support Staff" },
+        { "@type": "Person", "name": "Michelle Sullins", "jobTitle": "Support Staff" },
+        { "@type": "Person", "name": "Mary Cooper", "jobTitle": "Support Staff" },
+        { "@type": "Person", "name": "Emery Pederson", "jobTitle": "Support Staff" }
+      ]
+    }
+  };
+
   const philosophyPoints = [
     { icon: CheckCircle, text: "Non-diet approach" },
     { icon: Heart, text: "Health At Every Size (HAES)" },
@@ -128,6 +162,18 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>About Our Team | Eating Disorder Specialists in Portland & Vancouver</title>
+        <meta 
+          name="description" 
+          content="Meet our compassionate eating disorder treatment team in Portland & Vancouver. Licensed therapists and dietitians using HAES, intuitive eating, and trauma-informed care." 
+        />
+        <meta name="keywords" content="eating disorder therapist Portland, eating disorder specialist Vancouver WA, HAES therapist, intuitive eating counselor, trauma-informed eating disorder treatment" />
+        <link rel="canonical" href="https://beyondeatingrecovery.com/about" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       <Header />
       {/* Hero Section */}
       <section className="bg-primary text-white py-20">
