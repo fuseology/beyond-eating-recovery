@@ -44,13 +44,10 @@ const BookSection = () => {
               />
               
               <div className="text-center space-y-4">
-                <h3 className="text-2xl font-semibold text-foreground">
-                  If Your Hunger Could Talk
-                </h3>
                 <p className="text-muted-foreground">
                   Available on Amazon in Paperback or Kindle
                 </p>
-                <Button 
+                <Button
                   size="lg" 
                   className="bg-primary hover:bg-primary/90 text-primary-foreground"
                   asChild
