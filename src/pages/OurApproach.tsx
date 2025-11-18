@@ -90,7 +90,7 @@ const OurApproach = () => {
             </div>
             
             <div className="space-y-6">
-              <div className="bg-muted/50 p-8 rounded-lg">
+              <div className="bg-muted/50 p-8 rounded-lg max-w-md mx-auto">
                 <img 
                   src={anneCuthbertPhoto} 
                   alt="Anne Cuthbert, MA, LPC, LMHC - Founder and Clinical Director" 
@@ -116,7 +116,7 @@ const OurApproach = () => {
                 href="https://www.amazon.com/If-Your-Hunger-Could-Talk/dp/B0BW36MD3R"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block group max-w-md mx-auto"
+                className="block group max-w-xs mx-auto"
               >
                 <img 
                   src={bookCover} 
