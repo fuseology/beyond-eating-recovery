@@ -2,6 +2,7 @@ import { Phone, GraduationCap, Award, Heart, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import stephanieImage from "@/assets/stephanie-okumura.webp";
 
 const StephanieOkumura = () => {
@@ -436,6 +437,7 @@ const StephanieOkumura = () => {
         </div>
       </section>
 
+      <NewsletterFooterSection />
       <Footer />
     </div>
   );

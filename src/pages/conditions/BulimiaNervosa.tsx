@@ -4,6 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Phone, Mail, MapPin, Clock, ChevronRight, AlertTriangle } from "lucide-react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -855,6 +858,9 @@ const BulimiaNervosa = () => {
           </aside>
         </div>
       </div>
+      
+      <NewsletterFooterSection />
+      <Footer />
     </div>
   );
 };
