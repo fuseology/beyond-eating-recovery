@@ -93,8 +93,20 @@ const Contact = () => {
                 </div>
               </CardHeader>
               <CardContent>
+                <div className="mb-6">
+                  <a 
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfHvkpMJbdNF6m-eZFtRrwv4xrb2vUH6plb-rwJ5ERETqFX8A/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-white">
+                      Submit Secure Files
+                    </Button>
+                  </a>
+                </div>
                 <div className="w-full">
-                  <iframe 
+                  <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true" 
                     width="100%" 
                     height="3147" 
