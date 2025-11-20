@@ -201,32 +201,28 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Insurance & Payment */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6 text-primary">
-              Insurance & Payment
-            </h2>
-            <p className="text-xl text-foreground/80 mb-8">
-              We accept most major insurance plans for Oregon and Washington residents.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
-              <Button size="lg" className="bg-accent hover:bg-accent/90">
-                Verify Your Insurance
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-white">
-                Payment Options & Fees
-              </Button>
+              {/* Insurance & Payment */}
+              <Card className="border-2 bg-accent/10">
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold text-primary mb-3">Insurance & Payment</h3>
+                  <p className="text-foreground/80 mb-4">
+                    We accept most major insurance plans for Oregon and Washington residents.
+                  </p>
+                  <div className="space-y-3">
+                    <Button size="lg" className="w-full bg-accent hover:bg-accent/90">
+                      Verify Your Insurance
+                    </Button>
+                    <Button size="lg" variant="outline" className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-white">
+                      Payment Options & Fees
+                    </Button>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-4 text-center">
+                    Not sure if we're in-network? Contact us and we'll check for you.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
-            <p className="text-muted-foreground">
-              Not sure if we're in-network? Contact us and we'll check for you.
-            </p>
           </div>
         </div>
       </section>
