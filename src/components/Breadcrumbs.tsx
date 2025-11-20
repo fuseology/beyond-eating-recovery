@@ -78,13 +78,13 @@ const Breadcrumbs = () => {
   }
 
   return (
-    <div className="bg-muted/30 border-b border-border/40">
+    <div className="bg-primary border-b border-primary/40">
       <div className="container mx-auto px-4 py-3">
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link to="/" className="flex items-center gap-1">
+                <Link to="/" className="flex items-center gap-1 text-white hover:text-white/80">
                   <Home className="h-4 w-4" />
                   <span className="sr-only">Home</span>
                 </Link>
@@ -98,13 +98,13 @@ const Breadcrumbs = () => {
 
               return (
                 <div key={path} className="flex items-center gap-1.5">
-                  <BreadcrumbSeparator />
+                  <BreadcrumbSeparator className="text-white/60" />
                   <BreadcrumbItem>
                     {isLast ? (
-                      <BreadcrumbPage>{title}</BreadcrumbPage>
+                      <BreadcrumbPage className="text-white">{title}</BreadcrumbPage>
                     ) : (
                       <BreadcrumbLink asChild>
-                        <Link to={path}>{title}</Link>
+                        <Link to={path} className="text-white hover:text-white/80">{title}</Link>
                       </BreadcrumbLink>
                     )}
                   </BreadcrumbItem>
