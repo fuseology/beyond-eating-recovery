@@ -126,6 +126,27 @@ const Contact = () => {
             {/* RIGHT COLUMN - Contact Information */}
             <div className="space-y-8">
               
+              {/* Insurance & Payment */}
+              <Card className="border-2 bg-accent/10">
+                <CardContent className="pt-6">
+                  <h3 className="text-xl font-semibold text-primary mb-3">Insurance & Payment</h3>
+                  <p className="text-foreground/80 mb-4">
+                    We accept most major insurance plans for Oregon and Washington residents.
+                  </p>
+                  <div className="space-y-3">
+                    <Button size="lg" className="w-full bg-accent hover:bg-accent/90">
+                      Verify Your Insurance
+                    </Button>
+                    <Button size="lg" variant="outline" className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-white">
+                      Payment Options & Fees
+                    </Button>
+                  </div>
+                  <p className="text-sm text-muted-foreground mt-4 text-center">
+                    Not sure if we're in-network? Contact us and we'll check for you.
+                  </p>
+                </CardContent>
+              </Card>
+
               {/* Phone */}
               <Card className="border-2">
                 <CardContent className="pt-6">
@@ -212,27 +233,6 @@ const Contact = () => {
                       </div>
                     ))}
                   </div>
-                </CardContent>
-              </Card>
-
-              {/* Insurance & Payment */}
-              <Card className="border-2 bg-accent/10">
-                <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold text-primary mb-3">Insurance & Payment</h3>
-                  <p className="text-foreground/80 mb-4">
-                    We accept most major insurance plans for Oregon and Washington residents.
-                  </p>
-                  <div className="space-y-3">
-                    <Button size="lg" className="w-full bg-accent hover:bg-accent/90">
-                      Verify Your Insurance
-                    </Button>
-                    <Button size="lg" variant="outline" className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-white">
-                      Payment Options & Fees
-                    </Button>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-4 text-center">
-                    Not sure if we're in-network? Contact us and we'll check for you.
-                  </p>
                 </CardContent>
               </Card>
             </div>
