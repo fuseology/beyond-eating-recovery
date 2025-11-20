@@ -10,7 +10,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Phone, MapPin, Clock, CheckCircle } from "lucide-react";
+import { Phone, MapPin, Clock, CheckCircle, Upload } from "lucide-react";
 
 const Contact = () => {
   const faqs = [
@@ -101,6 +101,7 @@ const Contact = () => {
                     className="block"
                   >
                     <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-white">
+                      <Upload className="w-5 h-5 mr-2" />
                       Submit Secure Files
                     </Button>
                   </a>
