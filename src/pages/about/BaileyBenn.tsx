@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, MapPin, GraduationCap, Award, Briefcase, Leaf, Heart, UserCheck, Brain, MessageCircle, Palette, Rainbow, Handshake, Target, Sprout, CheckCircle, Scale, Clock, Users, CreditCard, Compass } from "lucide-react";
@@ -9,6 +10,19 @@ import { Link } from "react-router-dom";
 const BaileyBenn = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Bailey Benn, MA, LPC, LMHC - Licensed Therapist | Beyond Eating Recovery</title>
+        <meta name="description" content="Meet Bailey Benn, MA, LPC, LMHC, a licensed therapist specializing in eating disorders, body image, and intuitive eating. Compassionate, HAES-informed care in Portland & Vancouver." />
+        <meta property="og:title" content="Bailey Benn, MA, LPC, LMHC - Licensed Therapist | Beyond Eating Recovery" />
+        <meta property="og:description" content="Meet Bailey Benn, MA, LPC, LMHC, a licensed therapist specializing in eating disorders, body image, and intuitive eating. Compassionate, HAES-informed care in Portland & Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/bailey-benn" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/assets/bailey-benn-new.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bailey Benn, MA, LPC, LMHC - Licensed Therapist | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Meet Bailey Benn, MA, LPC, LMHC, a licensed therapist specializing in eating disorders, body image, and intuitive eating. Compassionate, HAES-informed care in Portland & Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/bailey-benn-new.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

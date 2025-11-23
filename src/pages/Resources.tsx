@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
@@ -174,6 +175,19 @@ const Resources = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Recovery Resources & Educational Content | Beyond Eating Recovery</title>
+        <meta name="description" content="Free eating disorder recovery resources including articles, guides, videos, self-assessments, and tools for healing your relationship with food and body image." />
+        <meta property="og:title" content="Recovery Resources & Educational Content | Beyond Eating Recovery" />
+        <meta property="og:description" content="Free eating disorder recovery resources including articles, guides, videos, self-assessments, and tools for healing your relationship with food and body image." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/resources" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Recovery Resources & Educational Content | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Free eating disorder recovery resources including articles, guides, videos, self-assessments, and tools for healing your relationship with food and body image." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+      </Helmet>
       <Header />
       <Breadcrumbs />
 

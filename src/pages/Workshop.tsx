@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
@@ -57,6 +58,19 @@ const Workshop = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Loveable At Any Size Workshop - 3-Day Intensive | Beyond Eating Recovery</title>
+        <meta name="description" content="Transform your relationship with yourself in this 3-day intensive workshop. Deep healing, self-acceptance, and connection with other women. Led by Anne Cuthbert." />
+        <meta property="og:title" content="Loveable At Any Size Workshop - 3-Day Intensive | Beyond Eating Recovery" />
+        <meta property="og:description" content="Transform your relationship with yourself in this 3-day intensive workshop. Deep healing, self-acceptance, and connection with other women. Led by Anne Cuthbert." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/workshop" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/assets/workshop-hero.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Loveable At Any Size Workshop - 3-Day Intensive | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Transform your relationship with yourself in this 3-day intensive workshop. Deep healing, self-acceptance, and connection with other women. Led by Anne Cuthbert." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/workshop-hero.jpg" />
+      </Helmet>
       <Header />
       <Breadcrumbs />
 

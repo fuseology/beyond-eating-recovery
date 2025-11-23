@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,6 +14,19 @@ import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 const BulimiaNervosa = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Bulimia Nervosa Treatment in Portland & Vancouver | Beyond Eating Recovery</title>
+        <meta name="description" content="Expert treatment for bulimia nervosa in Portland & Vancouver. Break the binge-purge cycle with compassionate, evidence-based care that addresses root causes." />
+        <meta property="og:title" content="Bulimia Nervosa Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta property="og:description" content="Expert treatment for bulimia nervosa in Portland & Vancouver. Break the binge-purge cycle with compassionate, evidence-based care that addresses root causes." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/conditions/bulimia-nervosa" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Bulimia Nervosa Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Expert treatment for bulimia nervosa in Portland & Vancouver. Break the binge-purge cycle with compassionate, evidence-based care that addresses root causes." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+      </Helmet>
       <Header />
       {/* Breadcrumb Navigation */}
       <div className="bg-muted/30 py-4">
