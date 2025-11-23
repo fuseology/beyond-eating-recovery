@@ -118,6 +118,25 @@ const Index = () => {
         />
         <meta name="keywords" content="eating disorder treatment Portland, eating disorder therapist Vancouver WA, anorexia treatment, bulimia treatment, binge eating disorder, intuitive eating, HAES therapist" />
         <link rel="canonical" href="https://beyondeatingrecovery.com" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Beyond Eating Recovery | Eating Disorder Treatment in Portland & Vancouver" />
+        <meta property="og:description" content="Compassionate eating disorder treatment in Portland, OR & Vancouver, WA. Specializing in anorexia, bulimia, binge eating, ARFID, and intuitive eating. In-person and virtual therapy available." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://beyondeatingrecovery.com" />
+        <meta property="og:image" content="https://beyondeatingrecovery.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Beyond Eating Recovery" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Beyond Eating Recovery | Eating Disorder Treatment in Portland & Vancouver" />
+        <meta name="twitter:description" content="Compassionate eating disorder treatment in Portland, OR & Vancouver, WA. Specializing in anorexia, bulimia, binge eating, ARFID, and intuitive eating." />
+        <meta name="twitter:image" content="https://beyondeatingrecovery.com/og-image.jpg" />
+        <meta name="twitter:site" content="@BeyondEating" />
+        
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

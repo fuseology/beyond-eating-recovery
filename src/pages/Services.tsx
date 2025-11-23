@@ -89,6 +89,24 @@ const Services = () => {
         />
         <meta name="keywords" content="eating disorder therapy Portland, group therapy eating disorders, nutrition counseling Vancouver WA, virtual eating disorder treatment, family therapy eating disorders, telehealth therapy Oregon" />
         <link rel="canonical" href="https://beyondeatingrecovery.com/services" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Eating Disorder Treatment Services | Individual, Group & Nutrition Therapy" />
+        <meta property="og:description" content="Comprehensive eating disorder treatment in Portland & Vancouver: individual therapy, group therapy, nutrition counseling, family therapy, and virtual care." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://beyondeatingrecovery.com/services" />
+        <meta property="og:image" content="https://beyondeatingrecovery.com/og-image-services.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Beyond Eating Recovery" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Eating Disorder Treatment Services | Individual, Group & Nutrition Therapy" />
+        <meta name="twitter:description" content="Comprehensive eating disorder treatment: individual therapy, group therapy, nutrition counseling, family therapy, and virtual care." />
+        <meta name="twitter:image" content="https://beyondeatingrecovery.com/og-image-services.jpg" />
+        <meta name="twitter:site" content="@BeyondEating" />
+        
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>

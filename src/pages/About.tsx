@@ -171,6 +171,24 @@ const About = () => {
         />
         <meta name="keywords" content="eating disorder therapist Portland, eating disorder specialist Vancouver WA, HAES therapist, intuitive eating counselor, trauma-informed eating disorder treatment" />
         <link rel="canonical" href="https://beyondeatingrecovery.com/about" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="About Our Team | Eating Disorder Specialists" />
+        <meta property="og:description" content="Meet our compassionate eating disorder treatment team in Portland & Vancouver. Licensed therapists and dietitians using HAES, intuitive eating, and trauma-informed care." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://beyondeatingrecovery.com/about" />
+        <meta property="og:image" content="https://beyondeatingrecovery.com/og-image-team.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content="Beyond Eating Recovery" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Our Team | Eating Disorder Specialists" />
+        <meta name="twitter:description" content="Meet our compassionate eating disorder treatment team in Portland & Vancouver. Licensed therapists and dietitians using HAES, intuitive eating, and trauma-informed care." />
+        <meta name="twitter:image" content="https://beyondeatingrecovery.com/og-image-team.jpg" />
+        <meta name="twitter:site" content="@BeyondEating" />
+        
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
