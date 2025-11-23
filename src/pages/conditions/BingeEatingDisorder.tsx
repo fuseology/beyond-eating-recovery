@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,6 +14,19 @@ import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 const BingeEatingDisorder = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Binge Eating Disorder Treatment in Portland & Vancouver | Beyond Eating Recovery</title>
+        <meta name="description" content="Compassionate, weight-neutral treatment for binge eating disorder (BED) in Portland & Vancouver. Evidence-based care addressing the emotional roots of binge eating." />
+        <meta property="og:title" content="Binge Eating Disorder Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta property="og:description" content="Compassionate, weight-neutral treatment for binge eating disorder (BED) in Portland & Vancouver. Evidence-based care addressing the emotional roots of binge eating." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/conditions/binge-eating-disorder" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Binge Eating Disorder Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Compassionate, weight-neutral treatment for binge eating disorder (BED) in Portland & Vancouver. Evidence-based care addressing the emotional roots of binge eating." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+      </Helmet>
       <Header />
       {/* Breadcrumb Navigation */}
       <div className="bg-muted/30 py-4">

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -58,6 +59,19 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Frequently Asked Questions About Eating Disorder Treatment | Beyond Eating Recovery</title>
+        <meta name="description" content="Get answers to common questions about eating disorders, treatment process, insurance, HAES approach, and what to expect at Beyond Eating Recovery in Portland & Vancouver." />
+        <meta property="og:title" content="Frequently Asked Questions About Eating Disorder Treatment | Beyond Eating Recovery" />
+        <meta property="og:description" content="Get answers to common questions about eating disorders, treatment process, insurance, HAES approach, and what to expect at Beyond Eating Recovery in Portland & Vancouver." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/faq" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Frequently Asked Questions About Eating Disorder Treatment | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Get answers to common questions about eating disorders, treatment process, insurance, HAES approach, and what to expect at Beyond Eating Recovery in Portland & Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+      </Helmet>
       <Header />
       <Breadcrumbs />
       

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Phone, Clipboard, Heart, Globe, Music } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
@@ -8,6 +9,19 @@ import michelleImage from "@/assets/michelle-commons.webp";
 const MichelleCommons = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Michelle Commons - Administrative Support | Beyond Eating Recovery</title>
+        <meta name="description" content="Meet Michelle Commons, the friendly administrative support at Beyond Eating Recovery. Your first point of contact for scheduling, insurance verification, and compassionate assistance." />
+        <meta property="og:title" content="Michelle Commons - Administrative Support | Beyond Eating Recovery" />
+        <meta property="og:description" content="Meet Michelle Commons, the friendly administrative support at Beyond Eating Recovery. Your first point of contact for scheduling, insurance verification, and compassionate assistance." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/michelle-commons" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/assets/michelle-commons.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Michelle Commons - Administrative Support | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Meet Michelle Commons, the friendly administrative support at Beyond Eating Recovery. Your first point of contact for scheduling, insurance verification, and compassionate assistance." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/michelle-commons.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}
