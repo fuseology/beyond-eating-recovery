@@ -12,6 +12,7 @@ const MichelleCommons = () => {
       <Helmet>
         <title>Michelle Commons - Administrative Support | Beyond Eating Recovery</title>
         <meta name="description" content="Meet Michelle Commons, the friendly administrative support at Beyond Eating Recovery. Your first point of contact for scheduling, insurance verification, and compassionate assistance." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/michelle-commons" />
         <meta property="og:title" content="Michelle Commons - Administrative Support | Beyond Eating Recovery" />
         <meta property="og:description" content="Meet Michelle Commons, the friendly administrative support at Beyond Eating Recovery. Your first point of contact for scheduling, insurance verification, and compassionate assistance." />
         <meta property="og:type" content="profile" />
@@ -21,6 +22,30 @@ const MichelleCommons = () => {
         <meta name="twitter:title" content="Michelle Commons - Administrative Support | Beyond Eating Recovery" />
         <meta name="twitter:description" content="Meet Michelle Commons, the friendly administrative support at Beyond Eating Recovery. Your first point of contact for scheduling, insurance verification, and compassionate assistance." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/michelle-commons.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Michelle Commons",
+            "jobTitle": "Administrative Support",
+            "description": "Administrative support specialist providing friendly, compassionate assistance with scheduling, insurance verification, and client support at Beyond Eating Recovery.",
+            "url": "https://www.beyondeatingrecovery.com/about/michelle-commons",
+            "image": "https://www.beyondeatingrecovery.com/assets/michelle-commons.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "knowsAbout": [
+              "Eating Disorder Treatment Administration",
+              "Insurance Verification",
+              "Client Support",
+              "Healthcare Scheduling",
+              "Administrative Coordination"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

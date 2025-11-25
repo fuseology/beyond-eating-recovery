@@ -28,6 +28,70 @@ const RachelBennett = () => {
         <meta name="twitter:title" content="Rachel Bennett, MA | QMHP-A Therapist at Beyond Eating Recovery" />
         <meta name="twitter:description" content="QMHP-A Therapist specializing in eating disorders, body positivity, and person-centered care in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/rachel-bennett.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Rachel Bennett",
+            "honorificSuffix": "MA",
+            "jobTitle": "QMHP-A Therapist | Professional Counselor Associate",
+            "description": "QMHP-A Therapist specializing in eating disorders, body positivity, and person-centered care with personal recovery experience.",
+            "url": "https://www.beyondeatingrecovery.com/about/rachel-bennett",
+            "image": "https://www.beyondeatingrecovery.com/rachel-bennett.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Pacific University"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Portland State University"
+              }
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "QMHP-A (Qualified Mental Health Professional - Adult)",
+                "recognizedBy": { "@type": "State", "name": "Oregon" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Professional Counselor Associate",
+                "recognizedBy": { "@type": "State", "name": "Oregon" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Mental Health Counselor Associate",
+                "recognizedBy": { "@type": "State", "name": "Washington" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Degree",
+                "name": "Master of Arts in Applied Psychological Program"
+              }
+            ],
+            "knowsAbout": [
+              "Eating Disorders",
+              "Body Positivity",
+              "Internal Family Systems (IFS)",
+              "Cognitive Behavioral Therapy (CBT)",
+              "Emotion Focused Therapy (EFT)",
+              "Acceptance and Commitment Therapy (ACT)",
+              "Health At Every Size (HAES)",
+              "LGBTQIA+ Affirming Care",
+              "Autism Spectrum Support"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

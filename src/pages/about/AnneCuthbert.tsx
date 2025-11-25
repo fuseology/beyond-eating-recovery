@@ -6,10 +6,82 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert.jpg";
+import { Helmet } from "react-helmet";
 
 const AnneCuthbert = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Anne Cuthbert, MA, LPC, LMHC | Owner & Therapist at Beyond Eating Recovery</title>
+        <meta name="description" content="Anne Cuthbert is the owner and licensed therapist at Beyond Eating Recovery, specializing in eating disorders and negative body image with over 23 years of experience in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/anne-cuthbert" />
+        <meta property="og:title" content="Anne Cuthbert, MA, LPC, LMHC | Owner & Therapist at Beyond Eating Recovery" />
+        <meta property="og:description" content="Owner and licensed therapist specializing in eating disorders and negative body image with over 23 years of experience in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/anne-cuthbert" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/assets/anne-cuthbert.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Anne Cuthbert, MA, LPC, LMHC | Owner & Therapist at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Owner and licensed therapist specializing in eating disorders and negative body image with over 23 years of experience in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/anne-cuthbert.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Anne Cuthbert",
+            "honorificSuffix": "MA, LPC, LMHC",
+            "jobTitle": "Owner & Licensed Therapist",
+            "description": "Licensed therapist specializing in eating disorders and negative body image with over 23 years of experience helping clients find food freedom.",
+            "url": "https://www.beyondeatingrecovery.com/about/anne-cuthbert",
+            "image": "https://www.beyondeatingrecovery.com/assets/anne-cuthbert.jpg",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Antioch University"
+            },
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Licensed Professional Counselor (LPC)",
+                "recognizedBy": { "@type": "State", "name": "Oregon" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Licensed Mental Health Counselor (LMHC)",
+                "recognizedBy": { "@type": "State", "name": "Washington" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Degree",
+                "name": "Master's Degree in Counseling Psychology"
+              }
+            ],
+            "knowsAbout": [
+              "Eating Disorders",
+              "Anorexia Nervosa",
+              "Bulimia Nervosa",
+              "Binge Eating Disorder",
+              "Body Image Issues",
+              "Intuitive Eating",
+              "Health At Every Size (HAES)",
+              "Trauma-Informed Care"
+            ],
+            "memberOf": [
+              {
+                "@type": "Organization",
+                "name": "ASDAH (Association for Size Diversity and Health)"
+              }
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
+      </Helmet>
       <Header />
       <Breadcrumbs />
       

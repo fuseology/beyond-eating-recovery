@@ -26,6 +26,54 @@ const AlyssaPataki = () => {
         <meta name="twitter:title" content="Alyssa Pataki, MA, LMFT | Licensed Therapist at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Licensed Marriage & Family Therapist specializing in eating disorders, family therapy, and social justice-informed practice in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/alyssa-pataki.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Alyssa Pataki",
+            "honorificSuffix": "MA, LMFT",
+            "jobTitle": "Licensed Marriage & Family Therapist",
+            "description": "Licensed Marriage & Family Therapist specializing in eating disorders, family therapy, and social justice-informed practice.",
+            "url": "https://www.beyondeatingrecovery.com/about/alyssa-pataki",
+            "image": "https://www.beyondeatingrecovery.com/alyssa-pataki.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Lewis & Clark Graduate School of Education & Counseling"
+            },
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Licensed Marriage & Family Therapist (LMFT)",
+                "recognizedBy": [
+                  { "@type": "State", "name": "Oregon" },
+                  { "@type": "State", "name": "Washington" }
+                ]
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Degree",
+                "name": "Master of Arts in Marriage, Couple, and Family Therapy"
+              }
+            ],
+            "knowsAbout": [
+              "Eating Disorders",
+              "Family Therapy",
+              "Systemic Therapy",
+              "Social Justice",
+              "Cultural Competency",
+              "BIPOC Mental Health",
+              "Health At Every Size (HAES)",
+              "Higher Levels of Care"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

@@ -29,6 +29,70 @@ const AnnieCalhounRandall = () => {
         <meta name="twitter:title" content="Annie Calhoun Randall, MA | Professional Counselor at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Professional Counselor Associate specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/annie-calhoun-randall.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Annie Calhoun Randall",
+            "honorificSuffix": "MA",
+            "jobTitle": "Professional Counselor Associate | Certified Nutrition Therapy Practitioner",
+            "description": "Professional Counselor Associate and Certified Nutrition Therapy Practitioner specializing in eating disorders, athlete nutrition, and holistic recovery with personal recovery experience.",
+            "url": "https://www.beyondeatingrecovery.com/about/annie-calhoun-randall",
+            "image": "https://www.beyondeatingrecovery.com/annie-calhoun-randall.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Western Seminary"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Nutrition Therapy Institute"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Oregon"
+              }
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Professional Counselor Associate",
+                "recognizedBy": [
+                  { "@type": "State", "name": "Oregon" },
+                  { "@type": "State", "name": "Washington" }
+                ]
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Certification",
+                "name": "Certified Nutrition Therapy Practitioner (NTP)"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Degree",
+                "name": "Master of Arts in Counseling"
+              }
+            ],
+            "knowsAbout": [
+              "Eating Disorders",
+              "Athlete Eating Disorders",
+              "Nutrition Therapy",
+              "Emotion Focused Therapy (EFIT)",
+              "Somatic Experiencing",
+              "Internal Family Systems (IFS)",
+              "Health At Every Size (HAES)",
+              "Religious Trauma",
+              "Relative Energy Deficiency in Sport (RED-S)"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

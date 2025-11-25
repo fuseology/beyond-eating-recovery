@@ -49,6 +49,37 @@ const MichelleSullins = () => {
         <meta name="twitter:title" content="Michelle Sullins | Billing Support at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Certified Professional Medical Coder providing billing support and insurance assistance at Beyond Eating Recovery in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/michelle-sullins.png" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Michelle Sullins",
+            "jobTitle": "Billing Support | Certified Professional Medical Coder",
+            "description": "Certified Professional Medical Coder with over 10 years of experience providing billing support and insurance assistance for eating disorder treatment.",
+            "url": "https://www.beyondeatingrecovery.com/about/michelle-sullins",
+            "image": "https://www.beyondeatingrecovery.com/michelle-sullins.png",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Certification",
+              "name": "Certified Professional Medical Coder"
+            },
+            "knowsAbout": [
+              "Medical Coding",
+              "Medical Billing",
+              "Insurance Verification",
+              "Claims Submission",
+              "Eating Disorder Treatment Coding",
+              "Healthcare Compliance",
+              "Superbill Preparation"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       
