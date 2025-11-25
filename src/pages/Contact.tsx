@@ -11,6 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Phone, MapPin, Clock, CheckCircle, Upload } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const faqs = [
@@ -50,8 +51,94 @@ const Contact = () => {
     { number: 4, text: "Begin your personalized treatment plan" }
   ];
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Beyond Eating Recovery of Portland",
+    "image": "https://www.beyondeatingrecovery.com/hero-background.jpg",
+    "description": "Professional eating disorder treatment center in Portland, Oregon offering specialized therapy, nutritional counseling, and support for eating disorders, body image issues, and disordered eating patterns.",
+    "url": "https://www.beyondeatingrecovery.com/contact",
+    "telephone": "+1-360-726-4141",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1235 Southeast Division Street",
+      "addressLocality": "Portland",
+      "addressRegion": "OR",
+      "postalCode": "97202",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 45.505065,
+      "longitude": -122.652856
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "00:00",
+        "closes": "00:00",
+        "description": "By appointment only"
+      }
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Portland",
+        "containedIn": {
+          "@type": "State",
+          "name": "Oregon"
+        }
+      },
+      {
+        "@type": "City",
+        "name": "Vancouver",
+        "containedIn": {
+          "@type": "State",
+          "name": "Washington"
+        }
+      }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-360-726-4141",
+      "contactType": "customer service",
+      "availableLanguage": "English",
+      "areaServed": ["OR", "WA"]
+    },
+    "paymentAccepted": "Cash, Check, Insurance",
+    "sameAs": [
+      "https://www.facebook.com/beyondeatingrecovery",
+      "https://www.instagram.com/beyondeatingrecovery"
+    ]
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Contact Us | Beyond Eating Recovery - Portland, OR</title>
+        <meta name="description" content="Contact Beyond Eating Recovery in Portland, Oregon for eating disorder treatment. Call 360-726-4141 or fill out our form for a free consultation. Serving Portland & Vancouver, WA." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/contact" />
+        <meta property="og:title" content="Contact Us | Beyond Eating Recovery - Portland, OR" />
+        <meta property="og:description" content="Contact Beyond Eating Recovery in Portland, Oregon for eating disorder treatment. Call 360-726-4141 or fill out our form for a free consultation." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/contact" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Us | Beyond Eating Recovery - Portland, OR" />
+        <meta name="twitter:description" content="Contact Beyond Eating Recovery in Portland, Oregon for eating disorder treatment. Call 360-726-4141 or fill out our form for a free consultation." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
       <Header />
       <Breadcrumbs />
 
