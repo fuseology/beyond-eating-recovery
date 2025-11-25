@@ -8,10 +8,25 @@ import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { Helmet } from "react-helmet";
 
 const OSFED = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>OSFED Treatment in Portland & Vancouver | Beyond Eating Recovery</title>
+        <meta name="description" content="Comprehensive OSFED treatment. Other Specified Feeding or Eating Disorder is just as serious as other eating disorders. Specialized care in Portland & Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/conditions/osfed" />
+        <meta property="og:title" content="OSFED Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta property="og:description" content="Comprehensive OSFED treatment. Other Specified Feeding or Eating Disorder is just as serious as other eating disorders. Specialized care available." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/conditions/osfed" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="OSFED Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Comprehensive OSFED treatment. Other Specified Feeding or Eating Disorder is just as serious as other eating disorders. Specialized care available." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+      </Helmet>
       <Header />
       
       <main className="container mx-auto px-4 py-8 max-w-7xl">

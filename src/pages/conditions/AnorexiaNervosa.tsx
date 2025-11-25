@@ -8,10 +8,25 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, Mail, MapPin, AlertCircle, ExternalLink } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { Helmet } from "react-helmet";
 
 const AnorexiaNervosa = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Anorexia Nervosa Treatment in Portland & Vancouver | Beyond Eating Recovery</title>
+        <meta name="description" content="Compassionate, evidence-based anorexia nervosa treatment. Address root causes and support lasting healing in Portland & Vancouver. Recovery is possible." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/conditions/anorexia-nervosa" />
+        <meta property="og:title" content="Anorexia Nervosa Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta property="og:description" content="Compassionate, evidence-based anorexia nervosa treatment. Address root causes and support lasting healing. Recovery is possible." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/conditions/anorexia-nervosa" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Anorexia Nervosa Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Compassionate, evidence-based anorexia nervosa treatment. Address root causes and support lasting healing. Recovery is possible." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+      </Helmet>
       <Header />
       <Breadcrumbs />
 
