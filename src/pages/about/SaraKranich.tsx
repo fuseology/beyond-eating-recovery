@@ -7,6 +7,7 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
 import saraImage from "@/assets/sara-kranich.webp";
+import { Helmet } from "react-helmet";
 // TODO: Replace with actual team photos
 const alyssaImage = anneImage;
 const kiandraImage = anneImage;
@@ -16,6 +17,20 @@ const annieImage = anneImage;
 const SaraKranich = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Sara Kranich, MA | Associate Therapist at Beyond Eating Recovery</title>
+        <meta name="description" content="Sara Kranich is an Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/sara-kranich" />
+        <meta property="og:title" content="Sara Kranich, MA | Associate Therapist at Beyond Eating Recovery" />
+        <meta property="og:description" content="Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/sara-kranich" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/sara-kranich.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sara Kranich, MA | Associate Therapist at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/sara-kranich.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

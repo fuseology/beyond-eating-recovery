@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import michelleImage from "@/assets/michelle-sullins.png";
+import { Helmet } from "react-helmet";
 
 const MichelleSullins = () => {
   const billingQuestions = [
@@ -35,6 +36,20 @@ const MichelleSullins = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Michelle Sullins | Billing Support at Beyond Eating Recovery</title>
+        <meta name="description" content="Michelle Sullins is a Certified Professional Medical Coder providing billing support and insurance assistance at Beyond Eating Recovery in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/michelle-sullins" />
+        <meta property="og:title" content="Michelle Sullins | Billing Support at Beyond Eating Recovery" />
+        <meta property="og:description" content="Certified Professional Medical Coder providing billing support and insurance assistance at Beyond Eating Recovery in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/michelle-sullins" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/michelle-sullins.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Michelle Sullins | Billing Support at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Certified Professional Medical Coder providing billing support and insurance assistance at Beyond Eating Recovery in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/michelle-sullins.png" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

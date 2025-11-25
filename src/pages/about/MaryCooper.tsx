@@ -4,10 +4,25 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import maryImage from "@/assets/mary-cooper.webp";
+import { Helmet } from "react-helmet";
 
 const MaryCooper = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Mary Cooper | Marketing Administrator at Beyond Eating Recovery</title>
+        <meta name="description" content="Mary Cooper is the Marketing Administrator at Beyond Eating Recovery, connecting people with eating disorder treatment and support in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/mary-cooper" />
+        <meta property="og:title" content="Mary Cooper | Marketing Administrator at Beyond Eating Recovery" />
+        <meta property="og:description" content="Marketing Administrator connecting people with eating disorder treatment and support in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/mary-cooper" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/mary-cooper.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Mary Cooper | Marketing Administrator at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Marketing Administrator connecting people with eating disorder treatment and support in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/mary-cooper.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}
