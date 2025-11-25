@@ -21,6 +21,7 @@ const routeTitles: Record<string, string> = {
   faq: "FAQ",
   careers: "Careers",
   "privacy-notice": "Privacy Notice",
+  "secure-file-submissions": "Secure File Submissions",
   "our-approach": "Our Approach",
   "health-at-every-size": "Health At Every Size",
   "body-shame": "Body Shame",
