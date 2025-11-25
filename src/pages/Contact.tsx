@@ -53,70 +53,183 @@ const Contact = () => {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Beyond Eating Recovery of Portland",
-    "image": "https://www.beyondeatingrecovery.com/hero-background.jpg",
-    "description": "Professional eating disorder treatment center in Portland, Oregon offering specialized therapy, nutritional counseling, and support for eating disorders, body image issues, and disordered eating patterns.",
-    "url": "https://www.beyondeatingrecovery.com/contact",
-    "telephone": "+1-360-726-4141",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1235 Southeast Division Street",
-      "addressLocality": "Portland",
-      "addressRegion": "OR",
-      "postalCode": "97202",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 45.505065,
-      "longitude": -122.652856
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "18:00"
+        "@type": "LocalBusiness",
+        "@id": "https://www.beyondeatingrecovery.com/#organization",
+        "name": "Beyond Eating Recovery of Portland",
+        "image": "https://www.beyondeatingrecovery.com/hero-background.jpg",
+        "description": "Professional eating disorder treatment center in Portland, Oregon offering specialized therapy, nutritional counseling, and support for eating disorders, body image issues, and disordered eating patterns.",
+        "url": "https://www.beyondeatingrecovery.com/contact",
+        "telephone": "+1-360-726-4141",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1235 Southeast Division Street",
+          "addressLocality": "Portland",
+          "addressRegion": "OR",
+          "postalCode": "97202",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.505065,
+          "longitude": -122.652856
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "00:00",
+            "closes": "00:00",
+            "description": "By appointment only"
+          }
+        ],
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Portland",
+            "containedIn": {
+              "@type": "State",
+              "name": "Oregon"
+            }
+          },
+          {
+            "@type": "City",
+            "name": "Vancouver",
+            "containedIn": {
+              "@type": "State",
+              "name": "Washington"
+            }
+          }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-360-726-4141",
+          "contactType": "customer service",
+          "availableLanguage": "English",
+          "areaServed": ["OR", "WA"]
+        },
+        "paymentAccepted": "Cash, Check, Insurance",
+        "sameAs": [
+          "https://www.facebook.com/beyondeatingrecovery",
+          "https://www.instagram.com/beyondeatingrecovery"
+        ]
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "00:00",
-        "closes": "00:00",
-        "description": "By appointment only"
+        "@type": "MedicalBusiness",
+        "@id": "https://www.beyondeatingrecovery.com/#medicalbusiness",
+        "name": "Beyond Eating Recovery of Portland",
+        "image": "https://www.beyondeatingrecovery.com/hero-background.jpg",
+        "description": "Specialized eating disorder treatment center providing evidence-based therapy, nutritional counseling, and comprehensive support for individuals struggling with anorexia, bulimia, binge eating disorder, ARFID, OSFED, and related conditions.",
+        "url": "https://www.beyondeatingrecovery.com",
+        "telephone": "+1-360-726-4141",
+        "medicalSpecialty": [
+          "Psychiatry",
+          "Psychology",
+          "Nutrition"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1235 Southeast Division Street",
+          "addressLocality": "Portland",
+          "addressRegion": "OR",
+          "postalCode": "97202",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 45.505065,
+          "longitude": -122.652856
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "00:00",
+            "closes": "00:00",
+            "description": "By appointment only"
+          }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Eating Disorder Treatment Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalTherapy",
+                "name": "Individual Therapy for Eating Disorders",
+                "description": "One-on-one therapy sessions for eating disorders including anorexia, bulimia, binge eating disorder, and OSFED"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalTherapy",
+                "name": "Group Therapy",
+                "description": "Supportive group therapy sessions for individuals in eating disorder recovery"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalTherapy",
+                "name": "Family Therapy",
+                "description": "Family-based treatment and support for eating disorder recovery"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalTherapy",
+                "name": "Nutritional Counseling",
+                "description": "Specialized dietitian services for eating disorder recovery and intuitive eating"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalTherapy",
+                "name": "Telehealth Services",
+                "description": "Virtual therapy sessions via secure HIPAA-compliant video conferencing"
+              }
+            }
+          ]
+        },
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Portland",
+            "containedIn": {
+              "@type": "State",
+              "name": "Oregon"
+            }
+          },
+          {
+            "@type": "City",
+            "name": "Vancouver",
+            "containedIn": {
+              "@type": "State",
+              "name": "Washington"
+            }
+          }
+        ],
+        "paymentAccepted": "Cash, Check, Insurance",
+        "currenciesAccepted": "USD"
       }
-    ],
-    "areaServed": [
-      {
-        "@type": "City",
-        "name": "Portland",
-        "containedIn": {
-          "@type": "State",
-          "name": "Oregon"
-        }
-      },
-      {
-        "@type": "City",
-        "name": "Vancouver",
-        "containedIn": {
-          "@type": "State",
-          "name": "Washington"
-        }
-      }
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-360-726-4141",
-      "contactType": "customer service",
-      "availableLanguage": "English",
-      "areaServed": ["OR", "WA"]
-    },
-    "paymentAccepted": "Cash, Check, Insurance",
-    "sameAs": [
-      "https://www.facebook.com/beyondeatingrecovery",
-      "https://www.instagram.com/beyondeatingrecovery"
     ]
   };
 
