@@ -7,6 +7,7 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
 import annieImage from "@/assets/annie-calhoun-randall.webp";
+import { Helmet } from "react-helmet";
 // TODO: Replace with actual team photos
 const alyssaImage = anneImage;
 const kiandraImage = anneImage;
@@ -15,6 +16,20 @@ const rachelImage = anneImage;
 const AnnieCalhounRandall = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Annie Calhoun Randall, MA | Professional Counselor at Beyond Eating Recovery</title>
+        <meta name="description" content="Annie Calhoun Randall is a Professional Counselor Associate specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
+        <meta property="og:title" content="Annie Calhoun Randall, MA | Professional Counselor at Beyond Eating Recovery" />
+        <meta property="og:description" content="Professional Counselor Associate specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/annie-calhoun-randall.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Annie Calhoun Randall, MA | Professional Counselor at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Professional Counselor Associate specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/annie-calhoun-randall.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

@@ -4,10 +4,25 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import stephanieImage from "@/assets/stephanie-okumura.webp";
+import { Helmet } from "react-helmet";
 
 const StephanieOkumura = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Stephanie Okumura, MS, RDN | Registered Dietitian at Beyond Eating Recovery</title>
+        <meta name="description" content="Stephanie Okumura is a Registered Dietitian specializing in eating disorder nutrition therapy, HAES, and culturally competent care in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/stephanie-okumura" />
+        <meta property="og:title" content="Stephanie Okumura, MS, RDN | Registered Dietitian at Beyond Eating Recovery" />
+        <meta property="og:description" content="Registered Dietitian specializing in eating disorder nutrition therapy, HAES, and culturally competent care in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/stephanie-okumura" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/stephanie-okumura.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Stephanie Okumura, MS, RDN | Registered Dietitian at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Registered Dietitian specializing in eating disorder nutrition therapy, HAES, and culturally competent care in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/stephanie-okumura.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

@@ -8,10 +8,25 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
 import alyssaImage from "@/assets/alyssa-pataki.webp";
+import { Helmet } from "react-helmet";
 
 const AlyssaPataki = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Alyssa Pataki, MA, LMFT | Licensed Therapist at Beyond Eating Recovery</title>
+        <meta name="description" content="Alyssa Pataki is a Licensed Marriage & Family Therapist specializing in eating disorders, family therapy, and social justice-informed practice in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/alyssa-pataki" />
+        <meta property="og:title" content="Alyssa Pataki, MA, LMFT | Licensed Therapist at Beyond Eating Recovery" />
+        <meta property="og:description" content="Licensed Marriage & Family Therapist specializing in eating disorders, family therapy, and social justice-informed practice in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/alyssa-pataki" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/alyssa-pataki.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Alyssa Pataki, MA, LMFT | Licensed Therapist at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Licensed Marriage & Family Therapist specializing in eating disorders, family therapy, and social justice-informed practice in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/alyssa-pataki.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

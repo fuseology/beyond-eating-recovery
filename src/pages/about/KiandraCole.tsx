@@ -8,12 +8,27 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn.jpg";
 import kiandraImage from "@/assets/kiandra-cole.webp";
+import { Helmet } from "react-helmet";
 // TODO: Replace with actual Alyssa photo
 const alyssaImage = anneImage;
 
 const KiandraCole = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Kiandra Cole, MA | Professional Counselor at Beyond Eating Recovery</title>
+        <meta name="description" content="Kiandra Cole is a Professional Counselor Associate specializing in eating disorders, LGBTQIA+ affirming care, and social justice advocacy in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/kiandra-cole" />
+        <meta property="og:title" content="Kiandra Cole, MA | Professional Counselor at Beyond Eating Recovery" />
+        <meta property="og:description" content="Professional Counselor Associate specializing in eating disorders, LGBTQIA+ affirming care, and social justice advocacy in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/kiandra-cole" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/kiandra-cole.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kiandra Cole, MA | Professional Counselor at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Professional Counselor Associate specializing in eating disorders, LGBTQIA+ affirming care, and social justice advocacy in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/kiandra-cole.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}

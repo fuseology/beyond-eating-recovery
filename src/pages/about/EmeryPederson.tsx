@@ -6,10 +6,25 @@ import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import { Link } from "react-router-dom";
 import emeryImage from "@/assets/emery-pederson.webp";
+import { Helmet } from "react-helmet";
 
 const EmeryPederson = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Emery Pederson | Admin Support at Beyond Eating Recovery</title>
+        <meta name="description" content="Emery Pederson provides welcoming admin support at Beyond Eating Recovery, creating inclusive environments for eating disorder treatment in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/emery-pederson" />
+        <meta property="og:title" content="Emery Pederson | Admin Support at Beyond Eating Recovery" />
+        <meta property="og:description" content="Providing welcoming admin support and creating inclusive environments for eating disorder treatment in Portland and Vancouver." />
+        <meta property="og:type" content="profile" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/emery-pederson" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/emery-pederson.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Emery Pederson | Admin Support at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Providing welcoming admin support and creating inclusive environments for eating disorder treatment in Portland and Vancouver." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/emery-pederson.webp" />
+      </Helmet>
       <Header />
       
       {/* Hero Section */}
