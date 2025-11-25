@@ -79,7 +79,8 @@ const Header = () => {
     { title: "Support Resources", href: "/resources" },
   ];
 
-  const formLinks = [
+  const contactLinks = [
+    { title: "Contact Us", href: "/contact" },
     { title: "Notice of Privacy Practice", href: "/privacy-notice" },
     { title: "Client Intake Forms", href: "/contact" },
     { title: "Consent Forms", href: "/contact" },
@@ -242,12 +243,28 @@ const Header = () => {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
+                <Link to="/careers">
+                  <NavigationMenuLink className="px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors">
+                    Careers
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
                 <NavigationMenuTrigger className="bg-transparent text-white/90 hover:text-white hover:bg-white/10">
-                  Forms
+                  Contact
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 bg-white">
-                    {formLinks.map((link) => (
+                    <li className="border-b pb-3 mb-2">
+                      <Link to="/contact">
+                        <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors bg-accent/5 hover:bg-accent/15 focus:bg-accent focus:text-accent-foreground border border-accent/20">
+                          <div className="text-sm font-bold leading-none text-primary">→ Contact Us</div>
+                          <p className="text-xs text-muted-foreground mt-1">Get in touch with our team</p>
+                        </NavigationMenuLink>
+                      </Link>
+                    </li>
+                    {contactLinks.slice(1).map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
                           <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
@@ -258,22 +275,6 @@ const Header = () => {
                     ))}
                   </ul>
                 </NavigationMenuContent>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/careers">
-                  <NavigationMenuLink className="px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors">
-                    Careers
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-
-              <NavigationMenuItem>
-                <Link to="/contact">
-                  <NavigationMenuLink className="px-4 py-2 text-white/90 hover:text-white hover:bg-white/10 rounded-md transition-colors">
-                    Contact
-                  </NavigationMenuLink>
-                </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -429,11 +430,22 @@ const Header = () => {
                   </div>
                 </div>
 
+                <Link
+                  to="/careers" 
+                  onClick={() => setIsOpen(false)} 
+                  className="flex items-center gap-3 py-3 text-lg font-medium text-primary hover:text-accent transition-colors border-b"
+                >
+                  <span>💼</span> Careers
+                </Link>
+
                 <div className="border-b py-3">
-                  <Link to="/privacy-notice" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
-                    <span>📋</span> Forms
+                  <Link to="/contact" onClick={() => setIsOpen(false)} className="flex items-center gap-3 text-lg font-medium text-primary hover:text-accent transition-colors mb-2">
+                    <span>📞</span> Contact
                   </Link>
                   <div className="pl-8 space-y-2">
+                    <Link to="/contact" onClick={() => setIsOpen(false)} className="block text-sm text-accent font-semibold hover:underline">
+                      → Contact Us
+                    </Link>
                     <Link to="/privacy-notice" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
                       → Privacy Notice
                     </Link>
@@ -443,24 +455,11 @@ const Header = () => {
                     <Link to="/contact" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
                       → Consent Forms
                     </Link>
+                    <Link to="/secure-file-submissions" onClick={() => setIsOpen(false)} className="block text-sm text-foreground/80 hover:text-accent">
+                      → Secure File Submissions
+                    </Link>
                   </div>
                 </div>
-
-                <Link
-                  to="/careers" 
-                  onClick={() => setIsOpen(false)} 
-                  className="flex items-center gap-3 py-3 text-lg font-medium text-primary hover:text-accent transition-colors border-b"
-                >
-                  <span>💼</span> Careers
-                </Link>
-
-                <Link 
-                  to="/contact" 
-                  onClick={() => setIsOpen(false)} 
-                  className="flex items-center gap-3 py-3 text-lg font-medium text-primary hover:text-accent transition-colors border-b"
-                >
-                  <span>📞</span> Contact
-                </Link>
 
                 {/* Menu Footer */}
                 <div className="pt-6 mt-4 border-t-2 space-y-4 text-center">
