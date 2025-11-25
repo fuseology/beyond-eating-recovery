@@ -28,6 +28,69 @@ const KiandraCole = () => {
         <meta name="twitter:title" content="Kiandra Cole, MA | Professional Counselor at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Professional Counselor Associate specializing in eating disorders, LGBTQIA+ affirming care, and social justice advocacy in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/kiandra-cole.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Kiandra Cole",
+            "honorificSuffix": "MA",
+            "jobTitle": "Professional Counselor Associate (OR) | Mental Health Counselor Associate (WA)",
+            "description": "Professional Counselor Associate specializing in eating disorders, LGBTQIA+ affirming care, and social justice advocacy. Fat, Indigenous, queer, neurodivergent therapist.",
+            "url": "https://www.beyondeatingrecovery.com/about/kiandra-cole",
+            "image": "https://www.beyondeatingrecovery.com/kiandra-cole.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Lewis & Clark Graduate School of Education and Counseling"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Portland State University"
+              }
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Professional Counselor Associate",
+                "recognizedBy": { "@type": "State", "name": "Oregon" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Mental Health Counselor Associate",
+                "recognizedBy": { "@type": "State", "name": "Washington" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Degree",
+                "name": "Master of Arts in Professional Mental Health Counseling"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Certificate",
+                "name": "Continuing Education Certificate in Eating Disorder Treatment"
+              }
+            ],
+            "knowsAbout": [
+              "Eating Disorders",
+              "LGBTQIA+ Mental Health",
+              "Fat Liberation",
+              "Indigenous Mental Health",
+              "Neurodiversity",
+              "Substance Use Disorders",
+              "Social Justice",
+              "Intersectional Feminism",
+              "Health At Every Size (HAES)"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

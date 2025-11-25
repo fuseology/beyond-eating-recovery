@@ -30,6 +30,40 @@ const SaraKranich = () => {
         <meta name="twitter:title" content="Sara Kranich, MA | Associate Therapist at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/sara-kranich.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Sara Kranich",
+            "honorificSuffix": "MA",
+            "jobTitle": "Associate Therapist | Mindfulness Specialist",
+            "description": "Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care with personal recovery experience.",
+            "url": "https://www.beyondeatingrecovery.com/about/sara-kranich",
+            "image": "https://www.beyondeatingrecovery.com/sara-kranich.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Degree",
+              "name": "Master of Arts"
+            },
+            "knowsAbout": [
+              "Eating Disorders",
+              "Mindfulness-Based Interventions",
+              "Meditation",
+              "Trauma-Informed Care",
+              "Person-Centered Counseling",
+              "Self-Compassion",
+              "Health At Every Size (HAES)",
+              "Body Diversity",
+              "Holistic Wellness"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

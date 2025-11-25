@@ -22,6 +22,55 @@ const StephanieOkumura = () => {
         <meta name="twitter:title" content="Stephanie Okumura, MS, RDN | Registered Dietitian at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Registered Dietitian specializing in eating disorder nutrition therapy, HAES, and culturally competent care in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/stephanie-okumura.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Stephanie Okumura",
+            "honorificSuffix": "MS, RDN",
+            "jobTitle": "Registered Dietitian Nutritionist | Clinical Nutrition Specialist",
+            "description": "Registered Dietitian specializing in eating disorder nutrition therapy, HAES, and culturally competent care.",
+            "url": "https://www.beyondeatingrecovery.com/about/stephanie-okumura",
+            "image": "https://www.beyondeatingrecovery.com/stephanie-okumura.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "alumniOf": [
+              {
+                "@type": "MedicalOrganization",
+                "name": "Rush Medical Center"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Illinois Urbana-Champaign"
+              }
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Degree",
+                "name": "Master of Science in Clinical Nutrition"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Registered Dietitian Nutritionist (RDN)"
+              }
+            ],
+            "knowsAbout": [
+              "Eating Disorder Nutrition Therapy",
+              "Health At Every Size (HAES)",
+              "Intuitive Eating",
+              "Cultural Competency in Nutrition",
+              "Weight-Neutral Nutrition Care",
+              "Clinical Nutrition",
+              "Medical Nutrition Therapy"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

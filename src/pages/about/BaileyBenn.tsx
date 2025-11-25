@@ -13,6 +13,7 @@ const BaileyBenn = () => {
       <Helmet>
         <title>Bailey Benn, MA, LPC, LMHC - Licensed Therapist | Beyond Eating Recovery</title>
         <meta name="description" content="Meet Bailey Benn, MA, LPC, LMHC, a licensed therapist specializing in eating disorders, body image, and intuitive eating. Compassionate, HAES-informed care in Portland & Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/bailey-benn" />
         <meta property="og:title" content="Bailey Benn, MA, LPC, LMHC - Licensed Therapist | Beyond Eating Recovery" />
         <meta property="og:description" content="Meet Bailey Benn, MA, LPC, LMHC, a licensed therapist specializing in eating disorders, body image, and intuitive eating. Compassionate, HAES-informed care in Portland & Vancouver." />
         <meta property="og:type" content="profile" />
@@ -22,6 +23,62 @@ const BaileyBenn = () => {
         <meta name="twitter:title" content="Bailey Benn, MA, LPC, LMHC - Licensed Therapist | Beyond Eating Recovery" />
         <meta name="twitter:description" content="Meet Bailey Benn, MA, LPC, LMHC, a licensed therapist specializing in eating disorders, body image, and intuitive eating. Compassionate, HAES-informed care in Portland & Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/bailey-benn-new.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Bailey Benn",
+            "honorificSuffix": "MA, LPC, LMHC",
+            "jobTitle": "Licensed Therapist",
+            "description": "Licensed therapist specializing in eating disorders, body image, and intuitive eating through compassionate, body-positive care.",
+            "url": "https://www.beyondeatingrecovery.com/about/bailey-benn",
+            "image": "https://www.beyondeatingrecovery.com/assets/bailey-benn-new.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Lewis & Clark Graduate School"
+            },
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Licensed Professional Counselor (LPC)",
+                "recognizedBy": { "@type": "State", "name": "Oregon" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "License",
+                "name": "Licensed Mental Health Counselor (LMHC)",
+                "recognizedBy": { "@type": "State", "name": "Washington" }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Degree",
+                "name": "Master of Arts in Professional Mental Health Counseling"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Certificate",
+                "name": "Certificate in Treatment of Eating Disorders"
+              }
+            ],
+            "knowsAbout": [
+              "Eating Disorders",
+              "Body Image",
+              "Intuitive Eating",
+              "Health At Every Size (HAES)",
+              "Psychodynamic Therapy",
+              "Gestalt Therapy",
+              "Narrative Therapy",
+              "Body Positivity"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

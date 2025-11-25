@@ -24,6 +24,40 @@ const EmeryPederson = () => {
         <meta name="twitter:title" content="Emery Pederson | Admin Support at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Providing welcoming admin support and creating inclusive environments for eating disorder treatment in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/emery-pederson.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Emery Pederson",
+            "jobTitle": "Admin Support",
+            "description": "Admin support providing welcoming, inclusive assistance for clients seeking eating disorder treatment and support.",
+            "url": "https://www.beyondeatingrecovery.com/about/emery-pederson",
+            "image": "https://www.beyondeatingrecovery.com/emery-pederson.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Washington State University Vancouver"
+            },
+            "hasCredential": {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Degree",
+              "name": "Bachelor of Science in Psychology"
+            },
+            "knowsAbout": [
+              "Eating Disorders",
+              "Mental Health Support",
+              "Client Care Coordination",
+              "Inclusive Practice",
+              "Administrative Support",
+              "Community Resources"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       

@@ -22,6 +22,32 @@ const MaryCooper = () => {
         <meta name="twitter:title" content="Mary Cooper | Marketing Administrator at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Marketing Administrator connecting people with eating disorder treatment and support in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/mary-cooper.webp" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Mary Cooper",
+            "jobTitle": "Marketing Administrator",
+            "description": "Marketing Administrator connecting people with eating disorder treatment and support through thoughtful, ethical marketing and community outreach.",
+            "url": "https://www.beyondeatingrecovery.com/about/mary-cooper",
+            "image": "https://www.beyondeatingrecovery.com/mary-cooper.webp",
+            "worksFor": {
+              "@type": "MedicalBusiness",
+              "name": "Beyond Eating Recovery",
+              "url": "https://www.beyondeatingrecovery.com"
+            },
+            "knowsAbout": [
+              "Healthcare Marketing",
+              "Eating Disorder Awareness",
+              "Community Outreach",
+              "Mental Health Education",
+              "Social Media Management",
+              "Website Management",
+              "Brand Development"
+            ],
+            "telephone": "+1-360-726-4141"
+          })}
+        </script>
       </Helmet>
       <Header />
       
