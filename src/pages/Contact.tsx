@@ -164,11 +164,10 @@ const Contact = () => {
               <CardHeader>
                 <div className="flex items-start justify-between">
                   <div>
-                    <CardTitle className="text-2xl text-primary mb-2">BodyExpressions</CardTitle>
+                    <CardTitle className="text-2xl text-primary mb-2">Beyond Eating Recovery</CardTitle>
                     <p className="text-foreground/90 font-semibold">Anne Cuthbert MA, LPC, LMHC</p>
                     <p className="text-sm text-muted-foreground mt-2">
-                      Owner & Practitioner of<br />
-                      <em>"Food Is Not The Enemy Group Practice"</em><br />
+                      Owner & Practitioner<br />
                       <em>Now Serving Portland & Vancouver Locations.</em>
                     </p>
                   </div>
