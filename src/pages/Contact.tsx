@@ -109,13 +109,11 @@ const Contact = () => {
                 <div className="w-full">
                   <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true" 
-                    width="100%" 
+                    width="640" 
                     height="3147" 
                     frameBorder={0} 
                     marginHeight={0} 
                     marginWidth={0}
-                    style={{ border: 0 }}
-                    className="w-full"
                   >
                     Loading…
                   </iframe>
