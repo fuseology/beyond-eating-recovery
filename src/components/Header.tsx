@@ -83,6 +83,7 @@ const Header = () => {
     { title: "Notice of Privacy Practice", href: "/privacy-notice" },
     { title: "Client Intake Forms", href: "/contact" },
     { title: "Consent Forms", href: "/contact" },
+    { title: "Secure File Submissions", href: "/secure-file-submissions" },
   ];
 
   return (
