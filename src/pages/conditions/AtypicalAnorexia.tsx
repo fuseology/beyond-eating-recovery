@@ -6,10 +6,25 @@ import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { Helmet } from "react-helmet";
 
 const AtypicalAnorexia = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Atypical Anorexia Treatment in Portland & Vancouver | Beyond Eating Recovery</title>
+        <meta name="description" content="Weight-neutral, HAES-aligned therapy for atypical anorexia. Just as serious as typical anorexia. You deserve validation and compassionate care in Portland & Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/conditions/atypical-anorexia" />
+        <meta property="og:title" content="Atypical Anorexia Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta property="og:description" content="Weight-neutral, HAES-aligned therapy for atypical anorexia. Just as serious as typical anorexia. You deserve validation and compassionate care." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/conditions/atypical-anorexia" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Atypical Anorexia Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Weight-neutral, HAES-aligned therapy for atypical anorexia. Just as serious as typical anorexia. You deserve validation and compassionate care." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+      </Helmet>
       <Header />
       
       <main className="flex-grow">

@@ -7,10 +7,25 @@ import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { Helmet } from "react-helmet";
 
 const CoOccurringIssues = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Co-Occurring Issues & Dual Diagnosis Treatment | Beyond Eating Recovery</title>
+        <meta name="description" content="Integrated treatment for eating disorders with co-occurring depression, anxiety, trauma, and substance use. Comprehensive care in Portland & Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/conditions/co-occurring-issues" />
+        <meta property="og:title" content="Co-Occurring Issues & Dual Diagnosis Treatment | Beyond Eating Recovery" />
+        <meta property="og:description" content="Integrated treatment for eating disorders with co-occurring depression, anxiety, trauma, and substance use. Comprehensive care that treats the whole person." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/conditions/co-occurring-issues" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Co-Occurring Issues & Dual Diagnosis Treatment | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Integrated treatment for eating disorders with co-occurring depression, anxiety, trauma, and substance use. Comprehensive care that treats the whole person." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+      </Helmet>
       <Header />
       
       {/* Breadcrumb */}

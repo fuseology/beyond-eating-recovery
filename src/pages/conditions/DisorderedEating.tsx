@@ -6,10 +6,25 @@ import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { Helmet } from "react-helmet";
 
 const DisorderedEating = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Disordered Eating Treatment in Portland & Vancouver | Beyond Eating Recovery</title>
+        <meta name="description" content="Compassionate, weight-neutral therapy for disordered eating patterns. You don't need a formal diagnosis to deserve support and healing in Portland & Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/conditions/disordered-eating" />
+        <meta property="og:title" content="Disordered Eating Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta property="og:description" content="Compassionate, weight-neutral therapy for disordered eating patterns. You don't need a formal diagnosis to deserve support and healing." />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/conditions/disordered-eating" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Disordered Eating Treatment in Portland & Vancouver | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Compassionate, weight-neutral therapy for disordered eating patterns. You don't need a formal diagnosis to deserve support and healing." />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
+      </Helmet>
       <Header />
       
       <main className="flex-grow">
