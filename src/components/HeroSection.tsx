@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroBackground from "@/assets/hero-background.jpg";
 import logo from "@/assets/beyond-eating-recovery-logo.png";
 
@@ -41,11 +42,11 @@ const HeroSection = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-lg">
-            Book Free Consultation
+          <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-lg" asChild>
+            <Link to="/contact">Book Free Consultation</Link>
           </Button>
-          <Button size="lg" variant="outline" className="bg-white text-primary hover:bg-white/90 border-2 border-white text-lg px-8 py-6 shadow-lg">
-            Verify Insurance
+          <Button size="lg" variant="outline" className="bg-white text-primary hover:bg-white/90 border-2 border-white text-lg px-8 py-6 shadow-lg" asChild>
+            <Link to="/contact">Verify Insurance</Link>
           </Button>
         </div>
       </div>

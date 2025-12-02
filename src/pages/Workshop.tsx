@@ -13,6 +13,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Phone, Heart, Users, Sparkles, Shield, Calendar, MapPin, User, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 import workshopHero from "@/assets/workshop-hero.jpg";
 
 const Workshop = () => {
@@ -244,8 +245,8 @@ const Workshop = () => {
               </div>
             </a>
             <p className="text-muted-foreground mb-6">or</p>
-            <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-white">
-              Send an Inquiry
+            <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-white" asChild>
+              <Link to="/contact">Send an Inquiry</Link>
             </Button>
           </div>
         </div>

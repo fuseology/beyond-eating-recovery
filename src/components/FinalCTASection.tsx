@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import ctaImage from "@/assets/michelle-commons-cta.webp";
+import { Link } from "react-router-dom";
 
 const FinalCTASection = () => {
   return (
@@ -30,16 +31,16 @@ const FinalCTASection = () => {
                 <Button 
                   size="lg" 
                   className="bg-accent hover:bg-accent/90 text-white px-8"
-                  onClick={() => window.location.href = '/contact'}
+                  asChild
                 >
-                  Book Free Consultation
+                  <Link to="/contact">Book Free Consultation</Link>
                 </Button>
                 <Button 
                   size="lg" 
                   variant="outline"
-                  onClick={() => window.location.href = '/contact'}
+                  asChild
                 >
-                  Verify Insurance
+                  <Link to="/contact">Verify Insurance</Link>
                 </Button>
               </div>
 
