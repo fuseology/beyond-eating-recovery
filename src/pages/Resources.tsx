@@ -27,58 +27,55 @@ const Resources = () => {
       image: blog1,
       title: "Understanding Intuitive Eating: A Beginner's Guide",
       excerpt: "Learn the foundational principles of intuitive eating and how to start listening to your body's natural hunger and fullness cues.",
-      category: "Intuitive Eating",
-      link: "/blog/intuitive-eating-guide"
+      category: "Intuitive Eating"
     },
     {
       id: 2,
       image: blog2,
       title: "5 Ways to Practice Body Acceptance Today",
       excerpt: "Practical, compassionate strategies you can use right now to start building a more positive relationship with your body.",
-      category: "Body Image",
-      link: "/blog/body-acceptance-practices"
+      category: "Body Image"
     },
     {
       id: 3,
       image: blog3,
       title: "How to Support a Loved One with an Eating Disorder",
       excerpt: "Family members and friends play a crucial role in recovery. Here's how to provide supportive, non-judgmental care.",
-      category: "Family Support",
-      link: "/blog/supporting-loved-ones"
+      category: "Family Support"
     }
   ];
 
   const popularTopics = [
-    { icon: Brain, title: "Understanding Eating Disorders", link: "#eating-disorders" },
-    { icon: Heart, title: "Body Image & Body Positivity", link: "#body-positivity" },
-    { icon: Users, title: "Intuitive Eating Guide", link: "#intuitive-eating" },
-    { icon: Scale, title: "HAES Approach", link: "#haes" },
-    { icon: Home, title: "Family Support Resources", link: "#family-support" },
-    { icon: Sparkles, title: "Recovery Stories", link: "#recovery-stories" },
-    { icon: Heart, title: "Coping Skills & Self-Care", link: "#coping-skills" },
-    { icon: Video, title: "Virtual Therapy Guide", link: "#virtual-therapy" }
+    { icon: Brain, title: "Understanding Eating Disorders", link: "/conditions" },
+    { icon: Heart, title: "Body Image & Body Positivity", link: "/body-shame" },
+    { icon: Users, title: "Intuitive Eating Guide", link: "/resources/5-steps-diet-roller-coaster" },
+    { icon: Scale, title: "HAES Approach", link: "/health-at-every-size" },
+    { icon: Home, title: "Family Support Resources", link: "/contact" },
+    { icon: Sparkles, title: "Recovery Stories", link: "/about" },
+    { icon: Heart, title: "Coping Skills & Self-Care", link: "/services" },
+    { icon: Video, title: "Virtual Therapy Guide", link: "/services" }
   ];
 
   const assessmentTools = [
     {
       title: "Eating Disorder Screening Questionnaire",
       description: "A confidential self-assessment to help identify potential concerns",
-      link: "#screening"
+      link: "/contact"
     },
     {
       title: "Body Image Assessment",
       description: "Understand your relationship with your body and identify areas for healing",
-      link: "#body-image"
+      link: "/contact"
     },
     {
       title: "Intuitive Eating Quiz",
       description: "Discover where you are on your intuitive eating journey",
-      link: "#ie-quiz"
+      link: "/resources/5-steps-diet-roller-coaster"
     },
     {
       title: "Do I Need Help? Guide",
       description: "Not sure if you should seek treatment? This guide can help",
-      link: "#need-help"
+      link: "/contact"
     }
   ];
 
@@ -280,6 +277,7 @@ const Resources = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">
             Latest Blog Posts
           </h2>
+          <p className="text-center text-muted-foreground mb-8">Coming soon - helpful articles about eating disorder recovery</p>
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-8">
             {blogPosts.map((post) => (
               <Card key={post.id} className="border-2 hover:shadow-lg transition-shadow overflow-hidden">
@@ -297,20 +295,12 @@ const Resources = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground/80 mb-4">
+                  <p className="text-foreground/80">
                     {post.excerpt}
                   </p>
-                  <Button className="bg-accent hover:bg-accent/90 w-full">
-                    Read More
-                  </Button>
                 </CardContent>
               </Card>
             ))}
-          </div>
-          <div className="text-center">
-            <Button size="lg" variant="outline" className="border-2 border-primary text-primary hover:bg-primary hover:text-white">
-              View All Articles
-            </Button>
           </div>
         </div>
       </section>
@@ -323,14 +313,16 @@ const Resources = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {popularTopics.map((topic, index) => (
-              <Card key={index} className="border-2 hover:shadow-lg transition-shadow cursor-pointer">
-                <CardContent className="pt-6 text-center">
-                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center">
-                    <topic.icon className="w-8 h-8 text-accent" />
-                  </div>
-                  <p className="font-semibold text-foreground/90">{topic.title}</p>
-                </CardContent>
-              </Card>
+              <Link key={index} to={topic.link}>
+                <Card className="border-2 hover:shadow-lg transition-shadow cursor-pointer h-full">
+                  <CardContent className="pt-6 text-center">
+                    <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-accent/10 flex items-center justify-center">
+                      <topic.icon className="w-8 h-8 text-accent" />
+                    </div>
+                    <p className="font-semibold text-foreground/90">{topic.title}</p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
@@ -350,8 +342,8 @@ const Resources = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-foreground/80 mb-4">{tool.description}</p>
-                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
-                    Take Assessment
+                  <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white" asChild>
+                    <Link to={tool.link}>Take Assessment</Link>
                   </Button>
                 </CardContent>
               </Card>

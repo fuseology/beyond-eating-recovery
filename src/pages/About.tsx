@@ -319,8 +319,8 @@ const About = () => {
           <p className="text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
             Take the first step toward compassionate, evidence-based care that honors who you are.
           </p>
-          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6">
-            Book a Free Consultation Today
+          <Button size="lg" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6" asChild>
+            <Link to="/contact">Book a Free Consultation Today</Link>
           </Button>
         </div>
       </section>

@@ -25,7 +25,7 @@ const routeTitles: Record<string, string> = {
   "our-approach": "Our Approach",
   "health-at-every-size": "Health At Every Size",
   "body-shame": "Body Shame",
-  "five-steps-diet-rollercoaster": "5 Steps Off The Diet Roller Coaster",
+  "5-steps-diet-roller-coaster": "5 Steps Off The Diet Roller Coaster",
   "battle-of-the-binge": "Battle Of The Binge",
   // Team members
   "anne-cuthbert": "Anne Cuthbert",
