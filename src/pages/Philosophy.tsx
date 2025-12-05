@@ -276,7 +276,6 @@ const Philosophy = () => {
                   <Clock className="h-5 w-5" />
                   Ready to Start Your Journey?
                 </CardTitle>
-                <p className="text-sm text-white/90">Free 15-Minute Consultation</p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-white/90">
@@ -286,12 +285,12 @@ const Philosophy = () => {
                   <div className="flex items-start gap-2">
                     <Phone className="h-4 w-4 mt-0.5 flex-shrink-0" />
                     <div>
-                      <a href="tel:+13039223262" className="hover:underline">(303) 922-3262</a>
+                      <a href="tel:3607264141" className="hover:underline">360-726-4141</a>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
-                    <div>Denver, CO</div>
+                    <div>Portland, OR & Vancouver, WA</div>
                   </div>
                 </div>
                 <Button className="w-full bg-[#f49a39] hover:bg-[#e38929]" asChild>

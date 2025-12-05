@@ -652,7 +652,6 @@ const BingeEatingDisorder = () => {
                   <Clock className="h-5 w-5" />
                   Ready to Start Your Recovery?
                 </CardTitle>
-                <p className="text-sm text-white/90">Free 15-Minute Consultation</p>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-sm text-white/90">

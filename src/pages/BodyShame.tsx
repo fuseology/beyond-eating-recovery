@@ -768,7 +768,7 @@ const BodyShame = () => {
                     <Calendar className="w-6 h-6" />
                     <CardTitle>Ready to Heal Body Shame?</CardTitle>
                   </div>
-                  <CardDescription className="text-primary-foreground/80">Free 15-Minute Consultation</CardDescription>
+                  
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p className="text-sm">

@@ -946,7 +946,7 @@ const DisorderedEating = () => {
                     <h3 className="text-lg font-semibold">Ready to Heal?</h3>
                   </div>
                   
-                  <p className="text-sm font-medium mb-3">Free 15-Minute Consultation</p>
+                  
                   
                   <p className="text-sm mb-4 opacity-90">
                     We provide compassionate, weight-neutral therapy for disordered eating throughout Oregon and Washington.
