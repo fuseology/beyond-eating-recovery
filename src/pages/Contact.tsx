@@ -334,9 +334,6 @@ const Contact = () => {
                     <Button size="lg" className="w-full bg-accent hover:bg-accent/90">
                       Verify Your Insurance
                     </Button>
-                    <Button size="lg" variant="outline" className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-white">
-                      Payment Options & Fees
-                    </Button>
                   </div>
                   <p className="text-sm text-muted-foreground mt-4 text-center">
                     Not sure if we're in-network? Contact us and we'll check for you.
