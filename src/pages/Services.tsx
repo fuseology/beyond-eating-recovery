@@ -351,57 +351,32 @@ const Services = () => {
             Group Therapy: Healing in Community
           </h2>
           
-          {/* Featured LGBTQIA+ Group */}
-          <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/20 dark:to-pink-950/20 p-8 md:p-12 rounded-lg border-2 border-purple-200 dark:border-purple-800 shadow-lg mb-12">
-            <div className="flex items-center gap-3 mb-6">
-              <Heart className="w-8 h-8 text-purple-600" />
-              <h3 className="text-2xl md:text-3xl font-bold text-purple-900 dark:text-purple-100">
-                LGBTQIA+ Eating Disorder Support Group
-              </h3>
-            </div>
-            
-            <p className="text-xl font-semibold mb-6 text-purple-800 dark:text-purple-200">
-              A Safe, Affirming Space for Healing
+          <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+            Group therapy offers a unique opportunity to connect with others who understand your experience. 
+            Sharing your journey in a supportive community can accelerate healing and reduce feelings of isolation.
+          </p>
+
+          {/* No Active Groups Notice */}
+          <div className="bg-card p-8 md:p-12 rounded-lg border shadow-sm max-w-2xl mx-auto text-center">
+            <Users className="w-12 h-12 text-primary mx-auto mb-6" />
+            <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-4">
+              No Active Groups at This Time
+            </h3>
+            <p className="text-muted-foreground mb-8">
+              We currently do not have any active groups. Please contact us if you are interested in Group Therapy—we'd love to hear from you.
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
-              <div className="bg-white/50 dark:bg-black/20 p-6 rounded-lg">
-                <h4 className="font-bold text-lg mb-4 text-purple-900 dark:text-purple-100">Group Details:</h4>
-                <ul className="space-y-2">
-                  <li><strong>When:</strong> Every Thursday evening from 6:00–7:15 PM</li>
-                  <li><strong>Where:</strong> Virtual (link provided at sign-up)</li>
-                  <li><strong>Who:</strong> Adults 18 and up, all genders welcome</li>
-                  <li><strong>Cost:</strong> $40 per session</li>
-                  <li className="text-sm italic">No one turned away for lack of funds • OHP accepted</li>
-                </ul>
-              </div>
-              
-              <div className="bg-white/50 dark:bg-black/20 p-6 rounded-lg">
-                <h4 className="font-bold text-lg mb-4 text-purple-900 dark:text-purple-100">Facilitator:</h4>
-                <p className="mb-4">
-                  <strong>Katie Gregg (she/her)</strong>, counseling student intern
-                </p>
-                <p className="text-sm">
-                  Katie is committed to creating a supportive environment where every member feels seen and valued. She provides affirming, inclusive care for LGBTQIA+ individuals navigating eating disorders and body image challenges.
-                </p>
-              </div>
-            </div>
-            
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-purple-600 hover:bg-purple-700 text-white">
+              <Button asChild size="lg">
                 <a href="tel:+13607264141">
                   <Phone className="w-5 h-5 mr-2" />
                   360-726-4141
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white">
+              <Button asChild size="lg" variant="outline">
                 <Link to="/contact">Contact Us</Link>
               </Button>
             </div>
-            
-            <p className="mt-6 text-xl font-bold text-center text-purple-900 dark:text-purple-100">
-              You are welcome here—just as you are.
-            </p>
           </div>
         </div>
       </section>
