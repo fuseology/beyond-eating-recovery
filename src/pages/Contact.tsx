@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import InsuranceSidebar from "@/components/InsuranceSidebar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -268,96 +269,64 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Main Content - Two Column Layout */}
-      <section className="py-20 bg-background">
+      {/* Main Content - Three Column Layout */}
+      <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-12 gap-8 max-w-[1600px] mx-auto">
             
             {/* LEFT COLUMN - Contact Form */}
-            <Card className="bg-secondary/30 border-2">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-2xl text-primary mb-2">Beyond Eating Recovery</CardTitle>
-                    <p className="text-foreground/90 font-semibold">Anne Cuthbert MA, LPC, LMHC</p>
-                    <p className="text-sm text-muted-foreground mt-2">
-                      Owner & Practitioner<br />
-                      <em>Now Serving Portland & Vancouver Locations.</em>
-                    </p>
+            <div className="lg:col-span-5">
+              <Card className="bg-secondary/30 border-2">
+                <CardHeader>
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <CardTitle className="text-2xl text-primary mb-2">Beyond Eating Recovery</CardTitle>
+                      <p className="text-foreground/90 font-semibold">Anne Cuthbert MA, LPC, LMHC</p>
+                      <p className="text-sm text-muted-foreground mt-2">
+                        Owner & Practitioner<br />
+                        <em>Now Serving Portland & Vancouver Locations.</em>
+                      </p>
+                    </div>
+                    <img 
+                      src="https://bodyexpressions.org/wp-content/uploads/2019/02/Love-Tree.png" 
+                      alt="Love Tree" 
+                      className="w-24 h-auto"
+                    />
                   </div>
-                  <img 
-                    src="https://bodyexpressions.org/wp-content/uploads/2019/02/Love-Tree.png" 
-                    alt="Love Tree" 
-                    className="w-24 h-auto"
-                  />
-                </div>
-              </CardHeader>
-              <CardContent>
-                <div className="mb-6">
-                  <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfHvkpMJbdNF6m-eZFtRrwv4xrb2vUH6plb-rwJ5ERETqFX8A/viewform?usp=header"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-white">
-                      <Upload className="w-5 h-5 mr-2" />
-                      Submit Secure Files
-                    </Button>
-                  </a>
-                </div>
-                <div className="w-full">
-                  <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true" 
-                    width="640" 
-                    height="3147" 
-                    frameBorder={0} 
-                    marginHeight={0} 
-                    marginWidth={0}
-                  >
-                    Loading…
-                  </iframe>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* RIGHT COLUMN - Contact Information */}
-            <div className="space-y-8">
-              
-              {/* Insurance & Payment */}
-              <Card className="border-2 bg-accent/10">
-                <CardContent className="pt-6">
-                  <div className="flex items-center gap-3 mb-3">
-                    <CreditCard className="w-6 h-6 text-accent" />
-                    <h3 className="text-xl font-semibold text-primary">Insurance & Payment</h3>
-                  </div>
-                  <p className="text-foreground/80 mb-4">
-                    We accept most major insurance plans for Oregon and Washington residents.
-                  </p>
-                  <div className="space-y-3">
-                    <Button 
-                      size="lg" 
-                      className="w-full bg-accent hover:bg-accent/90"
-                      onClick={() => document.getElementById('insurance-section')?.scrollIntoView({ behavior: 'smooth' })}
-                    >
-                      Verify Your Insurance
-                    </Button>
-                  </div>
-                  <p className="text-sm text-muted-foreground mt-4 text-center">
+                </CardHeader>
+                <CardContent>
+                  <div className="mb-6">
                     <a 
-                      href="#insurance-section" 
-                      className="text-primary hover:underline"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        document.getElementById('insurance-section')?.scrollIntoView({ behavior: 'smooth' });
-                      }}
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSfHvkpMJbdNF6m-eZFtRrwv4xrb2vUH6plb-rwJ5ERETqFX8A/viewform?usp=header"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block"
                     >
-                      View detailed insurance information below
+                      <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-white">
+                        <Upload className="w-5 h-5 mr-2" />
+                        Submit Secure Files
+                      </Button>
                     </a>
-                  </p>
+                  </div>
+                  <div className="w-full">
+                    <iframe
+                      src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true" 
+                      width="100%" 
+                      height="3147" 
+                      frameBorder={0} 
+                      marginHeight={0} 
+                      marginWidth={0}
+                      className="max-w-full"
+                    >
+                      Loading…
+                    </iframe>
+                  </div>
                 </CardContent>
               </Card>
+            </div>
 
+            {/* MIDDLE COLUMN - Contact Information */}
+            <div className="lg:col-span-3 space-y-6">
               {/* Phone */}
               <Card className="border-2">
                 <CardContent className="pt-6">
@@ -370,7 +339,7 @@ const Contact = () => {
                       <a href="tel:3607264141" className="text-2xl font-bold text-accent hover:underline">
                         360-726-4141
                       </a>
-                      <p className="text-muted-foreground mt-1">Call or text us—we're here to help</p>
+                      <p className="text-muted-foreground mt-1 text-sm">Call or text us—we're here to help</p>
                     </div>
                   </div>
                 </CardContent>
@@ -385,12 +354,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-primary mb-2">Portland Office</h3>
-                      <p className="text-foreground/80">
+                      <p className="text-foreground/80 text-sm">
                         Beyond Eating Recovery of Portland<br />
                         1235 Southeast Division Street<br />
                         Portland, Oregon 97202
                       </p>
-                      <p className="text-sm text-muted-foreground mt-2">In-Person Appointments Available</p>
+                      <p className="text-xs text-muted-foreground mt-2">In-Person Appointments Available</p>
                     </div>
                   </div>
 
@@ -421,7 +390,7 @@ const Contact = () => {
                         referrerPolicy="no-referrer-when-downgrade"
                       />
                     </div>
-                    <p className="text-sm text-muted-foreground mt-2">
+                    <p className="text-xs text-muted-foreground mt-2">
                       <strong>Parking:</strong> Street parking and nearby garage available
                     </p>
                   </div>
@@ -431,16 +400,16 @@ const Contact = () => {
               {/* Vancouver, WA Services */}
               <Card className="border-2 bg-secondary/20">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold text-primary mb-3">Serving Vancouver, WA</h3>
-                  <p className="text-foreground/80 mb-4">
-                    We proudly serve Vancouver, Washington residents through secure, HIPAA-compliant telehealth sessions. All the same quality care from the comfort of your home.
+                  <h3 className="text-lg font-semibold text-primary mb-3">Serving Vancouver, WA</h3>
+                  <p className="text-foreground/80 mb-4 text-sm">
+                    We proudly serve Vancouver, Washington residents through secure, HIPAA-compliant telehealth sessions.
                   </p>
                   <div className="space-y-2">
-                    <p className="font-semibold text-primary">Virtual Services Include:</p>
+                    <p className="font-semibold text-primary text-sm">Virtual Services Include:</p>
                     {virtualServices.map((service, index) => (
                       <div key={index} className="flex items-center gap-2">
-                        <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
-                        <span className="text-foreground/80">{service}</span>
+                        <CheckCircle className="w-4 h-4 text-accent flex-shrink-0" />
+                        <span className="text-foreground/80 text-sm">{service}</span>
                       </div>
                     ))}
                   </div>
@@ -450,21 +419,28 @@ const Contact = () => {
               {/* What Happens Next */}
               <Card className="border-2 bg-accent/10">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold text-primary mb-4 text-center">
+                  <h3 className="text-lg font-semibold text-primary mb-4 text-center">
                     What Happens Next?
                   </h3>
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {steps.map((step, index) => (
-                      <div key={index} className="flex items-center gap-4">
-                        <div className="w-12 h-12 flex-shrink-0 rounded-full bg-accent flex items-center justify-center">
-                          <span className="text-xl font-bold text-white">{step.number}</span>
+                      <div key={index} className="flex items-center gap-3">
+                        <div className="w-10 h-10 flex-shrink-0 rounded-full bg-accent flex items-center justify-center">
+                          <span className="text-lg font-bold text-white">{step.number}</span>
                         </div>
-                        <p className="text-foreground/80">{step.text}</p>
+                        <p className="text-foreground/80 text-sm">{step.text}</p>
                       </div>
                     ))}
                   </div>
                 </CardContent>
               </Card>
+            </div>
+
+            {/* RIGHT COLUMN - Insurance Sidebar */}
+            <div className="lg:col-span-4">
+              <div className="lg:sticky lg:top-24">
+                <InsuranceSidebar />
+              </div>
             </div>
           </div>
         </div>
