@@ -40,7 +40,7 @@ const FAQ = () => {
       id: "insurance",
       title: "Insurance & Financial Information",
       icon: DollarSign,
-      count: 5,
+      count: 8,
       samples: ["Do you accept insurance?", "What does treatment cost?", "What is a Good Faith Estimate?"],
     },
     {
@@ -83,10 +83,10 @@ const FAQ = () => {
               Frequently Asked Questions
             </h1>
             <p className="text-xl mb-8 text-white/90">
-              Get answers to common questions about eating disorders, treatment, and our practice
+              We're here to answer your questions about treatment, insurance, and getting started
             </p>
             <p className="text-lg mb-8 text-white/80 max-w-3xl mx-auto">
-              We understand that seeking help for eating disorders can feel overwhelming. You likely have many questions about treatment, what to expect, how it works, and whether it's right for you. We've compiled answers to the most common questions we hear. If you don't find what you're looking for, please don't hesitate to contact us.
+              If you don't find what you're looking for, please call us at 360-726-4141 or use our <Link to="/contact" className="underline hover:text-white">contact form</Link>.
             </p>
             
             {/* Search Bar */}
@@ -825,48 +825,233 @@ const FAQ = () => {
           <div id="insurance" className="mb-16 scroll-mt-24">
             <h2 className="text-3xl font-bold mb-8 text-primary">Insurance & Financial Information</h2>
             <Accordion type="single" collapsible className="space-y-4">
+              
               <AccordionItem value="q22" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
                   <span className="font-semibold">Do you accept insurance?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>We accept many major insurance plans, but coverage varies widely depending on your provider and plan.</p>
-                  <p>We recommend contacting your insurance company directly to verify coverage for outpatient therapy and dietitian services related to eating disorders.</p>
-                  <p>We also offer self-pay options and sliding scale fees for those without insurance or with limited coverage.</p>
+                  <p>Yes! Beyond Eating Recovery accepts most major insurance plans for Oregon and Washington residents. We are in-network with many commercial insurance carriers and also work with out-of-network benefits.</p>
+                  <p>To verify your specific coverage, please call us at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> or click the 'Verify Your Insurance' button on our <Link to="/contact" className="text-primary hover:underline font-semibold">contact page</Link>. Our team will help you understand your benefits and any out-of-pocket costs.</p>
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="q23" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">What does treatment cost?</span>
+                  <span className="font-semibold">What are my responsibilities regarding insurance coverage?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>Costs vary depending on the type of service, provider, and session length.</p>
-                  <p>Typical rates range from $100 to $200 per session for therapy and dietitian visits.</p>
-                  <p>We provide clear fee information during your initial consultation and can discuss payment plans or sliding scale options if needed.</p>
+                  <p className="font-semibold text-foreground">It is your responsibility as the client to:</p>
+                  <ul className="list-disc pl-6 space-y-3">
+                    <li><strong>Verify your insurance coverage before beginning treatment.</strong> While we assist with verification, you should confirm your benefits, deductibles, copays, and any out-of-network costs directly with your insurance company.</li>
+                    <li><strong>Communicate any insurance changes immediately.</strong> If your insurance plan changes, your coverage changes, or you switch insurance companies, please notify us right away. Changes in coverage can affect your treatment costs and our ability to bill your insurance.</li>
+                    <li><strong>Understand your benefits.</strong> Insurance plans vary widely in what they cover for mental health and nutrition services. We recommend calling your insurance company with the questions provided below to fully understand your coverage.</li>
+                  </ul>
+                  <p>Please contact us at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> if you have questions about your insurance or if your coverage changes.</p>
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="q24" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
-                  <span className="font-semibold">What is a Good Faith Estimate?</span>
+                  <span className="font-semibold">What CPT codes do you use, and what questions should I ask my insurance company?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>A Good Faith Estimate is a document that shows you the expected costs of medical services, including therapy and dietitian visits.</p>
-                  <p>We provide this estimate upon request so you can understand your financial responsibility before starting treatment.</p>
-                  <p>It helps you plan and avoid unexpected bills.</p>
+                  <p>When calling your insurance company to verify coverage, it's helpful to provide them with the specific CPT codes we use and ask targeted questions about your benefits.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">CPT Codes for Mental Health Services (Therapy):</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>90791 - Initial Diagnostic Interview</li>
+                      <li>90834 - 45-minute therapy session</li>
+                      <li>90837 - 53-minute therapy session</li>
+                      <li>90847 - Family therapy (with patient present)</li>
+                      <li>90853 - Group therapy</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">CPT Codes for Registered Dietitian Services:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>97802 - Medical nutrition therapy, initial assessment</li>
+                      <li>97803 - Medical nutrition therapy, re-assessment</li>
+                      <li>97804 - Medical nutrition therapy, group session</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">Questions to Ask Your Insurance Company:</p>
+                    <ol className="list-decimal pl-6 space-y-2">
+                      <li>Do I have mental health and/or nutrition benefits under my plan?</li>
+                      <li>What is my deductible for mental health services, and how much have I met?</li>
+                      <li>What is my copay or coinsurance for outpatient mental health services (CPT codes listed above)?</li>
+                      <li>Is Beyond Eating Recovery in-network with my plan? (Provide our Tax ID if requested)</li>
+                      <li>Do I need a referral or pre-authorization for outpatient therapy or nutrition services?</li>
+                      <li>How many therapy sessions are covered per year?</li>
+                      <li>Are nutrition/dietitian services (CPT codes 97802, 97803, 97804) covered under my plan?</li>
+                      <li>If Beyond Eating Recovery is out-of-network, what are my out-of-network benefits?</li>
+                      <li>Is there a limit to how much I can be reimbursed for out-of-network services?</li>
+                    </ol>
+                  </div>
+
+                  <p className="font-semibold text-foreground italic">We recommend writing down the representative's name, the date, and reference number for your call.</p>
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="q25" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">What's the difference between mental health and dietitian billing?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>Mental health services (therapy) and dietitian services are billed differently and often have different coverage under your insurance plan.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">Mental Health Services (Therapy):</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Provided by licensed therapists (LPC, LMHC, LCSW)</li>
+                      <li>Billed under mental health benefits</li>
+                      <li>Typically covered with copays or coinsurance</li>
+                      <li>May have separate deductibles from medical services</li>
+                      <li>Often have session limits per year</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">Registered Dietitian (RD) Services:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Provided by licensed dietitians specializing in eating disorders</li>
+                      <li>Billed under medical nutrition therapy (MNT) benefits or medical benefits</li>
+                      <li>Coverage varies significantly by insurance plan</li>
+                      <li>Some plans require a physician referral or diagnosis of a medical condition</li>
+                      <li>May not be covered at all by some plans, or may have limited sessions</li>
+                    </ul>
+                  </div>
+
+                  <p className="font-semibold text-foreground">Important: Even if therapy is covered, dietitian services may not be, or vice versa. We strongly recommend verifying coverage for both types of services separately when you call your insurance company.</p>
+                  
+                  <p>If you have questions about billing for either service, please call us at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a>.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q26" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">What information can the clinic provide during insurance verification?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>When you contact us to verify your insurance, our team can help identify certain information about your coverage. However, there are limitations to what we can determine during the verification process.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">What We Can Help Identify:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Whether we are in-network or out-of-network with your insurance plan</li>
+                      <li>Your estimated copay or coinsurance amounts</li>
+                      <li>Your deductible information (total and remaining)</li>
+                      <li>Whether pre-authorization is required</li>
+                      <li>Basic coverage for mental health and nutrition services</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">What You Must Verify Directly with Your Insurance:</p>
+                    <ul className="list-disc pl-6 space-y-1">
+                      <li>Exact out-of-pocket costs for your specific plan</li>
+                      <li>Any exclusions or limitations specific to eating disorder treatment</li>
+                      <li>Coverage for specific CPT codes and service types</li>
+                      <li>Appeal processes if claims are denied</li>
+                      <li>Out-of-network reimbursement rates and procedures</li>
+                      <li>Whether your plan has changed or will change during treatment</li>
+                    </ul>
+                  </div>
+
+                  <p className="font-semibold text-foreground">Why this matters: Insurance companies may provide us with preliminary benefit information, but only you as the policyholder can receive complete and binding coverage details. We encourage you to verify coverage directly with your insurance company using the CPT codes and questions listed above to avoid unexpected costs.</p>
+                  
+                  <p>We're here to help! Call us at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> with any questions about the verification process.</p>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q27" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">What does treatment cost?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>Treatment costs vary depending on the type and frequency of services you receive. Here's a general overview:</p>
+                  
+                  <div>
+                    <ul className="list-disc pl-6 space-y-2">
+                      <li><strong>Individual Therapy Sessions:</strong> Typically range from $150-$200 per session (45-53 minutes)</li>
+                      <li><strong>Dietitian Sessions:</strong> Typically range from $150-$200 per session</li>
+                      <li><strong>Group Therapy:</strong> Lower cost per session, varies by group type</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">With Insurance:</p>
+                    <p>Your out-of-pocket cost will depend on your specific insurance plan, including your deductible, copay, and coinsurance rates.</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">Without Insurance:</p>
+                    <p>We offer sliding scale fees based on income and financial need. Please ask about our sliding scale options when you call <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a>.</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">Good Faith Estimate:</p>
+                    <p>Under federal law, you have the right to receive a "Good Faith Estimate" explaining how much your medical care will cost before you receive services. If you'd like a Good Faith Estimate, please contact us.</p>
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="q28" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
                   <span className="font-semibold">Do you offer sliding scale or financial assistance?</span>
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground space-y-4">
-                  <p>Yes, we offer sliding scale fees based on income and financial need.</p>
-                  <p>Please contact us to discuss your situation confidentially, and we'll work with you to find an affordable option.</p>
+                  <p>Yes! We understand that eating disorder treatment is essential, and cost should not be a barrier to care.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">Sliding Scale Fees:</p>
+                    <p>We offer reduced fees based on your income and financial situation for clients who qualify. Sliding scale rates are available on a limited basis.</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">Payment Plans:</p>
+                    <p>We may be able to work with you on payment arrangements for out-of-pocket costs.</p>
+                  </div>
+
+                  <p>To discuss financial assistance options, please call us at <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a>. Our team will work with you confidentially to find a solution that makes treatment accessible.</p>
                 </AccordionContent>
               </AccordionItem>
+
+              <AccordionItem value="q29" className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <span className="font-semibold">What is a Good Faith Estimate?</span>
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground space-y-4">
+                  <p>Under the No Surprises Act (federal law), healthcare providers must give uninsured or self-pay patients a Good Faith Estimate of expected charges before services are provided.</p>
+                  
+                  <div>
+                    <p className="font-semibold text-foreground">What is it?</p>
+                    <p>A Good Faith Estimate is a written document showing the expected cost of your treatment, including all planned services and fees.</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">Who gets one?</p>
+                    <p>Uninsured clients or clients who choose not to use their insurance must receive a Good Faith Estimate.</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">When do I get it?</p>
+                    <p>You'll receive your Good Faith Estimate before your first appointment or when you request one.</p>
+                  </div>
+
+                  <div>
+                    <p className="font-semibold text-foreground">What if the actual cost is different?</p>
+                    <p>If your final bill is significantly different (more than $400 over the estimate), you have the right to dispute the charges.</p>
+                  </div>
+
+                  <p>To request a Good Faith Estimate, please call <a href="tel:360-726-4141" className="text-primary hover:underline font-semibold">360-726-4141</a> or mention it when scheduling your first appointment.</p>
+                </AccordionContent>
+              </AccordionItem>
+
             </Accordion>
           </div>
 
@@ -874,7 +1059,7 @@ const FAQ = () => {
           <div id="what-to-expect" className="mb-16 scroll-mt-24">
             <h2 className="text-3xl font-bold mb-8 text-primary">What to Expect in Treatment</h2>
             <Accordion type="single" collapsible className="space-y-4">
-              <AccordionItem value="q26" className="border rounded-lg px-6">
+              <AccordionItem value="q30" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
                   <span className="font-semibold">Is therapy confidential?</span>
                 </AccordionTrigger>
@@ -885,7 +1070,7 @@ const FAQ = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="q27" className="border rounded-lg px-6">
+              <AccordionItem value="q31" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
                   <span className="font-semibold">Is there support between sessions?</span>
                 </AccordionTrigger>
@@ -896,7 +1081,7 @@ const FAQ = () => {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="q28" className="border rounded-lg px-6">
+              <AccordionItem value="q32" className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
                   <span className="font-semibold">Can I switch therapists?</span>
                 </AccordionTrigger>
