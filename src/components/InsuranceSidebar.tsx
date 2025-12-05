@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, CheckCircle, AlertCircle, FileText, CreditCard, Info, Lightbulb } from "lucide-react";
 
@@ -184,26 +182,6 @@ const InsuranceSidebar = () => {
         <p className="text-[10px] text-muted-foreground mt-2 text-center">
           Only you as the policyholder can receive complete, binding information from your insurance company.
         </p>
-      </div>
-
-      {/* Bottom CTA */}
-      <div className="bg-primary/5 rounded-lg p-4 text-center border border-primary/20">
-        <p className="font-bold text-primary mb-2">Need Help?</p>
-        <a href="tel:3607264141" className="text-xl font-bold text-accent hover:underline block mb-3">
-          360-726-4141
-        </a>
-        <p className="text-xs text-muted-foreground mb-4">We'll walk you through the insurance process.</p>
-        <div className="space-y-2">
-          <Button 
-            className="w-full bg-accent hover:bg-accent/90 text-white"
-            onClick={() => document.getElementById('insurance-section')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            Verify Your Insurance
-          </Button>
-          <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white text-sm">
-            <Link to="/faq#insurance">View Complete FAQ →</Link>
-          </Button>
-        </div>
       </div>
     </aside>
   );
