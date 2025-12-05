@@ -5,6 +5,10 @@ import { Phone, MapPin, GraduationCap, Award, Briefcase, Leaf, Heart, UserCheck,
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import baileyBennPhoto from "@/assets/bailey-benn-new.webp";
+import anneImage from "@/assets/anne-cuthbert.jpg";
+import alyssaImage from "@/assets/alyssa-pataki.webp";
+import kiandraImage from "@/assets/kiandra-cole.webp";
+import rachelImage from "@/assets/rachel-bennett.webp";
 import { Link } from "react-router-dom";
 
 const BaileyBenn = () => {
@@ -617,7 +621,7 @@ const BaileyBenn = () => {
                 <CardContent className="pt-6 text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/src/assets/anne-cuthbert.jpg" 
+                      src={anneImage} 
                       alt="Anne Cuthbert" 
                       className="w-full h-full object-cover"
                     />
@@ -634,7 +638,7 @@ const BaileyBenn = () => {
                 <CardContent className="pt-6 text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/src/assets/anne-cuthbert.jpg" 
+                      src={alyssaImage} 
                       alt="Alyssa Pataki" 
                       className="w-full h-full object-cover"
                     />
@@ -651,7 +655,7 @@ const BaileyBenn = () => {
                 <CardContent className="pt-6 text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/src/assets/anne-cuthbert.jpg" 
+                      src={kiandraImage} 
                       alt="Kiandra Cole" 
                       className="w-full h-full object-cover"
                     />
@@ -668,7 +672,7 @@ const BaileyBenn = () => {
                 <CardContent className="pt-6 text-center">
                   <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden">
                     <img 
-                      src="/src/assets/anne-cuthbert.jpg" 
+                      src={rachelImage} 
                       alt="Rachel Bennett" 
                       className="w-full h-full object-cover"
                     />

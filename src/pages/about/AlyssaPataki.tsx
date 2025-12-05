@@ -6,8 +6,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
-import baileyImage from "@/assets/bailey-benn.jpg";
+import baileyImage from "@/assets/bailey-benn-new.webp";
 import alyssaImage from "@/assets/alyssa-pataki.webp";
+import kiandraImage from "@/assets/kiandra-cole.webp";
+import rachelImage from "@/assets/rachel-bennett.webp";
 import { Helmet } from "react-helmet";
 
 const AlyssaPataki = () => {
@@ -785,7 +787,7 @@ const AlyssaPataki = () => {
               <CardContent className="p-6 text-center">
                 <div className="w-32 h-32 mx-auto mb-4">
                   <img 
-                    src={anneImage} 
+                    src={kiandraImage} 
                     alt="Kiandra Cole"
                     className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
                   />
@@ -808,7 +810,7 @@ const AlyssaPataki = () => {
               <CardContent className="p-6 text-center">
                 <div className="w-32 h-32 mx-auto mb-4">
                   <img 
-                    src={anneImage} 
+                    src={rachelImage} 
                     alt="Rachel Bennett"
                     className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
                   />

@@ -5,14 +5,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
-import baileyImage from "@/assets/bailey-benn.jpg";
+import baileyImage from "@/assets/bailey-benn-new.webp";
 import saraImage from "@/assets/sara-kranich.webp";
+import alyssaImage from "@/assets/alyssa-pataki.webp";
+import kiandraImage from "@/assets/kiandra-cole.webp";
+import rachelImage from "@/assets/rachel-bennett.webp";
+import annieImage from "@/assets/annie-calhoun-randall.webp";
 import { Helmet } from "react-helmet";
-// TODO: Replace with actual team photos
-const alyssaImage = anneImage;
-const kiandraImage = anneImage;
-const rachelImage = anneImage;
-const annieImage = anneImage;
 
 const SaraKranich = () => {
   return (
