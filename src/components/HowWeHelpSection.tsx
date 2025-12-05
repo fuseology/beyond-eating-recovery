@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Sparkles, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HowWeHelpSection = () => {
   const helps = [
@@ -52,8 +53,8 @@ const HowWeHelpSection = () => {
           <p className="text-lg mb-6 text-foreground/80">
             Take the first step toward real freedom and healing.
           </p>
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
-            Get Started Today
+          <Button size="lg" className="bg-primary hover:bg-primary/90" asChild>
+            <Link to="/contact">Get Started Today</Link>
           </Button>
         </div>
       </div>
