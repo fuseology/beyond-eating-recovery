@@ -30,7 +30,7 @@ const OurApproach = () => {
             Our Approach to Lasting Freedom
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-white/90 font-medium">
-            A proven, step-by-step path to make peace with food, love your body, and reclaim your life
+            A compassionate, step-by-step path to make peace with food, love your body, and reclaim your life
           </p>
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
             At Beyond Eating Recovery, we don't just treat symptoms—we address the root causes of your relationship with food and your body. Through our compassionate, evidence-based approach, you'll discover how to eat without fear, accept your body, and build the rich, satisfying life you deserve.
@@ -265,7 +265,7 @@ const OurApproach = () => {
             The Six Steps to Making Peace with Food
           </h2>
           <p className="text-lg text-center text-foreground/80 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Our treatment approach follows a proven, sequential pathway designed to help you finally make peace with food, love your body, and trust yourself. Each step builds on the previous one, creating lasting transformation rather than temporary fixes.
+            Our treatment approach follows a structured, sequential pathway designed to help you finally make peace with food, love your body, and trust yourself. Each step builds on the previous one, creating lasting transformation rather than temporary fixes.
           </p>
           
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8">
