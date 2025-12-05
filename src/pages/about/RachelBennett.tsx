@@ -5,12 +5,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
-import baileyImage from "@/assets/bailey-benn.jpg";
+import baileyImage from "@/assets/bailey-benn-new.webp";
 import rachelImage from "@/assets/rachel-bennett.webp";
+import alyssaImage from "@/assets/alyssa-pataki.webp";
+import kiandraImage from "@/assets/kiandra-cole.webp";
 import { Helmet } from "react-helmet";
-// TODO: Replace with actual Alyssa and Kiandra photos
-const alyssaImage = anneImage;
-const kiandraImage = anneImage;
 
 const RachelBennett = () => {
   return (
