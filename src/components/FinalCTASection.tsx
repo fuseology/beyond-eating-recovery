@@ -27,20 +27,13 @@ const FinalCTASection = () => {
                 Schedule a free consultation with our compassionate team. We're here to help you heal your relationship with food and your body.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6">
+              <div className="flex justify-center md:justify-start mb-6">
                 <Button 
                   size="lg" 
                   className="bg-accent hover:bg-accent/90 text-white px-8"
                   asChild
                 >
                   <Link to="/contact">Book Free Consultation</Link>
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  asChild
-                >
-                  <Link to="/contact">Verify Insurance</Link>
                 </Button>
               </div>
 

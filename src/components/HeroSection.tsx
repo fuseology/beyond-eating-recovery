@@ -41,12 +41,9 @@ const HeroSection = () => {
           You work hard, care deeply, and want to live your life fully—but when it comes to food and your body, you feel stuck. Maybe you're a student, a professional, a parent, or someone exploring your identity. No matter who you are, feeling trapped in cycles of dieting, guilt, or self-criticism can be overwhelming.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center items-center">
           <Button size="lg" variant="default" className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 shadow-lg" asChild>
             <Link to="/contact">Book Free Consultation</Link>
-          </Button>
-          <Button size="lg" variant="outline" className="bg-white text-primary hover:bg-white/90 border-2 border-white text-lg px-8 py-6 shadow-lg" asChild>
-            <Link to="/contact">Verify Insurance</Link>
           </Button>
         </div>
       </div>
