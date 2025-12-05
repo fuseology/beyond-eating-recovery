@@ -905,7 +905,7 @@ const OSFED = () => {
                 <h3 className="text-xl font-bold">OSFED Deserves Treatment</h3>
               </div>
               
-              <p className="text-lg font-semibold mb-3">Free 15-Minute Consultation</p>
+              
               
               <p className="text-sm mb-6 opacity-90">
                 You don't need to meet full criteria for anorexia, bulimia, or binge eating disorder to deserve help. OSFED is a serious eating disorder, and we're here to support your recovery.

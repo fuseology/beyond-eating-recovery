@@ -772,7 +772,7 @@ const AtypicalAnorexia = () => {
                     <h3 className="text-lg font-semibold">Ready to Begin Recovery?</h3>
                   </div>
                   
-                  <p className="text-sm font-medium mb-3">Free 15-Minute Consultation</p>
+                  
                   
                   <p className="text-sm mb-4 opacity-90">
                     We provide compassionate, weight-neutral treatment for atypical anorexia throughout Oregon and Washington.

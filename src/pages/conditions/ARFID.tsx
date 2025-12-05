@@ -894,7 +894,7 @@ const ARFID = () => {
                 <h3 className="text-xl font-bold">Ready for ARFID Treatment?</h3>
               </div>
 
-              <p className="text-sm font-semibold mb-3">Free 15-Minute Consultation</p>
+              
               
               <p className="text-sm mb-4 opacity-90">
                 Whether you're struggling with sensory sensitivities, fear-based avoidance, or lack of interest in eating, specialized treatment can help. Schedule a free consultation to learn how we can support your recovery.

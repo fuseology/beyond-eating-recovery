@@ -1064,7 +1064,7 @@ const CoOccurringIssues = () => {
                 <h3 className="text-xl font-bold">Ready for Comprehensive Treatment?</h3>
               </div>
               
-              <p className="text-lg font-semibold mb-2">Free 15-Minute Consultation</p>
+              
               <p className="text-sm mb-4 opacity-90">
                 If you're struggling with multiple mental health conditions, comprehensive treatment can help. Schedule a free consultation to learn how integrated care can support your full recovery.
               </p>

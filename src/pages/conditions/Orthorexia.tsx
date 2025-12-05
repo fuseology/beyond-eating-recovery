@@ -777,7 +777,7 @@ const Orthorexia = () => {
                     <h3 className="text-lg font-semibold">Orthorexia Deserves Treatment</h3>
                   </div>
                   
-                  <p className="text-sm font-medium mb-3">Free 15-Minute Consultation</p>
+                  
                   
                   <p className="text-sm mb-4 opacity-90">
                     If obsession with "healthy eating" is causing you suffering, you deserve specialized treatment. Recovery means finding genuine balance, not rigid perfection.
