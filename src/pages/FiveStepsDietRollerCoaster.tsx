@@ -6,8 +6,21 @@ import anneCuthbertPhoto from "@/assets/anne-cuthbert.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    SignUpFormWidget?: { init: () => void };
+  }
+}
 
 const FiveStepsDietRollerCoaster = () => {
+  useEffect(() => {
+    if (window.SignUpFormWidget) {
+      window.SignUpFormWidget.init();
+    }
+  }, []);
+
   return (
     <>
       <Helmet>

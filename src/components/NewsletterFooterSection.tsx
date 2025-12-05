@@ -1,6 +1,20 @@
 import { Check } from "lucide-react";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    SignUpFormWidget?: { init: () => void };
+  }
+}
 
 const NewsletterFooterSection = () => {
+  useEffect(() => {
+    // Reinitialize Constant Contact forms when component mounts
+    if (window.SignUpFormWidget) {
+      window.SignUpFormWidget.init();
+    }
+  }, []);
+
   return (
     <section 
       className="newsletter-footer bg-gradient-to-r from-primary to-[#2a5399] py-16 md:py-20"
