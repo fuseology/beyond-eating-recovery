@@ -10,8 +10,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Phone, MapPin, Clock, CheckCircle, Upload } from "lucide-react";
+import { Phone, MapPin, Clock, CheckCircle, Upload, CreditCard, FileText, HelpCircle, DollarSign, ShieldCheck, AlertCircle } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const faqs = [
@@ -326,17 +327,33 @@ const Contact = () => {
               {/* Insurance & Payment */}
               <Card className="border-2 bg-accent/10">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold text-primary mb-3">Insurance & Payment</h3>
+                  <div className="flex items-center gap-3 mb-3">
+                    <CreditCard className="w-6 h-6 text-accent" />
+                    <h3 className="text-xl font-semibold text-primary">Insurance & Payment</h3>
+                  </div>
                   <p className="text-foreground/80 mb-4">
                     We accept most major insurance plans for Oregon and Washington residents.
                   </p>
                   <div className="space-y-3">
-                    <Button size="lg" className="w-full bg-accent hover:bg-accent/90">
+                    <Button 
+                      size="lg" 
+                      className="w-full bg-accent hover:bg-accent/90"
+                      onClick={() => document.getElementById('insurance-section')?.scrollIntoView({ behavior: 'smooth' })}
+                    >
                       Verify Your Insurance
                     </Button>
                   </div>
                   <p className="text-sm text-muted-foreground mt-4 text-center">
-                    Not sure if we're in-network? Contact us and we'll check for you.
+                    <a 
+                      href="#insurance-section" 
+                      className="text-primary hover:underline"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('insurance-section')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                    >
+                      View detailed insurance information below
+                    </a>
                   </p>
                 </CardContent>
               </Card>
@@ -448,6 +465,343 @@ const Contact = () => {
                   </div>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance & Payment Information Section */}
+      <section id="insurance-section" className="py-20 bg-muted/30 scroll-mt-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Insurance & Payment Information
+              </h2>
+              <p className="text-lg text-foreground/80 max-w-3xl mx-auto">
+                We accept most major insurance plans for Oregon and Washington residents. Understanding your coverage is an important part of beginning treatment. Here's what you need to know.
+              </p>
+            </div>
+
+            {/* We Accept Insurance */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <ShieldCheck className="w-5 h-5 text-accent" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary">We Accept Most Major Insurance Plans</h3>
+              </div>
+              <Card className="border-2">
+                <CardContent className="pt-6">
+                  <p className="text-foreground/80 mb-6">
+                    Beyond Eating Recovery is in-network with many commercial insurance carriers and also works with out-of-network benefits. We provide both mental health services (therapy) and registered dietitian services, which may be covered differently under your plan.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 items-center">
+                    <a href="tel:3607264141">
+                      <Button size="lg" className="bg-accent hover:bg-accent/90">
+                        <Phone className="w-5 h-5 mr-2" />
+                        Call to Verify: 360-726-4141
+                      </Button>
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Client Responsibilities Callout */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <AlertCircle className="w-5 h-5 text-accent" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary">Your Responsibilities as a Client</h3>
+              </div>
+              <Card className="border-2 border-primary/20 bg-primary/5">
+                <CardContent className="pt-6">
+                  <p className="font-semibold text-primary mb-4">Important: Please note that it is your responsibility to:</p>
+                  <ul className="space-y-4">
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground/80">
+                        <strong>Verify your insurance coverage before beginning treatment</strong>, including understanding your deductible, copay, and any out-of-network costs.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground/80">
+                        <strong>Communicate insurance changes immediately.</strong> If your insurance plan changes or you switch carriers during treatment, please notify us right away so we can update your billing information.
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <CheckCircle className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                      <span className="text-foreground/80">
+                        <strong>Contact your insurance company</strong> with questions about your specific benefits and coverage limits.
+                      </span>
+                    </li>
+                  </ul>
+                  <p className="mt-6 text-foreground/80 border-t border-primary/20 pt-4">
+                    We're here to help you navigate the insurance process, but final coverage decisions are made by your insurance company. Call us at <a href="tel:3607264141" className="text-primary font-semibold hover:underline">360-726-4141</a> with questions.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* How to Verify Coverage */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <FileText className="w-5 h-5 text-accent" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary">How to Verify Your Coverage</h3>
+              </div>
+              <Card className="border-2">
+                <CardContent className="pt-6">
+                  <p className="text-foreground/80 mb-6">
+                    When you call your insurance company, it's helpful to have specific information ready. We've prepared a list of CPT codes and questions to help you get clear answers about your benefits.
+                  </p>
+                  
+                  <div className="grid md:grid-cols-2 gap-6 mb-6">
+                    <div className="bg-secondary/30 rounded-lg p-5">
+                      <h4 className="font-bold text-primary mb-3">CPT Codes for Mental Health Services (Therapy)</h4>
+                      <ul className="space-y-2 text-sm text-foreground/80">
+                        <li className="flex justify-between"><span>90791</span><span className="text-muted-foreground">Initial diagnostic interview</span></li>
+                        <li className="flex justify-between"><span>90834</span><span className="text-muted-foreground">45-minute therapy session</span></li>
+                        <li className="flex justify-between"><span>90837</span><span className="text-muted-foreground">53-minute therapy session</span></li>
+                        <li className="flex justify-between"><span>90847</span><span className="text-muted-foreground">Family therapy</span></li>
+                        <li className="flex justify-between"><span>90853</span><span className="text-muted-foreground">Group therapy</span></li>
+                      </ul>
+                    </div>
+                    <div className="bg-secondary/30 rounded-lg p-5">
+                      <h4 className="font-bold text-primary mb-3">CPT Codes for Registered Dietitian Services</h4>
+                      <ul className="space-y-2 text-sm text-foreground/80">
+                        <li className="flex justify-between"><span>97802</span><span className="text-muted-foreground">Initial nutrition assessment</span></li>
+                        <li className="flex justify-between"><span>97803</span><span className="text-muted-foreground">Follow-up nutrition session</span></li>
+                        <li className="flex justify-between"><span>97804</span><span className="text-muted-foreground">Group nutrition session</span></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-muted/50 rounded-lg p-5">
+                    <h4 className="font-bold text-primary mb-3">Questions to Ask Your Insurance Company</h4>
+                    <ol className="list-decimal list-inside space-y-2 text-foreground/80">
+                      <li>Do I have mental health and nutrition benefits?</li>
+                      <li>What is my deductible, and how much have I met?</li>
+                      <li>What is my copay for outpatient therapy services?</li>
+                      <li>Is Beyond Eating Recovery in-network with my plan?</li>
+                      <li>Do I need pre-authorization for therapy or nutrition services?</li>
+                      <li>Are dietitian services (CPT 97802, 97803, 97804) covered?</li>
+                      <li>What are my out-of-network benefits if applicable?</li>
+                    </ol>
+                  </div>
+
+                  <div className="mt-6 text-center">
+                    <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                      <Link to="/faq#insurance">View Complete FAQ About Insurance & Billing</Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Mental Health vs Dietitian Billing */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <CreditCard className="w-5 h-5 text-accent" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary">Understanding Billing Differences</h3>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="border-2 bg-primary/5">
+                  <CardContent className="pt-6">
+                    <h4 className="font-bold text-primary mb-3 text-lg">Mental Health Services</h4>
+                    <p className="text-sm text-muted-foreground mb-3">Therapy Services (LPC, LMHC, LCSW)</p>
+                    <ul className="space-y-2 text-foreground/80">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Billed under mental health benefits</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Typically covered with copays</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>May have session limits per year</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Separate deductibles may apply</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+                <Card className="border-2 bg-accent/5">
+                  <CardContent className="pt-6">
+                    <h4 className="font-bold text-primary mb-3 text-lg">Dietitian Services</h4>
+                    <p className="text-sm text-muted-foreground mb-3">Nutrition Services (RD)</p>
+                    <ul className="space-y-2 text-foreground/80">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Billed under medical nutrition therapy</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Coverage varies by plan</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>May require physician referral</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent">•</span>
+                        <span>Some plans have limited coverage</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+              <p className="mt-4 text-center text-foreground/80 bg-muted/50 rounded-lg p-4">
+                <strong>Important:</strong> Even if your therapy is covered, dietitian services may have different coverage or may not be covered. We recommend verifying coverage for both types of services separately.
+              </p>
+            </div>
+
+            {/* What We Can Help With */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <HelpCircle className="w-5 h-5 text-accent" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary">What We Can Tell You During Verification</h3>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="border-2 border-green-200 bg-green-50/50">
+                  <CardContent className="pt-6">
+                    <h4 className="font-bold text-primary mb-3 flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 text-green-600" />
+                      We Can Help Identify
+                    </h4>
+                    <ul className="space-y-2 text-foreground/80">
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <span>Whether we're in-network with your plan</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <span>Your estimated copay amounts</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <span>Your deductible information</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <span>Whether pre-authorization is needed</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <CheckCircle className="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0" />
+                        <span>Basic coverage details</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+                <Card className="border-2 border-amber-200 bg-amber-50/50">
+                  <CardContent className="pt-6">
+                    <h4 className="font-bold text-primary mb-3 flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5 text-amber-600" />
+                      You Must Verify Directly
+                    </h4>
+                    <ul className="space-y-2 text-foreground/80">
+                      <li className="flex items-start gap-2">
+                        <span className="w-4 h-4 rounded-full border-2 border-amber-600 mt-0.5 flex-shrink-0" />
+                        <span>Exact out-of-pocket costs</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-4 h-4 rounded-full border-2 border-amber-600 mt-0.5 flex-shrink-0" />
+                        <span>Specific plan exclusions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-4 h-4 rounded-full border-2 border-amber-600 mt-0.5 flex-shrink-0" />
+                        <span>Coverage for eating disorder treatment</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-4 h-4 rounded-full border-2 border-amber-600 mt-0.5 flex-shrink-0" />
+                        <span>Out-of-network reimbursement rates</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="w-4 h-4 rounded-full border-2 border-amber-600 mt-0.5 flex-shrink-0" />
+                        <span>Appeals processes</span>
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+              <p className="mt-4 text-center text-muted-foreground text-sm">
+                Only you as the policyholder can receive complete, binding coverage information from your insurance company. We encourage you to verify directly to avoid unexpected costs.
+              </p>
+            </div>
+
+            {/* Payment Options */}
+            <div className="mb-12">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center">
+                  <DollarSign className="w-5 h-5 text-accent" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary">Payment Options & Financial Assistance</h3>
+              </div>
+              <Card className="border-2">
+                <CardContent className="pt-6">
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                      <h4 className="font-bold text-primary mb-2">Sliding Scale Fees</h4>
+                      <p className="text-sm text-foreground/80">
+                        We offer reduced fees based on income for clients who qualify (limited availability).
+                      </p>
+                    </div>
+                    <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                      <h4 className="font-bold text-primary mb-2">Payment Plans</h4>
+                      <p className="text-sm text-foreground/80">
+                        We may be able to arrange payment plans for out-of-pocket costs.
+                      </p>
+                    </div>
+                    <div className="text-center p-4 bg-secondary/30 rounded-lg">
+                      <h4 className="font-bold text-primary mb-2">Good Faith Estimates</h4>
+                      <p className="text-sm text-foreground/80">
+                        Required by federal law for uninsured/self-pay clients. Request yours when scheduling.
+                      </p>
+                    </div>
+                  </div>
+                  <p className="mt-6 text-center text-foreground/80">
+                    Call <a href="tel:3607264141" className="text-primary font-semibold hover:underline">360-726-4141</a> to discuss financial assistance options. <strong>We believe cost should not be a barrier to recovery.</strong>
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Ready to Get Started CTA */}
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-primary mb-4">Ready to Get Started?</h3>
+              <p className="text-foreground/80 mb-6">
+                We're here to answer your questions and help you understand your coverage.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+                <Button 
+                  size="lg" 
+                  className="bg-accent hover:bg-accent/90 text-white min-w-[200px]"
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                >
+                  Schedule Free Consultation
+                </Button>
+                <a href="tel:3607264141">
+                  <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white min-w-[200px]">
+                    <Phone className="w-5 h-5 mr-2" />
+                    Call 360-726-4141
+                  </Button>
+                </a>
+              </div>
+              <p className="text-muted-foreground">
+                Have questions about insurance or billing? Check our <Link to="/faq#insurance" className="text-primary hover:underline font-semibold">comprehensive FAQ page</Link> for detailed answers.
+              </p>
             </div>
           </div>
         </div>
