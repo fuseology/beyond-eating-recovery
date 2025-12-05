@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Youtube, ExternalLink } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Youtube } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -73,8 +73,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <a href="mailto:info@beyondeating.com" className="hover:text-white transition-colors">
-                  info@beyondeating.com
+                <a href="mailto:intakes@beyondeatingrecovery.com" className="hover:text-white transition-colors">
+                  intakes@beyondeatingrecovery.com
                 </a>
               </div>
             </div>
@@ -127,34 +127,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Professional Profiles */}
-          <div>
-            <h4 className="font-semibold mb-3 text-lg">Find Us On</h4>
-            <ul className="space-y-2 text-sm text-white/80">
-              <li>
-                <a 
-                  href="https://therapists.psychologytoday.com/rms/name/Food+Is+Not+The+Enemy_Vancouver_Washington_348762" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors flex items-center gap-1"
-                >
-                  Psychology Today
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="https://www.eatingdisordersdirectory.com/united-states/portland/therapists/anne-cuthbert" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-white transition-colors flex items-center gap-1"
-                >
-                  Eating Disorders Directory
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-              </li>
-            </ul>
-          </div>
         </div>
 
         {/* Bottom Bar */}
