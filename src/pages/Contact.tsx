@@ -493,17 +493,9 @@ const Contact = () => {
               </div>
               <Card className="border-2">
                 <CardContent className="pt-6">
-                  <p className="text-foreground/80 mb-6">
+                  <p className="text-foreground/80">
                     Beyond Eating Recovery is in-network with many commercial insurance carriers and also works with out-of-network benefits. We provide both mental health services (therapy) and registered dietitian services, which may be covered differently under your plan.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 items-center">
-                    <a href="tel:3607264141">
-                      <Button size="lg" className="bg-accent hover:bg-accent/90">
-                        <Phone className="w-5 h-5 mr-2" />
-                        Call to Verify: 360-726-4141
-                      </Button>
-                    </a>
-                  </div>
                 </CardContent>
               </Card>
             </div>
