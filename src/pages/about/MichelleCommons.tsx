@@ -70,7 +70,7 @@ const MichelleCommons = () => {
                 </h1>
                 
                 <p className="text-xl md:text-2xl text-accent font-medium">
-                  Admin Support | Your First Point of Contact
+                  Admin Support
                 </p>
                 
                 <p className="text-lg text-foreground leading-relaxed">
