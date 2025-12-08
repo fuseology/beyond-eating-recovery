@@ -1,12 +1,6 @@
 import { Check } from "lucide-react";
 import { useEffect } from "react";
 
-declare global {
-  interface Window {
-    SignUpFormWidget?: { init: () => void };
-  }
-}
-
 const NewsletterFooterSection = () => {
   useEffect(() => {
     // Reinitialize Constant Contact forms when component mounts
