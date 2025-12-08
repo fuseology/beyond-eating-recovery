@@ -4,8 +4,10 @@ import { useEffect } from "react";
 const NewsletterFooterSection = () => {
   useEffect(() => {
     // Reinitialize Constant Contact forms when component mounts
-    if (window.SignUpFormWidget) {
-      window.SignUpFormWidget.init();
+    // Check that both the object and init function exist (script loads async)
+    const widget = (window as any).SignUpFormWidget;
+    if (widget && typeof widget.init === 'function') {
+      widget.init();
     }
   }, []);
 

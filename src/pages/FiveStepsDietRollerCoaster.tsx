@@ -10,8 +10,11 @@ import { useEffect } from "react";
 
 const FiveStepsDietRollerCoaster = () => {
   useEffect(() => {
-    if (window.SignUpFormWidget) {
-      window.SignUpFormWidget.init();
+    // Reinitialize Constant Contact forms when component mounts
+    // Check that both the object and init function exist (script loads async)
+    const widget = (window as any).SignUpFormWidget;
+    if (widget && typeof widget.init === 'function') {
+      widget.init();
     }
   }, []);
 
