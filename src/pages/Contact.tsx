@@ -19,7 +19,7 @@ const Contact = () => {
   const faqs = [
     {
       question: "Do you take insurance?",
-      answer: "Yes! We accept most major insurance plans for Oregon and Washington residents, including Aetna, Cigna, Blue Cross Blue Shield, United Healthcare, Providence, and Kaiser. Contact us to verify your specific coverage."
+      answer: "Yes! We accept most major insurance providers for Oregon and Washington residents. Contact us to verify your specific coverage."
     },
     {
       question: "How much does treatment cost?",
