@@ -3,5 +3,3 @@ declare global {
     SignUpFormWidget?: { init: () => void };
   }
 }
-
-export {};
