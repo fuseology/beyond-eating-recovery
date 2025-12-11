@@ -300,7 +300,7 @@ const Contact = () => {
                     We Are Not Taking New Clients at This Time
                   </h3>
                   <p className="text-foreground/80 mb-6">
-                    Please call to inquire about our services and to be placed on our waiting list.
+                    Please call to inquire about our services.
                   </p>
                   <a href="tel:3607264141">
                     <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
