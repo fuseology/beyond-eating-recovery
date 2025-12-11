@@ -274,7 +274,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
             
-            {/* LEFT COLUMN - Contact Form */}
+            {/* LEFT COLUMN - Not Taking New Clients Notice */}
             <Card className="bg-secondary/30 border-2">
               <CardHeader>
                 <div className="flex items-start justify-between">
@@ -293,31 +293,21 @@ const Contact = () => {
                   />
                 </div>
               </CardHeader>
-              <CardContent>
-                <div className="mb-6">
-                  <a 
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfHvkpMJbdNF6m-eZFtRrwv4xrb2vUH6plb-rwJ5ERETqFX8A/viewform?usp=header"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
-                    <Button size="lg" className="w-full bg-accent hover:bg-accent/90 text-white">
-                      <Upload className="w-5 h-5 mr-2" />
-                      Submit Secure Files
+              <CardContent className="space-y-6">
+                <div className="bg-accent/10 border-2 border-accent/30 rounded-lg p-6 text-center">
+                  <AlertCircle className="w-12 h-12 text-accent mx-auto mb-4" />
+                  <h3 className="text-xl font-semibold text-primary mb-3">
+                    We Are Not Taking New Clients at This Time
+                  </h3>
+                  <p className="text-foreground/80 mb-6">
+                    Please call to inquire about our services and to be placed on our waiting list.
+                  </p>
+                  <a href="tel:3607264141">
+                    <Button size="lg" className="bg-accent hover:bg-accent/90 text-white">
+                      <Phone className="w-5 h-5 mr-2" />
+                      Call to Inquire: 360-726-4141
                     </Button>
                   </a>
-                </div>
-                <div className="w-full">
-                  <iframe
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true" 
-                    width="640" 
-                    height="3147" 
-                    frameBorder={0} 
-                    marginHeight={0} 
-                    marginWidth={0}
-                  >
-                    Loading…
-                  </iframe>
                 </div>
               </CardContent>
             </Card>
