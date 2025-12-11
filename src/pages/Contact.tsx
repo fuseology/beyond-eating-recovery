@@ -14,6 +14,7 @@ import {
 import { Phone, MapPin, Clock, CheckCircle, Upload, CreditCard, FileText, HelpCircle, DollarSign, ShieldCheck, AlertCircle } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import loveTreeImage from "@/assets/love-tree.png";
 
 const Contact = () => {
   const faqs = [
@@ -287,7 +288,7 @@ const Contact = () => {
                     </p>
                   </div>
                   <img 
-                    src="https://bodyexpressions.org/wp-content/uploads/2019/02/Love-Tree.png" 
+                    src={loveTreeImage} 
                     alt="Love Tree" 
                     className="w-24 h-auto"
                   />
