@@ -124,7 +124,7 @@ const Header = () => {
                     {aboutLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
-                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-accent/10 hover:text-accent-foreground hover:translate-x-1 focus:bg-accent focus:text-accent-foreground">
                             <div className="text-sm font-medium leading-none text-primary">{link.title}</div>
                           </NavigationMenuLink>
                         </Link>
@@ -151,7 +151,7 @@ const Header = () => {
                     {serviceLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
-                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-accent/10 hover:text-accent-foreground hover:translate-x-1 focus:bg-accent focus:text-accent-foreground">
                             <div className="text-sm font-medium leading-none text-primary">{link.title}</div>
                           </NavigationMenuLink>
                         </Link>
@@ -178,7 +178,7 @@ const Header = () => {
                     {conditionLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
-                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-accent/10 hover:text-accent-foreground hover:translate-x-1 focus:bg-accent focus:text-accent-foreground">
                             <div className="text-sm font-medium leading-none text-primary">{link.title}</div>
                           </NavigationMenuLink>
                         </Link>
@@ -205,7 +205,7 @@ const Header = () => {
                     {approachLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
-                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-accent/10 hover:text-accent-foreground hover:translate-x-1 focus:bg-accent focus:text-accent-foreground">
                             <div className="text-sm font-medium leading-none text-primary">{link.title}</div>
                           </NavigationMenuLink>
                         </Link>
@@ -232,7 +232,7 @@ const Header = () => {
                     {resourceLinks.map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
-                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-accent/10 hover:text-accent-foreground hover:translate-x-1 focus:bg-accent focus:text-accent-foreground">
                             <div className="text-sm font-medium leading-none text-primary">{link.title}</div>
                           </NavigationMenuLink>
                         </Link>
@@ -267,7 +267,7 @@ const Header = () => {
                     {contactLinks.slice(1).map((link) => (
                       <li key={link.title}>
                         <Link to={link.href}>
-                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                          <NavigationMenuLink className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-all duration-200 hover:bg-accent/10 hover:text-accent-foreground hover:translate-x-1 focus:bg-accent focus:text-accent-foreground">
                             <div className="text-sm font-medium leading-none text-primary">{link.title}</div>
                           </NavigationMenuLink>
                         </Link>
