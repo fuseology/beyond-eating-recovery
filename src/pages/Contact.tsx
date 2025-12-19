@@ -301,7 +301,7 @@ const Contact = () => {
                     We Are Not Taking New Clients at This Time
                   </h3>
                   <p className="text-foreground/80">
-                    Please call to inquire about our services.
+                    Please check back after January 1st.
                   </p>
                 </div>
               </CardContent>
