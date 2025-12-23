@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
   <url>
     <loc>https://www.beyondeatingrecovery.com/</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Main Pages -->
   <url>
     <loc>https://www.beyondeatingrecovery.com/about</loc>
     <lastmod>2025-01-15</lastmod>
@@ -81,8 +78,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  
-  <!-- Team Members -->
+  <url>
+    <loc>https://www.beyondeatingrecovery.com/secure-file-submissions</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/anne-cuthbert</loc>
     <lastmod>2025-01-15</lastmod>
@@ -155,8 +156,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  
-  <!-- Conditions Pages -->
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/anorexia-nervosa</loc>
     <lastmod>2025-01-15</lastmod>
@@ -247,8 +246,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  
-  <!-- Resource Articles -->
   <url>
     <loc>https://www.beyondeatingrecovery.com/battle-of-the-binge</loc>
     <lastmod>2025-01-15</lastmod>
