@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn-new.webp";
-import annieImage from "@/assets/annie-calhoun-randall.webp";
+import annieImage from "@/assets/annie-calhoun-randall-new.jpg";
 import alyssaImage from "@/assets/alyssa-pataki.webp";
 import kiandraImage from "@/assets/kiandra-cole.webp";
 import rachelImage from "@/assets/rachel-bennett.webp";

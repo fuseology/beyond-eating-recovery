@@ -12,7 +12,7 @@ import baileyBenn from "@/assets/bailey-benn-new.webp";
 import alyssaPataki from "@/assets/alyssa-pataki.webp";
 import kiandraCole from "@/assets/kiandra-cole.webp";
 import rachelBennett from "@/assets/rachel-bennett.webp";
-import annieCalhounRandall from "@/assets/annie-calhoun-randall.webp";
+import annieCalhounRandall from "@/assets/annie-calhoun-randall-new.jpg";
 import saraKranich from "@/assets/sara-kranich.webp";
 import stephanieOkumura from "@/assets/stephanie-okumura.webp";
 import michelleCommons from "@/assets/michelle-commons.webp";
