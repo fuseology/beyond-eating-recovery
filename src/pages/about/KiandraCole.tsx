@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import baileyImage from "@/assets/bailey-benn-new.webp";
 import kiandraImage from "@/assets/kiandra-cole.webp";
@@ -92,6 +93,7 @@ const KiandraCole = () => {
           })}
         </script>
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       
       {/* Hero Section */}

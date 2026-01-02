@@ -8,6 +8,7 @@ import { Phone, Mail, MapPin, Clock, ChevronRight, AlertTriangle, CheckCircle2 }
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -27,6 +28,7 @@ const BingeEatingDisorder = () => {
         <meta name="twitter:description" content="Compassionate, weight-neutral treatment for binge eating disorder (BED) in Portland & Vancouver. Evidence-based care addressing the emotional roots of binge eating." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       {/* Breadcrumb Navigation */}
       <div className="bg-muted/30 py-4">
