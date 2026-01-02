@@ -29,6 +29,7 @@ import MichelleCommons from "./pages/about/MichelleCommons";
 import MichelleSullins from "./pages/about/MichelleSullins";
 import MaryCooper from "./pages/about/MaryCooper";
 import EmeryPederson from "./pages/about/EmeryPederson";
+import MackenzieStracke from "./pages/about/MackenzieStracke";
 import Careers from "./pages/Careers";
 import AnorexiaNervosa from "./pages/conditions/AnorexiaNervosa";
 import BulimiaNervosa from "./pages/conditions/BulimiaNervosa";
@@ -74,6 +75,7 @@ const App = () => (
           <Route path="/about/michelle-sullins" element={<MichelleSullins />} />
           <Route path="/about/mary-cooper" element={<MaryCooper />} />
           <Route path="/about/emery-pederson" element={<EmeryPederson />} />
+          <Route path="/about/mackenzie-stracke" element={<MackenzieStracke />} />
           <Route path="/services" element={<Services />} />
           <Route path="/conditions" element={<Conditions />} />
           <Route path="/philosophy" element={<Philosophy />} />

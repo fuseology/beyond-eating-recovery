@@ -19,6 +19,7 @@ import michelleCommons from "@/assets/michelle-commons.webp";
 import michelleSullins from "@/assets/michelle-sullins.png";
 import maryCooper from "@/assets/mary-cooper.webp";
 import emeryPederson from "@/assets/emery-pederson.webp";
+import mackenzieStracke from "@/assets/mackenzie-stracke.jpg";
 
 const About = () => {
   const structuredData = {
@@ -46,6 +47,7 @@ const About = () => {
         { "@type": "Person", "name": "Annie Calhoun Randall", "jobTitle": "MA" },
         { "@type": "Person", "name": "Sara Kranich", "jobTitle": "MA" },
         { "@type": "Person", "name": "Stephanie Okumura", "jobTitle": "MS, RDN" },
+        { "@type": "Person", "name": "Mackenzie Stracke", "jobTitle": "Counseling Student Intern" },
         { "@type": "Person", "name": "Michelle Commons", "jobTitle": "Support Staff" },
         { "@type": "Person", "name": "Michelle Sullins", "jobTitle": "Support Staff" },
         { "@type": "Person", "name": "Mary Cooper", "jobTitle": "Support Staff" },
@@ -119,6 +121,13 @@ const About = () => {
       image: stephanieOkumura,
       link: "/about/stephanie-okumura",
       bio: "Stephanie provides weight-neutral, culturally responsive nutrition counseling. As a HAES® practitioner and Intuitive Eating specialist with Japanese heritage, she honors all cultural food traditions in eating disorder recovery."
+    },
+    {
+      name: "Mackenzie Stracke",
+      title: "Counseling Student Intern",
+      image: mackenzieStracke,
+      link: "/about/mackenzie-stracke",
+      bio: "Mackenzie is a graduate student intern working toward her MA in Counseling at Western Seminary. Her own recovery journey shapes her trauma-informed, HAES-aligned approach to helping clients build resilience and self-compassion."
     }
   ];
 
