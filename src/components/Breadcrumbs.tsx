@@ -8,6 +8,7 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 // Map of routes to readable titles
 const routeTitles: Record<string, string> = {
@@ -79,43 +80,46 @@ const Breadcrumbs = () => {
   }
 
   return (
-    <div className="bg-primary border-b border-primary/40">
-      <div className="container mx-auto px-4 py-3">
-        <Breadcrumb>
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link to="/" className="flex items-center gap-1 text-white hover:text-white/80">
-                  <Home className="h-4 w-4" />
-                  <span className="sr-only">Home</span>
-                </Link>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            
-            {pathnames.map((segment, index) => {
-              const path = `/${pathnames.slice(0, index + 1).join("/")}`;
-              const isLast = index === pathnames.length - 1;
-              const title = slugToTitle(segment);
+    <>
+      <BreadcrumbSchema />
+      <div className="bg-primary border-b border-primary/40">
+        <div className="container mx-auto px-4 py-3">
+          <Breadcrumb>
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link to="/" className="flex items-center gap-1 text-white hover:text-white/80">
+                    <Home className="h-4 w-4" />
+                    <span className="sr-only">Home</span>
+                  </Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              
+              {pathnames.map((segment, index) => {
+                const path = `/${pathnames.slice(0, index + 1).join("/")}`;
+                const isLast = index === pathnames.length - 1;
+                const title = slugToTitle(segment);
 
-              return (
-                <div key={path} className="flex items-center gap-1.5">
-                  <BreadcrumbSeparator className="text-white/60" />
-                  <BreadcrumbItem>
-                    {isLast ? (
-                      <BreadcrumbPage className="text-white">{title}</BreadcrumbPage>
-                    ) : (
-                      <BreadcrumbLink asChild>
-                        <Link to={path} className="text-white hover:text-white/80">{title}</Link>
-                      </BreadcrumbLink>
-                    )}
-                  </BreadcrumbItem>
-                </div>
-              );
-            })}
-          </BreadcrumbList>
-        </Breadcrumb>
+                return (
+                  <div key={path} className="flex items-center gap-1.5">
+                    <BreadcrumbSeparator className="text-white/60" />
+                    <BreadcrumbItem>
+                      {isLast ? (
+                        <BreadcrumbPage className="text-white">{title}</BreadcrumbPage>
+                      ) : (
+                        <BreadcrumbLink asChild>
+                          <Link to={path} className="text-white hover:text-white/80">{title}</Link>
+                        </BreadcrumbLink>
+                      )}
+                    </BreadcrumbItem>
+                  </div>
+                );
+              })}
+            </BreadcrumbList>
+          </Breadcrumb>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

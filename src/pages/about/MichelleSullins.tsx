@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import michelleImage from "@/assets/michelle-sullins.png";
 import { Helmet } from "react-helmet";
 
@@ -81,6 +82,7 @@ const MichelleSullins = () => {
           })}
         </script>
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       
       {/* Hero Section */}

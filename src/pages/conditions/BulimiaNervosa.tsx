@@ -8,6 +8,7 @@ import { Phone, Mail, MapPin, Clock, ChevronRight, AlertTriangle } from "lucide-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -27,6 +28,7 @@ const BulimiaNervosa = () => {
         <meta name="twitter:description" content="Expert treatment for bulimia nervosa in Portland & Vancouver. Break the binge-purge cycle with compassionate, evidence-based care that addresses root causes." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       {/* Breadcrumb Navigation */}
       <div className="bg-muted/30 py-4">

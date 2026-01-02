@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, MapPin, GraduationCap, Award, Briefcase, Leaf, Heart, UserCheck, Brain, MessageCircle, Palette, Rainbow, Handshake, Target, Sprout, CheckCircle, Scale, Clock, Users, CreditCard, Compass } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import baileyBennPhoto from "@/assets/bailey-benn-new.webp";
 import anneImage from "@/assets/anne-cuthbert.jpg";
 import alyssaImage from "@/assets/alyssa-pataki.webp";
@@ -84,6 +85,7 @@ const BaileyBenn = () => {
           })}
         </script>
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       
       {/* Hero Section */}

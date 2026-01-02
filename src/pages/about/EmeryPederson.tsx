@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Link } from "react-router-dom";
 import emeryImage from "@/assets/emery-pederson.webp";
 import { Helmet } from "react-helmet";
@@ -59,6 +60,7 @@ const EmeryPederson = () => {
           })}
         </script>
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       
       {/* Hero Section */}
