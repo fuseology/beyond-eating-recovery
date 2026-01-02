@@ -30,6 +30,7 @@ const Header = () => {
     { title: "Michelle Sullins", href: "/about/michelle-sullins" },
     { title: "Mary Cooper", href: "/about/mary-cooper" },
     { title: "Emery Pederson", href: "/about/emery-pederson" },
+    { title: "Mackenzie Stracke, Counseling Student Intern", href: "/about/mackenzie-stracke" },
   ];
 
   const serviceLinks = [
