@@ -17,16 +17,16 @@ const AnnieCalhounRandall = () => {
     <div className="min-h-screen bg-background">
       <Helmet>
         <title>Annie Calhoun Randall, MA | Professional Counselor at Beyond Eating Recovery</title>
-        <meta name="description" content="Annie Calhoun Randall is a Professional Counselor Associate specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
+        <meta name="description" content="Annie Calhoun Randall is a Professional Counselor Associate and Athlete Specialist specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
         <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
         <meta property="og:title" content="Annie Calhoun Randall, MA | Professional Counselor at Beyond Eating Recovery" />
-        <meta property="og:description" content="Professional Counselor Associate specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
+        <meta property="og:description" content="Professional Counselor Associate and Athlete Specialist specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
         <meta property="og:type" content="profile" />
         <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
         <meta property="og:image" content="https://www.beyondeatingrecovery.com/annie-calhoun-randall.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Annie Calhoun Randall, MA | Professional Counselor at Beyond Eating Recovery" />
-        <meta name="twitter:description" content="Professional Counselor Associate specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
+        <meta name="twitter:description" content="Professional Counselor Associate and Athlete Specialist specializing in eating disorders, athlete nutrition, and holistic recovery in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/annie-calhoun-randall.webp" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -34,8 +34,8 @@ const AnnieCalhounRandall = () => {
             "@type": "Person",
             "name": "Annie Calhoun Randall",
             "honorificSuffix": "MA",
-            "jobTitle": "Professional Counselor Associate | Certified Nutrition Therapy Practitioner",
-            "description": "Professional Counselor Associate and Certified Nutrition Therapy Practitioner specializing in eating disorders, athlete nutrition, and holistic recovery with personal recovery experience.",
+            "jobTitle": "Professional Counselor Associate | Certified Nutrition Therapy Practitioner | Athlete Specialist",
+            "description": "Professional Counselor Associate, Certified Nutrition Therapy Practitioner, and Athlete Specialist specializing in eating disorders, athlete nutrition, and holistic recovery with personal recovery experience.",
             "url": "https://www.beyondeatingrecovery.com/about/annie-calhoun-randall",
             "image": "https://www.beyondeatingrecovery.com/annie-calhoun-randall.webp",
             "worksFor": {
@@ -70,7 +70,7 @@ const AnnieCalhounRandall = () => {
               {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "Certification",
-                "name": "Certified Nutrition Therapy Practitioner (NTP)"
+                "name": "Certified Nutrition Therapy Practitioner (CNTP)"
               },
               {
                 "@type": "EducationalOccupationalCredential",
@@ -131,7 +131,7 @@ const AnnieCalhounRandall = () => {
               </div>
               
               <p className="text-lg text-[#333333] leading-relaxed">
-                As someone who recovered from an eating disorder myself, I understand the journey from struggle to freedom. Combining my background in nutrition therapy, counseling, and athletics, I offer a holistic, body-centered approach to healing. Whether you're an athlete or not, I seek to come alongside you with empathy and compassion as you improve your relationship with food and body.
+                As a life-long athlete and someone who personally recovered from an eating disorder, I understand the journey from struggle to freedom. Combining my background in nutrition therapy, counseling, and athletics, I offer a holistic, body-centered approach to recovery. In addition, I work with co-occurring concerns such as anxiety, depression, trauma, and identity development. In doing so, I seek to create a safe space where you can improve your relationship with food and body.
               </p>
               
               <div className="flex flex-wrap gap-4">
@@ -171,7 +171,7 @@ const AnnieCalhounRandall = () => {
                   <li className="font-medium">Nutrition Therapy Institute, Denver</li>
                   <li className="mt-3">Bachelor of Architecture</li>
                   <li className="font-medium">University of Oregon</li>
-                  <li className="mt-2">Professional Counselor Associate</li>
+                  <li className="mt-3">Professional Counselor Associate</li>
                 </ul>
               </CardContent>
             </Card>
@@ -187,10 +187,11 @@ const AnnieCalhounRandall = () => {
                 <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Licenses & Certifications</h3>
                 <ul className="space-y-2 text-[#333333]">
                   <li>Professional Counselor Associate - Oregon & Washington</li>
-                  <li>Certified Nutrition Therapy Practitioner (NTP)</li>
+                  <li>Certified Nutrition Therapy Practitioner (CNTP)</li>
+                  <li>Former Certified Personal Trainer (CPT)</li>
                   <li className="mt-3 font-medium">Supervised by Anne Cuthbert, MA, LPC, LMHC</li>
                   <li>Working toward full licensure (LPC/LMHC)</li>
-                  <li className="mt-2">Practicum/Internship: A New Day Counseling Center & Body Expressions</li>
+                  <li className="mt-3">Practicum/Internship: A New Day Counseling Center & Body Expressions</li>
                 </ul>
               </CardContent>
             </Card>
@@ -217,8 +218,8 @@ const AnnieCalhounRandall = () => {
           </div>
 
           <div className="mt-12 bg-[#fff5eb] p-8 rounded-lg text-center max-w-4xl mx-auto">
-            <p className="text-lg text-[#333333]">
-              <strong>Unique Combination:</strong> Annie brings together nutrition science, counseling expertise, athletic experience, and personal recovery—creating a comprehensive approach to eating disorder treatment that addresses body, mind, and spirit.
+            <p className="text-lg italic text-[#333333]">
+              <strong>Unique Combination:</strong> Annie brings together nutrition science, counseling expertise, athletic experience, and personal recovery, creating a comprehensive approach to eating disorder treatment that addresses body, mind, and spirit.
             </p>
           </div>
         </div>
@@ -279,9 +280,9 @@ const AnnieCalhounRandall = () => {
             </div>
           </div>
 
-          <div className="mt-12 bg-[#1a428a] p-8 rounded-lg max-w-4xl mx-auto">
-            <p className="text-lg text-white text-center">
-              <strong className="block mb-2">Social Justice Lens:</strong> I understand that our relationships with food and body are influenced by systemic factors—diet culture, weight stigma, athletic pressures, and societal expectations. My approach addresses these broader contexts while supporting your individual healing.
+          <div className="mt-12 bg-[#fff5eb] p-8 rounded-lg max-w-4xl mx-auto">
+            <p className="text-lg text-[#333333]">
+              <strong className="text-[#1a428a]">Social Justice Lens:</strong> I understand that our relationships with food and body are influenced by systemic factors including diet culture, weight stigma, societal expectations, other systems of oppression, and more. My approach addresses these broader contexts while supporting your individual healing.
             </p>
           </div>
         </div>
@@ -322,7 +323,7 @@ const AnnieCalhounRandall = () => {
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-[#f49a39] rounded-full flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"/>
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-[#1a428a] mb-4">Athletes & Performance</h3>
@@ -343,7 +344,7 @@ const AnnieCalhounRandall = () => {
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-[#f49a39] rounded-full flex items-center justify-center mb-6">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
+                    <path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-.5a1.5 1.5 0 000 3h.5a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-.5a1.5 1.5 0 00-3 0v.5a1 1 0 01-1 1H6a1 1 0 01-1-1v-3a1 1 0 00-1-1h-.5a1.5 1.5 0 010-3H4a1 1 0 001-1V6a1 1 0 011-1h3a1 1 0 001-1v-.5z"/>
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-[#1a428a] mb-4">Trauma & Emotional Work</h3>
@@ -355,6 +356,7 @@ const AnnieCalhounRandall = () => {
                   <li>• Depression</li>
                   <li>• Somatic trauma release</li>
                   <li>• Emotional regulation</li>
+                  <li>• Spiritual integration</li>
                 </ul>
               </CardContent>
             </Card>
@@ -372,6 +374,8 @@ const AnnieCalhounRandall = () => {
                   <li>• Body image issues</li>
                   <li>• Body dysmorphia</li>
                   <li>• Identity development</li>
+                  <li>• LGBTQIA+ identity affirmation</li>
+                  <li>• Adolescents and adults</li>
                   <li>• Self-esteem and self-worth</li>
                   <li>• Life transitions</li>
                   <li>• Career changes</li>
@@ -382,176 +386,163 @@ const AnnieCalhounRandall = () => {
         </div>
       </section>
 
-      {/* Working with Athletes - Athlete Specialization */}
+      {/* Working with Athletes */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a428a] mb-6">
             Working with Athletes
           </h2>
-          <p className="text-xl text-[#f49a39] mb-12">
+          <p className="text-xl text-[#f49a39] mb-8">
             Understanding the Unique Challenges Athletes Face
           </p>
           
-          <p className="text-lg text-[#333333] leading-relaxed mb-12">
-            I have a special interest in working with athletes. As a lifelong athlete and former coach, I understand the additional challenges that athletes face and the ways in which these challenges can impact one's relationship with food and body. The intersection of athletic performance, body expectations, and eating disorders requires specialized understanding—and I bring both professional training and lived experience to this work.
+          <p className="text-lg text-[#333333] leading-relaxed mb-8">
+            I have a special interest in working with athletes. As a lifelong athlete and former coach, I understand the additional challenges that athletes face and the ways in which these challenges can impact one's relationship with food and body. The intersection of athletic performance, body expectations, and eating disorders requires specialized understanding. I bring both professional training and lived experience to this work.
           </p>
 
-          <div className="space-y-8">
-            {/* Section 1 */}
-            <div className="bg-[#f8f9fa] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-[#1a428a] mb-6">Unique Risk Factors for Athletes</h3>
-              <p className="text-[#333333] leading-relaxed mb-4">
-                Athletes face specific pressures that increase eating disorder risk:
-              </p>
-              
-              <div className="space-y-4 text-[#333333]">
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">Sport-Specific Pressures:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Weight requirements or 'ideal' body types for certain sports</li>
-                    <li>• Performance metrics tied to body composition</li>
-                    <li>• Aesthetic components (gymnastics, figure skating, dance)</li>
-                    <li>• Weight class sports (wrestling, rowing, martial arts)</li>
-                    <li>• Endurance sports and energy availability concerns</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">Athletic Culture Factors:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Coach comments about weight or appearance</li>
-                    <li>• Team weigh-ins and body composition testing</li>
-                    <li>• Comparison with teammates</li>
-                    <li>• 'No pain, no gain' mentality that ignores body signals</li>
-                    <li>• Identity entirely wrapped up in athletic performance</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">RED-S (Relative Energy Deficiency in Sport):</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Under-fueling for training demands</li>
-                    <li>• Menstrual irregularities or loss</li>
-                    <li>• Bone density issues and stress fractures</li>
-                    <li>• Decreased performance despite increased training</li>
-                    <li>• Compromised immune function</li>
-                  </ul>
-                </div>
-                
-                <p className="italic mt-4">
-                  Many athletes don't recognize they have an eating disorder because the behaviors are normalized or even praised in athletic contexts.
-                </p>
-              </div>
+          <h3 className="text-2xl font-bold text-[#1a428a] mb-6">Unique Risk Factors for Athletes</h3>
+          <p className="text-lg text-[#333333] mb-6">Athletes face specific pressures that increase eating disorder risk:</p>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">Sport-Specific Pressures</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• Weight requirements or 'ideal' body types for certain sports</li>
+                <li>• Performance metrics tied to body composition</li>
+                <li>• Aesthetic components (gymnastics, figure skating, dance)</li>
+                <li>• Weight class sports (wrestling, rowing, martial arts)</li>
+                <li>• Endurance sports and energy availability concerns</li>
+              </ul>
             </div>
 
-            {/* Section 2 */}
-            <div className="bg-[#f8f9fa] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-[#1a428a] mb-6">My Athletic Background & Insight</h3>
-              <p className="text-[#333333] leading-relaxed mb-4">
-                As a lifelong athlete and former coach, I get it. I understand:
-              </p>
-              
-              <div className="space-y-4 text-[#333333]">
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">The Athletic Mindset:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• The drive for excellence and perfectionism</li>
-                    <li>• How training becomes both passion and compulsion</li>
-                    <li>• The fear of losing your edge if you change your approach</li>
-                    <li>• The identity crisis when injury or recovery sidelines you</li>
-                    <li>• The pressure to perform for coaches, teammates, and yourself</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">Coaching Dynamics:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• How coach relationships impact body image and eating</li>
-                    <li>• The vulnerability of receiving feedback about your body</li>
-                    <li>• When coaching crosses the line into harmful territory</li>
-                    <li>• How to navigate difficult conversations with coaches</li>
-                    <li>• The power dynamics in coach-athlete relationships</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">The Recovery Challenge:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Fear that proper fueling will hurt performance (it won't—it helps)</li>
-                    <li>• Concern about weight changes during recovery</li>
-                    <li>• Learning to listen to body signals instead of training plans</li>
-                    <li>• Maintaining athletic identity during eating disorder recovery</li>
-                    <li>• Finding balance between healthy training and compulsion</li>
-                  </ul>
-                </div>
-                
-                <p className="italic mt-4">
-                  I won't ask you to give up your sport—I'll help you find a healthier relationship with both athletics and your body.
-                </p>
-              </div>
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">Athletic Culture Factors</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• Coach comments about weight or appearance</li>
+                <li>• Team weigh-ins and body composition testing</li>
+                <li>• Comparison with teammates</li>
+                <li>• 'No pain, no gain' mentality that ignores body signals</li>
+                <li>• Identity entirely wrapped up in athletic performance</li>
+              </ul>
             </div>
 
-            {/* Section 3 */}
-            <div className="bg-[#f8f9fa] p-8 rounded-lg">
-              <h3 className="text-2xl font-bold text-[#1a428a] mb-6">Treatment Approach for Athletes</h3>
-              <p className="text-[#333333] leading-relaxed mb-4">
-                Working with athletes requires a specialized approach:
-              </p>
-              
-              <div className="space-y-4 text-[#333333]">
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">Nutrition Integration:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Combining counseling with nutrition therapy knowledge</li>
-                    <li>• Understanding sport-specific fueling needs</li>
-                    <li>• Addressing RED-S and energy availability</li>
-                    <li>• Working with sports dietitians when appropriate</li>
-                    <li>• Education about performance nutrition vs. diet culture</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">Body-Centered Work:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Somatic Experiencing to reconnect with body signals</li>
-                    <li>• Distinguishing between athletic pain and injury</li>
-                    <li>• Rebuilding trust with your body's hunger and fatigue cues</li>
-                    <li>• Addressing overtraining and burnout</li>
-                    <li>• Finding joyful movement beyond structured training</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">Identity Work:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Exploring who you are beyond your sport</li>
-                    <li>• Preparing for transitions (retirement, injury, graduation)</li>
-                    <li>• Building self-worth not tied to performance</li>
-                    <li>• Developing life balance and interests outside athletics</li>
-                  </ul>
-                </div>
-                
-                <div>
-                  <p className="font-bold text-[#1a428a] mb-2">Practical Support:</p>
-                  <ul className="space-y-1 ml-4">
-                    <li>• Navigating team environments during recovery</li>
-                    <li>• Communicating with coaches about your needs</li>
-                    <li>• Handling social eating situations with teams</li>
-                    <li>• Managing competition anxiety without food restriction</li>
-                    <li>• Return-to-sport planning after eating disorder treatment</li>
-                  </ul>
-                </div>
-                
-                <p className="mt-4">
-                  Whether you're currently competing, transitioning out of sport, or dealing with a career-ending injury, I understand the unique emotional landscape of athletic life.
-                </p>
-              </div>
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">RED-S (Relative Energy Deficiency in Sport)</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• Under-fueling for training demands</li>
+                <li>• Menstrual irregularities or loss</li>
+                <li>• Bone density issues and stress fractures</li>
+                <li>• Decreased performance despite increased training</li>
+                <li>• Compromised immune function</li>
+              </ul>
             </div>
           </div>
 
-          <div className="mt-12 bg-[#1a428a] p-8 rounded-lg text-center">
-            <p className="text-white text-lg leading-relaxed">
-              <strong className="block mb-4 text-xl">You Don't Have to Choose:</strong>
+          <div className="bg-[#fff5eb] p-6 rounded-lg mb-12">
+            <p className="text-lg text-[#333333] italic">
+              Many athletes don't recognize they have an eating disorder because the behaviors are normalized or even praised in athletic contexts.
+            </p>
+          </div>
+
+          <h3 className="text-2xl font-bold text-[#1a428a] mb-6">My Athletic Background & Insight</h3>
+          <p className="text-lg text-[#333333] mb-6">As a lifelong athlete and former coach, I get it. I understand:</p>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">The Athletic Mindset</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• The drive for excellence and perfectionism</li>
+                <li>• How training becomes both passion and compulsion</li>
+                <li>• The fear of losing your edge if you change your approach</li>
+                <li>• The identity crisis when injury or recovery sidelines you</li>
+                <li>• The pressure to perform for coaches, teammates, and yourself</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">Coaching Dynamics</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• How coach relationships impact body image and eating</li>
+                <li>• The vulnerability of receiving feedback about your body</li>
+                <li>• When coaching crosses the line into harmful territory</li>
+                <li>• How to navigate difficult conversations with coaches</li>
+                <li>• The power dynamics in coach-athlete relationships</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">The Recovery Challenge</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• Fear that proper fueling will hurt performance (it won't—it helps)</li>
+                <li>• Concern about weight changes during recovery</li>
+                <li>• Learning to listen to body signals instead of training plans</li>
+                <li>• Maintaining athletic identity during eating disorder recovery</li>
+                <li>• Finding balance between healthy training and compulsion</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="bg-[#1a428a] text-white p-6 rounded-lg mb-12">
+            <p className="text-lg">
+              I won't ask you to give up your sport—I'll help you find a healthier relationship with both athletics and your body.
+            </p>
+          </div>
+
+          <h3 className="text-2xl font-bold text-[#1a428a] mb-6">Treatment Approach for Athletes</h3>
+          <p className="text-lg text-[#333333] mb-6">Working with athletes requires a specialized approach:</p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">Nutrition Integration</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• Combining counseling with nutrition therapy knowledge</li>
+                <li>• Understanding sport-specific fueling needs</li>
+                <li>• Addressing RED-S and energy availability</li>
+                <li>• Working with sports dietitians when appropriate</li>
+                <li>• Education about performance nutrition vs. diet culture</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">Body-Centered Work</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• Somatic Experiencing to reconnect with body signals</li>
+                <li>• Distinguishing between athletic pain and injury</li>
+                <li>• Rebuilding trust with your body's hunger and fatigue cues</li>
+                <li>• Addressing overtraining and burnout</li>
+                <li>• Finding joyful movement beyond structured training</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">Identity Work</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• Exploring who you are beyond your sport</li>
+                <li>• Preparing for transitions (retirement, injury, graduation)</li>
+                <li>• Building self-worth not tied to performance</li>
+                <li>• Developing life balance and interests outside athletics</li>
+              </ul>
+            </div>
+
+            <div className="bg-[#f8f9fa] p-6 rounded-lg">
+              <h4 className="text-lg font-bold text-[#1a428a] mb-4">Practical Support</h4>
+              <ul className="space-y-2 text-[#333333]">
+                <li>• Navigating team environments during recovery</li>
+                <li>• Communicating with coaches about your needs</li>
+                <li>• Handling social eating situations with teams</li>
+                <li>• Managing competition anxiety without food restriction</li>
+                <li>• Return-to-sport planning after eating disorder treatment</li>
+              </ul>
+            </div>
+          </div>
+
+          <p className="text-lg text-[#333333] mb-8">
+            Whether you're currently competing, transitioning out of sport, a former athlete, or dealing with a career-ending injury, I understand the unique emotional landscape of athletic life.
+          </p>
+
+          <div className="bg-[#fff5eb] p-8 rounded-lg text-center">
+            <p className="text-lg font-medium text-[#1a428a] mb-2">You Don't Have to Choose:</p>
+            <p className="text-lg text-[#333333]">
               Many athletes fear they must choose between their sport and recovery. The truth is, proper fueling and a healthy relationship with food will make you a better athlete—not a worse one. Let's find that balance together.
             </p>
           </div>
@@ -564,50 +555,34 @@ const AnnieCalhounRandall = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a428a] mb-6">
             Body-Centered Healing
           </h2>
-          <p className="text-xl text-[#f49a39] mb-12">
+          <p className="text-xl text-[#f49a39] mb-8">
             Integrating EFIT, Somatic Experiencing, and IFS
           </p>
           
           <p className="text-lg text-[#333333] leading-relaxed mb-12">
-            My approach is informed by three powerful body-centered modalities: Emotion Focused Individual Therapy (EFIT), Somatic Experiencing (SE), and Internal Family Systems (IFS). These approaches honor the wisdom of the body and recognize that healing happens not just in our minds, but in our entire being.
+            My approach is informed by three primary body-centered modalities: Emotion Focused Individual Therapy (EFIT), Somatic Experiencing (SE), and Internal Family Systems (IFS). These approaches honor the wisdom of the body and recognize that healing happens not just in the mind, but in the body as well.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {/* EFIT */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="w-16 h-16 bg-[#f49a39] rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Emotion Focused Individual Therapy (EFIT)</h3>
-              <p className="text-[#333333] mb-4">
-                EFIT is an attachment-based approach that helps you access, process, and transform core emotions.
-              </p>
-              <p className="font-medium text-[#1a428a] mb-2">In EFIT work, we'll:</p>
-              <ul className="space-y-2 text-[#333333] text-sm">
+              <h3 className="text-xl font-bold text-[#1a428a] mb-4">Emotion Focused Individual Therapy (EFIT)</h3>
+              <p className="text-[#333333] mb-4">EFIT is an attachment-based approach that helps you access, process, and transform core emotions.</p>
+              <p className="font-medium text-[#1a428a] mb-3">Through EFIT, we will:</p>
+              <ul className="space-y-2 text-[#333333]">
                 <li>• Identify underlying emotions beneath eating disorder behaviors</li>
                 <li>• Understand your attachment patterns</li>
                 <li>• Access blocked or avoided emotions safely</li>
                 <li>• Transform maladaptive emotional patterns</li>
-                <li>• Build secure self-attachment</li>
+                <li>• Build secure attachments</li>
                 <li>• Develop emotional regulation skills</li>
               </ul>
             </div>
 
-            {/* SE */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="w-16 h-16 bg-[#f49a39] rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Somatic Experiencing (SE)</h3>
-              <p className="text-[#333333] mb-4">
-                SE is a body-based trauma therapy that helps release trauma stored in the nervous system.
-              </p>
-              <p className="font-medium text-[#1a428a] mb-2">In SE work, we'll:</p>
-              <ul className="space-y-2 text-[#333333] text-sm">
+              <h3 className="text-xl font-bold text-[#1a428a] mb-4">Somatic Experiencing (SE)</h3>
+              <p className="text-[#333333] mb-4">SE is a body-based trauma therapy that helps release trauma stored in the nervous system.</p>
+              <p className="font-medium text-[#1a428a] mb-3">Through SE, we will:</p>
+              <ul className="space-y-2 text-[#333333]">
                 <li>• Track bodily sensations and nervous system states</li>
                 <li>• Release trauma held in the body</li>
                 <li>• Complete survival responses that got 'stuck'</li>
@@ -617,19 +592,11 @@ const AnnieCalhounRandall = () => {
               </ul>
             </div>
 
-            {/* IFS */}
             <div className="bg-white p-8 rounded-lg shadow-lg">
-              <div className="w-16 h-16 bg-[#f49a39] rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/>
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Internal Family Systems (IFS)</h3>
-              <p className="text-[#333333] mb-4">
-                IFS views the psyche as made up of different 'parts,' each with its own protective role.
-              </p>
-              <p className="font-medium text-[#1a428a] mb-2">In IFS work, we'll:</p>
-              <ul className="space-y-2 text-[#333333] text-sm">
+              <h3 className="text-xl font-bold text-[#1a428a] mb-4">Internal Family Systems (IFS)</h3>
+              <p className="text-[#333333] mb-4">IFS views the psyche as made up of different 'parts,' each with its own protective role.</p>
+              <p className="font-medium text-[#1a428a] mb-3">Through IFS, we will:</p>
+              <ul className="space-y-2 text-[#333333]">
                 <li>• Identify parts (critic, protector, eating disorder voice)</li>
                 <li>• Understand what each part is protecting you from</li>
                 <li>• Access your core 'Self'</li>
@@ -640,29 +607,38 @@ const AnnieCalhounRandall = () => {
             </div>
           </div>
 
-          <div className="text-center max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-[#1a428a] mb-6">Why Body-Centered Approaches?</h3>
-            <p className="text-lg text-[#333333] leading-relaxed">
-              Eating disorders live in the body as much as the mind. Traditional talk therapy alone often isn't enough—we need to address the somatic, emotional, and relational dimensions of your experience. These body-centered approaches help you reconnect with body signals, release trauma stored in the nervous system, access and transform core emotions, understand protective patterns, build genuine body trust and safety, and create lasting change at a deep level.
-              <br /><br />
-              <span className="italic">Your body isn't the enemy—it's been trying to protect you. Let's help it find new, healthier ways to keep you safe.</span>
+          <div className="bg-white p-8 rounded-lg shadow-lg">
+            <h3 className="text-xl font-bold text-[#1a428a] mb-4">Why Body-Centered Approaches?</h3>
+            <p className="text-lg text-[#333333] leading-relaxed mb-4">
+              Eating disorders live in the body as much as the mind. Traditional talk therapy alone often isn't enough. We need to address the somatic, emotional, and relational dimensions of your experience. These body-centered approaches help you:
+            </p>
+            <ul className="grid md:grid-cols-2 gap-2 text-[#333333]">
+              <li>• Reconnect with body signals</li>
+              <li>• Release trauma stored in the nervous system</li>
+              <li>• Access and transform core emotions</li>
+              <li>• Understand protective patterns</li>
+              <li>• Build genuine body trust and safety</li>
+              <li>• Create lasting change</li>
+            </ul>
+            <p className="text-lg text-[#333333] mt-6 italic">
+              Your body isn't the enemy. It's been trying to protect you. Let's help it find new, healthier ways to keep you safe.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Personal Journey */}
-      <section className="py-20 bg-[#fff5eb]">
+      {/* My Journey */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1a428a] text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a428a] mb-6 text-center">
             My Journey: From Architecture to Healing
           </h2>
           
-          <div className="relative">
+          <div className="relative bg-[#f8f9fa] p-8 md:p-12 rounded-lg shadow-lg">
             <div className="text-6xl text-[#f49a39] absolute -top-4 -left-4">"</div>
             <div className="pl-8 pr-8 space-y-6 text-lg text-[#333333] leading-relaxed">
               <p>
-                My path to becoming a therapist wasn't traditional—but then again, recovery rarely is.
+                My path to becoming a therapist wasn't traditional… but then again, recovery rarely is.
               </p>
               
               <p>
@@ -672,30 +648,33 @@ const AnnieCalhounRandall = () => {
               <p className="font-medium text-[#1a428a]">
                 From Architecture to Nutrition:
               </p>
+              
               <p>
-                I made what seemed like a radical career change and attended the Nutrition Therapy Institute in Denver, becoming a Certified Nutrition Therapy Practitioner. For nearly six years, I coached clients around nutrition, helping them understand the science of nourishing their bodies. But I kept seeing that nutrition education alone wasn't enough—people needed deeper emotional and psychological support.
+                I made what seemed like a radical career change and attended the Nutrition Therapy Institute in Denver, becoming a Certified Nutrition Therapy Practitioner. For nearly six years, I then coached clients in nutrition and sports performance. However, I slowly began to realize that eating disorders are about more than just food and healing involves deeper emotional and psychological support.
               </p>
               
               <p className="font-medium text-[#1a428a]">
                 From Nutrition to Counseling:
               </p>
+              
               <p>
-                So I went back to school once again (yes, again!) and earned my Master of Arts in Counseling from Western Seminary. During my graduate program, I completed my practicum and internship at A New Day Counseling Center and Body Expressions, which brought together everything I'd learned.
+                Thus, I returned to school once again and earned my Master of Arts in Counseling from Western Seminary. During my graduate program, I completed my practicum and internship at A New Day Counseling Center and Body Expressions, which brought together everything that I had learned.
               </p>
               
               <p className="font-medium text-[#1a428a]">
                 What This Means for You:
               </p>
+              
               <p>
                 As someone who recovered from an eating disorder myself, I understand the journey from struggle to freedom. I know what it's like to battle daily with food decisions and body image, feel controlled by eating disorder thoughts, fear losing the behaviors that feel protective, wonder if recovery is actually possible, navigate relationships and social situations around food, and rebuild trust with your body.
               </p>
               
               <p>
-                I also know the incredible freedom that comes from recovery—and I wanted to dedicate my professional life to helping others experience that freedom too.
+                I also know the incredible freedom that comes from recovery, and I wanted to dedicate my professional life to helping others experience that freedom too.
               </p>
               
               <p>
-                My unconventional path—architecture, nutrition therapy, coaching, counseling—means I bring a truly holistic perspective. I understand the body (nutrition science), the mind (counseling), and the creative process of redesigning your life (literally and figuratively).
+                That said, my unconventional path means I bring a truly holistic perspective. I understand the body (nutrition science), the mind (counseling), and the creative process of redesigning your life (literally and figuratively).
               </p>
               
               <p className="font-medium">
@@ -710,14 +689,14 @@ const AnnieCalhounRandall = () => {
       </section>
 
       {/* What to Expect */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-[#1a428a] mb-12 text-center">
             What to Expect in Working with Me
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="border-t-4 border-[#f49a39] bg-[#f8f9fa] p-8 rounded-lg">
+            <div className="border-t-4 border-[#f49a39] bg-white p-8 rounded-lg shadow-lg">
               <div className="w-16 h-16 bg-[#f49a39] rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
@@ -725,16 +704,16 @@ const AnnieCalhounRandall = () => {
               </div>
               <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Your First Appointment</h3>
               <p className="text-[#333333] mb-6">
-                We'll explore your history with food, body, and athletics (if applicable). I'll learn about your goals, your story, and what you need from therapy. This is a collaborative conversation where we begin building the trust and safety essential for healing.
+                We'll explore your history with food, body, and movement. I'll learn about your goals, your story, and what you need from therapy. This is a collaborative conversation where we begin building the trust and safety essential for healing.
               </p>
               <div className="text-center">
                 <span className="inline-block bg-[#f49a39] text-white px-4 py-2 rounded-full text-sm font-medium">
-                  60-90 minutes
+                  60-90 Minutes
                 </span>
               </div>
             </div>
 
-            <div className="border-t-4 border-[#f49a39] bg-[#f8f9fa] p-8 rounded-lg">
+            <div className="border-t-4 border-[#f49a39] bg-white p-8 rounded-lg shadow-lg">
               <div className="w-16 h-16 bg-[#f49a39] rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
@@ -746,12 +725,12 @@ const AnnieCalhounRandall = () => {
               </p>
               <div className="text-center">
                 <span className="inline-block bg-[#f49a39] text-white px-4 py-2 rounded-full text-sm font-medium">
-                  50-60 minutes
+                  50-60 Minutes
                 </span>
               </div>
             </div>
 
-            <div className="border-t-4 border-[#f49a39] bg-[#f8f9fa] p-8 rounded-lg">
+            <div className="border-t-4 border-[#f49a39] bg-white p-8 rounded-lg shadow-lg">
               <div className="w-16 h-16 bg-[#f49a39] rounded-full flex items-center justify-center mb-6 mx-auto">
                 <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clipRule="evenodd"/>
@@ -759,11 +738,11 @@ const AnnieCalhounRandall = () => {
               </div>
               <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Empathy & Compassion</h3>
               <p className="text-[#333333] mb-6">
-                I seek to come alongside you with empathy and compassion. You won't be judged, rushed, or pushed. We'll work at your body's pace, honoring both your athletic drive (if you have one) and your need for gentleness.
+                I seek to come alongside you with empathy and compassion. You won't be judged or rushed. We'll work at your body's pace and honor your needs, increasing your sense of self-compassion.
               </p>
               <div className="text-center">
                 <span className="inline-block bg-[#f49a39] text-white px-4 py-2 rounded-full text-sm font-medium">
-                  Holistic & body-centered
+                  Holistic & Body Centered
                 </span>
               </div>
             </div>
@@ -780,190 +759,112 @@ const AnnieCalhounRandall = () => {
           
           <div className="space-y-6 text-lg text-[#333333] leading-relaxed">
             <p>
-              I grew up in Colorado, but I consider Portland home. There's something about the Pacific Northwest—the rain, the mountains, the culture—that resonates deeply with me. Portland feels like a place where I can be my authentic self, and I hope to create that same sense of authenticity and safety in therapy.
+              I grew up in Colorado, but I consider Portland home. In my free time, I enjoy running, weightlifting, hiking, and playing basketball. However, I now move my body from a place of joy and respect rather than compulsion or punishment. This shift informs how I work with clients, especially athletes.
             </p>
             
             <p>
-              In my free time, I'm still very much an athlete at heart. I enjoy running, weightlifting, and hiking—but now from a place of joy and body respect rather than compulsion or punishment. This shift in my own relationship with movement informs how I work with clients, especially athletes.
-            </p>
-            
-            <p>
-              I'm also a reader, writer, and artist. I love drawing and creative expression in all forms. I believe creativity is healing, and sometimes we'll incorporate creative exercises into our work together if that feels right for you.
-            </p>
-            
-            <p>
-              I spend a lot of time with my partner and our adorable puppy, who brings endless joy and keeps me grounded. There's something about animals that reminds us to be present, playful, and gentle with ourselves—lessons I hope to share in therapy.
-            </p>
-            
-            <p className="font-medium">
-              My career journey—from architecture to nutrition to counseling—reflects my belief that it's never too late to change direction, pursue your calling, and create a life aligned with your values. If I can make that kind of transformation, you can too.
+              Finally, I also enjoy reading, writing, drawing, and spending time with my family and our adorable puppy.
             </p>
           </div>
-          
-          <p className="text-xl text-[#f49a39] italic text-center mt-12">
-            I'm honored to walk alongside you on your journey to freedom and healing.
-          </p>
         </div>
       </section>
 
-      {/* Contact CTA */}
-      <section className="py-20 bg-[#1a428a]">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+      {/* Final CTA */}
+      <section className="py-20 bg-[#1a428a] text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Ready to Begin Your Healing Journey?
           </h2>
-          
-          <p className="text-xl text-white mb-10 leading-relaxed">
-            I'm currently accepting new clients for individual therapy in Portland, Vancouver, and via telehealth throughout Oregon and Washington. Whether you're an athlete struggling with food and performance, dealing with trauma, or seeking freedom from an eating disorder, I'm here to support you with empathy and compassion.
+          <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+            I am currently on leave, but I will be accepting new clients for individual therapy in Portland, Vancouver, and via telehealth throughout Oregon and Washington starting in February of 2026. Whether you're an athlete struggling with food and performance, dealing with trauma, or seeking freedom from an eating disorder, I'm here to support you with empathy and compassion.
           </p>
-          
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white px-8 py-4 text-lg">
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button size="lg" className="bg-[#f49a39] hover:bg-[#e88b28] text-white px-8 py-4 text-lg">
               Schedule with Annie
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#1a428a] px-8 py-4 text-lg">
+            <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#1a428a] px-8 py-4 text-lg">
               Call (360) 726-4141
             </Button>
           </div>
-          
-          <p className="text-white text-lg">
-            Email: [email address] | Portland & Vancouver Offices | Telehealth: OR & WA
-          </p>
         </div>
       </section>
 
       {/* Meet Other Therapists */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#f8f9fa]">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1a428a] text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1a428a] text-center mb-12">
             Meet Our Other Therapists
           </h2>
-          <p className="text-xl text-center text-[#666666] mb-12">
-            Beyond Eating Recovery's Compassionate Team
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-7xl mx-auto">
-            {/* Anne Cuthbert Card */}
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-4">
+          
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+            <Link to="/about/anne-cuthbert" className="group">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <CardContent className="p-4 text-center">
                   <img 
-                    src={anneImage} 
+                    src={anneImage}
                     alt="Anne Cuthbert"
-                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
+                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                   />
-                </div>
-                <h3 className="text-lg font-bold text-[#1a428a] mb-1">
-                  Anne Cuthbert
-                </h3>
-                <p className="text-xs text-[#666666] mb-2">MA, LPC, LMHC</p>
-                <p className="text-sm text-[#333333] mb-4">Owner & Founder</p>
-                <Link to="/about/anne-cuthbert">
-                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
-                    View Profile
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+                  <h3 className="font-bold text-[#1a428a] group-hover:text-[#f49a39] transition-colors">Anne Cuthbert</h3>
+                  <p className="text-sm text-[#666666]">MA, LPC, LMHC</p>
+                </CardContent>
+              </Card>
+            </Link>
 
-            {/* Bailey Benn Card */}
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-4">
+            <Link to="/about/bailey-benn" className="group">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <CardContent className="p-4 text-center">
                   <img 
-                    src={baileyImage} 
+                    src={baileyImage}
                     alt="Bailey Benn"
-                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
+                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                   />
-                </div>
-                <h3 className="text-lg font-bold text-[#1a428a] mb-1">
-                  Bailey Benn
-                </h3>
-                <p className="text-xs text-[#666666] mb-2">MA, LPC, LMHC</p>
-                <p className="text-sm text-[#333333] mb-4">Clinical Therapist</p>
-                <Link to="/about/bailey-benn">
-                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
-                    View Profile
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+                  <h3 className="font-bold text-[#1a428a] group-hover:text-[#f49a39] transition-colors">Bailey Benn</h3>
+                  <p className="text-sm text-[#666666]">MA, LPC, LMHC</p>
+                </CardContent>
+              </Card>
+            </Link>
 
-            {/* Alyssa Pataki Card */}
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-4">
+            <Link to="/about/alyssa-pataki" className="group">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <CardContent className="p-4 text-center">
                   <img 
-                    src={alyssaImage} 
+                    src={alyssaImage}
                     alt="Alyssa Pataki"
-                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
+                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                   />
-                </div>
-                <h3 className="text-lg font-bold text-[#1a428a] mb-1">
-                  Alyssa Pataki
-                </h3>
-                <p className="text-xs text-[#666666] mb-2">MA, LMFT</p>
-                <p className="text-sm text-[#333333] mb-4">Family Therapist</p>
-                <Link to="/about/alyssa-pataki">
-                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
-                    View Profile
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+                  <h3 className="font-bold text-[#1a428a] group-hover:text-[#f49a39] transition-colors">Alyssa Pataki</h3>
+                  <p className="text-sm text-[#666666]">MA, LMFT</p>
+                </CardContent>
+              </Card>
+            </Link>
 
-            {/* Kiandra Cole Card */}
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-4">
+            <Link to="/about/kiandra-cole" className="group">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <CardContent className="p-4 text-center">
                   <img 
-                    src={kiandraImage} 
+                    src={kiandraImage}
                     alt="Kiandra Cole"
-                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
+                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                   />
-                </div>
-                <h3 className="text-lg font-bold text-[#1a428a] mb-1">
-                  Kiandra Cole
-                </h3>
-                <p className="text-xs text-[#666666] mb-2">MA</p>
-                <p className="text-sm text-[#333333] mb-4">Social Justice Advocate</p>
-                <Link to="/about/kiandra-cole">
-                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
-                    View Profile
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+                  <h3 className="font-bold text-[#1a428a] group-hover:text-[#f49a39] transition-colors">Kiandra Cole</h3>
+                  <p className="text-sm text-[#666666]">MA</p>
+                </CardContent>
+              </Card>
+            </Link>
 
-            {/* Rachel Bennett Card */}
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-4">
+            <Link to="/about/rachel-bennett" className="group">
+              <Card className="overflow-hidden hover:shadow-lg transition-shadow">
+                <CardContent className="p-4 text-center">
                   <img 
-                    src={rachelImage} 
+                    src={rachelImage}
                     alt="Rachel Bennett"
-                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
+                    className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                   />
-                </div>
-                <h3 className="text-lg font-bold text-[#1a428a] mb-1">
-                  Rachel Bennett
-                </h3>
-                <p className="text-xs text-[#666666] mb-2">MA, QMHP-A</p>
-                <p className="text-sm text-[#333333] mb-4">Body Positive Therapist</p>
-                <Link to="/about/rachel-bennett">
-                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
-                    View Profile
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          </div>
-
-          <div className="text-center mt-8">
-            <Link to="/about">
-              <Button variant="outline" className="border-2 border-[#1a428a] text-[#1a428a] hover:bg-[#1a428a] hover:text-white px-8 py-3">
-                View Full Team
-              </Button>
+                  <h3 className="font-bold text-[#1a428a] group-hover:text-[#f49a39] transition-colors">Rachel Bennett</h3>
+                  <p className="text-sm text-[#666666]">MA</p>
+                </CardContent>
+              </Card>
             </Link>
           </div>
         </div>
