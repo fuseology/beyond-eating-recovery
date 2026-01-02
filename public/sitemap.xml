@@ -133,6 +133,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.beyondeatingrecovery.com/about/mackenzie-stracke</loc>
+    <lastmod>2026-01-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Team Member Pages - Support Staff -->
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/michelle-commons</loc>
