@@ -204,11 +204,12 @@ const RachelBennett = () => {
                 <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Specialized Experience</h3>
                 <ul className="space-y-2 text-[#333333]">
                   <li>Eating disorder treatment</li>
-                  <li>Body positive programming for college students</li>
-                  <li>Work with autism spectrum populations</li>
+                  <li>Mindful movement and education courses for college students</li>
+                  <li>Neurodivergent populations</li>
                   <li>Community health education</li>
                   <li>Personal recovery experience</li>
-                  <li>Strength-based interventions</li>
+                  <li>Religious trauma</li>
+                  <li>LGBTQIA+ Identity</li>
                 </ul>
               </CardContent>
             </Card>
@@ -309,6 +310,7 @@ const RachelBennett = () => {
                   <li>• ARFID</li>
                   <li>• Orthorexia</li>
                   <li>• Body dysmorphia</li>
+                  <li>• Athlete populations</li>
                   <li>• Chronic dieting recovery</li>
                   <li>• Body positive practices</li>
                 </ul>
@@ -330,6 +332,7 @@ const RachelBennett = () => {
                   <li>• Values clarification</li>
                   <li>• Purpose realignment</li>
                   <li>• LGBTQIA+ identity affirmation</li>
+                  <li>• Religious trauma</li>
                   <li>• College-age transitions</li>
                   <li>• Emerging adulthood</li>
                 </ul>
@@ -689,7 +692,7 @@ const RachelBennett = () => {
             </p>
             
             <p>
-              Outside of therapy, I'm an avid lover of music—truly all genres. From indie folk to hip-hop to classical, I believe music is one of the most powerful forms of emotional expression and healing. You might hear me reference song lyrics in session (fair warning!).
+              Outside of therapy, I'm an avid lover of music—especially classic rock and metal. There's something about the raw energy and powerful guitar riffs that speaks to me. You might hear me reference song lyrics in session (fair warning!).
             </p>
             
             <p>
