@@ -125,14 +125,14 @@ const EmeryPederson = () => {
         </div>
       </section>
 
-      {/* Professional Background & Research Experience */}
+      {/* Professional Background */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
-            Professional Background & Research Experience
+            Professional Background
           </h2>
           
-          <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="max-w-3xl mx-auto">
             <Card className="border-0 shadow-lg">
               <CardContent className="pt-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
@@ -151,41 +151,10 @@ const EmeryPederson = () => {
                 </div>
               </CardContent>
             </Card>
-
-            <Card className="border-0 shadow-lg">
-              <CardContent className="pt-6">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <BookOpen className="w-6 h-6 text-accent" />
-                </div>
-                <h3 className="text-2xl font-semibold text-primary mb-4">Research Experience</h3>
-                <ul className="space-y-2 text-foreground">
-                  <li>• Eating disorders research</li>
-                  <li>• Food insecurity studies</li>
-                  <li>• Thanatology (death and dying)</li>
-                  <li>• Education research</li>
-                  <li>• Undergraduate research assistant</li>
-                  <li>• Nonprofit research collaboration</li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
 
           <div className="max-w-4xl mx-auto mt-12 space-y-6 text-foreground text-lg leading-relaxed">
-            <h3 className="text-2xl font-semibold text-primary">Research Experience</h3>
-            <p>
-              Emery brings valuable research experience to her role at Beyond Eating Recovery. During her undergraduate studies, she had the privilege of working as a research assistant, gaining hands-on experience in academic research methodologies and contributing to important work in mental health and social issues.
-            </p>
-            <p>
-              Since completing her degree, Emery has continued her research involvement by assisting two separate nonprofit organizations. Her research experience spans diverse but interconnected topics that deepen her understanding of the complex issues our clients face:
-            </p>
-            <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Eating disorders</strong> - Research experience directly relevant to our practice</li>
-              <li><strong>Food insecurity</strong> - Understanding systemic barriers to food access</li>
-              <li><strong>Thanatology</strong> (the study of death and dying) - Exploring loss, grief, and life transitions</li>
-              <li><strong>Education</strong> - Examining learning, development, and access to knowledge</li>
-            </ul>
-
-            <h3 className="text-2xl font-semibold text-primary mt-8">Ongoing Learning</h3>
+            <h3 className="text-2xl font-semibold text-primary">Ongoing Learning Interests</h3>
             <p>
               Emery maintains an active interest in emerging research related to:
             </p>
