@@ -275,34 +275,26 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
             
-            {/* LEFT COLUMN - Not Taking New Clients Notice */}
+            {/* LEFT COLUMN - Contact Form */}
             <Card className="bg-secondary/30 border-2">
-              <CardHeader>
-                <div className="flex items-start justify-between">
-                  <div>
-                    <CardTitle className="text-2xl text-primary mb-2">Beyond Eating Recovery</CardTitle>
-                    <p className="text-foreground/90 font-semibold">Anne Cuthbert MA, LPC, LMHC</p>
-                    <p className="text-sm text-muted-foreground mt-2">
-                      Owner & Practitioner<br />
-                      <em>Now Serving Portland & Vancouver Locations.</em>
-                    </p>
-                  </div>
-                  <img 
-                    src={loveTreeImage} 
-                    alt="Love Tree" 
-                    className="w-24 h-auto"
-                  />
-                </div>
+              <CardHeader className="pb-4">
+                <h3 className="text-xl font-semibold text-primary">Contact Us</h3>
+                <p className="text-muted-foreground">Fill out the form below and we'll get back to you as soon as possible.</p>
               </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="bg-accent/10 border-2 border-accent/30 rounded-lg p-6 text-center">
-                  <AlertCircle className="w-12 h-12 text-accent mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-primary mb-3">
-                    We Are Not Taking New Clients at This Time
-                  </h3>
-                  <p className="text-foreground/80">
-                    Please check back after January 1st.
-                  </p>
+              <CardContent>
+                <div className="w-full overflow-hidden rounded-lg">
+                  <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true" 
+                    width="100%" 
+                    height="3147" 
+                    frameBorder="0" 
+                    marginHeight={0} 
+                    marginWidth={0}
+                    title="Contact Form"
+                    className="w-full"
+                  >
+                    Loading…
+                  </iframe>
                 </div>
               </CardContent>
             </Card>
