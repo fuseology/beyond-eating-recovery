@@ -284,7 +284,7 @@ const Contact = () => {
               <CardContent>
                 <div className="w-full overflow-hidden rounded-lg">
                   <iframe 
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true" 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSf5G_XyoAlB6O7ECXC6R5q80N6h_Kv2Dtb_VIrX9NsAc-F6lw/viewform?embedded=true&v=2" 
                     width="100%" 
                     height="3147" 
                     frameBorder="0" 
