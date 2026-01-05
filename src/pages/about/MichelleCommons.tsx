@@ -35,8 +35,23 @@ const MichelleCommons = () => {
             "worksFor": {
               "@type": "MedicalBusiness",
               "name": "Beyond Eating Recovery",
-              "url": "https://www.beyondeatingrecovery.com"
+              "url": "https://www.beyondeatingrecovery.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1000 Broadway Suite 215",
+                "addressLocality": "Vancouver",
+                "addressRegion": "WA",
+                "postalCode": "98660",
+                "addressCountry": "US"
+              },
+              "telephone": "+1-360-726-4141"
             },
+            "areaServed": [
+              { "@type": "City", "name": "Portland", "containedInPlace": { "@type": "State", "name": "Oregon" } },
+              { "@type": "City", "name": "Vancouver", "containedInPlace": { "@type": "State", "name": "Washington" } },
+              { "@type": "State", "name": "Oregon" },
+              { "@type": "State", "name": "Washington" }
+            ],
             "knowsAbout": [
               "Eating Disorder Treatment Administration",
               "Insurance Verification",
