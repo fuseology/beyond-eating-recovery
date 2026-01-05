@@ -8,69 +8,145 @@ import { Button } from "@/components/ui/button";
 import { Check, User, Apple, Users, Heart, Phone, ExternalLink } from "lucide-react";
 
 const Services = () => {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "@id": "https://beyondeatingrecovery.com/services#webpage",
-    "url": "https://beyondeatingrecovery.com/services",
-    "name": "Eating Disorder Treatment Services | Beyond Eating Recovery",
-    "description": "Comprehensive eating disorder treatment: individual therapy, group therapy, nutrition counseling, family therapy, and virtual care in Portland & Vancouver.",
-    "specialty": "Eating Disorder Treatment",
-    "about": {
-      "@type": "MedicalBusiness",
-      "@id": "https://beyondeatingrecovery.com/#organization"
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "@id": "https://beyondeatingrecovery.com/services#webpage",
+      "url": "https://beyondeatingrecovery.com/services",
+      "name": "Eating Disorder Treatment Services | Beyond Eating Recovery",
+      "description": "Comprehensive eating disorder treatment: individual therapy, group therapy, nutrition counseling, family therapy, and virtual care in Portland & Vancouver.",
+      "specialty": "Eating Disorder Treatment",
+      "about": {
+        "@type": "MedicalBusiness",
+        "@id": "https://beyondeatingrecovery.com/#organization"
+      }
     },
-    "mainEntity": {
-      "@type": "ItemList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@type": "MedicalTherapy",
-            "name": "Individual Therapy",
-            "description": "One-on-one therapy sessions with specialized eating disorder therapists using evidence-based approaches"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "MedicalTherapy",
-            "name": "Group Therapy",
-            "description": "Supportive group sessions for eating disorder recovery and body image healing"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "MedicalTherapy",
-            "name": "Nutrition Counseling",
-            "description": "Dietitian-led nutrition therapy using intuitive eating and HAES principles"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "MedicalTherapy",
-            "name": "Family Therapy",
-            "description": "Family-based treatment and support for eating disorder recovery"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "MedicalTherapy",
-            "name": "Telehealth Services",
-            "description": "Virtual therapy sessions available throughout Oregon and Washington"
-          }
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://beyondeatingrecovery.com/services#individual-therapy",
+      "name": "Individual Eating Disorder Therapy",
+      "description": "One-on-one therapy sessions with specialized eating disorder therapists using evidence-based approaches including CBT-E, DBT, and trauma-informed care.",
+      "serviceType": "Mental Health Therapy",
+      "category": "Eating Disorder Treatment",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Beyond Eating Recovery",
+        "telephone": "+1-503-868-9434",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7412 SW Beaverton-Hillsdale Hwy, Suite 107",
+          "addressLocality": "Portland",
+          "addressRegion": "OR",
+          "postalCode": "97225",
+          "addressCountry": "US"
         }
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Oregon" },
+        { "@type": "State", "name": "Washington" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Individual Therapy Sessions",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Individual Therapy Session (50-55 minutes)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://beyondeatingrecovery.com/services#nutrition-counseling",
+      "name": "Nutrition Counseling for Eating Disorders",
+      "description": "Dietitian-led nutrition therapy using Intuitive Eating and Health At Every Size (HAES) principles to support eating disorder recovery.",
+      "serviceType": "Nutrition Therapy",
+      "category": "Eating Disorder Treatment",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Beyond Eating Recovery",
+        "telephone": "+1-503-868-9434",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "7412 SW Beaverton-Hillsdale Hwy, Suite 107",
+          "addressLocality": "Portland",
+          "addressRegion": "OR",
+          "postalCode": "97225",
+          "addressCountry": "US"
+        }
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Oregon" },
+        { "@type": "State", "name": "Washington" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://beyondeatingrecovery.com/services#group-therapy",
+      "name": "Group Therapy for Eating Disorders",
+      "description": "Supportive group therapy sessions for eating disorder recovery and body image healing, providing community and shared experiences.",
+      "serviceType": "Group Therapy",
+      "category": "Eating Disorder Treatment",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Beyond Eating Recovery",
+        "telephone": "+1-503-868-9434"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Portland" },
+        { "@type": "City", "name": "Vancouver" }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://beyondeatingrecovery.com/services#telehealth",
+      "name": "Virtual Eating Disorder Therapy",
+      "description": "Telehealth therapy sessions for eating disorder treatment available throughout Oregon and Washington states.",
+      "serviceType": "Telehealth Mental Health Services",
+      "category": "Eating Disorder Treatment",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Beyond Eating Recovery",
+        "telephone": "+1-503-868-9434"
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Oregon" },
+        { "@type": "State", "name": "Washington" }
+      ],
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceType": "Telehealth",
+        "availableLanguage": "English"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "@id": "https://beyondeatingrecovery.com/services#family-therapy",
+      "name": "Family Therapy for Eating Disorders",
+      "description": "Family-based treatment and support to help families understand and support their loved one's eating disorder recovery journey.",
+      "serviceType": "Family Therapy",
+      "category": "Eating Disorder Treatment",
+      "provider": {
+        "@type": "MedicalBusiness",
+        "name": "Beyond Eating Recovery",
+        "telephone": "+1-503-868-9434"
+      },
+      "areaServed": [
+        { "@type": "State", "name": "Oregon" },
+        { "@type": "State", "name": "Washington" }
       ]
     }
-  };
+  ];
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
