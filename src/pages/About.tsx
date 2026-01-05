@@ -33,6 +33,66 @@ const About = () => {
       "@type": "MedicalBusiness",
       "@id": "https://beyondeatingrecovery.com/#organization",
       "name": "Beyond Eating Recovery",
+      "description": "Outpatient eating disorder treatment center providing compassionate, evidence-based therapy and nutrition counseling using Health At Every Size (HAES) and Intuitive Eating approaches.",
+      "url": "https://www.beyondeatingrecovery.com",
+      "telephone": "+1-360-726-4141",
+      "email": "info@beyondeatingrecovery.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1000 Broadway Suite 215",
+        "addressLocality": "Vancouver",
+        "addressRegion": "WA",
+        "postalCode": "98660",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.6280,
+        "longitude": -122.6739
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Portland",
+          "containedInPlace": { "@type": "State", "name": "Oregon" }
+        },
+        {
+          "@type": "City",
+          "name": "Vancouver",
+          "containedInPlace": { "@type": "State", "name": "Washington" }
+        },
+        { "@type": "State", "name": "Oregon" },
+        { "@type": "State", "name": "Washington" }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "medicalSpecialty": [
+        "Eating Disorders",
+        "Anorexia Nervosa",
+        "Bulimia Nervosa",
+        "Binge Eating Disorder",
+        "ARFID",
+        "Body Image Issues"
+      ],
+      "availableService": [
+        {
+          "@type": "MedicalTherapy",
+          "name": "Eating Disorder Therapy",
+          "description": "Individual therapy for eating disorders using evidence-based approaches"
+        },
+        {
+          "@type": "MedicalTherapy",
+          "name": "Nutrition Counseling",
+          "description": "Registered dietitian services using HAES and Intuitive Eating"
+        }
+      ],
       "founder": {
         "@type": "Person",
         "name": "Anne Cuthbert",
@@ -52,6 +112,10 @@ const About = () => {
         { "@type": "Person", "name": "Michelle Sullins", "jobTitle": "Support Staff" },
         { "@type": "Person", "name": "Mary Cooper", "jobTitle": "Support Staff" },
         { "@type": "Person", "name": "Emery Pederson", "jobTitle": "Support Staff" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/beyondeatingrecovery",
+        "https://www.instagram.com/beyondeatingrecovery"
       ]
     }
   };
