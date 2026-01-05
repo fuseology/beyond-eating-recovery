@@ -276,11 +276,23 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
             
             {/* LEFT COLUMN - Contact Form */}
-            <Card className="bg-secondary/30 border-2">
-              <CardHeader className="pb-4">
-                <h3 className="text-xl font-semibold text-primary">Contact Us</h3>
-                <p className="text-muted-foreground">Fill out the form below and we'll get back to you as soon as possible.</p>
-              </CardHeader>
+            <div className="space-y-4">
+              {/* Secure Upload Button */}
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSctoi0O7ZnL5wmQe9Ndt-yI_4cqeLDwn5jNE74KF4vsOzou4Q/viewform?usp=send_form"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold py-3 px-6 rounded-lg transition-colors"
+              >
+                <Upload className="h-5 w-5" />
+                Secure Upload
+              </a>
+              
+              <Card className="bg-secondary/30 border-2">
+                <CardHeader className="pb-4">
+                  <h3 className="text-xl font-semibold text-primary">Contact Us</h3>
+                  <p className="text-muted-foreground">Fill out the form below and we'll get back to you as soon as possible.</p>
+                </CardHeader>
               <CardContent>
                 <div className="w-full overflow-hidden rounded-lg">
                   <iframe 
@@ -297,7 +309,8 @@ const Contact = () => {
                   </iframe>
                 </div>
               </CardContent>
-            </Card>
+              </Card>
+            </div>
 
             {/* RIGHT COLUMN - Contact Information */}
             <div className="space-y-8">
