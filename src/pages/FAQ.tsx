@@ -71,6 +71,111 @@ const FAQ = () => {
         <meta name="twitter:title" content="Frequently Asked Questions About Eating Disorder Treatment | Beyond Eating Recovery" />
         <meta name="twitter:description" content="Get answers to common questions about eating disorders, treatment process, insurance, HAES approach, and what to expect at Beyond Eating Recovery in Portland & Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/faq" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is an eating disorder?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "An eating disorder is a serious mental health condition characterized by persistent disturbances in eating behaviors, thoughts, and emotions. Eating disorders involve a preoccupation with food, body weight, and shape that significantly impacts physical health, emotional well-being, and daily functioning. They are NOT a choice or phase, but complex mental health conditions often rooted in trauma, genetics, and environmental factors that are treatable with proper support."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I have an eating disorder? How do I know if I need help?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You don't need a formal diagnosis to benefit from help. Consider seeking support if you find yourself at the fridge repeatedly, think about food more than you want to, eat in secret, feel out of control around certain foods, have rigid food rules, obsess over weight or appearance, or use food to cope with emotions. If your relationship with food or body is causing distress or interfering with your life, you deserve support."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the different types of eating disorders?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Common eating disorder diagnoses include Anorexia Nervosa (severe food restriction, fear of weight gain), Bulimia Nervosa (binge eating followed by compensatory behaviors), Binge Eating Disorder (recurrent binge episodes without compensatory behaviors), ARFID (extremely limited food preferences not related to weight concerns), and OSFED (significant symptoms that don't fit other categories). We also treat compulsive overeating, emotional eating, body dysmorphia, and exercise addiction."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can men have eating disorders?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes—eating disorders affect people of ALL genders, ages, races, ethnicities, body sizes, and backgrounds. Men account for approximately 25% of people with anorexia and bulimia, and are nearly as likely as women to have binge eating disorder. Transgender and non-binary individuals have higher rates of eating disorders. At Beyond Eating Recovery, we provide affirming, inclusive care for all people."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I get started with treatment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Getting started is simple: 1) Contact us at 360-726-4141 or fill out our contact form, 2) Schedule a low-pressure initial consultation (15-30 minutes) to learn about your concerns, 3) We'll match you with an appropriate therapist or dietitian, 4) Begin your first session and develop a treatment plan. You don't need to be 'sick enough' to deserve support—early intervention leads to better outcomes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Health At Every Size (HAES)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Health At Every Size® (HAES) is an evidence-based approach that prioritizes well-being over weight. Core principles include weight inclusivity (respecting all body sizes), health enhancement (supporting accessible health practices), respectful care (acknowledging weight stigma), eating for well-being (flexible, intuitive eating), and life-enhancing movement (physical activity for enjoyment, not calorie burning). HAES improves health behaviors and outcomes without focusing on weight loss."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Intuitive Eating?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Intuitive Eating is a self-care eating framework with 10 principles that help you reconnect with your body's natural signals. It's NOT 'eat whatever you want' or another diet—it's learning to trust your body's signals, making peace with all foods, eating for satisfaction and nourishment, and finding freedom from food obsession. Over 200 studies show benefits including reduced disordered eating and improved body image."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How long will eating disorder treatment take?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Recovery timelines are highly individual. Generally: symptom reduction often occurs in 3-6 months, significant improvement in 6-12 months, and full recovery in 1-3+ years. Recovery is non-linear with ups and downs, and quality matters more than speed. We focus on lasting recovery, not quick fixes, and session frequency typically decreases as you progress."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you accept insurance for eating disorder treatment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Beyond Eating Recovery accepts most major insurance plans for Oregon and Washington residents. We are in-network with many commercial insurance carriers and also work with out-of-network benefits. To verify your specific coverage, please call us at 360-726-4141. Our team will help you understand your benefits and any out-of-pocket costs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What does eating disorder treatment cost?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Individual therapy sessions typically range from $150-$200 per session (45-53 minutes). Dietitian sessions are similar. With insurance, your out-of-pocket cost depends on your plan's deductible, copay, and coinsurance rates. Without insurance, we offer sliding scale fees based on income and financial need. Under federal law, you can request a Good Faith Estimate of expected charges."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you weigh clients during treatment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our practice is weight-neutral and HAES®-aligned. We do NOT routinely weigh clients, you can be weighed 'blind' (backwards, not seeing the number) if needed, and you can decline weighing. Weight is not a reliable indicator of health or recovery progress. We focus on eating patterns, physical health, mental/emotional well-being, and relationship with food and body instead."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I see both a therapist and dietitian at the same time?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes—and we strongly recommend it! Therapists focus on root causes, emotional coping, trauma, and body image, while dietitians focus on rebuilding trust with hunger/fullness, nutrition education, and Intuitive Eating. Together, they provide comprehensive care addressing both 'why' and 'how' for faster, more lasting recovery. Your providers communicate and collaborate on treatment goals."
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       <Header />
       <Breadcrumbs />
