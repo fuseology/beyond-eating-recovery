@@ -168,7 +168,7 @@ const RachelBennett = () => {
                 <ul className="space-y-2 text-[#333333]">
                   <li>Master of Arts in Applied Psychological Program</li>
                   <li className="font-medium">Pacific University</li>
-                  <li className="mt-3">Bachelor of Arts in Psychology (cum laude)</li>
+                  <li className="mt-3">Bachelor of Science in Psychology (cum laude)</li>
                   <li className="font-medium">Portland State University</li>
                   <li className="mt-2">Minor: Community Health Education</li>
                   <li className="mt-2">Registered Therapy Associate</li>
