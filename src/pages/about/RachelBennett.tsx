@@ -76,6 +76,11 @@ const RachelBennett = () => {
                 "@type": "EducationalOccupationalCredential",
                 "credentialCategory": "Degree",
                 "name": "Master of Arts in Applied Psychological Program"
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Degree",
+                "name": "Bachelor of Science in Psychology"
               }
             ],
             "knowsAbout": [
