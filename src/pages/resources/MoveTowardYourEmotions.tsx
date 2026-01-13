@@ -8,7 +8,7 @@ import { ArrowLeft, Headphones, Clock, Heart } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
-const audioUrl = `${SUPABASE_URL}/storage/v1/object/public/media/Move%20Toward%20Your%20Feelings.mp3`;
+const audioUrl = `${SUPABASE_URL}/storage/v1/object/public/audio/Move%20Toward%20Your%20Feelings.mp3`;
 
 const MoveTowardYourEmotions = () => {
   return (
