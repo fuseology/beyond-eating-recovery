@@ -74,8 +74,7 @@ const Header = () => {
     { title: "Loveable At Any Size Workshop", href: "/workshop" },
     { title: "Battle of the Binge Program", href: "/battle-of-the-binge" },
     { title: "Blog", href: "/resources" },
-    { title: "Articles", href: "/resources" },
-    { title: "Videos", href: "/resources" },
+    { title: "Audio", href: "/resources#audio" },
     { title: "Self-Assessment Tools", href: "/resources" },
     { title: "Support Resources", href: "/resources" },
   ];
