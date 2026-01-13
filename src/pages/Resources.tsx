@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
-import { 
-  BookOpen, Heart, Users, Scale, Home, Sparkles, 
-  Brain, Headphones, Download, ExternalLink, Phone, Video 
+import {
+  BookOpen, Heart, Users, Scale, Home, Sparkles,
+  Brain, Headphones, Download, ExternalLink, Phone, Video
 } from "lucide-react";
 import blog1 from "@/assets/blog-1.jpg";
 import blog2 from "@/assets/blog-2.jpg";
