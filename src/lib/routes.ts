@@ -61,6 +61,9 @@ export const routes: RouteConfig[] = [
   { path: '/battle-of-the-binge', priority: 0.7, changefreq: 'monthly' },
   { path: '/body-shame', priority: 0.7, changefreq: 'monthly' },
   { path: '/resources/5-steps-diet-roller-coaster', priority: 0.7, changefreq: 'monthly' },
+  
+  // Audio Resources
+  { path: '/resources/move-toward-your-emotions', priority: 0.7, changefreq: 'monthly' },
 ];
 
 export const SITE_URL = 'https://www.beyondeatingrecovery.com';
