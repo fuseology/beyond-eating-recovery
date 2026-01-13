@@ -50,6 +50,7 @@ import AthletesEatingDisorders from "./pages/conditions/AthletesEatingDisorders"
 import FiveStepsDietRollerCoaster from "./pages/FiveStepsDietRollerCoaster";
 import PrivacyNotice from "./pages/PrivacyNotice";
 import SecureFileSubmissions from "./pages/SecureFileSubmissions";
+import MoveTowardYourEmotions from "./pages/resources/MoveTowardYourEmotions";
 
 const queryClient = new QueryClient();
 
@@ -105,6 +106,7 @@ const App = () => (
           <Route path="/conditions/athletes-eating-disorders" element={<AthletesEatingDisorders />} />
           <Route path="/body-shame" element={<BodyShame />} />
           <Route path="/resources/5-steps-diet-roller-coaster" element={<FiveStepsDietRollerCoaster />} />
+          <Route path="/resources/move-toward-your-emotions" element={<MoveTowardYourEmotions />} />
           <Route path="/secure-file-submissions" element={<SecureFileSubmissions />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

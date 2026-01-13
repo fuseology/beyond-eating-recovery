@@ -9,7 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { 
   BookOpen, Heart, Users, Scale, Home, Sparkles, 
-  Brain, Video, Download, ExternalLink, Phone 
+  Brain, Headphones, Download, ExternalLink, Phone, Video 
 } from "lucide-react";
 import blog1 from "@/assets/blog-1.jpg";
 import blog2 from "@/assets/blog-2.jpg";
@@ -53,7 +53,7 @@ const Resources = () => {
     { icon: Home, title: "Family Support Resources", link: "/contact" },
     { icon: Sparkles, title: "Recovery Stories", link: "/about" },
     { icon: Heart, title: "Coping Skills & Self-Care", link: "/services" },
-    { icon: Video, title: "Virtual Therapy Guide", link: "/services" }
+    { icon: Headphones, title: "Audio Resources", link: "/resources#audio" }
   ];
 
   const assessmentTools = [
@@ -391,35 +391,39 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* Videos & Media */}
-      <section className="py-20 bg-background">
+      {/* Audio Resources */}
+      <section id="audio" className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-primary">
-            Videos & Media
+          <h2 className="text-3xl font-bold text-center mb-4 text-primary">
+            Audio Resources
           </h2>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg bg-muted">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Is Food Really the Problem?"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg bg-muted">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Steps to Make Peace with Food"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
+          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+            Guided practices and exercises to support your recovery journey
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <Link to="/resources/move-toward-your-emotions">
+              <Card className="border-2 hover:shadow-lg transition-all hover:border-accent/40 h-full cursor-pointer group">
+                <CardContent className="pt-6">
+                  <div className="flex items-start gap-4">
+                    <div className="w-14 h-14 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                      <Headphones className="w-7 h-7 text-accent" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="font-semibold text-primary mb-2 group-hover:text-accent transition-colors">
+                        Move Toward Your Emotions
+                      </h3>
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        Expressing your emotions is key to recovery. This audio will help you connect with your body, your emotions, and help you express them in a way that will support your recovery.
+                      </p>
+                      <span className="inline-flex items-center text-accent text-sm font-medium mt-3 group-hover:underline">
+                        Listen now
+                        <ExternalLink className="w-3 h-3 ml-1" />
+                      </span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
