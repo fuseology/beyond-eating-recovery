@@ -1,14 +1,17 @@
-import { MapPin, Phone, Mail, Facebook, Twitter, Linkedin, Youtube, Clock } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Youtube, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
+import { NAP_DATA } from "./NAPConsistency";
 
 const Footer = () => {
+  const portland = NAP_DATA.locations.portland;
+
   return (
     <footer className="bg-primary text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Column 1: Logo and Tagline */}
           <div>
-            <h3 className="text-2xl font-bold mb-3">Beyond Eating Recovery</h3>
+            <h3 className="text-2xl font-bold mb-3">{NAP_DATA.businessName}</h3>
             <p className="text-white/80 text-sm mb-4">
               Compassionate support for eating disorder recovery in Portland & Vancouver
             </p>
@@ -64,14 +67,14 @@ const Footer = () => {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <address className="not-italic">
-                  1235 Southeast Division Street<br />
-                  Portland, Oregon 97202
+                  {portland.street}<br />
+                  {portland.city}, {portland.state} {portland.zip}
                 </address>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <a href="tel:3607264141" className="hover:text-white transition-colors">
-                  360-726-4141
+                <a href={`tel:${NAP_DATA.phoneRaw}`} className="hover:text-white transition-colors">
+                  {NAP_DATA.phone}
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -89,9 +92,9 @@ const Footer = () => {
                 Office Hours
               </h4>
               <div className="text-sm text-white/80 space-y-1">
-                <p>Monday – Friday: 9am – 6pm</p>
-                <p>Saturday: By appointment</p>
-                <p>Sunday: Closed</p>
+                <p>{NAP_DATA.hoursShort.weekdays}</p>
+                <p>{NAP_DATA.hoursShort.saturday}</p>
+                <p>{NAP_DATA.hoursShort.sunday}</p>
               </div>
             </div>
           </div>
