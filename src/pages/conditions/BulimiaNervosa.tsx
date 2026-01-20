@@ -11,6 +11,7 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const BulimiaNervosa = () => {
   return (
@@ -28,6 +29,37 @@ const BulimiaNervosa = () => {
         <meta name="twitter:description" content="Expert treatment for bulimia nervosa in Portland & Vancouver. Break the binge-purge cycle with compassionate, evidence-based care that addresses root causes." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Bulimia Nervosa"
+        alternateName={["Bulimia", "BN"]}
+        description="Bulimia nervosa is an eating disorder characterized by cycles of binge eating followed by compensatory behaviors such as purging, excessive exercise, or fasting. Evidence-based treatment can help break the binge-purge cycle."
+        signOrSymptom={[
+          "Binge eating episodes",
+          "Purging behaviors (vomiting, laxatives)",
+          "Excessive exercise",
+          "Preoccupation with body shape and weight",
+          "Eating in secret",
+          "Feeling out of control around food",
+          "Dental problems",
+          "Swollen cheeks or jaw"
+        ]}
+        possibleTreatment={[
+          "Cognitive Behavioral Therapy (CBT-E)",
+          "Dialectical Behavior Therapy (DBT)",
+          "Individual Therapy",
+          "Nutritional Counseling",
+          "Medical Monitoring"
+        ]}
+        riskFactor={[
+          "History of dieting",
+          "Low self-esteem",
+          "Trauma history",
+          "Perfectionism",
+          "Anxiety or depression",
+          "Family history of eating disorders"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/bulimia-nervosa"
+      />
       <BreadcrumbSchema />
       <Header />
       {/* Breadcrumb Navigation */}

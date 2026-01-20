@@ -2,10 +2,21 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import bookBackCover from "@/assets/book-back-cover.png";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
+import { BookSchema } from "@/components/schemas";
 
 const BookSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-br from-background to-secondary/10">
+    <>
+      <BookSchema
+        name="If Your Hunger Could Talk"
+        authorName="Anne Cuthbert"
+        description="A compassionate guide to understanding the emotional roots of eating challenges. Anne Cuthbert shares her personal journey and professional expertise to help readers heal their relationship with food and their bodies."
+        isbn="B0BW7TMB5S"
+        datePublished="2023-02-01"
+        url="https://a.co/d/ehl8aa0"
+        imageUrl="https://www.beyondeatingrecovery.com/assets/book-back-cover.png"
+      />
+      <section className="py-16 md:py-24 bg-gradient-to-br from-background to-secondary/10">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-2 text-foreground">
@@ -88,6 +99,7 @@ const BookSection = () => {
 
       </div>
     </section>
+    </>
   );
 };
 
