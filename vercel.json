@@ -1,4 +1,12 @@
 {
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "beyondeatingrecovery.com" }],
+      "destination": "https://www.beyondeatingrecovery.com/$1",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/((?!api|assets|.*\\.xml|.*\\..*).*)", "destination": "/index.html" }
   ],

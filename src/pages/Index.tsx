@@ -18,10 +18,10 @@ const Index = () => {
     "@graph": [
       {
         "@type": "MedicalOrganization",
-        "@id": "https://beyondeatingrecovery.com/#organization",
+        "@id": "https://www.beyondeatingrecovery.com/#organization",
         "name": "Beyond Eating Recovery",
         "alternateName": "Food Is Not The Enemy",
-        "url": "https://beyondeatingrecovery.com",
+        "url": "https://www.beyondeatingrecovery.com",
         "logo": "https://beyondeatingrecovery.com/logo.png",
         "description": "Compassionate eating disorder treatment and recovery support in Portland, OR & Vancouver, WA. Specializing in anorexia, bulimia, binge eating disorder, and intuitive eating.",
         "address": [
@@ -92,16 +92,16 @@ const Index = () => {
       },
       {
         "@type": "WebSite",
-        "@id": "https://beyondeatingrecovery.com/#website",
-        "url": "https://beyondeatingrecovery.com",
+        "@id": "https://www.beyondeatingrecovery.com/#website",
+        "url": "https://www.beyondeatingrecovery.com",
         "name": "Beyond Eating Recovery",
         "description": "Portland & Vancouver eating disorder treatment center",
         "publisher": {
-          "@id": "https://beyondeatingrecovery.com/#organization"
+          "@id": "https://www.beyondeatingrecovery.com/#organization"
         },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://beyondeatingrecovery.com/search?q={search_term_string}",
+          "target": "https://www.beyondeatingrecovery.com/search?q={search_term_string}",
           "query-input": "required name=search_term_string"
         }
       }
@@ -117,7 +117,7 @@ const Index = () => {
           content="Compassionate eating disorder treatment in Portland, OR & Vancouver, WA. Specializing in anorexia, bulimia, binge eating, ARFID, and intuitive eating. In-person and virtual therapy available." 
         />
         <meta name="keywords" content="eating disorder treatment Portland, eating disorder therapist Vancouver WA, anorexia treatment, bulimia treatment, binge eating disorder, intuitive eating, HAES therapist" />
-        <link rel="canonical" href="https://beyondeatingrecovery.com" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
