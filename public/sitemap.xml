@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.beyondeatingrecovery.com/</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/hero-background.jpg</image:loc>
         <image:title>Beyond Eating Recovery - Eating Disorder Treatment</image:title>
@@ -32,6 +36,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/anne-cuthbert.jpg</image:loc>
         <image:title>Anne Cuthbert, MA, LPC, LMHC - Founder &amp; Clinical Director</image:title>
@@ -103,6 +110,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/services" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/inclusive-therapy.jpg</image:loc>
         <image:title>Eating Disorder Therapy Services</image:title>
@@ -114,12 +124,18 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/our-approach</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/our-approach" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/our-approach" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/our-approach" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/office-space.webp</image:loc>
         <image:title>Beyond Eating Recovery Office</image:title>
@@ -131,24 +147,36 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/contact" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/resources</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/resources" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/resources" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/resources" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/faq</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/faq" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/workshop</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/workshop" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/workshop" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/workshop" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/workshop-hero.jpg</image:loc>
         <image:title>Loveable At Any Size Workshop</image:title>
@@ -160,18 +188,27 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/careers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/careers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/careers" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/philosophy</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/philosophy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/philosophy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/philosophy" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/health-at-every-size</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/health-at-every-size" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/health-at-every-size" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/health-at-every-size" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/benefits-wellness.webp</image:loc>
         <image:title>Health At Every Size Approach</image:title>
@@ -183,18 +220,27 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/privacy-notice" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/privacy-notice" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/privacy-notice" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/secure-file-submissions</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/secure-file-submissions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/secure-file-submissions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/secure-file-submissions" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/anne-cuthbert</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/anne-cuthbert" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/anne-cuthbert" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/anne-cuthbert" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/anne-cuthbert.jpg</image:loc>
         <image:title>Anne Cuthbert, MA, LPC, LMHC - Founder &amp; Clinical Director</image:title>
@@ -206,6 +252,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/bailey-benn" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/bailey-benn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/bailey-benn" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/bailey-benn-new.webp</image:loc>
         <image:title>Bailey Benn, MA, LPC, LMHC - Licensed Professional Counselor</image:title>
@@ -217,6 +266,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/alyssa-pataki" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/alyssa-pataki" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/alyssa-pataki" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/alyssa-pataki.webp</image:loc>
         <image:title>Alyssa Pataki, MA, LMFT - Licensed Marriage &amp; Family Therapist</image:title>
@@ -228,6 +280,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/kiandra-cole" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/kiandra-cole" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/kiandra-cole" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/kiandra-cole.webp</image:loc>
         <image:title>Kiandra Cole, MA - Associate Therapist</image:title>
@@ -239,6 +294,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/rachel-bennett" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/rachel-bennett" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/rachel-bennett" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/rachel-bennett.webp</image:loc>
         <image:title>Rachel Bennett, MA - Professional Counselor Associate</image:title>
@@ -250,6 +308,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/annie-calhoun-randall-new.jpg</image:loc>
         <image:title>Annie Calhoun Randall, MA, NTP - Professional Counselor Associate</image:title>
@@ -261,6 +322,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/sara-kranich" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/sara-kranich" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/sara-kranich" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/sara-kranich.webp</image:loc>
         <image:title>Sara Kranich, MA - Associate Therapist</image:title>
@@ -272,6 +336,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/stephanie-okumura" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/stephanie-okumura" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/stephanie-okumura" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/stephanie-okumura.webp</image:loc>
         <image:title>Stephanie Okumura, MS, RDN - Registered Dietitian Nutritionist</image:title>
@@ -283,6 +350,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/michelle-commons" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/michelle-commons" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/michelle-commons" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/michelle-commons.webp</image:loc>
         <image:title>Michelle Commons - Admin Support</image:title>
@@ -294,6 +364,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/michelle-meredith" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/michelle-meredith" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/michelle-meredith" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/michelle-meredith.png</image:loc>
         <image:title>Michelle Meredith - Billing Support</image:title>
@@ -305,6 +378,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/mary-cooper" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/mary-cooper" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/mary-cooper" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/mary-cooper.webp</image:loc>
         <image:title>Mary Cooper - Marketing Administrator</image:title>
@@ -316,6 +392,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/emery-pederson" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/emery-pederson" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/emery-pederson" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/emery-pederson.webp</image:loc>
         <image:title>Emery Pederson - Admin Support</image:title>
@@ -327,6 +406,9 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/mackenzie-stracke" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/mackenzie-stracke" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/mackenzie-stracke" />
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/mackenzie-stracke.jpg</image:loc>
         <image:title>Mackenzie Stracke - Counseling Student Intern</image:title>
@@ -338,113 +420,170 @@
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/anorexia-nervosa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/anorexia-nervosa" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/anorexia-nervosa" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/bulimia-nervosa</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/bulimia-nervosa" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/bulimia-nervosa" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/bulimia-nervosa" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/binge-eating-disorder</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/binge-eating-disorder" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/binge-eating-disorder" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/binge-eating-disorder" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/co-occurring-issues</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/co-occurring-issues" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/co-occurring-issues" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/co-occurring-issues" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/arfid</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/arfid" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/arfid" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/arfid" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/osfed</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/osfed" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/osfed" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/osfed" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/orthorexia</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/orthorexia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/orthorexia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/orthorexia" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/atypical-anorexia</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/atypical-anorexia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/atypical-anorexia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/atypical-anorexia" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/disordered-eating</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/disordered-eating" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/disordered-eating" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/disordered-eating" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/emotional-eating</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/emotional-eating" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/emotional-eating" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/emotional-eating" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/body-dysmorphia</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/body-dysmorphia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/body-dysmorphia" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/body-dysmorphia" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/exercise-addiction</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/exercise-addiction" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/exercise-addiction" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/exercise-addiction" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/men-eating-disorders</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/men-eating-disorders" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/men-eating-disorders" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/men-eating-disorders" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/lgbtqia-eating-disorders</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/lgbtqia-eating-disorders" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/lgbtqia-eating-disorders" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/lgbtqia-eating-disorders" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/athletes-eating-disorders</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/athletes-eating-disorders" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/conditions/athletes-eating-disorders" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/conditions/athletes-eating-disorders" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/battle-of-the-binge</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/battle-of-the-binge" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/battle-of-the-binge" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/battle-of-the-binge" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/body-shame</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/body-shame" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/body-shame" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/body-shame" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/resources/5-steps-diet-roller-coaster</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/resources/5-steps-diet-roller-coaster" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/resources/5-steps-diet-roller-coaster" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/resources/5-steps-diet-roller-coaster" />
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/resources/move-toward-your-emotions</loc>
     <lastmod>2026-01-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/resources/move-toward-your-emotions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/resources/move-toward-your-emotions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/resources/move-toward-your-emotions" />
   </url>
 </urlset>
