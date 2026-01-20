@@ -9,6 +9,7 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const MenEatingDisorders = () => {
   return (
@@ -24,6 +25,36 @@ const MenEatingDisorders = () => {
           content="eating disorders in men, male eating disorder treatment, muscle dysmorphia therapy Portland, men's body image counseling Vancouver WA, anorexia in men, bulimia in men, binge eating disorder men, compulsive exercise men, gender-affirming eating disorder treatment, HAES for men, telehealth Oregon Washington" 
         />
       </Helmet>
+      <MedicalConditionSchema
+        name="Eating Disorders in Men"
+        alternateName={["Male Eating Disorders", "Men's Eating Disorders"]}
+        description="Men get eating disorders too. Specialized, gender-affirming treatment addresses unique presentations like muscle dysmorphia and the barriers men face seeking help. Your struggles are valid."
+        signOrSymptom={[
+          "Muscle dysmorphia",
+          "Excessive exercise and gym obsession",
+          "Bulking and cutting cycles",
+          "Protein and supplement obsession",
+          "Food restriction for performance",
+          "Binge eating",
+          "Purging behaviors"
+        ]}
+        possibleTreatment={[
+          "Gender-Affirming Therapy",
+          "Cognitive Behavioral Therapy",
+          "Individual Therapy",
+          "Nutritional Counseling",
+          "Body Image Work"
+        ]}
+        riskFactor={[
+          "Athletic participation",
+          "Weight-class sports",
+          "LGBTQ+ identity",
+          "Trauma history",
+          "Perfectionism",
+          "Social media influence"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/men-eating-disorders"
+      />
       <BreadcrumbSchema />
 
       <div className="min-h-screen flex flex-col bg-background">

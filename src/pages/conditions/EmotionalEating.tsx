@@ -17,6 +17,7 @@ import {
 import { Phone, BookOpen, ExternalLink } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const EmotionalEating = () => {
   return (
@@ -32,6 +33,35 @@ const EmotionalEating = () => {
           content="emotional eating treatment, compulsive overeating therapy, binge eating help Portland, stress eating counselor Vancouver WA, Intuitive Eating therapist, HAES counselor, weight-neutral eating disorder treatment, restrict-binge cycle, emotional eating recovery Oregon Washington, telehealth eating disorder therapy"
         />
       </Helmet>
+      <MedicalConditionSchema
+        name="Emotional Eating"
+        alternateName={["Compulsive Overeating", "Stress Eating"]}
+        description="Emotional eating is using food to cope with feelings rather than physical hunger. Treatment addresses root emotional causes to create lasting change without dieting or restriction."
+        signOrSymptom={[
+          "Eating when not physically hungry",
+          "Eating in response to emotions (stress, sadness, boredom)",
+          "Feeling out of control around food",
+          "Eating past comfortable fullness",
+          "Guilt or shame after eating",
+          "Using food as primary coping mechanism",
+          "Eating in secret"
+        ]}
+        possibleTreatment={[
+          "Individual Therapy",
+          "Dialectical Behavior Therapy (DBT)",
+          "Intuitive Eating Counseling",
+          "Emotional Regulation Skills",
+          "Nutritional Counseling"
+        ]}
+        riskFactor={[
+          "History of dieting",
+          "Emotional suppression",
+          "Stress or trauma",
+          "Lack of coping skills",
+          "Diet culture internalization"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/emotional-eating"
+      />
       <BreadcrumbSchema />
 
       <Header />

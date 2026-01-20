@@ -8,6 +8,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const DisorderedEating = () => {
   return (
@@ -26,6 +27,35 @@ const DisorderedEating = () => {
         <meta name="twitter:description" content="Compassionate, weight-neutral therapy for disordered eating patterns. You don't need a formal diagnosis to deserve support and healing." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Disordered Eating"
+        alternateName={["Subclinical Eating Disorder", "Problematic Eating Patterns"]}
+        description="Disordered eating refers to a range of irregular eating behaviors that don't meet full criteria for a clinical eating disorder but still cause significant distress and health impacts. You don't need a diagnosis to deserve support."
+        signOrSymptom={[
+          "Chronic dieting",
+          "Food restriction or skipping meals",
+          "Rigid food rules",
+          "Guilt or shame around eating",
+          "Preoccupation with food, weight, or body",
+          "Using exercise to 'earn' food",
+          "Binge eating episodes"
+        ]}
+        possibleTreatment={[
+          "Intuitive Eating Counseling",
+          "Cognitive Behavioral Therapy",
+          "Individual Therapy",
+          "Nutritional Counseling",
+          "HAES-Aligned Care"
+        ]}
+        riskFactor={[
+          "Diet culture exposure",
+          "History of dieting",
+          "Perfectionism",
+          "Weight stigma",
+          "Anxiety or stress"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/disordered-eating"
+      />
       <BreadcrumbSchema />
       <Header />
       

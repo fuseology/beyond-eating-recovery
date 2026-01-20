@@ -9,6 +9,7 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const BodyDysmorphia = () => {
   return (
@@ -24,6 +25,35 @@ const BodyDysmorphia = () => {
           content="body dysmorphia treatment, body dysmorphic disorder therapy, BDD counseling Portland, BDD treatment Vancouver WA, appearance preoccupation help, CBT for BDD, ERP therapy, body image disorder treatment, eating disorder and BDD, muscle dysmorphia treatment, telehealth BDD therapy Oregon Washington" 
         />
       </Helmet>
+      <MedicalConditionSchema
+        name="Body Dysmorphic Disorder"
+        alternateName={["BDD", "Body Dysmorphia"]}
+        description="Body dysmorphic disorder is a mental health condition where individuals become preoccupied with perceived flaws in their appearance that others cannot see. It often co-occurs with eating disorders and requires specialized treatment."
+        signOrSymptom={[
+          "Preoccupation with perceived appearance flaws",
+          "Repetitive behaviors (mirror checking, skin picking)",
+          "Reassurance seeking",
+          "Camouflaging perceived flaws",
+          "Avoiding social situations",
+          "Comparing appearance to others",
+          "Excessive grooming"
+        ]}
+        possibleTreatment={[
+          "Cognitive Behavioral Therapy (CBT)",
+          "Exposure and Response Prevention (ERP)",
+          "Acceptance and Commitment Therapy",
+          "Individual Therapy"
+        ]}
+        riskFactor={[
+          "Perfectionism",
+          "Anxiety disorders",
+          "OCD",
+          "Childhood teasing or bullying",
+          "Trauma history",
+          "Co-occurring eating disorders"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/body-dysmorphia"
+      />
       <BreadcrumbSchema />
 
       <div className="min-h-screen flex flex-col bg-background">

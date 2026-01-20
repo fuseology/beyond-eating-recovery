@@ -10,6 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { ChevronRight, Phone, MapPin, AlertCircle, ExternalLink, Heart, Users, Shield, Sparkles, Rainbow } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const LGBTQIAEatingDisorders = () => {
   return (
@@ -19,6 +20,35 @@ const LGBTQIAEatingDisorders = () => {
         <meta name="description" content="Truly affirming eating disorder treatment for LGBTQ+ individuals. Expert care addressing minority stress, trauma, identity. LGBTQIA+ group therapy available. Oregon & Washington—call 360-726-4141." />
         <meta name="keywords" content="LGBTQ eating disorder treatment, LGBTQIA affirming therapy Portland, transgender eating disorder help Vancouver WA, gay eating disorder treatment, lesbian eating disorder therapy, non-binary eating disorder care, queer affirming counselor, minority stress eating disorder, gender dysphoria and eating disorder, LGBTQ group therapy, telehealth Oregon Washington" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Eating Disorders in LGBTQIA+ Individuals"
+        alternateName={["LGBTQ+ Eating Disorders", "Queer Eating Disorders"]}
+        description="LGBTQIA+ individuals face higher rates of eating disorders due to minority stress, discrimination, and unique body image pressures. Truly affirming treatment addresses identity, trauma, and intersectionality."
+        signOrSymptom={[
+          "Eating disorder symptoms linked to identity stress",
+          "Body image concerns related to gender dysphoria",
+          "Using food to cope with discrimination",
+          "Restrictive eating to conform to body ideals",
+          "Binge eating in response to minority stress",
+          "Exercise patterns tied to gender expression"
+        ]}
+        possibleTreatment={[
+          "LGBTQIA+ Affirming Therapy",
+          "Trauma-Informed Care",
+          "Group Therapy for LGBTQ+ Individuals",
+          "Individual Therapy",
+          "Nutritional Counseling"
+        ]}
+        riskFactor={[
+          "Minority stress",
+          "Discrimination and rejection",
+          "Gender dysphoria",
+          "Family rejection",
+          "Internalized stigma",
+          "Multiple marginalized identities"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/lgbtqia-eating-disorders"
+      />
       <BreadcrumbSchema />
 
       <Header />
