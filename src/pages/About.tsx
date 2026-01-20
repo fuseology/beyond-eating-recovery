@@ -25,13 +25,13 @@ const About = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    "@id": "https://beyondeatingrecovery.com/about#webpage",
-    "url": "https://beyondeatingrecovery.com/about",
+    "@id": "https://www.beyondeatingrecovery.com/about#webpage",
+    "url": "https://www.beyondeatingrecovery.com/about",
     "name": "About Our Team | Beyond Eating Recovery",
     "description": "Meet our compassionate team of eating disorder specialists in Portland & Vancouver. Licensed therapists and dietitians using HAES, intuitive eating, and trauma-informed approaches.",
     "mainEntity": {
       "@type": "MedicalBusiness",
-      "@id": "https://beyondeatingrecovery.com/#organization",
+      "@id": "https://www.beyondeatingrecovery.com/#organization",
       "name": "Beyond Eating Recovery",
       "description": "Outpatient eating disorder treatment center providing compassionate, evidence-based therapy and nutrition counseling using Health At Every Size (HAES) and Intuitive Eating approaches.",
       "url": "https://www.beyondeatingrecovery.com",
@@ -243,7 +243,7 @@ const About = () => {
           content="Meet our compassionate eating disorder treatment team in Portland & Vancouver. Licensed therapists and dietitians using HAES, intuitive eating, and trauma-informed care." 
         />
         <meta name="keywords" content="eating disorder therapist Portland, eating disorder specialist Vancouver WA, HAES therapist, intuitive eating counselor, trauma-informed eating disorder treatment" />
-        <link rel="canonical" href="https://beyondeatingrecovery.com/about" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
