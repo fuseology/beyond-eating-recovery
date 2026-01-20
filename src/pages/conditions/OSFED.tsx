@@ -10,6 +10,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const OSFED = () => {
   return (
@@ -28,6 +29,34 @@ const OSFED = () => {
         <meta name="twitter:description" content="Comprehensive OSFED treatment. Other Specified Feeding or Eating Disorder is just as serious as other eating disorders. Specialized care available." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Other Specified Feeding or Eating Disorder"
+        alternateName={["OSFED", "EDNOS"]}
+        description="OSFED includes eating disorders that cause significant distress but don't meet full criteria for other eating disorders. It is just as serious and requires specialized treatment."
+        signOrSymptom={[
+          "Atypical anorexia symptoms",
+          "Low frequency binge eating",
+          "Low frequency purging",
+          "Night eating syndrome",
+          "Purging disorder",
+          "Significant distress around food and eating"
+        ]}
+        possibleTreatment={[
+          "Cognitive Behavioral Therapy (CBT)",
+          "Dialectical Behavior Therapy (DBT)",
+          "Individual Therapy",
+          "Nutritional Counseling",
+          "Group Therapy"
+        ]}
+        riskFactor={[
+          "History of dieting",
+          "Perfectionism",
+          "Anxiety or depression",
+          "Trauma history",
+          "Body dissatisfaction"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/osfed"
+      />
       <BreadcrumbSchema />
       <Header />
       

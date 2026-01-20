@@ -8,6 +8,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const Orthorexia = () => {
   return (
@@ -26,6 +27,35 @@ const Orthorexia = () => {
         <meta name="twitter:description" content="Compassionate orthorexia treatment. When healthy eating becomes unhealthy obsession. Find true balance in your relationship with food." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Orthorexia Nervosa"
+        alternateName={["Orthorexia", "Healthy Eating Obsession"]}
+        description="Orthorexia is an obsession with eating 'pure' or 'healthy' foods that becomes so rigid it damages physical health, emotional wellbeing, and relationships. Treatment helps find true balance with food."
+        signOrSymptom={[
+          "Obsessive focus on food quality",
+          "Rigid food rules",
+          "Anxiety when 'unhealthy' foods are present",
+          "Social isolation around food",
+          "Elimination of entire food groups",
+          "Spending excessive time planning meals",
+          "Feelings of superiority about eating habits"
+        ]}
+        possibleTreatment={[
+          "Cognitive Behavioral Therapy (CBT)",
+          "Exposure and Response Prevention (ERP)",
+          "Acceptance and Commitment Therapy (ACT)",
+          "Intuitive Eating Counseling",
+          "Nutritional Counseling"
+        ]}
+        riskFactor={[
+          "Perfectionism",
+          "OCD tendencies",
+          "Anxiety disorders",
+          "History of other eating disorders",
+          "Wellness culture immersion"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/orthorexia"
+      />
       <BreadcrumbSchema />
       <Header />
       

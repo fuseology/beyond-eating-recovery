@@ -12,6 +12,7 @@ import FinalCTASection from "@/components/FinalCTASection";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Footer from "@/components/Footer";
 import { NAP_DATA } from "@/components/NAPConsistency";
+import { getAggregateRatingSchema, BUSINESS_RATING } from "@/components/schemas";
 
 const Index = () => {
   const portland = NAP_DATA.locations.portland;
@@ -93,7 +94,8 @@ const Index = () => {
             "opens": "09:00",
             "closes": "14:00"
           }
-        ]
+        ],
+        "aggregateRating": getAggregateRatingSchema(BUSINESS_RATING)
       },
       {
         "@type": "LocalBusiness",
@@ -142,7 +144,8 @@ const Index = () => {
           }
         ],
         "sameAs": Object.values(NAP_DATA.socialMedia),
-        "hasMap": portland.googleMapsUrl
+        "hasMap": portland.googleMapsUrl,
+        "aggregateRating": getAggregateRatingSchema(BUSINESS_RATING)
       },
       {
         "@type": "LocalBusiness",
@@ -191,7 +194,8 @@ const Index = () => {
           }
         ],
         "sameAs": Object.values(NAP_DATA.socialMedia),
-        "hasMap": vancouver.googleMapsUrl
+        "hasMap": vancouver.googleMapsUrl,
+        "aggregateRating": getAggregateRatingSchema(BUSINESS_RATING)
       },
       {
         "@type": "WebSite",

@@ -10,6 +10,7 @@ import { ChevronRight, Phone, Mail, MapPin, AlertCircle, ExternalLink } from "lu
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const AnorexiaNervosa = () => {
   return (
@@ -28,6 +29,36 @@ const AnorexiaNervosa = () => {
         <meta name="twitter:description" content="Compassionate, evidence-based anorexia nervosa treatment. Address root causes and support lasting healing. Recovery is possible." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Anorexia Nervosa"
+        alternateName={["Anorexia", "AN"]}
+        description="Anorexia nervosa is a serious eating disorder characterized by severe food restriction, intense fear of weight gain, and distorted body image. Recovery is possible with compassionate, evidence-based treatment."
+        signOrSymptom={[
+          "Severe food restriction",
+          "Intense fear of gaining weight",
+          "Distorted body image",
+          "Excessive exercise",
+          "Social withdrawal",
+          "Denial of hunger",
+          "Obsessive calorie counting"
+        ]}
+        possibleTreatment={[
+          "Individual Therapy",
+          "Family-Based Treatment (FBT)",
+          "Cognitive Behavioral Therapy (CBT)",
+          "Nutritional Counseling",
+          "Medical Monitoring"
+        ]}
+        riskFactor={[
+          "Genetics and family history",
+          "Perfectionism",
+          "Trauma history",
+          "Diet culture exposure",
+          "Anxiety or depression",
+          "Athletes in weight-focused sports"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/anorexia-nervosa"
+      />
       <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />

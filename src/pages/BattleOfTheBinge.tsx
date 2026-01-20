@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
@@ -12,12 +13,32 @@ import {
 } from "@/components/ui/accordion";
 import { Check, ExternalLink, Heart, Unlock, Search } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
+import { CourseSchema } from "@/components/schemas";
 
 const BattleOfTheBinge = () => {
   const courseLink = "https://battleofthebinge.com/";
   
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Battle of the Binge | Online Course for Binge Eating Recovery | Beyond Eating Recovery</title>
+        <meta 
+          name="description" 
+          content="Break free from binge eating and emotional eating with our 4-week self-study online course. Learn to end the restrict-binge cycle and make peace with food." 
+        />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/battle-of-the-binge" />
+      </Helmet>
+      <CourseSchema
+        name="Battle of the Binge"
+        description="A 4-week self-study online course to break free from binge eating and emotional eating. Learn proven strategies to end the restrict-binge cycle, understand your emotional eating triggers, and make peace with food—without another diet."
+        providerName="Beyond Eating Recovery"
+        providerUrl="https://www.beyondeatingrecovery.com"
+        instructorName="Anne Cuthbert"
+        instructorUrl="https://www.beyondeatingrecovery.com/about/anne-cuthbert"
+        courseUrl={courseLink}
+        duration="P4W"
+        courseMode="Online"
+      />
       <Header />
       <Breadcrumbs />
       

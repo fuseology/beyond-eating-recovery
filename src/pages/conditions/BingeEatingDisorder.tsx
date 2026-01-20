@@ -11,6 +11,7 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const BingeEatingDisorder = () => {
   return (
@@ -28,6 +29,36 @@ const BingeEatingDisorder = () => {
         <meta name="twitter:description" content="Compassionate, weight-neutral treatment for binge eating disorder (BED) in Portland & Vancouver. Evidence-based care addressing the emotional roots of binge eating." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Binge Eating Disorder"
+        alternateName={["BED", "Compulsive Overeating"]}
+        description="Binge eating disorder is the most common eating disorder, characterized by recurrent episodes of eating large amounts of food while feeling a loss of control. Weight-neutral, evidence-based treatment addresses the emotional roots of binge eating."
+        signOrSymptom={[
+          "Recurrent binge eating episodes",
+          "Eating rapidly during binges",
+          "Eating until uncomfortably full",
+          "Eating when not physically hungry",
+          "Eating alone due to embarrassment",
+          "Feeling disgusted, depressed, or guilty after eating",
+          "Distress about binge eating"
+        ]}
+        possibleTreatment={[
+          "Cognitive Behavioral Therapy (CBT)",
+          "Dialectical Behavior Therapy (DBT)",
+          "Interpersonal Therapy",
+          "Intuitive Eating Counseling",
+          "Nutritional Counseling"
+        ]}
+        riskFactor={[
+          "History of dieting",
+          "Emotional difficulties",
+          "Trauma history",
+          "Low self-esteem",
+          "Weight stigma",
+          "Family history of eating disorders"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/binge-eating-disorder"
+      />
       <BreadcrumbSchema />
       <Header />
       {/* Breadcrumb Navigation */}

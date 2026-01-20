@@ -9,6 +9,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const ARFID = () => {
   return (
@@ -27,6 +28,35 @@ const ARFID = () => {
         <meta name="twitter:description" content="Specialized ARFID treatment for avoidant/restrictive food intake disorder. Compassionate care addressing sensory sensitivities and food anxieties." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Avoidant/Restrictive Food Intake Disorder"
+        alternateName={["ARFID", "Selective Eating Disorder"]}
+        description="ARFID is an eating disorder characterized by avoidance or restriction of food intake based on sensory characteristics, fear of aversive consequences, or lack of interest in eating—without concerns about body weight or shape."
+        signOrSymptom={[
+          "Extreme picky eating",
+          "Sensory sensitivity to food textures, colors, or smells",
+          "Fear of choking or vomiting",
+          "Lack of appetite or interest in food",
+          "Limited variety of acceptable foods",
+          "Nutritional deficiencies",
+          "Weight loss or failure to gain weight"
+        ]}
+        possibleTreatment={[
+          "Cognitive Behavioral Therapy (CBT)",
+          "Exposure Therapy",
+          "Sensory Desensitization",
+          "Family-Based Treatment",
+          "Nutritional Counseling"
+        ]}
+        riskFactor={[
+          "Autism spectrum disorder",
+          "Anxiety disorders",
+          "Sensory processing differences",
+          "History of choking or vomiting",
+          "GI conditions"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/arfid"
+      />
       <BreadcrumbSchema />
       <Header />
       
