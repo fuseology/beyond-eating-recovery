@@ -1,12 +1,39 @@
-// Sitemap generator script
+// Enhanced Sitemap generator script with Git-based lastmod dates
 // Run with: npx tsx scripts/generate-sitemap.ts
-// Generates both URL sitemap and Image sitemap
+// Generates URL sitemap, Image sitemap, and Sitemap index
 
 import { routes, SITE_URL, getAllImages } from '../src/lib/routes';
 import * as fs from 'fs';
 import * as path from 'path';
+import { execSync } from 'child_process';
 
 const today = new Date().toISOString().split('T')[0];
+
+// Get the last modified date from Git for a specific file
+function getGitLastModified(filePath: string): string {
+  try {
+    const result = execSync(
+      `git log -1 --format="%ad" --date=short -- "${filePath}"`,
+      { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] }
+    ).trim();
+    return result || today;
+  } catch {
+    return today;
+  }
+}
+
+// Get the most recent commit date in the entire project (fallback)
+function getProjectLastModified(): string {
+  try {
+    const result = execSync(
+      'git log -1 --format="%ad" --date=short',
+      { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] }
+    ).trim();
+    return result || today;
+  } catch {
+    return today;
+  }
+}
 
 // Escape XML special characters
 function escapeXml(str: string): string {
@@ -20,17 +47,36 @@ function escapeXml(str: string): string {
 
 // Convert asset path to public URL
 function assetToUrl(assetPath: string): string {
-  // Convert /src/assets/image.jpg to https://site.com/assets/image.jpg
-  // Note: In production, Vite bundles these with hashes. For sitemap purposes,
-  // we use a consistent path that should be set up with redirects or copied to public
   const filename = assetPath.split('/').pop() || '';
   return `${SITE_URL}/assets/${filename}`;
 }
 
+// Get lastmod for a route (priority: manual > git > project fallback)
+function getRouteLastmod(route: typeof routes[0], projectFallback: string): string {
+  // Priority 1: Manual override
+  if (route.lastmod) {
+    return route.lastmod;
+  }
+  
+  // Priority 2: Git-based date from source file
+  if (route.sourceFile) {
+    const gitDate = getGitLastModified(route.sourceFile);
+    if (gitDate !== today) {
+      return gitDate;
+    }
+  }
+  
+  // Priority 3: Project-wide fallback
+  return projectFallback;
+}
+
 // Generate main URL sitemap with embedded images and hreflang
 function generateUrlSitemap(): string {
+  const projectFallback = getProjectLastModified();
+  
   const urlEntries = routes.map(route => {
     const loc = route.path === '/' ? SITE_URL + '/' : SITE_URL + route.path;
+    const lastmod = getRouteLastmod(route, projectFallback);
     
     let imageEntries = '';
     if (route.images && route.images.length > 0) {
@@ -50,7 +96,7 @@ function generateUrlSitemap(): string {
     
     return `  <url>
     <loc>${escapeXml(loc)}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastmod}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority.toFixed(1)}</priority>${hreflangEntries}${imageEntries}
   </url>`;
@@ -67,12 +113,16 @@ ${urlEntries}
 // Generate standalone image sitemap
 function generateImageSitemap(): string {
   const allImages = getAllImages();
+  const projectFallback = getProjectLastModified();
   
   const imageEntries = allImages.map(({ pageUrl, image }) => {
     const loc = pageUrl === '/' ? SITE_URL + '/' : SITE_URL + pageUrl;
+    const route = routes.find(r => r.path === pageUrl);
+    const lastmod = route ? getRouteLastmod(route, projectFallback) : projectFallback;
     
     return `  <url>
     <loc>${escapeXml(loc)}</loc>
+    <lastmod>${lastmod}</lastmod>
     <image:image>
       <image:loc>${escapeXml(assetToUrl(image.src))}</image:loc>
       <image:title>${escapeXml(image.title)}</image:title>${image.caption ? `
@@ -103,7 +153,9 @@ function generateSitemapIndex(): string {
 </sitemapindex>`;
 }
 
-// Generate and write all sitemaps
+// Main execution
+console.log('🚀 Starting sitemap generation...\n');
+
 const publicDir = path.join(process.cwd(), 'public');
 
 // Main sitemap with images embedded
@@ -122,7 +174,8 @@ const sitemapIndex = generateSitemapIndex();
 fs.writeFileSync(path.join(publicDir, 'sitemap-index.xml'), sitemapIndex, 'utf-8');
 console.log(`✓ Sitemap index generated`);
 
-console.log('\nAll sitemaps generated successfully!');
+console.log('\n📁 All sitemaps generated successfully!');
 console.log(`  - ${SITE_URL}/sitemap.xml (main + images)`);
 console.log(`  - ${SITE_URL}/sitemap-images.xml (images only)`);
 console.log(`  - ${SITE_URL}/sitemap-index.xml (index)`);
+console.log('\n💡 Tip: Run "npx tsx scripts/validate-sitemap.ts" to validate routes');
