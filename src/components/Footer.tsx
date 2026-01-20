@@ -57,13 +57,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info with NAP */}
           <div>
-            <h4 className="font-semibold mb-3 text-lg">Portland Office</h4>
-            <div className="space-y-2 text-sm text-white/80">
+            <h4 className="font-semibold mb-3 text-lg">Beyond Eating Recovery of Portland</h4>
+            <div className="space-y-2 text-sm text-white/80 mb-4">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Portland, OR & Vancouver, WA</span>
+                <address className="not-italic">
+                  1235 Southeast Division Street<br />
+                  Portland, Oregon 97202
+                </address>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 flex-shrink-0" />
@@ -77,6 +80,21 @@ const Footer = () => {
                   intakes@beyondeatingrecovery.com
                 </a>
               </div>
+            </div>
+            
+            {/* Google Maps Embed */}
+            <div className="rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5592.498093295984!2d-122.652856!3d45.505065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b992a10ec77%3A0x27e481ed74713d36!2sBody%20Expressions%20of%20Portland%20-%20Eating%20Disorders%20Counseling!5e0!3m2!1sen!2sus!4v1763163338622!5m2!1sen!2sus"
+                width="100%"
+                height="150"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Beyond Eating Recovery Portland Office Location"
+                className="rounded-lg"
+              />
             </div>
           </div>
 
