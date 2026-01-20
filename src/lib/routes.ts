@@ -36,7 +36,7 @@ export const routes: RouteConfig[] = [
   { path: '/about/sara-kranich', priority: 0.7, changefreq: 'monthly' },
   { path: '/about/stephanie-okumura', priority: 0.7, changefreq: 'monthly' },
   { path: '/about/michelle-commons', priority: 0.7, changefreq: 'monthly' },
-  { path: '/about/michelle-sullins', priority: 0.7, changefreq: 'monthly' },
+  { path: '/about/michelle-meredith', priority: 0.7, changefreq: 'monthly' },
   { path: '/about/mary-cooper', priority: 0.7, changefreq: 'monthly' },
   { path: '/about/emery-pederson', priority: 0.7, changefreq: 'monthly' },
   

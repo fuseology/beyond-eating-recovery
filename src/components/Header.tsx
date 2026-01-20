@@ -27,7 +27,7 @@ const Header = () => {
     { title: "Sara Kranich, MA", href: "/about/sara-kranich" },
     { title: "Stephanie Okumura, MS, RDN", href: "/about/stephanie-okumura" },
     { title: "Michelle Commons", href: "/about/michelle-commons" },
-    { title: "Michelle Sullins", href: "/about/michelle-sullins" },
+    { title: "Michelle Meredith", href: "/about/michelle-meredith" },
     { title: "Mary Cooper", href: "/about/mary-cooper" },
     { title: "Emery Pederson", href: "/about/emery-pederson" },
     { title: "Mackenzie Stracke, Counseling Student Intern", href: "/about/mackenzie-stracke" },

@@ -32,7 +32,7 @@ const routeLabels: Record<string, string> = {
   '/about/sara-kranich': 'Sara Kranich',
   '/about/stephanie-okumura': 'Stephanie Okumura',
   '/about/michelle-commons': 'Michelle Commons',
-  '/about/michelle-sullins': 'Michelle Sullins',
+  '/about/michelle-meredith': 'Michelle Meredith',
   '/about/mary-cooper': 'Mary Cooper',
   '/about/emery-pederson': 'Emery Pederson',
   '/conditions/anorexia-nervosa': 'Anorexia Nervosa',
