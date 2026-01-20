@@ -11,93 +11,74 @@ import TrustIndicators from "@/components/TrustIndicators";
 import FinalCTASection from "@/components/FinalCTASection";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Footer from "@/components/Footer";
+import { NAP_DATA } from "@/components/NAPConsistency";
 
 const Index = () => {
+  const portland = NAP_DATA.locations.portland;
+  const vancouver = NAP_DATA.locations.vancouver;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "MedicalOrganization",
-        "@id": "https://www.beyondeatingrecovery.com/#organization",
-        "name": "Beyond Eating Recovery",
+        "@id": `${NAP_DATA.website}/#organization`,
+        "name": NAP_DATA.businessName,
         "alternateName": "Food Is Not The Enemy",
-        "url": "https://www.beyondeatingrecovery.com",
-        "logo": "https://www.beyondeatingrecovery.com/logo.png",
-        "image": "https://www.beyondeatingrecovery.com/assets/hero-background.jpg",
+        "url": NAP_DATA.website,
+        "logo": `${NAP_DATA.website}/logo.png`,
+        "image": `${NAP_DATA.website}/assets/hero-background.jpg`,
         "description": "Compassionate eating disorder treatment and recovery support in Portland, OR & Vancouver, WA. Specializing in anorexia, bulimia, binge eating disorder, and intuitive eating.",
         "address": [
           {
             "@type": "PostalAddress",
-            "streetAddress": "1235 SE Division Street, Suite 104",
-            "addressLocality": "Portland",
-            "addressRegion": "OR",
-            "postalCode": "97202",
-            "addressCountry": "US"
+            "streetAddress": portland.street,
+            "addressLocality": portland.city,
+            "addressRegion": portland.state,
+            "postalCode": portland.zip,
+            "addressCountry": portland.countryCode
           },
           {
             "@type": "PostalAddress",
-            "streetAddress": "400 E. Evergreen Blvd, Suite 309",
-            "addressLocality": "Vancouver",
-            "addressRegion": "WA",
-            "postalCode": "98660",
-            "addressCountry": "US"
+            "streetAddress": vancouver.street,
+            "addressLocality": vancouver.city,
+            "addressRegion": vancouver.state,
+            "postalCode": vancouver.zip,
+            "addressCountry": vancouver.countryCode
           }
         ],
-        "telephone": "+1-360-726-4141",
-        "email": "info@beyondeating.com",
+        "telephone": NAP_DATA.phoneInternational,
+        "email": NAP_DATA.email,
         "priceRange": "$$",
         "medicalSpecialty": ["Eating Disorder Treatment", "Mental Health Counseling", "Nutrition Counseling"],
         "areaServed": [
           {
             "@type": "City",
-            "name": "Portland",
+            "name": portland.city,
             "containedInPlace": {
               "@type": "State",
-              "name": "Oregon"
+              "name": portland.stateFullName
             }
           },
           {
             "@type": "City",
-            "name": "Vancouver",
+            "name": vancouver.city,
             "containedInPlace": {
               "@type": "State",
-              "name": "Washington"
+              "name": vancouver.stateFullName
             }
           }
         ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Eating Disorder Treatment Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "MedicalTherapy",
-                "name": "Individual Therapy"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "MedicalTherapy",
-                "name": "Group Therapy"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "MedicalTherapy",
-                "name": "Nutrition Counseling"
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "MedicalTherapy",
-                "name": "Telehealth Services"
-              }
+          "itemListElement": NAP_DATA.services.slice(0, 4).map(service => ({
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "MedicalTherapy",
+              "name": service
             }
-          ]
+          }))
         },
         "openingHoursSpecification": [
           {
@@ -116,33 +97,33 @@ const Index = () => {
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.beyondeatingrecovery.com/#localbusiness-portland",
-        "name": "Beyond Eating Recovery - Portland",
-        "image": "https://www.beyondeatingrecovery.com/assets/office-space.webp",
-        "description": "Eating disorder treatment center in Portland, Oregon offering compassionate therapy for anorexia, bulimia, binge eating disorder, and body image concerns.",
-        "url": "https://www.beyondeatingrecovery.com",
-        "telephone": "+1-360-726-4141",
-        "email": "info@beyondeating.com",
+        "@id": `${NAP_DATA.website}/#localbusiness-portland`,
+        "name": `${NAP_DATA.businessName} - ${portland.city}`,
+        "image": `${NAP_DATA.website}/assets/office-space.webp`,
+        "description": `Eating disorder treatment center in ${portland.city}, ${portland.stateFullName} offering compassionate therapy for anorexia, bulimia, binge eating disorder, and body image concerns.`,
+        "url": NAP_DATA.website,
+        "telephone": NAP_DATA.phoneInternational,
+        "email": NAP_DATA.email,
         "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "1235 SE Division Street, Suite 104",
-          "addressLocality": "Portland",
-          "addressRegion": "OR",
-          "postalCode": "97202",
-          "addressCountry": "US"
+          "streetAddress": portland.street,
+          "addressLocality": portland.city,
+          "addressRegion": portland.state,
+          "postalCode": portland.zip,
+          "addressCountry": portland.countryCode
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "45.5051",
-          "longitude": "-122.6528"
+          "latitude": portland.coordinates.latitude.toString(),
+          "longitude": portland.coordinates.longitude.toString()
         },
         "areaServed": {
           "@type": "GeoCircle",
           "geoMidpoint": {
             "@type": "GeoCoordinates",
-            "latitude": "45.5051",
-            "longitude": "-122.6528"
+            "latitude": portland.coordinates.latitude.toString(),
+            "longitude": portland.coordinates.longitude.toString()
           },
           "geoRadius": "40000"
         },
@@ -160,41 +141,38 @@ const Index = () => {
             "closes": "14:00"
           }
         ],
-        "sameAs": [
-          "https://www.facebook.com/beyondeatingrecovery",
-          "https://www.instagram.com/beyondeatingrecovery"
-        ],
-        "hasMap": "https://www.google.com/maps?cid=2882847891293830454"
+        "sameAs": Object.values(NAP_DATA.socialMedia),
+        "hasMap": portland.googleMapsUrl
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.beyondeatingrecovery.com/#localbusiness-vancouver",
-        "name": "Beyond Eating Recovery - Vancouver",
-        "image": "https://www.beyondeatingrecovery.com/assets/office-space.webp",
-        "description": "Eating disorder treatment center in Vancouver, Washington offering compassionate therapy for anorexia, bulimia, binge eating disorder, and body image concerns.",
-        "url": "https://www.beyondeatingrecovery.com",
-        "telephone": "+1-360-726-4141",
-        "email": "info@beyondeating.com",
+        "@id": `${NAP_DATA.website}/#localbusiness-vancouver`,
+        "name": `${NAP_DATA.businessName} - ${vancouver.city}`,
+        "image": `${NAP_DATA.website}/assets/office-space.webp`,
+        "description": `Eating disorder treatment center in ${vancouver.city}, ${vancouver.stateFullName} offering compassionate therapy for anorexia, bulimia, binge eating disorder, and body image concerns.`,
+        "url": NAP_DATA.website,
+        "telephone": NAP_DATA.phoneInternational,
+        "email": NAP_DATA.email,
         "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "400 E. Evergreen Blvd, Suite 309",
-          "addressLocality": "Vancouver",
-          "addressRegion": "WA",
-          "postalCode": "98660",
-          "addressCountry": "US"
+          "streetAddress": vancouver.street,
+          "addressLocality": vancouver.city,
+          "addressRegion": vancouver.state,
+          "postalCode": vancouver.zip,
+          "addressCountry": vancouver.countryCode
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "45.6280",
-          "longitude": "-122.6739"
+          "latitude": vancouver.coordinates.latitude.toString(),
+          "longitude": vancouver.coordinates.longitude.toString()
         },
         "areaServed": {
           "@type": "GeoCircle",
           "geoMidpoint": {
             "@type": "GeoCoordinates",
-            "latitude": "45.6280",
-            "longitude": "-122.6739"
+            "latitude": vancouver.coordinates.latitude.toString(),
+            "longitude": vancouver.coordinates.longitude.toString()
           },
           "geoRadius": "40000"
         },
@@ -212,24 +190,21 @@ const Index = () => {
             "closes": "14:00"
           }
         ],
-        "sameAs": [
-          "https://www.facebook.com/beyondeatingrecovery",
-          "https://www.instagram.com/beyondeatingrecovery"
-        ],
-        "hasMap": "https://www.google.com/maps?cid=2882847891293830454"
+        "sameAs": Object.values(NAP_DATA.socialMedia),
+        "hasMap": vancouver.googleMapsUrl
       },
       {
         "@type": "WebSite",
-        "@id": "https://www.beyondeatingrecovery.com/#website",
-        "url": "https://www.beyondeatingrecovery.com",
-        "name": "Beyond Eating Recovery",
+        "@id": `${NAP_DATA.website}/#website`,
+        "url": NAP_DATA.website,
+        "name": NAP_DATA.businessName,
         "description": "Portland & Vancouver eating disorder treatment center",
         "publisher": {
-          "@id": "https://www.beyondeatingrecovery.com/#organization"
+          "@id": `${NAP_DATA.website}/#organization`
         },
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://www.beyondeatingrecovery.com/search?q={search_term_string}",
+          "target": `${NAP_DATA.website}/search?q={search_term_string}`,
           "query-input": "required name=search_term_string"
         }
       }
