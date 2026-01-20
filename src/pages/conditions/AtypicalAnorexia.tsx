@@ -4,6 +4,7 @@ import { AlertCircle, Calendar, Phone, Mail, MapPin } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
@@ -25,6 +26,7 @@ const AtypicalAnorexia = () => {
         <meta name="twitter:description" content="Weight-neutral, HAES-aligned therapy for atypical anorexia. Just as serious as typical anorexia. You deserve validation and compassionate care." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       
       <main className="flex-grow">

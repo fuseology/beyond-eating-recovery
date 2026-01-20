@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
@@ -27,6 +28,7 @@ const OSFED = () => {
         <meta name="twitter:description" content="Comprehensive OSFED treatment. Other Specified Feeding or Eating Disorder is just as serious as other eating disorders. Specialized care available." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       
       <main className="container mx-auto px-4 py-8 max-w-7xl">

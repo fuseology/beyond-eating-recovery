@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
@@ -26,6 +27,7 @@ const CoOccurringIssues = () => {
         <meta name="twitter:description" content="Integrated treatment for eating disorders with co-occurring depression, anxiety, trauma, and substance use. Comprehensive care that treats the whole person." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       
       {/* Breadcrumb */}

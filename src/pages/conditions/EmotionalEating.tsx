@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -31,6 +32,7 @@ const EmotionalEating = () => {
           content="emotional eating treatment, compulsive overeating therapy, binge eating help Portland, stress eating counselor Vancouver WA, Intuitive Eating therapist, HAES counselor, weight-neutral eating disorder treatment, restrict-binge cycle, emotional eating recovery Oregon Washington, telehealth eating disorder therapy"
         />
       </Helmet>
+      <BreadcrumbSchema />
 
       <Header />
 

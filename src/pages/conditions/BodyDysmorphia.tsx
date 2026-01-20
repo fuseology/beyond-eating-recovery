@@ -6,6 +6,7 @@ import { Phone, AlertCircle, ExternalLink, CheckCircle, XCircle } from "lucide-r
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -23,6 +24,7 @@ const BodyDysmorphia = () => {
           content="body dysmorphia treatment, body dysmorphic disorder therapy, BDD counseling Portland, BDD treatment Vancouver WA, appearance preoccupation help, CBT for BDD, ERP therapy, body image disorder treatment, eating disorder and BDD, muscle dysmorphia treatment, telehealth BDD therapy Oregon Washington" 
         />
       </Helmet>
+      <BreadcrumbSchema />
 
       <div className="min-h-screen flex flex-col bg-background">
         <Header />

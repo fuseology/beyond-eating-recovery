@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, Mail, MapPin, AlertCircle, ExternalLink } from "lucide-react";
@@ -27,6 +28,7 @@ const AnorexiaNervosa = () => {
         <meta name="twitter:description" content="Compassionate, evidence-based anorexia nervosa treatment. Address root causes and support lasting healing. Recovery is possible." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />
 
