@@ -13,4 +13,6 @@ Allow: /
 User-agent: *
 Allow: /
 
+Sitemap: https://www.beyondeatingrecovery.com/sitemap-index.xml
 Sitemap: https://www.beyondeatingrecovery.com/sitemap.xml
+Sitemap: https://www.beyondeatingrecovery.com/sitemap-images.xml
