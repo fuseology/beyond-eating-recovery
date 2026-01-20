@@ -255,6 +255,152 @@ const Conditions = () => {
             ]
           })}
         </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Eating Disorders We Treat at Beyond Eating Recovery",
+            "description": "Comprehensive list of eating disorders and related conditions treated at Beyond Eating Recovery in Portland, OR and Vancouver, WA",
+            "numberOfItems": 15,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Anorexia Nervosa",
+                  "url": "https://beyondeatingrecovery.com/conditions/anorexia-nervosa"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Bulimia Nervosa",
+                  "url": "https://beyondeatingrecovery.com/conditions/bulimia-nervosa"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Binge Eating Disorder",
+                  "url": "https://beyondeatingrecovery.com/conditions/binge-eating-disorder"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Atypical Anorexia Nervosa",
+                  "url": "https://beyondeatingrecovery.com/conditions/atypical-anorexia"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "ARFID (Avoidant/Restrictive Food Intake Disorder)",
+                  "url": "https://beyondeatingrecovery.com/conditions/arfid"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "OSFED (Other Specified Feeding or Eating Disorder)",
+                  "url": "https://beyondeatingrecovery.com/conditions/osfed"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Orthorexia",
+                  "url": "https://beyondeatingrecovery.com/conditions/orthorexia"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 8,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Disordered Eating",
+                  "url": "https://beyondeatingrecovery.com/conditions/disordered-eating"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 9,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Emotional Eating",
+                  "url": "https://beyondeatingrecovery.com/conditions/emotional-eating"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 10,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Body Dysmorphic Disorder",
+                  "url": "https://beyondeatingrecovery.com/conditions/body-dysmorphia"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 11,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Exercise Addiction",
+                  "url": "https://beyondeatingrecovery.com/conditions/exercise-addiction"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 12,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Co-Occurring Mental Health Issues",
+                  "url": "https://beyondeatingrecovery.com/conditions/co-occurring-issues"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 13,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Eating Disorders in Men",
+                  "url": "https://beyondeatingrecovery.com/conditions/men-eating-disorders"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 14,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Eating Disorders in LGBTQIA+ Individuals",
+                  "url": "https://beyondeatingrecovery.com/conditions/lgbtqia-eating-disorders"
+                }
+              },
+              {
+                "@type": "ListItem",
+                "position": 15,
+                "item": {
+                  "@type": "MedicalCondition",
+                  "name": "Eating Disorders in Athletes",
+                  "url": "https://beyondeatingrecovery.com/conditions/athletes-eating-disorders"
+                }
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Header />
