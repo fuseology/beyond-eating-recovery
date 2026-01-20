@@ -16,7 +16,7 @@ import annieCalhounRandall from "@/assets/annie-calhoun-randall-new.jpg";
 import saraKranich from "@/assets/sara-kranich.webp";
 import stephanieOkumura from "@/assets/stephanie-okumura.webp";
 import michelleCommons from "@/assets/michelle-commons.webp";
-import michelleSullins from "@/assets/michelle-sullins.png";
+import michelleMeredith from "@/assets/michelle-meredith.png";
 import maryCooper from "@/assets/mary-cooper.webp";
 import emeryPederson from "@/assets/emery-pederson.webp";
 import mackenzieStracke from "@/assets/mackenzie-stracke.jpg";
@@ -109,7 +109,7 @@ const About = () => {
         { "@type": "Person", "name": "Stephanie Okumura", "jobTitle": "MS, RDN" },
         { "@type": "Person", "name": "Mackenzie Stracke", "jobTitle": "Counseling Student Intern" },
         { "@type": "Person", "name": "Michelle Commons", "jobTitle": "Support Staff" },
-        { "@type": "Person", "name": "Michelle Sullins", "jobTitle": "Support Staff" },
+        { "@type": "Person", "name": "Michelle Meredith", "jobTitle": "Support Staff" },
         { "@type": "Person", "name": "Mary Cooper", "jobTitle": "Support Staff" },
         { "@type": "Person", "name": "Emery Pederson", "jobTitle": "Support Staff" }
       ],
@@ -204,10 +204,10 @@ const About = () => {
       bio: "Michelle brings friendly, compassionate administrative support to Beyond Eating Recovery. With over two decades in personal development, she's passionate about helping people become better versions of themselves. When you reach out, you'll likely connect with Michelle first."
     },
     {
-      name: "Michelle Sullins",
+      name: "Michelle Meredith",
       title: "Billing Support | Certified Professional Medical Coder",
-      image: michelleSullins,
-      link: "/about/michelle-sullins",
+      image: michelleMeredith,
+      link: "/about/michelle-meredith",
       bio: "With over 10 years as a Certified Professional Medical Coder, Michelle ensures accurate billing and maximizes your insurance benefits. She navigates the complex world of medical coding and insurance so you can focus on your healing journey."
     },
     {

@@ -31,7 +31,7 @@ const routeTitles: Record<string, string> = {
   "mary-cooper": "Mary Cooper",
   "emery-pederson": "Emery Pederson",
   "annie-calhoun-randall": "Annie Calhoun Randall, MA",
-  "michelle-sullins": "Michelle Sullins",
+  "michelle-meredith": "Michelle Meredith",
   // Conditions
   "anorexia-nervosa": "Anorexia Nervosa",
   "bulimia-nervosa": "Bulimia Nervosa",

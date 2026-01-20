@@ -4,10 +4,10 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
-import michelleImage from "@/assets/michelle-sullins.png";
+import michelleImage from "@/assets/michelle-meredith.png";
 import { Helmet } from "react-helmet";
 
-const MichelleSullins = () => {
+const MichelleMeredith = () => {
   const billingQuestions = [
     {
       question: "What are my insurance benefits for eating disorder treatment?",
@@ -38,27 +38,27 @@ const MichelleSullins = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Michelle Sullins | Billing Support at Beyond Eating Recovery</title>
-        <meta name="description" content="Michelle Sullins is a Certified Professional Medical Coder providing billing support and insurance assistance at Beyond Eating Recovery in Portland and Vancouver." />
-        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/michelle-sullins" />
-        <meta property="og:title" content="Michelle Sullins | Billing Support at Beyond Eating Recovery" />
+        <title>Michelle Meredith | Billing Support at Beyond Eating Recovery</title>
+        <meta name="description" content="Michelle Meredith is a Certified Professional Medical Coder providing billing support and insurance assistance at Beyond Eating Recovery in Portland and Vancouver." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/michelle-meredith" />
+        <meta property="og:title" content="Michelle Meredith | Billing Support at Beyond Eating Recovery" />
         <meta property="og:description" content="Certified Professional Medical Coder providing billing support and insurance assistance at Beyond Eating Recovery in Portland and Vancouver." />
         <meta property="og:type" content="profile" />
-        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/michelle-sullins" />
-        <meta property="og:image" content="https://www.beyondeatingrecovery.com/michelle-sullins.png" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/michelle-meredith" />
+        <meta property="og:image" content="https://www.beyondeatingrecovery.com/michelle-meredith.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Michelle Sullins | Billing Support at Beyond Eating Recovery" />
+        <meta name="twitter:title" content="Michelle Meredith | Billing Support at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Certified Professional Medical Coder providing billing support and insurance assistance at Beyond Eating Recovery in Portland and Vancouver." />
-        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/michelle-sullins.png" />
+        <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/michelle-meredith.png" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            "name": "Michelle Sullins",
+            "name": "Michelle Meredith",
             "jobTitle": "Billing Support | Certified Professional Medical Coder",
             "description": "Certified Professional Medical Coder with over 10 years of experience providing billing support and insurance assistance for eating disorder treatment.",
-            "url": "https://www.beyondeatingrecovery.com/about/michelle-sullins",
-            "image": "https://www.beyondeatingrecovery.com/michelle-sullins.png",
+            "url": "https://www.beyondeatingrecovery.com/about/michelle-meredith",
+            "image": "https://www.beyondeatingrecovery.com/michelle-meredith.png",
             "worksFor": {
               "@type": "MedicalBusiness",
               "name": "Beyond Eating Recovery",
@@ -109,7 +109,7 @@ const MichelleSullins = () => {
               <div className="w-full md:w-2/5">
                 <img 
                   src={michelleImage} 
-                  alt="Michelle Sullins - Billing Support at Beyond Eating Recovery"
+                  alt="Michelle Meredith - Billing Support at Beyond Eating Recovery"
                   className="w-full max-w-md mx-auto rounded-lg shadow-lg"
                 />
               </div>
@@ -117,7 +117,7 @@ const MichelleSullins = () => {
               {/* Info */}
               <div className="w-full md:w-3/5 text-center md:text-left space-y-6">
                 <h1 className="text-4xl md:text-5xl font-bold text-primary">
-                  Michelle Sullins
+                  Michelle Meredith
                 </h1>
                 
                 <p className="text-xl md:text-2xl text-accent font-medium">
@@ -382,4 +382,4 @@ const MichelleSullins = () => {
   );
 };
 
-export default MichelleSullins;
+export default MichelleMeredith;
