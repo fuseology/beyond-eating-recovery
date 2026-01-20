@@ -55,30 +55,33 @@ const Contact = () => {
     { number: 4, text: "Begin your personalized treatment plan" }
   ];
 
+  const portland = NAP_DATA.locations.portland;
+  const vancouver = NAP_DATA.locations.vancouver;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.beyondeatingrecovery.com/#organization",
-        "name": "Beyond Eating Recovery of Portland",
-        "image": "https://www.beyondeatingrecovery.com/hero-background.jpg",
+        "@id": `${NAP_DATA.website}/#organization`,
+        "name": NAP_DATA.businessNameFull,
+        "image": `${NAP_DATA.website}/hero-background.jpg`,
         "description": "Professional eating disorder treatment center in Portland, Oregon offering specialized therapy, nutritional counseling, and support for eating disorders, body image issues, and disordered eating patterns.",
-        "url": "https://www.beyondeatingrecovery.com/contact",
-        "telephone": "+1-360-726-4141",
+        "url": `${NAP_DATA.website}/contact`,
+        "telephone": NAP_DATA.phoneInternational,
         "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "1235 Southeast Division Street",
-          "addressLocality": "Portland",
-          "addressRegion": "OR",
-          "postalCode": "97202",
-          "addressCountry": "US"
+          "streetAddress": portland.street,
+          "addressLocality": portland.city,
+          "addressRegion": portland.state,
+          "postalCode": portland.zip,
+          "addressCountry": portland.countryCode
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 45.505065,
-          "longitude": -122.652856
+          "latitude": portland.coordinates.latitude,
+          "longitude": portland.coordinates.longitude
         },
         "openingHoursSpecification": [
           {
@@ -98,42 +101,39 @@ const Contact = () => {
         "areaServed": [
           {
             "@type": "City",
-            "name": "Portland",
+            "name": portland.city,
             "containedIn": {
               "@type": "State",
-              "name": "Oregon"
+              "name": portland.stateFullName
             }
           },
           {
             "@type": "City",
-            "name": "Vancouver",
+            "name": vancouver.city,
             "containedIn": {
               "@type": "State",
-              "name": "Washington"
+              "name": vancouver.stateFullName
             }
           }
         ],
         "contactPoint": {
           "@type": "ContactPoint",
-          "telephone": "+1-360-726-4141",
+          "telephone": NAP_DATA.phoneInternational,
           "contactType": "customer service",
           "availableLanguage": "English",
-          "areaServed": ["OR", "WA"]
+          "areaServed": [portland.state, vancouver.state]
         },
         "paymentAccepted": "Cash, Check, Insurance",
-        "sameAs": [
-          "https://www.facebook.com/beyondeatingrecovery",
-          "https://www.instagram.com/beyondeatingrecovery"
-        ]
+        "sameAs": Object.values(NAP_DATA.socialMedia)
       },
       {
         "@type": "MedicalBusiness",
-        "@id": "https://www.beyondeatingrecovery.com/#medicalbusiness",
-        "name": "Beyond Eating Recovery of Portland",
-        "image": "https://www.beyondeatingrecovery.com/hero-background.jpg",
+        "@id": `${NAP_DATA.website}/#medicalbusiness`,
+        "name": NAP_DATA.businessNameFull,
+        "image": `${NAP_DATA.website}/hero-background.jpg`,
         "description": "Specialized eating disorder treatment center providing evidence-based therapy, nutritional counseling, and comprehensive support for individuals struggling with anorexia, bulimia, binge eating disorder, ARFID, OSFED, and related conditions.",
-        "url": "https://www.beyondeatingrecovery.com",
-        "telephone": "+1-360-726-4141",
+        "url": NAP_DATA.website,
+        "telephone": NAP_DATA.phoneInternational,
         "medicalSpecialty": [
           "Psychiatry",
           "Psychology",
@@ -141,16 +141,16 @@ const Contact = () => {
         ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "1235 Southeast Division Street",
-          "addressLocality": "Portland",
-          "addressRegion": "OR",
-          "postalCode": "97202",
-          "addressCountry": "US"
+          "streetAddress": portland.street,
+          "addressLocality": portland.city,
+          "addressRegion": portland.state,
+          "postalCode": portland.zip,
+          "addressCountry": portland.countryCode
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 45.505065,
-          "longitude": -122.652856
+          "latitude": portland.coordinates.latitude,
+          "longitude": portland.coordinates.longitude
         },
         "openingHoursSpecification": [
           {
@@ -216,18 +216,18 @@ const Contact = () => {
         "areaServed": [
           {
             "@type": "City",
-            "name": "Portland",
+            "name": portland.city,
             "containedIn": {
               "@type": "State",
-              "name": "Oregon"
+              "name": portland.stateFullName
             }
           },
           {
             "@type": "City",
-            "name": "Vancouver",
+            "name": vancouver.city,
             "containedIn": {
               "@type": "State",
-              "name": "Washington"
+              "name": vancouver.stateFullName
             }
           }
         ],
