@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, AlertCircle, ExternalLink, Trophy, Activity, Heart, Users, Target, Zap } from "lucide-react";
@@ -17,6 +18,7 @@ const AthletesEatingDisorders = () => {
         <meta name="description" content="Specialized treatment for athletes with eating disorders. Address sport culture, performance pressure, RED-S. Return-to-sport support. Weight-neutral, athlete-informed care. Oregon & Washington—call 360-726-4141." />
         <meta name="keywords" content="athlete eating disorder treatment, sports eating disorder therapy Portland, RED-S treatment Vancouver WA, female athlete triad, eating disorder athlete recovery, return to sport, wrestler eating disorder, gymnast eating disorder, runner eating disorder, weight-class sport, aesthetic sport, compulsive exercise athlete, telehealth Oregon Washington" />
       </Helmet>
+      <BreadcrumbSchema />
 
       <Header />
 

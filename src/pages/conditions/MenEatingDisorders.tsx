@@ -6,6 +6,7 @@ import { Phone, AlertCircle, ExternalLink, CheckCircle, XCircle } from "lucide-r
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -23,6 +24,7 @@ const MenEatingDisorders = () => {
           content="eating disorders in men, male eating disorder treatment, muscle dysmorphia therapy Portland, men's body image counseling Vancouver WA, anorexia in men, bulimia in men, binge eating disorder men, compulsive exercise men, gender-affirming eating disorder treatment, HAES for men, telehealth Oregon Washington" 
         />
       </Helmet>
+      <BreadcrumbSchema />
 
       <div className="min-h-screen flex flex-col bg-background">
         <Header />

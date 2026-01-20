@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -18,6 +19,7 @@ const LGBTQIAEatingDisorders = () => {
         <meta name="description" content="Truly affirming eating disorder treatment for LGBTQ+ individuals. Expert care addressing minority stress, trauma, identity. LGBTQIA+ group therapy available. Oregon & Washington—call 360-726-4141." />
         <meta name="keywords" content="LGBTQ eating disorder treatment, LGBTQIA affirming therapy Portland, transgender eating disorder help Vancouver WA, gay eating disorder treatment, lesbian eating disorder therapy, non-binary eating disorder care, queer affirming counselor, minority stress eating disorder, gender dysphoria and eating disorder, LGBTQ group therapy, telehealth Oregon Washington" />
       </Helmet>
+      <BreadcrumbSchema />
 
       <Header />
 

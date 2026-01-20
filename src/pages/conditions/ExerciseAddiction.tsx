@@ -6,6 +6,7 @@ import { Phone, AlertCircle, ExternalLink, CheckCircle, XCircle } from "lucide-r
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 
@@ -23,6 +24,7 @@ const ExerciseAddiction = () => {
           content="exercise addiction treatment, compulsive exercise therapy, over-exercise counseling Portland, exercise addiction help Vancouver WA, joyful movement, overtraining treatment, compensatory exercise, eating disorder and exercise, RED-S treatment, HAES exercise approach, telehealth Oregon Washington" 
         />
       </Helmet>
+      <BreadcrumbSchema />
 
       <div className="min-h-screen flex flex-col bg-background">
         <Header />
