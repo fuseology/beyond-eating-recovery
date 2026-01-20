@@ -22,7 +22,8 @@ const Index = () => {
         "name": "Beyond Eating Recovery",
         "alternateName": "Food Is Not The Enemy",
         "url": "https://www.beyondeatingrecovery.com",
-        "logo": "https://beyondeatingrecovery.com/logo.png",
+        "logo": "https://www.beyondeatingrecovery.com/logo.png",
+        "image": "https://www.beyondeatingrecovery.com/assets/hero-background.jpg",
         "description": "Compassionate eating disorder treatment and recovery support in Portland, OR & Vancouver, WA. Specializing in anorexia, bulimia, binge eating disorder, and intuitive eating.",
         "address": [
           {
@@ -46,15 +47,24 @@ const Index = () => {
         "email": "info@beyondeating.com",
         "priceRange": "$$",
         "medicalSpecialty": ["Eating Disorder Treatment", "Mental Health Counseling", "Nutrition Counseling"],
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": "45.5051",
-            "longitude": "-122.6750"
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Portland",
+            "containedInPlace": {
+              "@type": "State",
+              "name": "Oregon"
+            }
           },
-          "geoRadius": "50000"
-        },
+          {
+            "@type": "City",
+            "name": "Vancouver",
+            "containedInPlace": {
+              "@type": "State",
+              "name": "Washington"
+            }
+          }
+        ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Eating Disorder Treatment Services",
@@ -88,7 +98,125 @@ const Index = () => {
               }
             }
           ]
-        }
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "14:00"
+          }
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.beyondeatingrecovery.com/#localbusiness-portland",
+        "name": "Beyond Eating Recovery - Portland",
+        "image": "https://www.beyondeatingrecovery.com/assets/office-space.webp",
+        "description": "Eating disorder treatment center in Portland, Oregon offering compassionate therapy for anorexia, bulimia, binge eating disorder, and body image concerns.",
+        "url": "https://www.beyondeatingrecovery.com",
+        "telephone": "+1-360-726-4141",
+        "email": "info@beyondeating.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1235 SE Division Street, Suite 104",
+          "addressLocality": "Portland",
+          "addressRegion": "OR",
+          "postalCode": "97202",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "45.5051",
+          "longitude": "-122.6528"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.5051",
+            "longitude": "-122.6528"
+          },
+          "geoRadius": "40000"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "14:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/beyondeatingrecovery",
+          "https://www.instagram.com/beyondeatingrecovery"
+        ],
+        "hasMap": "https://www.google.com/maps?cid=2882847891293830454"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.beyondeatingrecovery.com/#localbusiness-vancouver",
+        "name": "Beyond Eating Recovery - Vancouver",
+        "image": "https://www.beyondeatingrecovery.com/assets/office-space.webp",
+        "description": "Eating disorder treatment center in Vancouver, Washington offering compassionate therapy for anorexia, bulimia, binge eating disorder, and body image concerns.",
+        "url": "https://www.beyondeatingrecovery.com",
+        "telephone": "+1-360-726-4141",
+        "email": "info@beyondeating.com",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "400 E. Evergreen Blvd, Suite 309",
+          "addressLocality": "Vancouver",
+          "addressRegion": "WA",
+          "postalCode": "98660",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "45.6280",
+          "longitude": "-122.6739"
+        },
+        "areaServed": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.6280",
+            "longitude": "-122.6739"
+          },
+          "geoRadius": "40000"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "09:00",
+            "closes": "18:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "14:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/beyondeatingrecovery",
+          "https://www.instagram.com/beyondeatingrecovery"
+        ],
+        "hasMap": "https://www.google.com/maps?cid=2882847891293830454"
       },
       {
         "@type": "WebSite",

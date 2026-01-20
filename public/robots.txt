@@ -1,18 +1,38 @@
+# Beyond Eating Recovery - robots.txt
+# Website: https://www.beyondeatingrecovery.com
+
+# Google Search Bot
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
+# Bing Search Bot
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 2
 
+# Social Media Bots
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
-User-agent: *
+User-agent: LinkedInBot
 Allow: /
 
+# All other bots
+User-agent: *
+Allow: /
+Crawl-delay: 5
+
+# Block specific directories if any (currently none)
+# Disallow: /private/
+
+# Sitemaps
 Sitemap: https://www.beyondeatingrecovery.com/sitemap-index.xml
 Sitemap: https://www.beyondeatingrecovery.com/sitemap.xml
 Sitemap: https://www.beyondeatingrecovery.com/sitemap-images.xml
+
+# Host directive for canonical domain
+Host: https://www.beyondeatingrecovery.com
