@@ -12,6 +12,8 @@ export interface RouteConfig {
   priority: number;
   changefreq: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
   images?: ImageInfo[];
+  lastmod?: string; // Optional manual override (YYYY-MM-DD)
+  sourceFile?: string; // Maps to the source file for Git tracking
 }
 
 export const SITE_URL = 'https://www.beyondeatingrecovery.com';
@@ -37,6 +39,7 @@ export const routes: RouteConfig[] = [
   // Homepage
   { 
     path: '/', 
+    sourceFile: 'src/pages/Index.tsx',
     priority: 1.0, 
     changefreq: 'weekly',
     images: [
@@ -50,62 +53,63 @@ export const routes: RouteConfig[] = [
   // Main Pages
   { 
     path: '/about', 
+    sourceFile: 'src/pages/About.tsx',
     priority: 0.9, 
     changefreq: 'monthly',
     images: Object.values(teamImages)
   },
-  { path: '/services', priority: 0.9, changefreq: 'monthly', images: [{ src: '/src/assets/inclusive-therapy.jpg', title: 'Eating Disorder Therapy Services', caption: 'Individual, group, and family therapy for eating disorders' }] },
-  { path: '/conditions', priority: 0.9, changefreq: 'monthly' },
-  { path: '/our-approach', priority: 0.9, changefreq: 'monthly', images: [{ src: '/src/assets/office-space.webp', title: 'Beyond Eating Recovery Office', caption: 'Welcoming therapy space in Vancouver WA' }] },
-  { path: '/contact', priority: 0.9, changefreq: 'monthly' },
-  { path: '/resources', priority: 0.8, changefreq: 'weekly' },
-  { path: '/faq', priority: 0.7, changefreq: 'monthly' },
-  { path: '/workshop', priority: 0.8, changefreq: 'monthly', images: [{ src: '/src/assets/workshop-hero.jpg', title: 'Loveable At Any Size Workshop', caption: 'Body acceptance and self-compassion workshop' }] },
-  { path: '/careers', priority: 0.7, changefreq: 'monthly' },
-  { path: '/philosophy', priority: 0.8, changefreq: 'monthly' },
-  { path: '/health-at-every-size', priority: 0.8, changefreq: 'monthly', images: [{ src: '/src/assets/benefits-wellness.webp', title: 'Health At Every Size Approach', caption: 'HAES weight-neutral approach to eating disorder treatment' }] },
-  { path: '/privacy-notice', priority: 0.3, changefreq: 'yearly' },
-  { path: '/secure-file-submissions', priority: 0.5, changefreq: 'yearly' },
+  { path: '/services', sourceFile: 'src/pages/Services.tsx', priority: 0.9, changefreq: 'monthly', images: [{ src: '/src/assets/inclusive-therapy.jpg', title: 'Eating Disorder Therapy Services', caption: 'Individual, group, and family therapy for eating disorders' }] },
+  { path: '/conditions', sourceFile: 'src/pages/Conditions.tsx', priority: 0.9, changefreq: 'monthly' },
+  { path: '/our-approach', sourceFile: 'src/pages/OurApproach.tsx', priority: 0.9, changefreq: 'monthly', images: [{ src: '/src/assets/office-space.webp', title: 'Beyond Eating Recovery Office', caption: 'Welcoming therapy space in Vancouver WA' }] },
+  { path: '/contact', sourceFile: 'src/pages/Contact.tsx', priority: 0.9, changefreq: 'monthly' },
+  { path: '/resources', sourceFile: 'src/pages/Resources.tsx', priority: 0.8, changefreq: 'weekly' },
+  { path: '/faq', sourceFile: 'src/pages/FAQ.tsx', priority: 0.7, changefreq: 'monthly' },
+  { path: '/workshop', sourceFile: 'src/pages/Workshop.tsx', priority: 0.8, changefreq: 'monthly', images: [{ src: '/src/assets/workshop-hero.jpg', title: 'Loveable At Any Size Workshop', caption: 'Body acceptance and self-compassion workshop' }] },
+  { path: '/careers', sourceFile: 'src/pages/Careers.tsx', priority: 0.7, changefreq: 'monthly' },
+  { path: '/philosophy', sourceFile: 'src/pages/Philosophy.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/health-at-every-size', sourceFile: 'src/pages/HealthAtEverySize.tsx', priority: 0.8, changefreq: 'monthly', images: [{ src: '/src/assets/benefits-wellness.webp', title: 'Health At Every Size Approach', caption: 'HAES weight-neutral approach to eating disorder treatment' }] },
+  { path: '/privacy-notice', sourceFile: 'src/pages/PrivacyNotice.tsx', priority: 0.3, changefreq: 'yearly' },
+  { path: '/secure-file-submissions', sourceFile: 'src/pages/SecureFileSubmissions.tsx', priority: 0.5, changefreq: 'yearly' },
   
   // Team Members
-  { path: '/about/anne-cuthbert', priority: 0.7, changefreq: 'monthly', images: [teamImages['anne-cuthbert']] },
-  { path: '/about/bailey-benn', priority: 0.7, changefreq: 'monthly', images: [teamImages['bailey-benn']] },
-  { path: '/about/alyssa-pataki', priority: 0.7, changefreq: 'monthly', images: [teamImages['alyssa-pataki']] },
-  { path: '/about/kiandra-cole', priority: 0.7, changefreq: 'monthly', images: [teamImages['kiandra-cole']] },
-  { path: '/about/rachel-bennett', priority: 0.7, changefreq: 'monthly', images: [teamImages['rachel-bennett']] },
-  { path: '/about/annie-calhoun-randall', priority: 0.7, changefreq: 'monthly', images: [teamImages['annie-calhoun-randall']] },
-  { path: '/about/sara-kranich', priority: 0.7, changefreq: 'monthly', images: [teamImages['sara-kranich']] },
-  { path: '/about/stephanie-okumura', priority: 0.7, changefreq: 'monthly', images: [teamImages['stephanie-okumura']] },
-  { path: '/about/michelle-commons', priority: 0.7, changefreq: 'monthly', images: [teamImages['michelle-commons']] },
-  { path: '/about/michelle-meredith', priority: 0.7, changefreq: 'monthly', images: [teamImages['michelle-meredith']] },
-  { path: '/about/mary-cooper', priority: 0.7, changefreq: 'monthly', images: [teamImages['mary-cooper']] },
-  { path: '/about/emery-pederson', priority: 0.7, changefreq: 'monthly', images: [teamImages['emery-pederson']] },
-  { path: '/about/mackenzie-stracke', priority: 0.7, changefreq: 'monthly', images: [teamImages['mackenzie-stracke']] },
+  { path: '/about/anne-cuthbert', sourceFile: 'src/pages/about/AnneCuthbert.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['anne-cuthbert']] },
+  { path: '/about/bailey-benn', sourceFile: 'src/pages/about/BaileyBenn.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['bailey-benn']] },
+  { path: '/about/alyssa-pataki', sourceFile: 'src/pages/about/AlyssaPataki.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['alyssa-pataki']] },
+  { path: '/about/kiandra-cole', sourceFile: 'src/pages/about/KiandraCole.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['kiandra-cole']] },
+  { path: '/about/rachel-bennett', sourceFile: 'src/pages/about/RachelBennett.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['rachel-bennett']] },
+  { path: '/about/annie-calhoun-randall', sourceFile: 'src/pages/about/AnnieCalhounRandall.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['annie-calhoun-randall']] },
+  { path: '/about/sara-kranich', sourceFile: 'src/pages/about/SaraKranich.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['sara-kranich']] },
+  { path: '/about/stephanie-okumura', sourceFile: 'src/pages/about/StephanieOkumura.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['stephanie-okumura']] },
+  { path: '/about/michelle-commons', sourceFile: 'src/pages/about/MichelleCommons.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['michelle-commons']] },
+  { path: '/about/michelle-meredith', sourceFile: 'src/pages/about/MichelleMeredith.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['michelle-meredith']] },
+  { path: '/about/mary-cooper', sourceFile: 'src/pages/about/MaryCooper.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['mary-cooper']] },
+  { path: '/about/emery-pederson', sourceFile: 'src/pages/about/EmeryPederson.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['emery-pederson']] },
+  { path: '/about/mackenzie-stracke', sourceFile: 'src/pages/about/MackenzieStracke.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['mackenzie-stracke']] },
   
   // Conditions Pages
-  { path: '/conditions/anorexia-nervosa', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/bulimia-nervosa', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/binge-eating-disorder', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/co-occurring-issues', priority: 0.7, changefreq: 'monthly' },
-  { path: '/conditions/arfid', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/osfed', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/orthorexia', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/atypical-anorexia', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/disordered-eating', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/emotional-eating', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/body-dysmorphia', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/exercise-addiction', priority: 0.7, changefreq: 'monthly' },
-  { path: '/conditions/men-eating-disorders', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/lgbtqia-eating-disorders', priority: 0.8, changefreq: 'monthly' },
-  { path: '/conditions/athletes-eating-disorders', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/anorexia-nervosa', sourceFile: 'src/pages/conditions/AnorexiaNervosa.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/bulimia-nervosa', sourceFile: 'src/pages/conditions/BulimiaNervosa.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/binge-eating-disorder', sourceFile: 'src/pages/conditions/BingeEatingDisorder.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/co-occurring-issues', sourceFile: 'src/pages/conditions/CoOccurringIssues.tsx', priority: 0.7, changefreq: 'monthly' },
+  { path: '/conditions/arfid', sourceFile: 'src/pages/conditions/ARFID.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/osfed', sourceFile: 'src/pages/conditions/OSFED.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/orthorexia', sourceFile: 'src/pages/conditions/Orthorexia.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/atypical-anorexia', sourceFile: 'src/pages/conditions/AtypicalAnorexia.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/disordered-eating', sourceFile: 'src/pages/conditions/DisorderedEating.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/emotional-eating', sourceFile: 'src/pages/conditions/EmotionalEating.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/body-dysmorphia', sourceFile: 'src/pages/conditions/BodyDysmorphia.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/exercise-addiction', sourceFile: 'src/pages/conditions/ExerciseAddiction.tsx', priority: 0.7, changefreq: 'monthly' },
+  { path: '/conditions/men-eating-disorders', sourceFile: 'src/pages/conditions/MenEatingDisorders.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/lgbtqia-eating-disorders', sourceFile: 'src/pages/conditions/LGBTQIAEatingDisorders.tsx', priority: 0.8, changefreq: 'monthly' },
+  { path: '/conditions/athletes-eating-disorders', sourceFile: 'src/pages/conditions/AthletesEatingDisorders.tsx', priority: 0.8, changefreq: 'monthly' },
   
   // Resource Articles
-  { path: '/battle-of-the-binge', priority: 0.7, changefreq: 'monthly' },
-  { path: '/body-shame', priority: 0.7, changefreq: 'monthly' },
-  { path: '/resources/5-steps-diet-roller-coaster', priority: 0.7, changefreq: 'monthly' },
+  { path: '/battle-of-the-binge', sourceFile: 'src/pages/BattleOfTheBinge.tsx', priority: 0.7, changefreq: 'monthly' },
+  { path: '/body-shame', sourceFile: 'src/pages/BodyShame.tsx', priority: 0.7, changefreq: 'monthly' },
+  { path: '/resources/5-steps-diet-roller-coaster', sourceFile: 'src/pages/FiveStepsDietRollerCoaster.tsx', priority: 0.7, changefreq: 'monthly' },
   
   // Audio Resources
-  { path: '/resources/move-toward-your-emotions', priority: 0.7, changefreq: 'monthly' },
+  { path: '/resources/move-toward-your-emotions', sourceFile: 'src/pages/resources/MoveTowardYourEmotions.tsx', priority: 0.7, changefreq: 'monthly' },
 ];
 
 // Helper to get all images for sitemap generation
