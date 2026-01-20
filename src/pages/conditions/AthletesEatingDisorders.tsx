@@ -9,6 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Phone, AlertCircle, ExternalLink, Trophy, Activity, Heart, Users, Target, Zap } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const AthletesEatingDisorders = () => {
   return (
@@ -18,6 +19,36 @@ const AthletesEatingDisorders = () => {
         <meta name="description" content="Specialized treatment for athletes with eating disorders. Address sport culture, performance pressure, RED-S. Return-to-sport support. Weight-neutral, athlete-informed care. Oregon & Washington—call 360-726-4141." />
         <meta name="keywords" content="athlete eating disorder treatment, sports eating disorder therapy Portland, RED-S treatment Vancouver WA, female athlete triad, eating disorder athlete recovery, return to sport, wrestler eating disorder, gymnast eating disorder, runner eating disorder, weight-class sport, aesthetic sport, compulsive exercise athlete, telehealth Oregon Washington" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Eating Disorders in Athletes"
+        alternateName={["Athlete Eating Disorders", "Sports-Related Eating Disorders"]}
+        description="Athletes face unique eating disorder risks from sport culture, performance pressure, and weight demands. Specialized treatment supports recovery while addressing return-to-sport considerations."
+        signOrSymptom={[
+          "Relative Energy Deficiency in Sport (RED-S)",
+          "Female Athlete Triad",
+          "Excessive training",
+          "Food restriction for performance",
+          "Weight cutting for competition",
+          "Loss of menstrual cycle",
+          "Stress fractures"
+        ]}
+        possibleTreatment={[
+          "Sport-Informed Therapy",
+          "Nutritional Counseling for Athletes",
+          "Return-to-Sport Planning",
+          "Individual Therapy",
+          "Medical Monitoring"
+        ]}
+        riskFactor={[
+          "Weight-class sports",
+          "Aesthetic sports",
+          "Endurance sports",
+          "Coach pressure",
+          "Performance expectations",
+          "Perfectionism"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/athletes-eating-disorders"
+      />
       <BreadcrumbSchema />
 
       <Header />

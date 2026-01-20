@@ -8,6 +8,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const AtypicalAnorexia = () => {
   return (
@@ -26,6 +27,35 @@ const AtypicalAnorexia = () => {
         <meta name="twitter:description" content="Weight-neutral, HAES-aligned therapy for atypical anorexia. Just as serious as typical anorexia. You deserve validation and compassionate care." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Atypical Anorexia Nervosa"
+        alternateName={["Atypical Anorexia", "AAN"]}
+        description="Atypical anorexia has all the features of anorexia nervosa—severe restriction, fear of weight gain, body image disturbance—but the individual's weight remains within or above 'normal' range. It is just as serious and requires specialized treatment."
+        signOrSymptom={[
+          "Significant weight loss (regardless of starting weight)",
+          "Intense fear of gaining weight",
+          "Food restriction and rule-making",
+          "Body image disturbance",
+          "Excessive exercise",
+          "Medical complications despite 'normal' weight",
+          "Denial that anything is wrong"
+        ]}
+        possibleTreatment={[
+          "Weight-Neutral Therapy",
+          "Cognitive Behavioral Therapy (CBT)",
+          "Family-Based Treatment",
+          "Nutritional Counseling",
+          "HAES-Aligned Care"
+        ]}
+        riskFactor={[
+          "History of dieting",
+          "Weight stigma and bias",
+          "Larger body size",
+          "Perfectionism",
+          "Trauma history"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/atypical-anorexia"
+      />
       <BreadcrumbSchema />
       <Header />
       

@@ -9,6 +9,7 @@ import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const ExerciseAddiction = () => {
   return (
@@ -24,6 +25,35 @@ const ExerciseAddiction = () => {
           content="exercise addiction treatment, compulsive exercise therapy, over-exercise counseling Portland, exercise addiction help Vancouver WA, joyful movement, overtraining treatment, compensatory exercise, eating disorder and exercise, RED-S treatment, HAES exercise approach, telehealth Oregon Washington" 
         />
       </Helmet>
+      <MedicalConditionSchema
+        name="Exercise Addiction"
+        alternateName={["Compulsive Exercise", "Exercise Dependence"]}
+        description="Exercise addiction is a compulsive relationship with physical activity where exercise takes priority over health, relationships, and wellbeing. Treatment helps rediscover joyful, flexible movement."
+        signOrSymptom={[
+          "Exercising despite injury or illness",
+          "Severe anxiety or distress when unable to exercise",
+          "Prioritizing exercise over relationships and responsibilities",
+          "Rigid exercise routines",
+          "Using exercise to 'compensate' for eating",
+          "Exercising in secret",
+          "Loss of enjoyment in exercise"
+        ]}
+        possibleTreatment={[
+          "Cognitive Behavioral Therapy",
+          "Individual Therapy",
+          "Joyful Movement Exploration",
+          "Nutritional Counseling",
+          "Co-occurring Eating Disorder Treatment"
+        ]}
+        riskFactor={[
+          "Perfectionism",
+          "Anxiety disorders",
+          "History of eating disorders",
+          "Athletic background",
+          "Body dissatisfaction"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/exercise-addiction"
+      />
       <BreadcrumbSchema />
 
       <div className="min-h-screen flex flex-col bg-background">

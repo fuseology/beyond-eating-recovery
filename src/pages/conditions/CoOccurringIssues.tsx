@@ -9,6 +9,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert-photo.jpg";
 import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 import { Helmet } from "react-helmet";
+import { MedicalConditionSchema } from "@/components/schemas";
 
 const CoOccurringIssues = () => {
   return (
@@ -27,6 +28,34 @@ const CoOccurringIssues = () => {
         <meta name="twitter:description" content="Integrated treatment for eating disorders with co-occurring depression, anxiety, trauma, and substance use. Comprehensive care that treats the whole person." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/hero-background.jpg" />
       </Helmet>
+      <MedicalConditionSchema
+        name="Co-Occurring Disorders with Eating Disorders"
+        alternateName={["Dual Diagnosis", "Comorbid Conditions"]}
+        description="Co-occurring issues like depression, anxiety, trauma, and substance use frequently accompany eating disorders. Integrated treatment addresses all conditions simultaneously for lasting recovery."
+        signOrSymptom={[
+          "Depression symptoms alongside eating disorder",
+          "Anxiety that intensifies eating behaviors",
+          "Trauma responses affecting food relationship",
+          "Substance use to cope with eating disorder distress",
+          "OCD patterns with food and body",
+          "Self-harm behaviors"
+        ]}
+        possibleTreatment={[
+          "Integrated Dual Diagnosis Treatment",
+          "Trauma-Informed Therapy",
+          "EMDR",
+          "Dialectical Behavior Therapy (DBT)",
+          "Cognitive Behavioral Therapy"
+        ]}
+        riskFactor={[
+          "History of trauma",
+          "Genetic predisposition",
+          "Chronic stress",
+          "Early onset of eating disorder",
+          "Lack of support systems"
+        ]}
+        url="https://www.beyondeatingrecovery.com/conditions/co-occurring-issues"
+      />
       <BreadcrumbSchema />
       <Header />
       
