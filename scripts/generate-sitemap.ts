@@ -27,7 +27,7 @@ function assetToUrl(assetPath: string): string {
   return `${SITE_URL}/assets/${filename}`;
 }
 
-// Generate main URL sitemap with embedded images
+// Generate main URL sitemap with embedded images and hreflang
 function generateUrlSitemap(): string {
   const urlEntries = routes.map(route => {
     const loc = route.path === '/' ? SITE_URL + '/' : SITE_URL + route.path;
@@ -42,16 +42,23 @@ function generateUrlSitemap(): string {
       </image:image>`).join('');
     }
     
+    // Hreflang entries for US English and default
+    const hreflangEntries = `
+    <xhtml:link rel="alternate" hreflang="en-US" href="${escapeXml(loc)}" />
+    <xhtml:link rel="alternate" hreflang="en" href="${escapeXml(loc)}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="${escapeXml(loc)}" />`;
+    
     return `  <url>
     <loc>${escapeXml(loc)}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
-    <priority>${route.priority.toFixed(1)}</priority>${imageEntries}
+    <priority>${route.priority.toFixed(1)}</priority>${hreflangEntries}${imageEntries}
   </url>`;
   }).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urlEntries}
 </urlset>`;
