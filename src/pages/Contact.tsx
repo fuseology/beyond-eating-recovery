@@ -15,6 +15,7 @@ import { Phone, MapPin, Clock, CheckCircle, Upload, CreditCard, FileText, HelpCi
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import loveTreeImage from "@/assets/love-tree.png";
+import { NAP_DATA } from "@/components/NAPConsistency";
 
 const Contact = () => {
   const faqs = [
@@ -323,8 +324,8 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-primary mb-2">Phone</h3>
-                      <a href="tel:3607264141" className="text-2xl font-bold text-accent hover:underline">
-                        360-726-4141
+                      <a href={`tel:${NAP_DATA.phoneRaw}`} className="text-2xl font-bold text-accent hover:underline">
+                        {NAP_DATA.phone}
                       </a>
                       <p className="text-muted-foreground mt-1">Call or text us—we're here to help</p>
                     </div>
@@ -340,11 +341,11 @@ const Contact = () => {
                       <MapPin className="w-6 h-6 text-accent" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-primary mb-2">Portland Office</h3>
+                      <h3 className="text-xl font-semibold text-primary mb-2">{NAP_DATA.locations.portland.name}</h3>
                       <p className="text-foreground/80">
-                        Beyond Eating Recovery of Portland<br />
-                        1235 Southeast Division Street<br />
-                        Portland, Oregon 97202
+                        {NAP_DATA.businessNameFull}<br />
+                        {NAP_DATA.locations.portland.street}<br />
+                        {NAP_DATA.locations.portland.city}, {NAP_DATA.locations.portland.stateFullName} {NAP_DATA.locations.portland.zip}
                       </p>
                       <p className="text-sm text-muted-foreground mt-2">In-Person Appointments Available</p>
                     </div>
@@ -357,9 +358,9 @@ const Contact = () => {
                     <div>
                       <h4 className="font-semibold text-primary mb-2">Office Hours</h4>
                       <div className="space-y-1 text-sm text-foreground/80">
-                        <p>Monday-Friday: 9am-6pm</p>
-                        <p>Saturday: By appointment</p>
-                        <p>Sunday: Closed</p>
+                        <p>{NAP_DATA.hoursShort.weekdays}</p>
+                        <p>{NAP_DATA.hoursShort.saturday}</p>
+                        <p>{NAP_DATA.hoursShort.sunday}</p>
                       </div>
                     </div>
                   </div>
