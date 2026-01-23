@@ -188,54 +188,6 @@ const FiveStepsDietRollerCoaster = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <section className="py-16 bg-background-light">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-[1000px] mx-auto">
-              <h3 className="text-3xl md:text-4xl font-bold text-primary text-center mb-12">
-                What People Are Saying
-              </h3>
-
-              <div className="grid md:grid-cols-3 gap-6">
-                {/* Testimonial 1 */}
-                <div className="bg-white rounded-lg shadow-md p-8">
-                  <p className="text-base text-foreground/90 leading-relaxed italic mb-4">
-                    "This video series was exactly what I needed. Anne's approach is so compassionate and practical. For the first time in years, I feel hope that I can actually stop dieting forever."
-                  </p>
-                  <div className="text-sm font-semibold text-foreground">
-                    — Sarah M.
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    Portland, OR
-                  </div>
-                </div>
-
-                {/* Testimonial 2 */}
-                <div className="bg-white rounded-lg shadow-md p-8">
-                  <p className="text-base text-foreground/90 leading-relaxed italic mb-4">
-                    "I loved the pacing of the videos. Having a few days between each one gave me time to really practice the steps. Anne makes complex ideas feel simple and doable."
-                  </p>
-                  <div className="text-sm font-semibold text-foreground">
-                    — Jamie L.
-                  </div>
-                  <div className="text-sm text-muted-foreground">
-                    Vancouver, WA
-                  </div>
-                </div>
-
-                {/* Testimonial 3 */}
-                <div className="bg-white rounded-lg shadow-md p-8">
-                  <p className="text-base text-foreground/90 leading-relaxed italic mb-4">
-                    "As someone who has tried every diet, this video series helped me understand why dieting never worked. I'm finally learning to trust my body again."
-                  </p>
-                  <div className="text-sm font-semibold text-foreground">
-                    — Anonymous
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <Footer />
       </div>
