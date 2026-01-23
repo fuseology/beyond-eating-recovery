@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import {
-  BookOpen, Heart, Users, Scale, Home, Sparkles,
+  BookOpen, Heart, Users, Scale, Home,
   Brain, Headphones, Download, ExternalLink, Phone, Video
 } from "lucide-react";
 import blog1 from "@/assets/blog-1.jpg";
@@ -51,30 +51,20 @@ const Resources = () => {
     { icon: Users, title: "Intuitive Eating Guide", link: "/resources/5-steps-diet-roller-coaster" },
     { icon: Scale, title: "HAES Approach", link: "/health-at-every-size" },
     { icon: Home, title: "Family Support Resources", link: "/contact" },
-    { icon: Sparkles, title: "Recovery Stories", link: "/about" },
+    { icon: Users, title: "Meet Our Team", link: "/about" },
     { icon: Heart, title: "Coping Skills & Self-Care", link: "/services" },
     { icon: Headphones, title: "Audio Resources", link: "/resources#audio" }
   ];
 
   const assessmentTools = [
     {
-      title: "Eating Disorder Screening Questionnaire",
-      description: "A confidential self-assessment to help identify potential concerns",
-      link: "/contact"
-    },
-    {
-      title: "Body Image Assessment",
-      description: "Understand your relationship with your body and identify areas for healing",
-      link: "/contact"
-    },
-    {
-      title: "Intuitive Eating Quiz",
-      description: "Discover where you are on your intuitive eating journey",
+      title: "5-Step Intuitive Eating Journey",
+      description: "Discover practical steps to find peace and freedom with food through our free video series",
       link: "/resources/5-steps-diet-roller-coaster"
     },
     {
-      title: "Do I Need Help? Guide",
-      description: "Not sure if you should seek treatment? This guide can help",
+      title: "Is It Time to Reach Out?",
+      description: "Not sure if you should seek support? We're happy to answer your questions",
       link: "/contact"
     }
   ];
@@ -280,22 +270,25 @@ const Resources = () => {
           <p className="text-center text-muted-foreground mb-8">Coming soon - helpful articles about eating disorder recovery</p>
           <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-8">
             {blogPosts.map((post) => (
-              <Card key={post.id} className="border-2 hover:shadow-lg transition-shadow overflow-hidden">
+              <Card key={post.id} className="border-2 overflow-hidden opacity-75 relative">
+                <div className="absolute top-4 right-4 z-10">
+                  <Badge className="bg-muted text-muted-foreground">Coming Soon</Badge>
+                </div>
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src={post.image} 
                     alt={post.title}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover grayscale-[30%]"
                   />
                 </div>
                 <CardHeader>
-                  <Badge className="w-fit mb-2 bg-accent text-white">{post.category}</Badge>
-                  <CardTitle className="text-xl text-primary">
+                  <Badge className="w-fit mb-2 bg-accent/60 text-white">{post.category}</Badge>
+                  <CardTitle className="text-xl text-primary/80">
                     {post.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-foreground/80">
+                  <p className="text-foreground/60">
                     {post.excerpt}
                   </p>
                 </CardContent>
