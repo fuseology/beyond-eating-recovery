@@ -1,20 +1,20 @@
 
 
-## Replace "All Bodies, Identities & Experiences Welcome" Image
+## Add Email to Careers "Questions? Let's Talk" Section
 
 ### What's Changing
-The current stock image (`inclusive-therapy.jpg`) next to the diversity and inclusion section on the Careers page will be replaced with a newly generated image that better represents the message of welcoming all bodies, identities, and experiences.
+Adding the email address `intakes@beyondeatingrecovery.com` to the contact section near the bottom of the Careers page ("Questions? Let's Talk.") so applicants have a clear way to reach out.
 
-### Approach
-1. **Generate a new image** using AI image generation that depicts a diverse, welcoming group of professionals in a warm, collaborative setting -- reflecting varied body sizes, skin tones, gender expressions, and abilities in a therapeutic/wellness workplace context.
-2. **Save the image** as `src/assets/inclusive-welcome.webp`.
-3. **Update `src/pages/Careers.tsx`** to import and use the new image in place of `inclusiveTherapyImage` for that section (lines 158-164), with updated alt text.
+### Details
+**File:** `src/pages/Careers.tsx` (lines 714-724)
 
-### Technical Details
+Add an email line between the Phone and Office entries in the contact card:
 
-**File: `src/pages/Careers.tsx`**
-- Update the import on line 17 to reference the new image file
-- Update the `alt` attribute to better describe the new image content
+```
+Phone: (360) 726-4141
+Email: intakes@beyondeatingrecovery.com   <-- NEW
+Office: Portland, Oregon
+```
 
-No other files or pages are affected.
+The email will be a clickable `mailto:` link styled consistently with the existing contact info.
 
