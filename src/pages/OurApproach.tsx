@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -20,6 +21,7 @@ import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 const OurApproach = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />
       

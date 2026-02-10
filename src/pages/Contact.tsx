@@ -14,6 +14,7 @@ import {
 import { Phone, MapPin, Clock, CheckCircle, Upload, CreditCard, FileText, HelpCircle, DollarSign, ShieldCheck, AlertCircle } from "lucide-react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import loveTreeImage from "@/assets/love-tree.png";
 import { NAP_DATA } from "@/components/NAPConsistency";
 
@@ -256,6 +257,7 @@ const Contact = () => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />
 

@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import HeroSection from "@/components/HeroSection";
 import NotAloneSection from "@/components/NotAloneSection";
 import HowWeHelpSection from "@/components/HowWeHelpSection";
@@ -229,6 +230,7 @@ const Index = () => {
           {JSON.stringify(structuredData)}
         </script>
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       <HeroSection />
       <TrustIndicators />

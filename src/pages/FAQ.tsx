@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -177,6 +178,7 @@ const FAQ = () => {
           })}
         </script>
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />
       
