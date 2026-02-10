@@ -14,7 +14,7 @@ import { Network, Heart, CheckCircle2, BookOpen, Home, Users, TrendingUp, Chevro
 import { useState } from "react";
 import teamTrainingImage from "@/assets/team-training.webp";
 import officeSpaceImage from "@/assets/office-space.webp";
-import inclusiveTherapyImage from "@/assets/inclusive-therapy.jpg";
+import inclusiveWelcomeImage from "@/assets/inclusive-welcome.webp";
 import benefitsWellnessImage from "@/assets/benefits-wellness.webp";
 
 const Careers = () => {
@@ -157,8 +157,8 @@ const Careers = () => {
               </div>
               <div className="rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src={inclusiveTherapyImage} 
-                  alt="Inclusive therapy session demonstrating body-positive, affirming care at Beyond Eating Recovery"
+                  src={inclusiveWelcomeImage} 
+                  alt="Diverse group of wellness professionals of various backgrounds, body sizes, and identities welcoming you at Beyond Eating Recovery"
                   className="w-full h-full object-cover"
                 />
               </div>
