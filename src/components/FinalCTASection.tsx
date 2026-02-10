@@ -24,7 +24,7 @@ const FinalCTASection = () => {
                 Ready to Begin Your Recovery Journey?
               </h2>
               <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
-                Schedule a free consultation with our compassionate team. We're here to help you heal your relationship with food and your body.
+                We understand that reaching out can feel overwhelming — and that's okay. Our compassionate team meets you exactly where you are, without judgment. Whether you're just beginning to explore your relationship with food or you've been navigating these struggles for years, you deserve thoughtful, individualized support. Recovery looks different for everyone, and we're here to walk alongside you at your own pace. Schedule a free consultation to take that first step.
               </p>
               
               <div className="flex justify-center md:justify-start mb-6">
