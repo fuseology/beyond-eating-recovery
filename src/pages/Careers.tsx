@@ -716,6 +716,12 @@ const Careers = () => {
                 <strong>Phone:</strong> (360) 726-4141
               </p>
               <p>
+                <strong>Email:</strong>{" "}
+                <a href="mailto:intakes@beyondeatingrecovery.com" className="underline hover:opacity-80 transition-opacity">
+                  intakes@beyondeatingrecovery.com
+                </a>
+              </p>
+              <p>
                 <strong>Office:</strong> Portland, Oregon
               </p>
               <p className="opacity-90">
