@@ -112,6 +112,38 @@ const FAQ = () => {
               },
               {
                 "@type": "Question",
+                "name": "What causes eating disorders?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Eating disorders are complex conditions with multiple contributing factors including biological/genetic factors (family history, neurochemistry), psychological factors (perfectionism, low self-esteem, trauma history), social/cultural factors (diet culture, weight stigma, social media), and environmental factors (life transitions, loss, relationship difficulties). Dieting is one of the strongest predictors of eating disorder development. You are not to blame for having an eating disorder."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can eating disorders be cured? What does recovery look like?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, full recovery from eating disorders is absolutely possible. Recovery means eating without fear, guilt, or rigid rules; accepting your body; having healthy coping strategies; and engaging fully in life. Recovery is non-linear with ups and downs, individual to each person, possible at any stage, and worth the hard work. Our approach focuses on lasting recovery by addressing root causes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will I have to gain weight in treatment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our practice is weight-neutral and Health At Every Size®-aligned. We do not focus on weight gain or weight loss as goals of treatment. We don't weigh clients routinely, don't set weight goals, and focus on health behaviors rather than body weight. We focus on ending restriction, stopping binge eating, rebuilding trust with hunger and fullness signals, and body acceptance. The goal is freedom from the eating disorder—not achieving a certain weight."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the difference between an eating disorder and just being careful about what I eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A healthy relationship with food includes flexibility, eating based on hunger and satisfaction, and self-worth not tied to eating 'perfectly.' Eating disorders involve rigid food rules, intense fear about certain foods, constant thoughts about food/calories/weight, guilt after eating, avoiding social situations due to food concerns, and feeling out of control around food. If your relationship with food is causing distress or taking up significant mental space, you deserve support."
+                }
+              },
+              {
+                "@type": "Question",
                 "name": "How do I get started with treatment?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -120,7 +152,47 @@ const FAQ = () => {
               },
               {
                 "@type": "Question",
-                "name": "What is Health At Every Size (HAES)?",
+                "name": "What should I expect in my first therapy session?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your first therapy session includes building rapport (10-15 min) where your therapist introduces themselves and discusses confidentiality, gathering information (30-40 min) about what brought you to therapy and your history, and beginning treatment planning (10-15 min) to discuss approaches and set goals. It's normal to feel nervous, anxious, or uncertain. You might feel vulnerable or relieved. The first session is just the beginning—building trust takes time."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need a referral from my doctor?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For most clients, no—you do not need a referral from a doctor to begin therapy or dietitian services at Beyond Eating Recovery. Self-referral is welcome for both individual therapy and dietitian services. Some insurance plans may require a referral for coverage. We may recommend working with a physician if you have medical complications, but this isn't required to start. Contact us at 360-726-4141 and we'll help you navigate what's needed."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I bring a family member or friend to my first appointment?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "This depends on your situation and preferences. Most first sessions are one-on-one to create a confidential space, but support people can be involved if you feel more comfortable. They can wait in the waiting area, join for the first few minutes, or participate in part of the session. Eating disorders often involve secrecy and shame, so you may find it easier to be honest without family present. Mention your preference when scheduling."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What if I'm not ready to commit to therapy yet?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "That's completely okay. Options include scheduling a low-pressure initial consultation with no obligation, exploring our educational resources and website, trying our Battle of the Binge 4-week self-study course, attending a group session, or starting with a dietitian consultation. Many people start therapy while still ambivalent—readiness often comes during therapy, not before. When you're ready, we'll be here."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What happens if I need more intensive treatment than outpatient therapy?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Beyond Eating Recovery specializes in outpatient treatment, but we recognize some people need more intensive care. Levels of care range from outpatient (what we provide) to intensive outpatient (IOP), partial hospitalization (PHP), residential treatment, and inpatient hospitalization. If a higher level of care is needed, we will discuss our concerns openly, provide referrals, support you through the transition, and remain available for outpatient support after you step down."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Health At Every Size® (HAES®)?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Health At Every Size® (HAES) is an evidence-based approach that prioritizes well-being over weight. Core principles include weight inclusivity (respecting all body sizes), health enhancement (supporting accessible health practices), respectful care (acknowledging weight stigma), eating for well-being (flexible, intuitive eating), and life-enhancing movement (physical activity for enjoyment, not calorie burning). HAES improves health behaviors and outcomes without focusing on weight loss."
@@ -128,10 +200,10 @@ const FAQ = () => {
               },
               {
                 "@type": "Question",
-                "name": "What is Intuitive Eating?",
+                "name": "What is Intuitive Eating? How is it different from a meal plan?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Intuitive Eating is a self-care eating framework with 10 principles that help you reconnect with your body's natural signals. It's NOT 'eat whatever you want' or another diet—it's learning to trust your body's signals, making peace with all foods, eating for satisfaction and nourishment, and finding freedom from food obsession. Over 200 studies show benefits including reduced disordered eating and improved body image."
+                  "text": "Intuitive Eating is a self-care eating framework with 10 principles that help you reconnect with your body's natural signals. Unlike meal plans which provide external rules and create dependence, Intuitive Eating uses internal guidance, honors hunger and fullness, is flexible and individualized, and builds self-trust. It's NOT 'eat whatever you want'—it's learning to trust your body. Over 200 studies show benefits including reduced disordered eating and improved body image."
                 }
               },
               {
@@ -144,10 +216,74 @@ const FAQ = () => {
               },
               {
                 "@type": "Question",
-                "name": "Do you accept insurance for eating disorder treatment?",
+                "name": "Do you use a specific type of therapy (CBT, DBT, etc.)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our therapists are trained in multiple evidence-based approaches including Cognitive Behavioral Therapy (CBT), Dialectical Behavior Therapy (DBT), Acceptance and Commitment Therapy (ACT), Internal Family Systems (IFS), Emotion-Focused Therapy, Psychodynamic Therapy, Somatic/Body-Based Approaches, Trauma-Informed Care, and Family Systems Therapy. We tailor treatment to your unique needs rather than using one rigid method. All approaches are grounded in HAES® principles and Intuitive Eating."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Will you give me a meal plan or tell me what to eat?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No—we do not provide prescriptive meal plans because external rules about eating are part of what creates eating disorders and they don't address root causes. Instead, we use Intuitive Eating guidance, general nutrition education, structured flexibility as a temporary bridge for those very disconnected from hunger/fullness, meal support for challenging food situations, and addressing the emotional roots of food struggles. Our goal is autonomy—we want you to trust yourself, not a meal plan."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you weigh clients? What if I don't want to be weighed?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Our practice is weight-neutral and HAES®-aligned. We do NOT routinely weigh clients, you can be weighed 'blind' (backwards, not seeing the number) if needed, and you can decline weighing. Weight is not a reliable indicator of health or recovery progress. We focus on eating patterns, physical health, mental/emotional well-being, and relationship with food and body instead. You have the right to decline being weighed at any time."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I see both a therapist and dietitian at the same time?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes—and we strongly recommend it! Therapists focus on root causes, emotional coping, trauma, and body image, while dietitians focus on rebuilding trust with hunger/fullness, nutrition education, and Intuitive Eating. Together, they provide comprehensive care addressing both 'why' and 'how' for faster, more lasting recovery. Your providers communicate and collaborate on treatment goals."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you accept insurance?",
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Yes! Beyond Eating Recovery accepts most major insurance plans for Oregon and Washington residents. We are in-network with many commercial insurance carriers and also work with out-of-network benefits. To verify your specific coverage, please call us at 360-726-4141. Our team will help you understand your benefits and any out-of-pocket costs."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are my responsibilities regarding insurance coverage?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It is your responsibility to verify your insurance coverage before beginning treatment, communicate any insurance changes immediately, and understand your benefits. Insurance plans vary widely in what they cover for mental health and nutrition services. While we assist with verification, you should confirm your benefits, deductibles, copays, and any out-of-network costs directly with your insurance company."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What CPT codes do you use, and what questions should I ask my insurance company?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For mental health services: 90791 (Initial Diagnostic Interview), 90834 (45-min therapy), 90837 (53-min therapy), 90847 (Family therapy), 90853 (Group therapy). For dietitian services: 97802 (Initial assessment), 97803 (Re-assessment), 97804 (Group session). Ask your insurance about mental health benefits, deductibles, copays, in-network status, referral requirements, session limits, and out-of-network benefits."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What's the difference between mental health and dietitian billing?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Mental health services (therapy) are provided by licensed therapists and billed under mental health benefits, while dietitian services are billed under medical nutrition therapy (MNT) or medical benefits. Coverage varies significantly by insurance plan. Even if therapy is covered, dietitian services may not be, or vice versa. We strongly recommend verifying coverage for both types of services separately."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What information can the clinic provide during insurance verification?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We can help identify whether we are in-network or out-of-network, estimated copay or coinsurance amounts, deductible information, whether pre-authorization is required, and basic coverage details. However, you must verify exact out-of-pocket costs, exclusions or limitations, coverage for specific CPT codes, appeal processes, and out-of-network reimbursement rates directly with your insurance company."
                 }
               },
               {
@@ -160,18 +296,42 @@ const FAQ = () => {
               },
               {
                 "@type": "Question",
-                "name": "Do you weigh clients during treatment?",
+                "name": "Do you offer sliding scale or financial assistance?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Our practice is weight-neutral and HAES®-aligned. We do NOT routinely weigh clients, you can be weighed 'blind' (backwards, not seeing the number) if needed, and you can decline weighing. Weight is not a reliable indicator of health or recovery progress. We focus on eating patterns, physical health, mental/emotional well-being, and relationship with food and body instead."
+                  "text": "Yes! We understand that eating disorder treatment is essential and cost should not be a barrier to care. We offer reduced sliding scale fees based on income and financial situation on a limited basis. We may also be able to work with you on payment arrangements for out-of-pocket costs. Call us at 360-726-4141 to discuss financial assistance options confidentially."
                 }
               },
               {
                 "@type": "Question",
-                "name": "Can I see both a therapist and dietitian at the same time?",
+                "name": "What is a Good Faith Estimate?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes—and we strongly recommend it! Therapists focus on root causes, emotional coping, trauma, and body image, while dietitians focus on rebuilding trust with hunger/fullness, nutrition education, and Intuitive Eating. Together, they provide comprehensive care addressing both 'why' and 'how' for faster, more lasting recovery. Your providers communicate and collaborate on treatment goals."
+                  "text": "Under the No Surprises Act (federal law), healthcare providers must give uninsured or self-pay patients a Good Faith Estimate of expected charges before services are provided. It is a written document showing the expected cost of your treatment. You'll receive it before your first appointment or upon request. If your final bill is more than $400 over the estimate, you have the right to dispute the charges."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is therapy confidential?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, therapy sessions are confidential within the limits of the law. We explain confidentiality and its limits during your first session. We only share information with your consent or if required to protect your safety or others."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is there support between sessions?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We offer limited support between sessions via secure messaging or brief check-ins, depending on your provider's policies. Emergency support is available through crisis lines and emergency services. Discuss your needs and preferences with your therapist or dietitian."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I switch therapists?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, you have the right to change providers if you feel your current therapist or dietitian isn't the right fit. We encourage open communication and can help facilitate a smooth transition. Your comfort and trust are important for successful treatment."
                 }
               }
             ]
