@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Button } from "@/components/ui/button";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Link } from "react-router-dom";
 import { ChevronRight, Video, Lock } from "lucide-react";
 import anneCuthbertPhoto from "@/assets/anne-cuthbert.jpg";
@@ -30,6 +31,7 @@ const FiveStepsDietRollerCoaster = () => {
       </Helmet>
 
       <div className="min-h-screen bg-background-light">
+        <BreadcrumbSchema />
         <Header />
         <Breadcrumbs />
 

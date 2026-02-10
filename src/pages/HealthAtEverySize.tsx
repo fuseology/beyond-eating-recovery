@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
@@ -33,6 +34,7 @@ const HealthAtEverySize = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />
 

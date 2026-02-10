@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import Footer from "@/components/Footer";
 import NewsletterFooterSection from "@/components/NewsletterFooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -72,6 +73,7 @@ const Workshop = () => {
         <meta name="twitter:description" content="Transform your relationship with yourself in this 3-day intensive workshop. Deep healing, self-acceptance, and connection with other women. Led by Anne Cuthbert." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/workshop-hero.jpg" />
       </Helmet>
+      <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />
 

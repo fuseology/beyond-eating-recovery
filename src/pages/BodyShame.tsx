@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { CheckCircle2, Calendar, Heart, AlertCircle } from "lucide-react";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -12,6 +13,7 @@ import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 const BodyShame = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />
       
