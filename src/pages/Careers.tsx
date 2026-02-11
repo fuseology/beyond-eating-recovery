@@ -177,10 +177,10 @@ const Careers = () => {
               <div>
                 <TrendingUp className="w-10 h-10 text-accent mb-4" />
                 <h3 className="text-2xl font-semibold text-primary mb-4">
-                  Fair Pay & Comprehensive Benefits
+                  Competitive Compensation & Practice Support
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Competitive fee-for-service compensation, health insurance contribution, paid sick time, furnished offices, full administrative support, professional liability insurance, and more. We believe in compensating practitioners fairly for their expertise and time.
+                  As independent contractors, our practitioners enjoy competitive fee-for-service compensation with the flexibility and autonomy that comes with 1099 status. We provide furnished office space, full administrative and billing support, and a collaborative clinical community — so you can focus on what you do best. We believe in valuing practitioners fairly for their expertise and time.
                 </p>
               </div>
             </div>
