@@ -1,26 +1,34 @@
 
 
-## Expand the Final CTA Section Body Copy
+## Rewrite "Fair Pay" Section for 1099 Contractors
 
 ### What's Changing
 
-Expanding the paragraph under "Ready to Begin Your Recovery Journey?" in `src/components/FinalCTASection.tsx` (line 26-28) with warm, reassuring language that emphasizes empathy, no judgment, and that recovery is personal.
+Updating the heading and body copy in the "Fair Pay & Comprehensive Benefits" block on the Careers page to reflect a 1099 independent contractor arrangement rather than a W-2 employee benefits package.
+
+### Current Copy
+
+> **Fair Pay & Comprehensive Benefits**
+>
+> Competitive fee-for-service compensation, health insurance contribution, paid sick time, furnished offices, full administrative support, professional liability insurance, and more. We believe in compensating practitioners fairly for their expertise and time.
 
 ### Proposed New Copy
 
-The current single sentence:
+> **Competitive Compensation & Practice Support**
+>
+> As independent contractors, our practitioners enjoy competitive fee-for-service compensation with the flexibility and autonomy that comes with 1099 status. We provide furnished office space, full administrative and billing support, and a collaborative clinical community — so you can focus on what you do best. We believe in valuing practitioners fairly for their expertise and time.
 
-> Schedule a free consultation with our compassionate team. We're here to help you heal your relationship with food and your body.
-
-Will be expanded to something like:
-
-> We understand that reaching out can feel overwhelming -- and that's okay. Our compassionate team meets you exactly where you are, without judgment. Whether you're just beginning to explore your relationship with food or you've been navigating these struggles for years, you deserve thoughtful, individualized support. Recovery looks different for everyone, and we're here to walk alongside you at your own pace. Schedule a free consultation to take that first step.
-
-**Important:** All language avoids outcome-guaranteeing words (no "proven," "guarantee," etc.) per legal requirements. Words like "compassionate," "thoughtful," and "individualized" are used instead.
+Key changes:
+- Removed W-2-style benefits language (health insurance contribution, paid sick time, professional liability insurance) that could create misclassification risk.
+- Added language emphasizing flexibility, autonomy, and 1099 status explicitly.
+- Retained furnished offices, administrative support, and fair compensation messaging.
+- Updated the heading from "Fair Pay & Comprehensive Benefits" to "Competitive Compensation & Practice Support" to avoid implying employee benefits.
 
 ### Technical Details
 
-**File:** `src/components/FinalCTASection.tsx` (lines 26-28)
+**File:** `src/pages/Careers.tsx` (lines 179-184)
 
-Replace the single `<p>` tag content with the expanded copy. No structural or styling changes needed -- the existing `text-lg text-foreground/80 mb-8 leading-relaxed` classes will handle the longer text gracefully.
+- Update the `<h3>` text (line 180) with the new heading.
+- Update the `<p>` text (line 183) with the new body copy.
+- No structural or styling changes needed.
 
