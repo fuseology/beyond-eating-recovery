@@ -66,10 +66,16 @@ const MackenzieStracke = () => {
               { "@type": "State", "name": "Oregon" },
               { "@type": "State", "name": "Washington" }
             ],
-            "alumniOf": {
-              "@type": "CollegeOrUniversity",
-              "name": "Western Seminary"
-            },
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "Western Seminary"
+              },
+              {
+                "@type": "EducationalOrganization",
+                "name": "Integrative Studies Program"
+              }
+            ],
             "knowsAbout": [
               "Eating Disorders",
               "Trauma-Informed Care",
@@ -225,6 +231,10 @@ const MackenzieStracke = () => {
                   <div>
                     <p className="font-semibold">Master of Arts in Counseling (In Progress)</p>
                     <p className="text-muted-foreground">Western Seminary</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold">Bachelor of Arts in Integrative Studies</p>
+                    <p className="text-muted-foreground">Psychology, Marketing, and Communications</p>
                   </div>
                 </div>
               </CardContent>
