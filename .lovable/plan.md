@@ -1,34 +1,35 @@
 
 
-## Rewrite "Fair Pay" Section for 1099 Contractors
+## Add BA in Integrative Studies to Mackenzie Stracke's Education
 
 ### What's Changing
 
-Updating the heading and body copy in the "Fair Pay & Comprehensive Benefits" block on the Careers page to reflect a 1099 independent contractor arrangement rather than a W-2 employee benefits package.
+Adding Mackenzie's Bachelor of Arts in Integrative Studies (Psychology, Marketing, and Communications) to the Education & Training section on her bio page.
 
-### Current Copy
+### Current Education Section
 
-> **Fair Pay & Comprehensive Benefits**
->
-> Competitive fee-for-service compensation, health insurance contribution, paid sick time, furnished offices, full administrative support, professional liability insurance, and more. We believe in compensating practitioners fairly for their expertise and time.
+- Master of Arts in Counseling (In Progress) — Western Seminary
 
-### Proposed New Copy
+### Proposed Addition
 
-> **Competitive Compensation & Practice Support**
->
-> As independent contractors, our practitioners enjoy competitive fee-for-service compensation with the flexibility and autonomy that comes with 1099 status. We provide furnished office space, full administrative and billing support, and a collaborative clinical community — so you can focus on what you do best. We believe in valuing practitioners fairly for their expertise and time.
+Add a second entry beneath the existing one:
 
-Key changes:
-- Removed W-2-style benefits language (health insurance contribution, paid sick time, professional liability insurance) that could create misclassification risk.
-- Added language emphasizing flexibility, autonomy, and 1099 status explicitly.
-- Retained furnished offices, administrative support, and fair compensation messaging.
-- Updated the heading from "Fair Pay & Comprehensive Benefits" to "Competitive Compensation & Practice Support" to avoid implying employee benefits.
+- **Bachelor of Arts in Integrative Studies (Psychology, Marketing, and Communications)**
 
 ### Technical Details
 
-**File:** `src/pages/Careers.tsx` (lines 179-184)
+**File:** `src/pages/about/MackenzieStracke.tsx` (around lines 193-199)
 
-- Update the `<h3>` text (line 180) with the new heading.
-- Update the `<p>` text (line 183) with the new body copy.
-- No structural or styling changes needed.
+Inside the Education card's `space-y-3` div, add a new `<div>` block after the existing MA entry:
+
+```
+<div>
+  <p className="font-semibold">Bachelor of Arts in Integrative Studies</p>
+  <p className="text-muted-foreground">Psychology, Marketing, and Communications</p>
+</div>
+```
+
+This follows the same pattern used for the MA entry (bold degree name, muted subtitle). No other changes needed.
+
+Additionally, update the JSON-LD structured data `alumniOf` field (around line 65) from a single object to an array to include both institutions (if the undergraduate institution is known — otherwise just the degree text can be added to the `knowsAbout` or `description` fields).
 
