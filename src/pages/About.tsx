@@ -10,7 +10,6 @@ import { Heart, Users, Sparkles, Shield, Target, CheckCircle, ArrowRight } from 
 import { Link } from "react-router-dom";
 import anneCuthbert from "@/assets/anne-cuthbert.jpg";
 import baileyBenn from "@/assets/bailey-benn-new.webp";
-import alyssaPataki from "@/assets/alyssa-pataki.webp";
 import kiandraCole from "@/assets/kiandra-cole.webp";
 import rachelBennett from "@/assets/rachel-bennett.webp";
 import annieCalhounRandall from "@/assets/annie-calhoun-randall-new.jpg";
@@ -102,7 +101,6 @@ const About = () => {
       },
       "employee": [
         { "@type": "Person", "name": "Bailey Benn", "jobTitle": "MA, LPC, LMHC" },
-        { "@type": "Person", "name": "Alyssa Pataki", "jobTitle": "MA, LMFT" },
         { "@type": "Person", "name": "Kiandra Cole", "jobTitle": "MA" },
         { "@type": "Person", "name": "Rachel Bennett", "jobTitle": "MA" },
         { "@type": "Person", "name": "Annie Calhoun Randall", "jobTitle": "MA" },
@@ -144,13 +142,6 @@ const About = () => {
       image: baileyBenn,
       link: "/about/bailey-benn",
       bio: "Bailey provides LGBTQIA+ affirming, trauma-informed therapy specializing in eating disorders, body image, and identity. Creating safe spaces for healing is at the heart of Bailey's practice."
-    },
-    {
-      name: "Alyssa Pataki, MA, LMFT",
-      title: "Licensed Marriage & Family Therapist",
-      image: alyssaPataki,
-      link: "/about/alyssa-pataki",
-      bio: "Alyssa specializes in relational healing, couples therapy, and eating disorder treatment. With training in EFT and EMDR, she helps clients heal attachment wounds and transform relationships."
     },
     {
       name: "Kiandra Cole, MA",
