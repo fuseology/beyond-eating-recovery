@@ -20,7 +20,6 @@ import BattleOfTheBinge from "./pages/BattleOfTheBinge";
 import NotFound from "./pages/NotFound";
 import AnneCuthbert from "./pages/about/AnneCuthbert";
 import BaileyBenn from "./pages/about/BaileyBenn";
-import AlyssaPataki from "./pages/about/AlyssaPataki";
 import KiandraCole from "./pages/about/KiandraCole";
 import RachelBennett from "./pages/about/RachelBennett";
 import AnnieCalhounRandall from "./pages/about/AnnieCalhounRandall";
@@ -68,7 +67,6 @@ const App = () => (
           <Route path="/about" element={<About />} />
           <Route path="/about/anne-cuthbert" element={<AnneCuthbert />} />
           <Route path="/about/bailey-benn" element={<BaileyBenn />} />
-          <Route path="/about/alyssa-pataki" element={<AlyssaPataki />} />
           <Route path="/about/kiandra-cole" element={<KiandraCole />} />
           <Route path="/about/rachel-bennett" element={<RachelBennett />} />
           <Route path="/about/annie-calhoun-randall" element={<AnnieCalhounRandall />} />

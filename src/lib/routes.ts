@@ -22,7 +22,6 @@ export const SITE_URL = 'https://www.beyondeatingrecovery.com';
 const teamImages: Record<string, ImageInfo> = {
   'anne-cuthbert': { src: '/src/assets/anne-cuthbert.jpg', title: 'Anne Cuthbert, MA, LPC, LMHC - Founder & Clinical Director', caption: 'Eating disorder therapist and founder of Beyond Eating Recovery' },
   'bailey-benn': { src: '/src/assets/bailey-benn-new.webp', title: 'Bailey Benn, MA, LPC, LMHC - Licensed Professional Counselor', caption: 'LGBTQIA+ affirming eating disorder therapist' },
-  'alyssa-pataki': { src: '/src/assets/alyssa-pataki.webp', title: 'Alyssa Pataki, MA, LMFT - Licensed Marriage & Family Therapist', caption: 'Eating disorder and couples therapist' },
   'kiandra-cole': { src: '/src/assets/kiandra-cole.webp', title: 'Kiandra Cole, MA - Associate Therapist', caption: 'Eating disorder and body image therapist' },
   'rachel-bennett': { src: '/src/assets/rachel-bennett.webp', title: 'Rachel Bennett, MA - Professional Counselor Associate', caption: 'Eating disorder therapist with recovery experience' },
   'annie-calhoun-randall': { src: '/src/assets/annie-calhoun-randall-new.jpg', title: 'Annie Calhoun Randall, MA, NTP - Professional Counselor Associate', caption: 'Eating disorder therapist specializing in athletes' },
@@ -74,7 +73,6 @@ export const routes: RouteConfig[] = [
   // Team Members
   { path: '/about/anne-cuthbert', sourceFile: 'src/pages/about/AnneCuthbert.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['anne-cuthbert']] },
   { path: '/about/bailey-benn', sourceFile: 'src/pages/about/BaileyBenn.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['bailey-benn']] },
-  { path: '/about/alyssa-pataki', sourceFile: 'src/pages/about/AlyssaPataki.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['alyssa-pataki']] },
   { path: '/about/kiandra-cole', sourceFile: 'src/pages/about/KiandraCole.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['kiandra-cole']] },
   { path: '/about/rachel-bennett', sourceFile: 'src/pages/about/RachelBennett.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['rachel-bennett']] },
   { path: '/about/annie-calhoun-randall', sourceFile: 'src/pages/about/AnnieCalhounRandall.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['annie-calhoun-randall']] },
