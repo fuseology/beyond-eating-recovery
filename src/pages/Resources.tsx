@@ -175,6 +175,7 @@ const Resources = () => {
         <meta name="twitter:title" content="Recovery Resources & Educational Content | Beyond Eating Recovery" />
         <meta name="twitter:description" content="Free eating disorder recovery resources including articles, guides, videos, self-assessments, and tools for healing your relationship with food and body image." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/resources" />
       </Helmet>
       <BreadcrumbSchema />
       <Header />

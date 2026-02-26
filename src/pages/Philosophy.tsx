@@ -55,6 +55,7 @@ const Philosophy = () => {
         <meta name="twitter:title" content="Our Philosophy: HAES & Intuitive Eating | Beyond Eating Recovery" />
         <meta name="twitter:description" content="Learn about our eating disorder treatment philosophy based on Health At Every Size (HAES) and Intuitive Eating. Weight-neutral, compassionate, evidence-based care." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/hero-background.jpg" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/philosophy" />
       </Helmet>
       <BreadcrumbSchema />
       <Header />

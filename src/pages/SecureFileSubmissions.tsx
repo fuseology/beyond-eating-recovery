@@ -13,7 +13,7 @@ const SecureFileSubmissions = () => {
           name="description" 
           content="Securely submit files and documents to Beyond Eating Recovery. Our encrypted form ensures your privacy and confidentiality." 
         />
-        <link rel="canonical" href="https://beyondeatingrecovery.com/secure-file-submissions" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/secure-file-submissions" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="Secure File Submissions | Beyond Eating Recovery" />
@@ -22,7 +22,7 @@ const SecureFileSubmissions = () => {
           content="Securely submit files and documents to Beyond Eating Recovery. Our encrypted form ensures your privacy and confidentiality." 
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://beyondeatingrecovery.com/secure-file-submissions" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/secure-file-submissions" />
         <meta property="og:image" content="https://beyondeatingrecovery.com/og-image.jpg" />
 
         {/* Twitter Card Tags */}

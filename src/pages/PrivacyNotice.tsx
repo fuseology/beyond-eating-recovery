@@ -14,10 +14,10 @@ const PrivacyNotice = () => {
     "@graph": [
       {
         "@type": "MedicalOrganization",
-        "@id": "https://beyondeatingrecovery.com/#organization",
-        "name": "Beyond Eating Recovery",
-        "url": "https://beyondeatingrecovery.com",
-        "logo": "https://beyondeatingrecovery.com/logo.png",
+         "@id": "https://www.beyondeatingrecovery.com/#organization",
+         "name": "Beyond Eating Recovery",
+         "url": "https://www.beyondeatingrecovery.com",
+         "logo": "https://www.beyondeatingrecovery.com/logo.png",
         "description": "Compassionate eating disorder treatment in Portland, OR & Vancouver, WA",
         "address": [
           {
@@ -44,30 +44,30 @@ const PrivacyNotice = () => {
       },
       {
         "@type": "WebPage",
-        "@id": "https://beyondeatingrecovery.com/privacy-notice#webpage",
-        "url": "https://beyondeatingrecovery.com/privacy-notice",
-        "name": "HIPAA Notice of Privacy Practices | Beyond Eating Recovery",
-        "description": "Review Beyond Eating Recovery's HIPAA Notice of Privacy Practices. Learn about your rights, how we protect your health information, and download the full notice.",
-        "isPartOf": { "@id": "https://beyondeatingrecovery.com/#website" },
-        "about": { "@id": "https://beyondeatingrecovery.com/#organization" },
+         "@id": "https://www.beyondeatingrecovery.com/privacy-notice#webpage",
+         "url": "https://www.beyondeatingrecovery.com/privacy-notice",
+         "name": "HIPAA Notice of Privacy Practices | Beyond Eating Recovery",
+         "description": "Review Beyond Eating Recovery's HIPAA Notice of Privacy Practices. Learn about your rights, how we protect your health information, and download the full notice.",
+         "isPartOf": { "@id": "https://www.beyondeatingrecovery.com/#website" },
+         "about": { "@id": "https://www.beyondeatingrecovery.com/#organization" },
         "datePublished": "2013-09-22",
         "dateModified": "2025-01-01",
         "breadcrumb": {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "item": { "@id": "https://beyondeatingrecovery.com", "name": "Home" } },
-            { "@type": "ListItem", "position": 2, "item": { "@id": "https://beyondeatingrecovery.com/resources", "name": "Resources" } },
-            { "@type": "ListItem", "position": 3, "item": { "@id": "https://beyondeatingrecovery.com/privacy-notice", "name": "Notice of Privacy Practices" } }
-          ]
+             { "@type": "ListItem", "position": 1, "item": { "@id": "https://www.beyondeatingrecovery.com", "name": "Home" } },
+             { "@type": "ListItem", "position": 2, "item": { "@id": "https://www.beyondeatingrecovery.com/resources", "name": "Resources" } },
+             { "@type": "ListItem", "position": 3, "item": { "@id": "https://www.beyondeatingrecovery.com/privacy-notice", "name": "Notice of Privacy Practices" } }
+           ]
         }
       },
       {
         "@type": "WebSite",
-        "@id": "https://beyondeatingrecovery.com/#website",
-        "url": "https://beyondeatingrecovery.com",
-        "name": "Beyond Eating Recovery",
-        "publisher": { "@id": "https://beyondeatingrecovery.com/#organization" }
-      }
+         "@id": "https://www.beyondeatingrecovery.com/#website",
+         "url": "https://www.beyondeatingrecovery.com",
+         "name": "Beyond Eating Recovery",
+         "publisher": { "@id": "https://www.beyondeatingrecovery.com/#organization" }
+       }
     ]
   };
 
@@ -77,11 +77,11 @@ const PrivacyNotice = () => {
         <title>HIPAA Notice of Privacy Practices | Beyond Eating Recovery</title>
         <meta name="description" content="Review Beyond Eating Recovery's HIPAA Notice of Privacy Practices. Learn about your rights, how we protect your health information, and download the full notice." />
         <meta name="keywords" content="HIPAA privacy notice, patient privacy rights, medical records access, health information privacy, Beyond Eating Recovery privacy policy, Vancouver WA therapist privacy, Portland OR eating disorder privacy" />
-        <link rel="canonical" href="https://beyondeatingrecovery.com/privacy-notice" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/privacy-notice" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="HIPAA Notice of Privacy Practices | Beyond Eating Recovery" />
         <meta property="og:description" content="Learn about your HIPAA rights and how we protect your health information." />
-        <meta property="og:url" content="https://beyondeatingrecovery.com/privacy-notice" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/privacy-notice" />
         <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       </Helmet>
       

@@ -24,6 +24,7 @@ const ExerciseAddiction = () => {
           name="keywords" 
           content="exercise addiction treatment, compulsive exercise therapy, over-exercise counseling Portland, exercise addiction help Vancouver WA, joyful movement, overtraining treatment, compensatory exercise, eating disorder and exercise, RED-S treatment, HAES exercise approach, telehealth Oregon Washington" 
         />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/conditions/exercise-addiction" />
       </Helmet>
       <MedicalConditionSchema
         name="Exercise Addiction"

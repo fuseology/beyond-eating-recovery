@@ -72,6 +72,7 @@ const Workshop = () => {
         <meta name="twitter:title" content="Loveable At Any Size Workshop - 3-Day Intensive | Beyond Eating Recovery" />
         <meta name="twitter:description" content="Transform your relationship with yourself in this 3-day intensive workshop. Deep healing, self-acceptance, and connection with other women. Led by Anne Cuthbert." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/assets/workshop-hero.jpg" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/workshop" />
       </Helmet>
       <BreadcrumbSchema />
       <Header />

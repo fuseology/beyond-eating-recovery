@@ -13,20 +13,20 @@ const Services = () => {
     {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
-      "@id": "https://beyondeatingrecovery.com/services#webpage",
-      "url": "https://beyondeatingrecovery.com/services",
-      "name": "Eating Disorder Treatment Services | Beyond Eating Recovery",
-      "description": "Comprehensive eating disorder treatment: individual therapy, group therapy, nutrition counseling, family therapy, and virtual care in Portland & Vancouver.",
-      "specialty": "Eating Disorder Treatment",
-      "about": {
-        "@type": "MedicalBusiness",
-        "@id": "https://beyondeatingrecovery.com/#organization"
-      }
+       "@id": "https://www.beyondeatingrecovery.com/services#webpage",
+       "url": "https://www.beyondeatingrecovery.com/services",
+       "name": "Eating Disorder Treatment Services | Beyond Eating Recovery",
+       "description": "Comprehensive eating disorder treatment: individual therapy, group therapy, nutrition counseling, family therapy, and virtual care in Portland & Vancouver.",
+       "specialty": "Eating Disorder Treatment",
+       "about": {
+         "@type": "MedicalBusiness",
+         "@id": "https://www.beyondeatingrecovery.com/#organization"
+       }
     },
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "@id": "https://beyondeatingrecovery.com/services#individual-therapy",
+      "@id": "https://www.beyondeatingrecovery.com/services#individual-therapy",
       "name": "Individual Eating Disorder Therapy",
       "description": "One-on-one therapy sessions with specialized eating disorder therapists using evidence-based approaches including CBT-E, DBT, and trauma-informed care.",
       "serviceType": "Mental Health Therapy",
@@ -65,7 +65,7 @@ const Services = () => {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "@id": "https://beyondeatingrecovery.com/services#nutrition-counseling",
+      "@id": "https://www.beyondeatingrecovery.com/services#nutrition-counseling",
       "name": "Nutrition Counseling for Eating Disorders",
       "description": "Dietitian-led nutrition therapy using Intuitive Eating and Health At Every Size (HAES) principles to support eating disorder recovery.",
       "serviceType": "Nutrition Therapy",
@@ -91,7 +91,7 @@ const Services = () => {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "@id": "https://beyondeatingrecovery.com/services#group-therapy",
+      "@id": "https://www.beyondeatingrecovery.com/services#group-therapy",
       "name": "Group Therapy for Eating Disorders",
       "description": "Supportive group therapy sessions for eating disorder recovery and body image healing, providing community and shared experiences.",
       "serviceType": "Group Therapy",
@@ -109,7 +109,7 @@ const Services = () => {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "@id": "https://beyondeatingrecovery.com/services#telehealth",
+      "@id": "https://www.beyondeatingrecovery.com/services#telehealth",
       "name": "Virtual Eating Disorder Therapy",
       "description": "Telehealth therapy sessions for eating disorder treatment available throughout Oregon and Washington states.",
       "serviceType": "Telehealth Mental Health Services",
@@ -132,7 +132,7 @@ const Services = () => {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "@id": "https://beyondeatingrecovery.com/services#family-therapy",
+      "@id": "https://www.beyondeatingrecovery.com/services#family-therapy",
       "name": "Family Therapy for Eating Disorders",
       "description": "Family-based treatment and support to help families understand and support their loved one's eating disorder recovery journey.",
       "serviceType": "Family Therapy",
@@ -165,7 +165,7 @@ const Services = () => {
           content="Comprehensive eating disorder treatment in Portland & Vancouver: individual therapy, group therapy, nutrition counseling, family therapy, and virtual care. Evidence-based, compassionate support." 
         />
         <meta name="keywords" content="eating disorder therapy Portland, group therapy eating disorders, nutrition counseling Vancouver WA, virtual eating disorder treatment, family therapy eating disorders, telehealth therapy Oregon" />
-        <link rel="canonical" href="https://beyondeatingrecovery.com/services" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/services" />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
