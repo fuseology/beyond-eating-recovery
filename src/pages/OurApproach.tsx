@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
@@ -21,6 +22,18 @@ import bookCover from "@/assets/if-your-hunger-could-talk-book.jpg";
 const OurApproach = () => {
   return (
     <div className="min-h-screen flex flex-col">
+      <Helmet>
+        <title>Our Approach to Eating Disorder Recovery | Beyond Eating Recovery</title>
+        <meta name="description" content="Discover our compassionate, step-by-step approach to eating disorder recovery. Make peace with food, love your body, and reclaim your life with evidence-based care." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/our-approach" />
+        <meta property="og:title" content="Our Approach to Eating Disorder Recovery | Beyond Eating Recovery" />
+        <meta property="og:description" content="Discover our compassionate, step-by-step approach to eating disorder recovery. Make peace with food, love your body, and reclaim your life with evidence-based care." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/our-approach" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Our Approach to Eating Disorder Recovery | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Discover our compassionate, step-by-step approach to eating disorder recovery. Make peace with food, love your body, and reclaim your life with evidence-based care." />
+      </Helmet>
       <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />

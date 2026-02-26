@@ -32,6 +32,7 @@ const EmotionalEating = () => {
           name="keywords"
           content="emotional eating treatment, compulsive overeating therapy, binge eating help Portland, stress eating counselor Vancouver WA, Intuitive Eating therapist, HAES counselor, weight-neutral eating disorder treatment, restrict-binge cycle, emotional eating recovery Oregon Washington, telehealth eating disorder therapy"
         />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/conditions/emotional-eating" />
       </Helmet>
       <MedicalConditionSchema
         name="Emotional Eating"

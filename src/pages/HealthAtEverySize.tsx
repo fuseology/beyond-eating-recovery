@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
@@ -34,6 +35,18 @@ const HealthAtEverySize = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Health At Every Size (HAES) | Beyond Eating Recovery</title>
+        <meta name="description" content="Learn about Health At Every Size (HAES), a health-centered paradigm focused on well-being, not weight. End the diet cycle with compassionate, evidence-based care." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/health-at-every-size" />
+        <meta property="og:title" content="Health At Every Size (HAES) | Beyond Eating Recovery" />
+        <meta property="og:description" content="Learn about Health At Every Size (HAES), a health-centered paradigm focused on well-being, not weight. End the diet cycle with compassionate, evidence-based care." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/health-at-every-size" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Health At Every Size (HAES) | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Learn about Health At Every Size (HAES), a health-centered paradigm focused on well-being, not weight. End the diet cycle with compassionate, evidence-based care." />
+      </Helmet>
       <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />

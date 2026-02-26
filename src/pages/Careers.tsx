@@ -30,6 +30,16 @@ const Careers = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
+        <title>Careers | Join Our Team | Beyond Eating Recovery</title>
+        <meta name="description" content="Join Beyond Eating Recovery's collaborative team. We're hiring HAES-aligned therapists, dietitians, and wellness practitioners in Portland, OR & Vancouver, WA." />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/careers" />
+        <meta property="og:title" content="Careers | Join Our Team | Beyond Eating Recovery" />
+        <meta property="og:description" content="Join Beyond Eating Recovery's collaborative team. We're hiring HAES-aligned therapists, dietitians, and wellness practitioners in Portland, OR & Vancouver, WA." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.beyondeatingrecovery.com/careers" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers | Join Our Team | Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Join Beyond Eating Recovery's collaborative team. We're hiring HAES-aligned therapists, dietitians, and wellness practitioners in Portland, OR & Vancouver, WA." />
         <script type="application/ld+json">
           {JSON.stringify([
             {

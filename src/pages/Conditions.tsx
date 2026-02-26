@@ -218,13 +218,13 @@ const Conditions = () => {
           content="Comprehensive eating disorder treatment for anorexia, bulimia, binge eating, ARFID, orthorexia, and more. Weight-neutral, HAES®-aligned care throughout Oregon and Washington. Call 360-726-4141." 
         />
         <meta name="keywords" content="eating disorder treatment, anorexia treatment Portland, bulimia therapy Vancouver WA, binge eating disorder help, ARFID treatment, orthorexia counseling, eating disorder types, HAES therapist, weight-neutral treatment, telehealth Oregon Washington" />
-        <link rel="canonical" href="https://beyondeatingrecovery.com/conditions" />
+        <link rel="canonical" href="https://www.beyondeatingrecovery.com/conditions" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "MedicalWebPage",
-            "@id": "https://beyondeatingrecovery.com/conditions#webpage",
-            "url": "https://beyondeatingrecovery.com/conditions",
+            "@id": "https://www.beyondeatingrecovery.com/conditions#webpage",
+            "url": "https://www.beyondeatingrecovery.com/conditions",
             "name": "Eating Disorders We Treat",
             "description": "Comprehensive guide to eating disorders treated at Beyond Eating Recovery",
             "specialty": "Eating Disorder Treatment",
@@ -270,7 +270,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Anorexia Nervosa",
-                  "url": "https://beyondeatingrecovery.com/conditions/anorexia-nervosa"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/anorexia-nervosa"
                 }
               },
               {
@@ -279,7 +279,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Bulimia Nervosa",
-                  "url": "https://beyondeatingrecovery.com/conditions/bulimia-nervosa"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/bulimia-nervosa"
                 }
               },
               {
@@ -288,7 +288,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Binge Eating Disorder",
-                  "url": "https://beyondeatingrecovery.com/conditions/binge-eating-disorder"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/binge-eating-disorder"
                 }
               },
               {
@@ -297,7 +297,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Atypical Anorexia Nervosa",
-                  "url": "https://beyondeatingrecovery.com/conditions/atypical-anorexia"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/atypical-anorexia"
                 }
               },
               {
@@ -306,7 +306,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "ARFID (Avoidant/Restrictive Food Intake Disorder)",
-                  "url": "https://beyondeatingrecovery.com/conditions/arfid"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/arfid"
                 }
               },
               {
@@ -315,7 +315,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "OSFED (Other Specified Feeding or Eating Disorder)",
-                  "url": "https://beyondeatingrecovery.com/conditions/osfed"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/osfed"
                 }
               },
               {
@@ -324,7 +324,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Orthorexia",
-                  "url": "https://beyondeatingrecovery.com/conditions/orthorexia"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/orthorexia"
                 }
               },
               {
@@ -333,7 +333,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Disordered Eating",
-                  "url": "https://beyondeatingrecovery.com/conditions/disordered-eating"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/disordered-eating"
                 }
               },
               {
@@ -342,7 +342,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Emotional Eating",
-                  "url": "https://beyondeatingrecovery.com/conditions/emotional-eating"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/emotional-eating"
                 }
               },
               {
@@ -351,7 +351,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Body Dysmorphic Disorder",
-                  "url": "https://beyondeatingrecovery.com/conditions/body-dysmorphia"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/body-dysmorphia"
                 }
               },
               {
@@ -360,7 +360,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Exercise Addiction",
-                  "url": "https://beyondeatingrecovery.com/conditions/exercise-addiction"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/exercise-addiction"
                 }
               },
               {
@@ -369,7 +369,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Co-Occurring Mental Health Issues",
-                  "url": "https://beyondeatingrecovery.com/conditions/co-occurring-issues"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/co-occurring-issues"
                 }
               },
               {
@@ -378,7 +378,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Eating Disorders in Men",
-                  "url": "https://beyondeatingrecovery.com/conditions/men-eating-disorders"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/men-eating-disorders"
                 }
               },
               {
@@ -387,7 +387,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Eating Disorders in LGBTQIA+ Individuals",
-                  "url": "https://beyondeatingrecovery.com/conditions/lgbtqia-eating-disorders"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/lgbtqia-eating-disorders"
                 }
               },
               {
@@ -396,7 +396,7 @@ const Conditions = () => {
                 "item": {
                   "@type": "MedicalCondition",
                   "name": "Eating Disorders in Athletes",
-                  "url": "https://beyondeatingrecovery.com/conditions/athletes-eating-disorders"
+                  "url": "https://www.beyondeatingrecovery.com/conditions/athletes-eating-disorders"
                 }
               }
             ]
