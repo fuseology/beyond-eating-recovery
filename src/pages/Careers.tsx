@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Header from "@/components/Header";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import Footer from "@/components/Footer";
@@ -28,6 +29,151 @@ const Careers = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify([
+            {
+              "@context": "https://schema.org/",
+              "@type": "JobPosting",
+              "title": "Licensed Therapist (PhD, PsyD, LCSW, LMFT, LPC)",
+              "description": "Join our collaborative team as a licensed mental health professional specializing in eating disorder treatment. Provide individual, couples, and/or family therapy using HAES®, Intuitive Eating, and trauma-informed approaches in a supportive group practice environment.",
+              "datePosted": "2025-01-01",
+              "validThrough": "2026-12-31",
+              "employmentType": "CONTRACTOR",
+              "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Beyond Eating Recovery",
+                "sameAs": "https://www.beyondeatingrecovery.com",
+                "logo": "https://www.beyondeatingrecovery.com/assets/beyond-eating-recovery-logo.png"
+              },
+              "jobLocation": [
+                {
+                  "@type": "Place",
+                  "address": { "@type": "PostalAddress", "addressLocality": "Portland", "addressRegion": "OR", "addressCountry": "US" }
+                },
+                {
+                  "@type": "Place",
+                  "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "WA", "addressCountry": "US" }
+                }
+              ],
+              "jobLocationType": "TELECOMMUTE",
+              "applicantLocationRequirements": [
+                { "@type": "State", "name": "Oregon" },
+                { "@type": "State", "name": "Washington" }
+              ],
+              "baseSalary": {
+                "@type": "MonetaryAmount",
+                "currency": "USD",
+                "value": { "@type": "QuantitativeValue", "minValue": 3000, "maxValue": 6000, "unitText": "MONTH" }
+              },
+              "qualifications": "Doctoral or Master's degree in counseling, psychology, social work, or marriage and family therapy. Current, active licensure in Oregon and/or Washington.",
+              "responsibilities": "Provide individual, couples, and/or family therapy for clients with eating disorders. Conduct comprehensive assessments and develop treatment plans.",
+              "industry": "Mental Health Care",
+              "directApply": false
+            },
+            {
+              "@context": "https://schema.org/",
+              "@type": "JobPosting",
+              "title": "Associate Therapist / Student Intern",
+              "description": "Build your clinical skills with experienced supervision in a specialized eating disorder practice. Perfect for associates working toward full licensure or graduate students completing practicum/internship requirements.",
+              "datePosted": "2025-01-01",
+              "validThrough": "2026-12-31",
+              "employmentType": "CONTRACTOR",
+              "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Beyond Eating Recovery",
+                "sameAs": "https://www.beyondeatingrecovery.com",
+                "logo": "https://www.beyondeatingrecovery.com/assets/beyond-eating-recovery-logo.png"
+              },
+              "jobLocation": [
+                {
+                  "@type": "Place",
+                  "address": { "@type": "PostalAddress", "addressLocality": "Portland", "addressRegion": "OR", "addressCountry": "US" }
+                },
+                {
+                  "@type": "Place",
+                  "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "WA", "addressCountry": "US" }
+                }
+              ],
+              "jobLocationType": "TELECOMMUTE",
+              "applicantLocationRequirements": [
+                { "@type": "State", "name": "Oregon" },
+                { "@type": "State", "name": "Washington" }
+              ],
+              "qualifications": "Currently enrolled in accredited graduate program or Master's degree with associate license in Oregon/Washington.",
+              "industry": "Mental Health Care",
+              "directApply": false
+            },
+            {
+              "@context": "https://schema.org/",
+              "@type": "JobPosting",
+              "title": "Registered Dietitian (RD/RDN)",
+              "description": "Join our multidisciplinary team as a registered dietitian specializing in eating disorder nutrition counseling using HAES®, Intuitive Eating, and non-diet approaches.",
+              "datePosted": "2025-01-01",
+              "validThrough": "2026-12-31",
+              "employmentType": "CONTRACTOR",
+              "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Beyond Eating Recovery",
+                "sameAs": "https://www.beyondeatingrecovery.com",
+                "logo": "https://www.beyondeatingrecovery.com/assets/beyond-eating-recovery-logo.png"
+              },
+              "jobLocation": [
+                {
+                  "@type": "Place",
+                  "address": { "@type": "PostalAddress", "addressLocality": "Portland", "addressRegion": "OR", "addressCountry": "US" }
+                },
+                {
+                  "@type": "Place",
+                  "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "WA", "addressCountry": "US" }
+                }
+              ],
+              "jobLocationType": "TELECOMMUTE",
+              "applicantLocationRequirements": [
+                { "@type": "State", "name": "Oregon" },
+                { "@type": "State", "name": "Washington" }
+              ],
+              "baseSalary": {
+                "@type": "MonetaryAmount",
+                "currency": "USD",
+                "value": { "@type": "QuantitativeValue", "minValue": 2500, "maxValue": 5000, "unitText": "MONTH" }
+              },
+              "qualifications": "Master's degree in nutrition, dietetics, or related field. Current RD or RDN credential through CDR. Active licensure in Oregon and/or Washington.",
+              "responsibilities": "Provide individual nutrition counseling for clients with eating disorders. Conduct nutrition assessments and develop individualized care plans.",
+              "industry": "Mental Health Care",
+              "directApply": false
+            },
+            {
+              "@context": "https://schema.org/",
+              "@type": "JobPosting",
+              "title": "Wellness Practitioner (Prescribers, Massage Therapists, Movement Instructors)",
+              "description": "We're interested in connecting with psychiatric prescribers, massage therapists, movement instructors, and other wellness practitioners aligned with our HAES® and social justice philosophy.",
+              "datePosted": "2025-01-01",
+              "validThrough": "2026-12-31",
+              "employmentType": "CONTRACTOR",
+              "hiringOrganization": {
+                "@type": "Organization",
+                "name": "Beyond Eating Recovery",
+                "sameAs": "https://www.beyondeatingrecovery.com",
+                "logo": "https://www.beyondeatingrecovery.com/assets/beyond-eating-recovery-logo.png"
+              },
+              "jobLocation": [
+                {
+                  "@type": "Place",
+                  "address": { "@type": "PostalAddress", "addressLocality": "Portland", "addressRegion": "OR", "addressCountry": "US" }
+                },
+                {
+                  "@type": "Place",
+                  "address": { "@type": "PostalAddress", "addressLocality": "Vancouver", "addressRegion": "WA", "addressCountry": "US" }
+                }
+              ],
+              "jobLocationType": "TELECOMMUTE",
+              "industry": "Mental Health Care",
+              "directApply": false
+            }
+          ])}
+        </script>
+      </Helmet>
       <BreadcrumbSchema />
       <Header />
       <Breadcrumbs />
