@@ -1,19 +1,12 @@
 
 
-## Show a Video Frame as Cover Image
+## Remove Netlify `_redirects` File
 
-### Approach
+Since the site is hosted on Vercel, the `public/_redirects` file serves no purpose -- it's a Netlify-specific convention. Vercel uses `vercel.json` for routing, which is already properly configured.
 
-Append a timestamp fragment (`#t=2`) to the video source URL so the browser automatically displays the frame at the 2-second mark as a preview. Combined with `preload="metadata"`, this loads just enough data to show that frame without downloading the entire video.
+### Change
 
-### Technical Details
+- **Delete `public/_redirects`** -- This file contains `/* /index.html 200` which is only used by Netlify for SPA routing. Vercel handles this via the `rewrites` section in `vercel.json`.
 
-**File:** `src/pages/Careers.tsx`
-
-1. Remove the empty `poster=""` attribute from the `<video>` element
-2. Append `#t=2` to the video source URL so it reads:
-   `...BER Recruitment Video updated.mp4#t=2`
-3. This tells the browser to seek to 2 seconds and display that frame as the initial preview
-
-If the 2-second mark isn't a good frame, the timestamp can be easily adjusted (e.g., `#t=5` for 5 seconds in).
+No other files need to change.
 
