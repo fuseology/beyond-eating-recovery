@@ -194,8 +194,8 @@ const Careers = () => {
       
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary via-primary to-primary/80 text-primary-foreground py-16 md:py-24">
-        <div className="container max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="container max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-[2fr_3fr] gap-10 items-center">
             <div className="text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
                 Join Our Collaborative Team
@@ -214,7 +214,7 @@ const Careers = () => {
                 View Open Positions ↓
               </Button>
             </div>
-            <div className="rounded-lg overflow-hidden shadow-2xl">
+            <div className="rounded-lg overflow-hidden shadow-2xl min-h-[350px] md:min-h-[450px]">
               <video
                 className="w-full h-auto rounded-lg"
                 controls
