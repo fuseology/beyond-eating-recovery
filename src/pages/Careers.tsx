@@ -179,24 +179,43 @@ const Careers = () => {
       <Breadcrumbs />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-primary to-primary/80 text-primary-foreground py-20 md:py-32">
-        <div className="container max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Join Our Collaborative Team
-          </h1>
-          <p className="text-xl md:text-2xl font-medium mb-8 text-primary-foreground/90">
-            Build your practice with support, supervision, and a community that shares your values
-          </p>
-          <p className="text-lg leading-relaxed mb-10 max-w-3xl mx-auto">
-            Beyond Eating Recovery is seeking passionate, HAES®-aligned therapists and dietitians to join our collaborative group practice. If you're looking for the freedom of private practice with the support of an experienced team, excellent administrative backing, and a commitment to social justice and weight-neutral care—we'd love to hear from you.
-          </p>
-          <Button 
-            size="lg" 
-            onClick={scrollToPositions}
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8"
-          >
-            View Open Positions ↓
-          </Button>
+      <section className="relative bg-gradient-to-br from-primary via-primary to-primary/80 text-primary-foreground py-16 md:py-24">
+        <div className="container max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Join Our Collaborative Team
+              </h1>
+              <p className="text-xl md:text-2xl font-medium mb-6 text-primary-foreground/90">
+                Build your practice with support, supervision, and a community that shares your values
+              </p>
+              <p className="text-lg leading-relaxed mb-8">
+                Beyond Eating Recovery is seeking passionate, HAES®-aligned therapists and dietitians to join our collaborative group practice. If you're looking for the freedom of private practice with the support of an experienced team, excellent administrative backing, and a commitment to social justice and weight-neutral care—we'd love to hear from you.
+              </p>
+              <Button 
+                size="lg" 
+                onClick={scrollToPositions}
+                className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8"
+              >
+                View Open Positions ↓
+              </Button>
+            </div>
+            <div className="rounded-lg overflow-hidden shadow-2xl">
+              <video
+                className="w-full h-auto rounded-lg"
+                controls
+                preload="metadata"
+                poster=""
+                playsInline
+              >
+                <source
+                  src="https://fjmloyeksqvqqjrbmnhp.supabase.co/storage/v1/object/public/video//BER Recruitment Video updated.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
         </div>
       </section>
 
