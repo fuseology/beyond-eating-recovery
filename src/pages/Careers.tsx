@@ -205,11 +205,10 @@ const Careers = () => {
                 className="w-full h-auto rounded-lg"
                 controls
                 preload="metadata"
-                poster=""
                 playsInline
               >
                 <source
-                  src="https://fjmloyeksqvqqjrbmnhp.supabase.co/storage/v1/object/public/video//BER Recruitment Video updated.mp4"
+                  src="https://fjmloyeksqvqqjrbmnhp.supabase.co/storage/v1/object/public/video//BER Recruitment Video updated.mp4#t=2"
                   type="video/mp4"
                 />
                 Your browser does not support the video tag.
