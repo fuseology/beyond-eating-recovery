@@ -68,8 +68,8 @@ const Careers = () => {
               ],
               "jobLocationType": "TELECOMMUTE",
               "applicantLocationRequirements": [
-                { "@type": "State", "name": "Oregon" },
-                { "@type": "State", "name": "Washington" }
+                { "@type": "AdministrativeArea", "name": "Oregon" },
+                { "@type": "AdministrativeArea", "name": "Washington" }
               ],
               "baseSalary": {
                 "@type": "MonetaryAmount",
@@ -107,8 +107,8 @@ const Careers = () => {
               ],
               "jobLocationType": "TELECOMMUTE",
               "applicantLocationRequirements": [
-                { "@type": "State", "name": "Oregon" },
-                { "@type": "State", "name": "Washington" }
+                { "@type": "AdministrativeArea", "name": "Oregon" },
+                { "@type": "AdministrativeArea", "name": "Washington" }
               ],
               "qualifications": "Currently enrolled in accredited graduate program or Master's degree with associate license in Oregon/Washington.",
               "industry": "Mental Health Care",
@@ -140,8 +140,8 @@ const Careers = () => {
               ],
               "jobLocationType": "TELECOMMUTE",
               "applicantLocationRequirements": [
-                { "@type": "State", "name": "Oregon" },
-                { "@type": "State", "name": "Washington" }
+                { "@type": "AdministrativeArea", "name": "Oregon" },
+                { "@type": "AdministrativeArea", "name": "Washington" }
               ],
               "baseSalary": {
                 "@type": "MonetaryAmount",
@@ -178,6 +178,10 @@ const Careers = () => {
                 }
               ],
               "jobLocationType": "TELECOMMUTE",
+              "applicantLocationRequirements": [
+                { "@type": "AdministrativeArea", "name": "Oregon" },
+                { "@type": "AdministrativeArea", "name": "Washington" }
+              ],
               "industry": "Mental Health Care",
               "directApply": false
             }
