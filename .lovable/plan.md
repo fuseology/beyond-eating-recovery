@@ -1,14 +1,35 @@
 
-# Make Careers Page Video Container Larger
+Issue diagnosis:
+- I reviewed `src/pages/Careers.tsx` and confirmed all 4 `JobPosting` entries currently use:
+  - `jobLocationType: "TELECOMMUTE"`
+  - `applicantLocationRequirements` as an array of two `AdministrativeArea` objects (`Oregon`, `Washington`).
+- Your Search Console output shows exactly 2 critical errors per job posting for this field, which matches having 2 invalid entries in the array.
+- For Google Job Posting rich results, telecommute jobs require `applicantLocationRequirements` with at least one `Country` object. While `AdministrativeArea` is allowed in broader schema.org vocabulary, Google’s validator is stricter here.
 
-## Change
+Implementation plan:
+1. Update `src/pages/Careers.tsx` JSON-LD for all four `JobPosting` objects:
+   - Replace:
+     - `"applicantLocationRequirements": [ { "@type": "AdministrativeArea", ... }, { "@type": "AdministrativeArea", ... } ]`
+   - With:
+     - `"applicantLocationRequirements": { "@type": "Country", "name": "US" }`
+   - Keep existing `jobLocation` entries for Portland (OR) and Vancouver (WA), which still communicate regional context.
+2. Keep all other fields unchanged (titles, descriptions, datePosted, validThrough, employmentType, etc.) to minimize SEO churn.
+3. Optional cleanup (recommended but non-blocking):
+   - Add `baseSalary` to Associate Therapist and Wellness Practitioner to resolve the non-critical warning.
 
-**File: `src/pages/Careers.tsx`**
+Validation plan after change:
+1. Re-run Google Rich Results Test on:
+   - `https://www.beyondeatingrecovery.com/careers`
+2. Confirm each detected job no longer has:
+   - `Invalid object type for field "applicantLocationRequirements"`
+3. In Search Console, click “Validate Fix” after successful test.
+4. If errors persist after code fix, check crawl lag/caching by waiting for recrawl and testing with live URL inspection again.
 
-Update the hero section grid layout from a 50/50 split to give more space to the video, and increase the max-width of the container:
-
-1. Change `max-w-6xl` to `max-w-7xl` on the hero container (line 197)
-2. Change the grid from `md:grid-cols-2` to `md:grid-cols-[2fr_3fr]` so the video gets ~60% of the width (line 198)
-3. Add `min-h-[350px] md:min-h-[450px]` to the video container div for a taller minimum height (line 217)
-
-This keeps the side-by-side layout but gives the video more visual prominence.
+Technical details (exact target shape):
+```json
+"jobLocationType": "TELECOMMUTE",
+"applicantLocationRequirements": {
+  "@type": "Country",
+  "name": "US"
+}
+```
