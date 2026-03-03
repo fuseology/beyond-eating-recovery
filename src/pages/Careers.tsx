@@ -67,10 +67,7 @@ const Careers = () => {
                 }
               ],
               "jobLocationType": "TELECOMMUTE",
-              "applicantLocationRequirements": [
-                { "@type": "AdministrativeArea", "name": "Oregon" },
-                { "@type": "AdministrativeArea", "name": "Washington" }
-              ],
+              "applicantLocationRequirements": { "@type": "Country", "name": "US" },
               "baseSalary": {
                 "@type": "MonetaryAmount",
                 "currency": "USD",
@@ -106,10 +103,12 @@ const Careers = () => {
                 }
               ],
               "jobLocationType": "TELECOMMUTE",
-              "applicantLocationRequirements": [
-                { "@type": "AdministrativeArea", "name": "Oregon" },
-                { "@type": "AdministrativeArea", "name": "Washington" }
-              ],
+              "applicantLocationRequirements": { "@type": "Country", "name": "US" },
+              "baseSalary": {
+                "@type": "MonetaryAmount",
+                "currency": "USD",
+                "value": { "@type": "QuantitativeValue", "minValue": 1500, "maxValue": 3000, "unitText": "MONTH" }
+              },
               "qualifications": "Currently enrolled in accredited graduate program or Master's degree with associate license in Oregon/Washington.",
               "industry": "Mental Health Care",
               "directApply": false
@@ -139,10 +138,7 @@ const Careers = () => {
                 }
               ],
               "jobLocationType": "TELECOMMUTE",
-              "applicantLocationRequirements": [
-                { "@type": "AdministrativeArea", "name": "Oregon" },
-                { "@type": "AdministrativeArea", "name": "Washington" }
-              ],
+              "applicantLocationRequirements": { "@type": "Country", "name": "US" },
               "baseSalary": {
                 "@type": "MonetaryAmount",
                 "currency": "USD",
@@ -178,10 +174,12 @@ const Careers = () => {
                 }
               ],
               "jobLocationType": "TELECOMMUTE",
-              "applicantLocationRequirements": [
-                { "@type": "AdministrativeArea", "name": "Oregon" },
-                { "@type": "AdministrativeArea", "name": "Washington" }
-              ],
+              "applicantLocationRequirements": { "@type": "Country", "name": "US" },
+              "baseSalary": {
+                "@type": "MonetaryAmount",
+                "currency": "USD",
+                "value": { "@type": "QuantitativeValue", "minValue": 2000, "maxValue": 4000, "unitText": "MONTH" }
+              },
               "industry": "Mental Health Care",
               "directApply": false
             }
