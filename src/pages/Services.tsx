@@ -73,19 +73,19 @@ const Services = () => {
       "provider": {
         "@type": "MedicalBusiness",
         "name": "Beyond Eating Recovery",
-        "telephone": "+1-503-868-9434",
+        "telephone": "+1-360-726-4141",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "7412 SW Beaverton-Hillsdale Hwy, Suite 107",
+          "streetAddress": "1235 SE Division Street, Suite 104",
           "addressLocality": "Portland",
           "addressRegion": "OR",
-          "postalCode": "97225",
+          "postalCode": "97202",
           "addressCountry": "US"
         }
       },
       "areaServed": [
-        { "@type": "State", "name": "Oregon" },
-        { "@type": "State", "name": "Washington" }
+        { "@type": "AdministrativeArea", "name": "Oregon" },
+        { "@type": "AdministrativeArea", "name": "Washington" }
       ]
     },
     {
