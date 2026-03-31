@@ -53,12 +53,19 @@ const Index = () => {
         "email": NAP_DATA.email,
         "priceRange": "$$",
         "medicalSpecialty": ["Eating Disorder Treatment", "Mental Health Counseling", "Nutrition Counseling"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": NAP_DATA.phoneInternational,
+          "contactType": "customer service",
+          "availableLanguage": "English"
+        },
+        "sameAs": Object.values(NAP_DATA.socialMedia),
         "areaServed": [
           {
             "@type": "City",
             "name": portland.city,
             "containedInPlace": {
-              "@type": "State",
+              "@type": "AdministrativeArea",
               "name": portland.stateFullName
             }
           },
@@ -66,7 +73,7 @@ const Index = () => {
             "@type": "City",
             "name": vancouver.city,
             "containedInPlace": {
-              "@type": "State",
+              "@type": "AdministrativeArea",
               "name": vancouver.stateFullName
             }
           }
@@ -206,11 +213,6 @@ const Index = () => {
         "description": "Portland & Vancouver eating disorder treatment center",
         "publisher": {
           "@id": `${NAP_DATA.website}/#organization`
-        },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": `${NAP_DATA.website}/search?q={search_term_string}`,
-          "query-input": "required name=search_term_string"
         }
       }
     ]
