@@ -213,9 +213,6 @@ const Index = () => {
         "description": "Portland & Vancouver eating disorder treatment center",
         "publisher": {
           "@id": `${NAP_DATA.website}/#organization`
-        },
-        "publisher": {
-          "@id": `${NAP_DATA.website}/#organization`
         }
       }
     ]
