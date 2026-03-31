@@ -21,13 +21,26 @@ Allow: /
 User-agent: LinkedInBot
 Allow: /
 
+# AI Crawlers (2026 GEO Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
 # All other bots
 User-agent: *
 Allow: /
 Crawl-delay: 5
-
-# Block specific directories if any (currently none)
-# Disallow: /private/
 
 # Sitemaps
 Sitemap: https://www.beyondeatingrecovery.com/sitemap-index.xml

@@ -117,7 +117,7 @@ const Services = () => {
       "provider": {
         "@type": "MedicalBusiness",
         "name": "Beyond Eating Recovery",
-        "telephone": "+1-503-868-9434"
+        "telephone": "+1-360-726-4141"
       },
       "areaServed": [
         { "@type": "State", "name": "Oregon" },

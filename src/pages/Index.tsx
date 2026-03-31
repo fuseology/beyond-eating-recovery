@@ -214,10 +214,8 @@ const Index = () => {
         "publisher": {
           "@id": `${NAP_DATA.website}/#organization`
         },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": `${NAP_DATA.website}/search?q={search_term_string}`,
-          "query-input": "required name=search_term_string"
+        "publisher": {
+          "@id": `${NAP_DATA.website}/#organization`
         }
       }
     ]
