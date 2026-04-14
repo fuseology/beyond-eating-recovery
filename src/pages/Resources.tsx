@@ -96,14 +96,22 @@ const Resources = () => {
       downloadUrl: "/downloads/haes_principles_explained.pdf"
     },
     {
-      title: "Recovery Milestone Tracker",
-      description: "Track your progress and celebrate wins",
-      type: "Worksheet"
+      title: "Recognizing Warning Signs of Eating Disorders",
+      description: "Learn to identify physical, behavioral, and emotional warning signs",
+      type: "PDF Guide",
+      downloadUrl: "/downloads/recognizing_warning_signs_eating_disorders.pdf"
+    },
+    {
+      title: "Body Image Affirmations & Reflection Worksheet",
+      description: "Guided prompts for building a healthier body image",
+      type: "Worksheet",
+      downloadUrl: "/downloads/body_image_affirmations_reflection_worksheet.pdf"
     },
     {
       title: "Self-Care Planning Worksheet",
       description: "Create your personalized self-care plan",
-      type: "Worksheet"
+      type: "Worksheet",
+      downloadUrl: "/downloads/self_care_planning_worksheet.pdf"
     }
   ];
 
@@ -397,7 +405,29 @@ const Resources = () => {
         </div>
       </section>
 
-      {/* Audio Resources */}
+      {/* Warning Signs Infographic */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4 text-primary">
+            Eating Disorder Warning Signs
+          </h2>
+          <p className="text-center text-muted-foreground mb-10 max-w-2xl mx-auto">
+            Learn to recognize the physical, behavioral, and emotional warning signs of eating disorders
+          </p>
+          <div className="max-w-5xl mx-auto">
+            <img
+              src="/images/eating-disorder-warning-signs-infographic.png"
+              alt="Infographic showing physical, behavioral, and emotional warning signs of eating disorders including dramatic weight changes, skipping meals, and preoccupation with weight"
+              className="w-full h-auto rounded-lg shadow-lg"
+              loading="lazy"
+            />
+            <p className="text-xs text-muted-foreground mt-4 text-center italic">
+              This information is for educational purposes only and does not constitute medical advice. Consult a healthcare professional for diagnosis and treatment.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="audio" className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4 text-primary">
