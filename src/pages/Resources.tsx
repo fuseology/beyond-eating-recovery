@@ -96,14 +96,22 @@ const Resources = () => {
       downloadUrl: "/downloads/haes_principles_explained.pdf"
     },
     {
-      title: "Recovery Milestone Tracker",
-      description: "Track your progress and celebrate wins",
-      type: "Worksheet"
+      title: "Recognizing Warning Signs of Eating Disorders",
+      description: "Learn to identify physical, behavioral, and emotional warning signs",
+      type: "PDF Guide",
+      downloadUrl: "/downloads/recognizing_warning_signs_eating_disorders.pdf"
+    },
+    {
+      title: "Body Image Affirmations & Reflection Worksheet",
+      description: "Guided prompts for building a healthier body image",
+      type: "Worksheet",
+      downloadUrl: "/downloads/body_image_affirmations_reflection_worksheet.pdf"
     },
     {
       title: "Self-Care Planning Worksheet",
       description: "Create your personalized self-care plan",
-      type: "Worksheet"
+      type: "Worksheet",
+      downloadUrl: "/downloads/self_care_planning_worksheet.pdf"
     }
   ];
 
