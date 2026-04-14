@@ -375,6 +375,13 @@ const Resources = () => {
                             View Page
                           </Button>
                         </Link>
+                      ) : resource.downloadUrl ? (
+                        <a href={resource.downloadUrl} download target="_blank" rel="noopener noreferrer">
+                          <Button size="sm" className="bg-accent hover:bg-accent/90">
+                            <Download className="w-4 h-4 mr-2" />
+                            Download
+                          </Button>
+                        </a>
                       ) : (
                         <Button size="sm" className="bg-accent hover:bg-accent/90">
                           <Download className="w-4 h-4 mr-2" />
