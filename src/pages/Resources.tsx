@@ -80,17 +80,20 @@ const Resources = () => {
     {
       title: "What is Intuitive Eating?",
       description: "Comprehensive guide to the 10 principles",
-      type: "PDF Guide"
+      type: "PDF Guide",
+      downloadUrl: "/downloads/What_is_Intuitive_Eating.pdf"
     },
     {
       title: "Supporting a Loved One with an Eating Disorder",
       description: "Family and friends guide",
-      type: "PDF Guide"
+      type: "PDF Guide",
+      downloadUrl: "/downloads/supporting_loved_one_eating_disorder.pdf"
     },
     {
       title: "HAES Principles Explained",
       description: "Understanding Health At Every Size",
-      type: "PDF Guide"
+      type: "PDF Guide",
+      downloadUrl: "/downloads/haes_principles_explained.pdf"
     },
     {
       title: "Recovery Milestone Tracker",
