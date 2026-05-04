@@ -55,5 +55,31 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- AMP8 AI Citation Tracking v1.1 -->
+    <script>
+    (function(){
+      var lastTracked = "";
+      function track(){
+        var currentPath = location.pathname + location.search + location.hash;
+        if (currentPath === lastTracked) return;
+        lastTracked = currentPath;
+        var img = new Image();
+        img.src = "https://amp8-tracking-pixel.michael-de9.workers.dev/p"
+          + "?c=" + encodeURIComponent("BER")
+          + "&u=" + encodeURIComponent(location.href)
+          + "&pid=" + encodeURIComponent(document.title || "untitled")
+          + "&t=" + Date.now();
+      }
+      track();
+      window.addEventListener("hashchange", track);
+      var pushState = history.pushState;
+      history.pushState = function(){
+        pushState.apply(history, arguments);
+        setTimeout(track, 0);
+      };
+      window.addEventListener("popstate", track);
+    })();
+    </script>
   </body>
 </html>
