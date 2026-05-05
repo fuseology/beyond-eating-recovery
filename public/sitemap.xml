@@ -4,7 +4,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.beyondeatingrecovery.com/</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/" />
@@ -33,7 +33,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about" />
@@ -48,11 +48,6 @@
         <image:loc>https://www.beyondeatingrecovery.com/assets/bailey-benn-new.webp</image:loc>
         <image:title>Bailey Benn, MA, LPC, LMHC - Licensed Professional Counselor</image:title>
         <image:caption>LGBTQIA+ affirming eating disorder therapist</image:caption>
-      </image:image>
-      <image:image>
-        <image:loc>https://www.beyondeatingrecovery.com/assets/alyssa-pataki.webp</image:loc>
-        <image:title>Alyssa Pataki, MA, LMFT - Licensed Marriage &amp; Family Therapist</image:title>
-        <image:caption>Eating disorder and couples therapist</image:caption>
       </image:image>
       <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/kiandra-cole.webp</image:loc>
@@ -107,7 +102,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/services</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/services" />
@@ -121,7 +116,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions" />
@@ -130,7 +125,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/our-approach</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/our-approach" />
@@ -144,7 +139,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/contact</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/contact" />
@@ -153,7 +148,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/resources</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/resources" />
@@ -162,7 +157,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/faq</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/faq" />
@@ -171,7 +166,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/workshop</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/workshop" />
@@ -185,7 +180,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/careers</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/careers" />
@@ -194,7 +189,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/philosophy</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/philosophy" />
@@ -203,7 +198,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/health-at-every-size</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/health-at-every-size" />
@@ -217,7 +212,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/privacy-notice</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/privacy-notice" />
@@ -226,7 +221,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/secure-file-submissions</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/secure-file-submissions" />
@@ -249,7 +244,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/bailey-benn</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/bailey-benn" />
@@ -262,22 +257,8 @@
       </image:image>
   </url>
   <url>
-    <loc>https://www.beyondeatingrecovery.com/about/alyssa-pataki</loc>
-    <lastmod>2026-01-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/alyssa-pataki" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/alyssa-pataki" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/alyssa-pataki" />
-      <image:image>
-        <image:loc>https://www.beyondeatingrecovery.com/assets/alyssa-pataki.webp</image:loc>
-        <image:title>Alyssa Pataki, MA, LMFT - Licensed Marriage &amp; Family Therapist</image:title>
-        <image:caption>Eating disorder and couples therapist</image:caption>
-      </image:image>
-  </url>
-  <url>
     <loc>https://www.beyondeatingrecovery.com/about/kiandra-cole</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/kiandra-cole" />
@@ -291,7 +272,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/rachel-bennett</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/rachel-bennett" />
@@ -305,7 +286,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/annie-calhoun-randall</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
@@ -319,7 +300,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/sara-kranich</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/sara-kranich" />
@@ -333,7 +314,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/stephanie-okumura</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/stephanie-okumura" />
@@ -347,7 +328,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/michelle-commons</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/michelle-commons" />
@@ -375,7 +356,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/mary-cooper</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/mary-cooper" />
@@ -389,7 +370,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/emery-pederson</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-01-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/emery-pederson" />
@@ -403,7 +384,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/about/mackenzie-stracke</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/mackenzie-stracke" />
@@ -498,7 +479,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/emotional-eating</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/emotional-eating" />
@@ -516,7 +497,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/conditions/exercise-addiction</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/conditions/exercise-addiction" />
@@ -552,7 +533,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/battle-of-the-binge</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/battle-of-the-binge" />
@@ -561,7 +542,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/body-shame</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/body-shame" />
@@ -570,7 +551,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/resources/5-steps-diet-roller-coaster</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/resources/5-steps-diet-roller-coaster" />
@@ -579,7 +560,7 @@
   </url>
   <url>
     <loc>https://www.beyondeatingrecovery.com/resources/move-toward-your-emotions</loc>
-    <lastmod>2026-01-20</lastmod>
+    <lastmod>2026-02-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/resources/move-toward-your-emotions" />
