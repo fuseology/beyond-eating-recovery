@@ -82,8 +82,8 @@ export const NAP_DATA = {
       countryCode: "US",
       fullAddress: "1235 SE Division Street, Suite 104, Portland, OR 97202",
       coordinates: {
-        latitude: 45.5051,
-        longitude: -122.6528
+        latitude: 45.5050654,
+        longitude: -122.6528561
       },
       googleMapsUrl: "https://www.google.com/maps?cid=2882847891293830454",
       googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5592.498093295984!2d-122.652856!3d45.505065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b992a10ec77%3A0x27e481ed74713d36!2sBody%20Expressions%20of%20Portland%20-%20Eating%20Disorders%20Counseling!5e0!3m2!1sen!2sus!4v1763163338622!5m2!1sen!2sus"
