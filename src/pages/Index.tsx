@@ -128,15 +128,19 @@ const Index = () => {
           "latitude": portland.coordinates.latitude.toString(),
           "longitude": portland.coordinates.longitude.toString()
         },
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": portland.coordinates.latitude.toString(),
-            "longitude": portland.coordinates.longitude.toString()
-          },
-          "geoRadius": "40000"
-        },
+        "areaServed": [
+          { "@type": "City", "name": "Portland" },
+          { "@type": "City", "name": "Beaverton" },
+          { "@type": "City", "name": "Lake Oswego" },
+          { "@type": "City", "name": "Tigard" },
+          { "@type": "City", "name": "Hillsboro" },
+          { "@type": "City", "name": "Milwaukie" },
+          { "@type": "City", "name": "Gresham" },
+          { "@type": "City", "name": "Tualatin" },
+          { "@type": "AdministrativeArea", "name": "Multnomah County, Oregon" },
+          { "@type": "AdministrativeArea", "name": "Washington County, Oregon" },
+          { "@type": "AdministrativeArea", "name": "Clackamas County, Oregon" }
+        ],
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
