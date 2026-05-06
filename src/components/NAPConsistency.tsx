@@ -99,8 +99,8 @@ export const NAP_DATA = {
       countryCode: "US",
       fullAddress: "400 E. Evergreen Blvd, Suite 309, Vancouver, WA 98660",
       coordinates: {
-        latitude: 45.6280,
-        longitude: -122.6739
+        latitude: 45.6894344,
+        longitude: -122.6591071
       },
       googleMapsUrl: "https://www.google.com/maps/place/Vancouver,+WA",
       telehealth: true
