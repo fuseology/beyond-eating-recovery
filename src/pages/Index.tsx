@@ -155,7 +155,10 @@ const Index = () => {
             "closes": "14:00"
           }
         ],
-        "sameAs": Object.values(NAP_DATA.socialMedia),
+        "sameAs": [
+          ...Object.values(NAP_DATA.socialMedia),
+          "https://www.google.com/maps/place/?q=place_id:0x54950b992a10ec77:0x27e481ed74713d36"
+        ],
         "hasMap": portland.googleMapsUrl,
         "aggregateRating": getAggregateRatingSchema(BUSINESS_RATING)
       },
