@@ -20,6 +20,7 @@ import michelleMeredith from "@/assets/michelle-meredith.png";
 import maryCooper from "@/assets/mary-cooper.webp";
 import emeryPederson from "@/assets/emery-pederson.webp";
 import mackenzieStracke from "@/assets/mackenzie-stracke.jpg";
+import ginaParisi from "@/assets/gina-parisi.webp";
 
 const About = () => {
   const structuredData = {
@@ -107,6 +108,7 @@ const About = () => {
         { "@type": "Person", "name": "Sara Kranich", "jobTitle": "MA" },
         { "@type": "Person", "name": "Stephanie Okumura", "jobTitle": "MS, RDN" },
         { "@type": "Person", "name": "Mackenzie Stracke", "jobTitle": "Counseling Student Intern" },
+        { "@type": "Person", "name": "Gina Parisi", "jobTitle": "Counseling Student Intern" },
         { "@type": "Person", "name": "Michelle Commons", "jobTitle": "Support Staff" },
         { "@type": "Person", "name": "Michelle Meredith", "jobTitle": "Support Staff" },
         { "@type": "Person", "name": "Mary Cooper", "jobTitle": "Support Staff" },
@@ -184,6 +186,13 @@ const About = () => {
       image: mackenzieStracke,
       link: "/about/mackenzie-stracke",
       bio: "Mackenzie is a graduate student intern working toward her MA in Counseling at Western Seminary. Her own recovery journey shapes her trauma-informed, HAES-aligned approach to helping clients build resilience and self-compassion."
+    },
+    {
+      name: "Gina Parisi",
+      title: "Counseling Student Intern",
+      image: ginaParisi,
+      link: "/about/gina-parisi",
+      bio: "Gina is completing her MA in Marriage, Couples, and Family Therapy at Lewis & Clark College with a certification in Eating Disorder Treatment. A certified Body Trust Provider®, she integrates somatic awareness, mindfulness, and HAES principles into compassionate, embodied care."
     }
   ];
 
