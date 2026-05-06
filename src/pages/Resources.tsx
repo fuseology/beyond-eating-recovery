@@ -275,6 +275,89 @@ const Resources = () => {
         </div>
       </section>
 
+      {/* Recovery Reality Check Toolkit */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <Badge className="bg-accent text-white mb-4 text-sm">Free Download</Badge>
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+                  Recovery: The Reality Check Toolkit
+                </h2>
+                <p className="text-lg text-foreground/80 mb-4 leading-relaxed">
+                  Recovery isn't linear. Some days you'll feel strong, confident, and capable. Other days, the thought of eating breakfast will feel impossible.
+                </p>
+                <p className="text-lg text-foreground/80 mb-6 leading-relaxed font-medium">
+                  This toolkit is for those other days.
+                </p>
+                <p className="text-foreground/80 mb-4 leading-relaxed">
+                  Inside, you'll find 7 evidence-based grounding exercises designed specifically for eating disorder recovery. These aren't generic mindfulness tips—they're practical tools created for the moments when:
+                </p>
+                <ul className="space-y-2 mb-8 text-foreground/90">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>You're panicking before a meal</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Body image thoughts are spiraling</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>You need to ask for help but don't know what to say</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>Recovery feels too hard to continue</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent mt-1">•</span>
+                    <span>You're comparing yourself to everyone around you</span>
+                  </li>
+                </ul>
+                <Button
+                  size="lg"
+                  className="bg-accent hover:bg-accent/90 text-white"
+                  asChild
+                >
+                  <a
+                    href="/downloads/Recovery_Reality_Check_Toolkit.pdf"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Download className="w-4 h-4 mr-2" />
+                    Download Free Toolkit (PDF)
+                  </a>
+                </Button>
+              </div>
+              <div className="bg-secondary/30 rounded-lg shadow-xl p-8 border-2 border-accent/20">
+                <h3 className="text-xl font-semibold text-primary mb-4">How to Use This Toolkit</h3>
+                <ul className="space-y-4 text-foreground/90">
+                  <li className="flex gap-3">
+                    <span className="text-accent flex-shrink-0">•</span>
+                    <span>Print it out and keep it somewhere accessible (bathroom, bedroom, kitchen)</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent flex-shrink-0">•</span>
+                    <span>Save it to your phone so you always have it with you</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent flex-shrink-0">•</span>
+                    <span>Dog-ear the pages of exercises that resonate most</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent flex-shrink-0">•</span>
+                    <span>Share it with your support team so they understand what helps</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Latest Blog Posts */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
