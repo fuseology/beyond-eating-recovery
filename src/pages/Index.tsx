@@ -185,15 +185,17 @@ const Index = () => {
           "latitude": vancouver.coordinates.latitude.toString(),
           "longitude": vancouver.coordinates.longitude.toString()
         },
-        "areaServed": {
-          "@type": "GeoCircle",
-          "geoMidpoint": {
-            "@type": "GeoCoordinates",
-            "latitude": vancouver.coordinates.latitude.toString(),
-            "longitude": vancouver.coordinates.longitude.toString()
-          },
-          "geoRadius": "40000"
-        },
+        "areaServed": [
+          { "@type": "City", "name": "Vancouver" },
+          { "@type": "City", "name": "Camas" },
+          { "@type": "City", "name": "Washougal" },
+          { "@type": "City", "name": "Battle Ground" },
+          { "@type": "City", "name": "Ridgefield" },
+          { "@type": "City", "name": "Hazel Dell" },
+          { "@type": "City", "name": "Salmon Creek" },
+          { "@type": "City", "name": "Brush Prairie" },
+          { "@type": "AdministrativeArea", "name": "Clark County, Washington" }
+        ],
         "openingHoursSpecification": [
           {
             "@type": "OpeningHoursSpecification",
