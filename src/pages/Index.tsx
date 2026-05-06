@@ -210,7 +210,10 @@ const Index = () => {
             "closes": "14:00"
           }
         ],
-        "sameAs": Object.values(NAP_DATA.socialMedia),
+        "sameAs": [
+          ...Object.values(NAP_DATA.socialMedia),
+          "https://www.google.com/maps/place/?q=place_id:0x0:0xfe6c6aa5392359df"
+        ],
         "hasMap": vancouver.googleMapsUrl,
         "aggregateRating": getAggregateRatingSchema(BUSINESS_RATING)
       },
