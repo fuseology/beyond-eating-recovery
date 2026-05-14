@@ -1,51 +1,69 @@
-# Beyond Eating Recovery - robots.txt
-# Website: https://www.beyondeatingrecovery.com
+# robots.txt — AMP8 Media AI Search Standard
 
-# Google Search Bot
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 1
+# Last updated: 2026-05-14
 
-# Bing Search Bot
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 2
+# Default — allow all standard crawlers
 
-# Social Media Bots
-User-agent: Twitterbot
+User-agent: *
+
 Allow: /
 
-User-agent: facebookexternalhit
+Disallow: /admin/
+
+Disallow: /api/
+
+Disallow: /*.json$
+
+# AI Search Crawlers — Explicit Allow (citation eligibility)
+
+User-agent: OAI-SearchBot
+
 Allow: /
 
-User-agent: LinkedInBot
-Allow: /
-
-# AI Crawlers (2026 GEO Optimization)
 User-agent: GPTBot
+
 Allow: /
 
 User-agent: ChatGPT-User
+
 Allow: /
 
 User-agent: PerplexityBot
+
+Allow: /
+
+User-agent: Perplexity-User
+
 Allow: /
 
 User-agent: ClaudeBot
+
+Allow: /
+
+User-agent: Claude-Web
+
 Allow: /
 
 User-agent: anthropic-ai
+
 Allow: /
 
-# All other bots
-User-agent: *
+User-agent: Google-Extended
+
 Allow: /
-Crawl-delay: 5
 
-# Sitemaps
-Sitemap: https://www.beyondeatingrecovery.com/sitemap-index.xml
-Sitemap: https://www.beyondeatingrecovery.com/sitemap.xml
-Sitemap: https://www.beyondeatingrecovery.com/sitemap-images.xml
+User-agent: cohere-ai
 
-# Host directive for canonical domain
-Host: https://www.beyondeatingrecovery.com
+Allow: /
+
+User-agent: Applebot-Extended
+
+Allow: /
+
+User-agent: Meta-ExternalAgent
+
+Allow: /
+
+# Sitemap reference
+
+Sitemap: https://beyondeatingrecovery.com/sitemap.xml
