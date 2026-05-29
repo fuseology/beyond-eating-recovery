@@ -150,17 +150,17 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3 text-lg">Find Us</h4>
             <div className="rounded-lg overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5592.498093295984!2d-122.652856!3d45.505065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b992a10ec77%3A0x27e481ed74713d36!2sBody%20Expressions%20of%20Portland%20-%20Eating%20Disorders%20Counseling!5e0!3m2!1sen!2sus!4v1763163338622!5m2!1sen!2sus"
-                width="100%"
-                height="180"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Beyond Eating Recovery Portland Office Location"
-                className="rounded-lg"
-              />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22369.992373183937!2d-122.652856!3d45.505065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b992a10ec77%3A0x27e481ed74713d36!2sBeyond%20Eating%20Recovery%20-%20Eating%20Disorders%20Counseling%20of%20Portland!5e0!3m2!1sen!2sus!4v1780090275980!5m2!1sen!2sus"
+              width="100%"
+              height="180"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Beyond Eating Recovery Portland Office Location"
+              className="rounded-lg"
+            />
             </div>
             <p className="text-xs text-white/60 mt-2">
               Also serving Vancouver, WA via telehealth
