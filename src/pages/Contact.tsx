@@ -371,7 +371,7 @@ const Contact = () => {
                   <div className="mt-4">
                     <div className="aspect-video w-full bg-muted rounded-lg overflow-hidden">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5592.498093295984!2d-122.652856!3d45.505065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b992a10ec77%3A0x27e481ed74713d36!2sBody%20Expressions%20of%20Portland%20-%20Eating%20Disorders%20Counseling!5e0!3m2!1sen!2sus!4v1763163338622!5m2!1sen!2sus"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d22369.992373183937!2d-122.652856!3d45.505065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54950b992a10ec77%3A0x27e481ed74713d36!2sBeyond%20Eating%20Recovery%20-%20Eating%20Disorders%20Counseling%20of%20Portland!5e0!3m2!1sen!2sus!4v1780090275980!5m2!1sen!2sus"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
