@@ -108,6 +108,9 @@ export const routes: RouteConfig[] = [
   
   // Audio Resources
   { path: '/resources/move-toward-your-emotions', sourceFile: 'src/pages/resources/MoveTowardYourEmotions.tsx', priority: 0.7, changefreq: 'monthly' },
+
+  // Hub Page
+  { path: '/connect', sourceFile: 'src/pages/Connect.tsx', priority: 0.8, changefreq: 'monthly' },
 ];
 
 // Helper to get all images for sitemap generation
