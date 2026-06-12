@@ -12,6 +12,7 @@ const routeTitles: Record<string, string> = {
   workshop: "Workshop",
   faq: "FAQ",
   careers: "Careers",
+  connect: "Profiles & Resources",
   "privacy-notice": "Privacy Notice",
   "secure-file-submissions": "Secure File Submissions",
   "our-approach": "Our Approach",
