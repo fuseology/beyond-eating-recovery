@@ -52,6 +52,7 @@ import FiveStepsDietRollerCoaster from "./pages/FiveStepsDietRollerCoaster";
 import PrivacyNotice from "./pages/PrivacyNotice";
 import SecureFileSubmissions from "./pages/SecureFileSubmissions";
 import MoveTowardYourEmotions from "./pages/resources/MoveTowardYourEmotions";
+import Connect from "./pages/Connect";
 
 const queryClient = new QueryClient();
 
