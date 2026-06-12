@@ -36,7 +36,14 @@ const guides = [
   },
 ];
 
-const videos: Array<{ title: string; href: string }> = [];
+const videos: Array<{ id: string; title: string }> = [
+  { id: "0pmDdZJNSgM", title: "Beyond Eating Recovery video" },
+  { id: "xX1NzHsiQrs", title: "Is Food Really the Problem?" },
+  { id: "1H2YL57mjtc", title: "Beyond Eating Recovery video" },
+  { id: "e0ILEHJhoU8", title: "Beyond Eating Recovery video" },
+  { id: "xLJtp8P2vZo", title: "Beyond Eating Recovery video" },
+  { id: "BLzx439Z_Xs", title: "Beyond Eating Recovery video" },
+];
 
 const Connect = () => {
   return (
@@ -182,11 +189,21 @@ const Connect = () => {
             ) : (
               <div className="grid md:grid-cols-3 gap-6">
                 {videos.map((v) => (
-                  <Card key={v.href} className="shadow-md">
-                    <CardHeader>
-                      <CardTitle className="text-lg">{v.title}</CardTitle>
-                    </CardHeader>
-                  </Card>
+                  <div
+                    key={v.id}
+                    className="aspect-video rounded-lg overflow-hidden shadow-md bg-muted"
+                  >
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={`https://www.youtube.com/embed/${v.id}`}
+                      title={v.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      loading="lazy"
+                      className="w-full h-full"
+                    />
+                  </div>
                 ))}
               </div>
             )}
