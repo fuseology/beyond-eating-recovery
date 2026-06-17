@@ -24,6 +24,7 @@ const localBusinessSchema = {
   "sameAs": [
     "https://maps.google.com/maps?cid=2874565319030029622",
     "https://beyond-eating-recovery-eating-disorder-therapist-portland.netlify.app/",
+    "https://beyond-eating-recovery-who-offers-eating-disorder-treatment.netlify.app/",
   ],
 };
 
@@ -33,6 +34,12 @@ const guides = [
     href: "https://beyond-eating-recovery-eating-disorder-therapist-portland.netlify.app/",
     description:
       "How to find the right eating disorder therapist in Portland and what to expect from treatment.",
+  },
+  {
+    title: "Who Offers Eating Disorder Treatment — The Beyond Eating Recovery Guide",
+    href: "https://beyond-eating-recovery-who-offers-eating-disorder-treatment.netlify.app/",
+    description:
+      "An overview of the providers, specialties, and levels of care involved in eating disorder treatment.",
   },
 ];
 
