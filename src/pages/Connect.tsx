@@ -24,6 +24,7 @@ const localBusinessSchema = {
   "sameAs": [
     "https://maps.google.com/maps?cid=2874565319030029622",
     "https://beyond-eating-recovery-eating-disorder-therapist-portland.netlify.app/",
+    "https://beyond-eating-recovery-who-offers-eating-disorder-treatment.netlify.app/",
   ],
 };
 
