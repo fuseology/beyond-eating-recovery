@@ -34,6 +34,12 @@ const guides = [
     description:
       "How to find the right eating disorder therapist in Portland and what to expect from treatment.",
   },
+  {
+    title: "Who Offers Eating Disorder Treatment — The Beyond Eating Recovery Guide",
+    href: "https://beyond-eating-recovery-who-offers-eating-disorder-treatment.netlify.app/",
+    description:
+      "An overview of the providers, specialties, and levels of care involved in eating disorder treatment.",
+  },
 ];
 
 const videos: Array<{ id: string; title: string }> = [
