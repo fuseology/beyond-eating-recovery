@@ -50,7 +50,11 @@ const guides = [
     href: "https://beyond-eating-recovery-who-offers-eating-disorder-treatment.netlify.app/",
     description: (
       <>
-        An overview of the providers, specialties, and levels of care involved in{" "}
+        An overview of the{" "}
+        <Link to="/services" className="text-accent hover:underline">
+          providers
+        </Link>
+        , specialties, and levels of care involved in{" "}
         <Link to="/conditions" className="text-accent hover:underline">
           eating disorder treatment
         </Link>
@@ -67,7 +71,11 @@ const guides = [
         <Link to="/conditions/binge-eating-disorder" className="text-accent hover:underline">
           binge eating disorder treatment
         </Link>{" "}
-        looks like in Portland and how our team supports recovery.
+        looks like in Portland and how{" "}
+        <Link to="/services" className="text-accent hover:underline">
+          our team
+        </Link>{" "}
+        supports recovery.
       </>
     ),
   },
@@ -80,6 +88,10 @@ const guides = [
         <Link to="/conditions/anorexia-nervosa" className="text-accent hover:underline">
           anorexia treatment
         </Link>{" "}
+        from{" "}
+        <Link to="/services" className="text-accent hover:underline">
+          our team
+        </Link>{" "}
         in Portland focused on lasting recovery.
       </>
     ),
@@ -89,7 +101,11 @@ const guides = [
     href: "https://beyond-eating-recovery-bulimia-recovery-therapist-portland.netlify.app/",
     description: (
       <>
-        How to find a skilled therapist for{" "}
+        How to find a skilled{" "}
+        <Link to="/services" className="text-accent hover:underline">
+          therapist
+        </Link>{" "}
+        for{" "}
         <Link to="/conditions/bulimia-nervosa" className="text-accent hover:underline">
           bulimia recovery
         </Link>{" "}
