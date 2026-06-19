@@ -26,6 +26,7 @@ const localBusinessSchema = {
     "https://beyond-eating-recovery-eating-disorder-therapist-portland.netlify.app/",
     "https://beyond-eating-recovery-who-offers-eating-disorder-treatment.netlify.app/",
     "https://beyond-eating-recovery-binge-eating-disorder-treatment-portl.netlify.app/",
+    "https://beyond-eating-recovery-anorexia-treatment-portland.netlify.app/",
   ],
 };
 
@@ -47,6 +48,12 @@ const guides = [
     href: "https://beyond-eating-recovery-binge-eating-disorder-treatment-portl.netlify.app/",
     description:
       "What binge eating disorder treatment looks like in Portland and how our team supports recovery.",
+  },
+  {
+    title: "Anorexia Treatment Portland — The Beyond Eating Recovery Guide",
+    href: "https://beyond-eating-recovery-anorexia-treatment-portland.netlify.app/",
+    description:
+      "Compassionate, structured anorexia treatment in Portland focused on lasting recovery.",
   },
 ];
 
