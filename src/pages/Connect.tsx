@@ -89,9 +89,9 @@ const guides = [
     href: "https://beyond-eating-recovery-bulimia-recovery-therapist-portland.netlify.app/",
     description: (
       <>
-        How to find a skilled{" "}
-        <Link to="/services" className="text-accent hover:underline">
-          bulimia recovery therapist
+        How to find a skilled therapist for{" "}
+        <Link to="/conditions/bulimia-nervosa" className="text-accent hover:underline">
+          bulimia recovery
         </Link>{" "}
         in Portland who understands lasting recovery.
       </>
