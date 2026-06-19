@@ -34,26 +34,54 @@ const guides = [
   {
     title: "Eating Disorder Therapist Portland — The Beyond Eating Recovery Guide",
     href: "https://beyond-eating-recovery-eating-disorder-therapist-portland.netlify.app/",
-    description:
-      "How to find the right eating disorder therapist in Portland and what to expect from treatment.",
+    description: (
+      <>
+        How to find the right{" "}
+        <Link to="/services" className="text-accent hover:underline">
+          eating disorder therapist
+        </Link>{" "}
+        in Portland and what to expect from treatment.
+      </>
+    ),
   },
   {
     title: "Who Offers Eating Disorder Treatment — The Beyond Eating Recovery Guide",
     href: "https://beyond-eating-recovery-who-offers-eating-disorder-treatment.netlify.app/",
-    description:
-      "An overview of the providers, specialties, and levels of care involved in eating disorder treatment.",
+    description: (
+      <>
+        An overview of the providers, specialties, and levels of care involved in{" "}
+        <Link to="/conditions" className="text-accent hover:underline">
+          eating disorder treatment
+        </Link>
+        .
+      </>
+    ),
   },
   {
     title: "Binge Eating Disorder Treatment Portland — The Beyond Eating Recovery Guide",
     href: "https://beyond-eating-recovery-binge-eating-disorder-treatment-portl.netlify.app/",
-    description:
-      "What binge eating disorder treatment looks like in Portland and how our team supports recovery.",
+    description: (
+      <>
+        What{" "}
+        <Link to="/conditions/binge-eating-disorder" className="text-accent hover:underline">
+          binge eating disorder treatment
+        </Link>{" "}
+        looks like in Portland and how our team supports recovery.
+      </>
+    ),
   },
   {
     title: "Anorexia Treatment Portland — The Beyond Eating Recovery Guide",
     href: "https://beyond-eating-recovery-anorexia-treatment-portland.netlify.app/",
-    description:
-      "Compassionate, structured anorexia treatment in Portland focused on lasting recovery.",
+    description: (
+      <>
+        Compassionate, structured{" "}
+        <Link to="/conditions/anorexia-nervosa" className="text-accent hover:underline">
+          anorexia treatment
+        </Link>{" "}
+        in Portland focused on lasting recovery.
+      </>
+    ),
   },
 ];
 
