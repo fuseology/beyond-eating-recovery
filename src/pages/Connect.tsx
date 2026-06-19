@@ -27,6 +27,7 @@ const localBusinessSchema = {
     "https://beyond-eating-recovery-who-offers-eating-disorder-treatment.netlify.app/",
     "https://beyond-eating-recovery-binge-eating-disorder-treatment-portl.netlify.app/",
     "https://beyond-eating-recovery-anorexia-treatment-portland.netlify.app/",
+    "https://beyond-eating-recovery-bulimia-recovery-therapist-portland.netlify.app/",
   ],
 };
 
@@ -80,6 +81,19 @@ const guides = [
           anorexia treatment
         </Link>{" "}
         in Portland focused on lasting recovery.
+      </>
+    ),
+  },
+  {
+    title: "Bulimia Recovery Therapist Portland — The Beyond Eating Recovery Guide",
+    href: "https://beyond-eating-recovery-bulimia-recovery-therapist-portland.netlify.app/",
+    description: (
+      <>
+        How to find a skilled{" "}
+        <Link to="/services" className="text-accent hover:underline">
+          bulimia recovery therapist
+        </Link>{" "}
+        in Portland who understands lasting recovery.
       </>
     ),
   },
