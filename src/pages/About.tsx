@@ -192,7 +192,7 @@ const About = () => {
       title: "Counseling Student Intern",
       image: ginaParisi,
       link: "/about/gina-parisi",
-      bio: "Gina is completing her MA in Marriage, Couples, and Family Therapy at Lewis & Clark College with a certification in Eating Disorder Treatment. A certified Body Trust Provider®, she integrates somatic awareness, mindfulness, and HAES principles into compassionate, embodied care."
+      bio: "Gina is completing her MA in Marriage and Family Therapy at Lewis & Clark College. Her own recovery journey informs her somatic and Body Trust®-oriented approach, that helps clients reconnect with their bodies through compassion, curiosity, and embodied nurturance. Gina is passionate about supporting athletes in healing their relationship with food, movement, performance, and self-worth."
     }
   ];
 
