@@ -110,7 +110,7 @@ const GinaParisi = () => {
                 </p>
 
                 <p className="text-lg text-foreground leading-relaxed">
-                  Gina believes that every person is already whole, and that problems in our lives result from a disconnection to this wholeness. She offers a compassionate, nonjudgmental space grounded in somatic awareness, mindfulness, and Health at Every Size® principles.
+                  Gina's own recovery journey informs her belief that every person is already whole, and that problems in our lives result from a disconnection to this wholeness. She offers a compassionate, nonjudgmental space grounded in somatic awareness, mindfulness, Body Trust®, and Health at Every Size® principles. Gina has worked with athletes for 15 years and specializes in athlete eating disorders.
                 </p>
 
                 <div className="pt-4 space-y-4">
@@ -140,7 +140,7 @@ const GinaParisi = () => {
 
           <div className="max-w-4xl mx-auto space-y-6 text-foreground text-lg leading-relaxed">
             <p>
-              Gina believes that every person is already whole, and that problems in our lives result from a disconnection to this wholeness. Therapy is a space to support your process of embodiment, healing, and deeper connection to yourself.
+              Gina's own recovery journey informs her belief that every person is already whole, and that problems in our lives result from a disconnection to this wholeness. She offers a compassionate, nonjudgmental space grounded in somatic awareness, mindfulness, Body Trust®, and Health at Every Size® principles. Gina has worked with athletes for 15 years and specializes in athlete eating disorders. Therapy is a space to support your process of embodiment, healing, and deeper connection to yourself.
             </p>
             <p>
               From her perspective, our relationships with food and body are often meaningful coping strategies that reflect deeper emotional, relational, and lived experiences. In her work, she strives to offer a compassionate, nonjudgmental space where you can gently explore these layers with curiosity and care.
@@ -254,7 +254,7 @@ const GinaParisi = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-secondary/30 p-8 rounded-lg">
               <p className="text-foreground text-lg leading-relaxed">
-                Gina brings 15 years of experience working with athletes as a sport physiotherapist, along with more than a decade of personal somatic and meditation practice. This background informs both her clinical sensibility and her deep appreciation for the wisdom of the body.
+                Gina brings 15 years of experience working with athletes as a sport physiotherapist, along with more than a decade of personal somatic and meditation practice. She specializes in athlete eating disorders. This background informs both her clinical sensibility and her deep appreciation for the wisdom of the body.
               </p>
             </div>
           </div>
