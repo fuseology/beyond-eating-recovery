@@ -254,7 +254,7 @@ const GinaParisi = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-secondary/30 p-8 rounded-lg">
               <p className="text-foreground text-lg leading-relaxed">
-                Gina brings 15 years of experience working with athletes as a sport physiotherapist, along with more than a decade of personal somatic and meditation practice. This background informs both her clinical sensibility and her deep appreciation for the wisdom of the body.
+                Gina brings 15 years of experience working with athletes as a sport physiotherapist, along with more than a decade of personal somatic and meditation practice. She specializes in athlete eating disorders. This background informs both her clinical sensibility and her deep appreciation for the wisdom of the body.
               </p>
             </div>
           </div>
