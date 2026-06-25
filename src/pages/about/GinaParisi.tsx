@@ -110,7 +110,7 @@ const GinaParisi = () => {
                 </p>
 
                 <p className="text-lg text-foreground leading-relaxed">
-                  Gina believes that every person is already whole, and that problems in our lives result from a disconnection to this wholeness. She offers a compassionate, nonjudgmental space grounded in somatic awareness, mindfulness, and Health at Every Size® principles.
+                  Gina's own recovery journey informs her belief that every person is already whole, and that problems in our lives result from a disconnection to this wholeness. She offers a compassionate, nonjudgmental space grounded in somatic awareness, mindfulness, Body Trust®, and Health at Every Size® principles. Gina has worked with athletes for 15 years and specializes in athlete eating disorders.
                 </p>
 
                 <div className="pt-4 space-y-4">
