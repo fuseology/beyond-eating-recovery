@@ -140,7 +140,7 @@ const GinaParisi = () => {
 
           <div className="max-w-4xl mx-auto space-y-6 text-foreground text-lg leading-relaxed">
             <p>
-              Gina believes that every person is already whole, and that problems in our lives result from a disconnection to this wholeness. Therapy is a space to support your process of embodiment, healing, and deeper connection to yourself.
+              Gina's own recovery journey informs her belief that every person is already whole, and that problems in our lives result from a disconnection to this wholeness. She offers a compassionate, nonjudgmental space grounded in somatic awareness, mindfulness, Body Trust®, and Health at Every Size® principles. Gina has worked with athletes for 15 years and specializes in athlete eating disorders. Therapy is a space to support your process of embodiment, healing, and deeper connection to yourself.
             </p>
             <p>
               From her perspective, our relationships with food and body are often meaningful coping strategies that reflect deeper emotional, relational, and lived experiences. In her work, she strives to offer a compassionate, nonjudgmental space where you can gently explore these layers with curiosity and care.
