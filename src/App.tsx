@@ -22,7 +22,7 @@ import AnneCuthbert from "./pages/about/AnneCuthbert";
 import BaileyBenn from "./pages/about/BaileyBenn";
 import KiandraCole from "./pages/about/KiandraCole";
 import RachelBennett from "./pages/about/RachelBennett";
-import AnnieCalhounRandall from "./pages/about/AnnieCalhounRandall";
+
 import SaraKranich from "./pages/about/SaraKranich";
 import StephanieOkumura from "./pages/about/StephanieOkumura";
 import MichelleCommons from "./pages/about/MichelleCommons";
@@ -71,7 +71,7 @@ const App = () => (
           <Route path="/about/bailey-benn" element={<BaileyBenn />} />
           <Route path="/about/kiandra-cole" element={<KiandraCole />} />
           <Route path="/about/rachel-bennett" element={<RachelBennett />} />
-          <Route path="/about/annie-calhoun-randall" element={<AnnieCalhounRandall />} />
+          
           <Route path="/about/sara-kranich" element={<SaraKranich />} />
           <Route path="/about/stephanie-okumura" element={<StephanieOkumura />} />
           <Route path="/about/michelle-commons" element={<MichelleCommons />} />
