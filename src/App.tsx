@@ -22,7 +22,7 @@ import AnneCuthbert from "./pages/about/AnneCuthbert";
 import BaileyBenn from "./pages/about/BaileyBenn";
 import KiandraCole from "./pages/about/KiandraCole";
 import RachelBennett from "./pages/about/RachelBennett";
-import AnnieCalhounRandall from "./pages/about/AnnieCalhounRandall";
+
 import SaraKranich from "./pages/about/SaraKranich";
 import StephanieOkumura from "./pages/about/StephanieOkumura";
 import MichelleCommons from "./pages/about/MichelleCommons";

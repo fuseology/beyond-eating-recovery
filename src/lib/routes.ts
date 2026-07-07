@@ -24,7 +24,7 @@ const teamImages: Record<string, ImageInfo> = {
   'bailey-benn': { src: '/src/assets/bailey-benn-new.webp', title: 'Bailey Benn, MA, LPC, LMHC - Licensed Professional Counselor', caption: 'LGBTQIA+ affirming eating disorder therapist' },
   'kiandra-cole': { src: '/src/assets/kiandra-cole.webp', title: 'Kiandra Cole, MA - Associate Therapist', caption: 'Eating disorder and body image therapist' },
   'rachel-bennett': { src: '/src/assets/rachel-bennett.webp', title: 'Rachel Bennett, MA - Professional Counselor Associate', caption: 'Eating disorder therapist with recovery experience' },
-  'annie-calhoun-randall': { src: '/src/assets/annie-calhoun-randall-new.jpg', title: 'Annie Calhoun Randall, MA, NTP - Professional Counselor Associate', caption: 'Eating disorder therapist specializing in athletes' },
+  
   'sara-kranich': { src: '/src/assets/sara-kranich.webp', title: 'Sara Kranich, MA - Associate Therapist', caption: 'Mindfulness-based eating disorder therapist' },
   'stephanie-okumura': { src: '/src/assets/stephanie-okumura.webp', title: 'Stephanie Okumura, MS, RDN - Registered Dietitian Nutritionist', caption: 'HAES dietitian for eating disorder recovery' },
   'michelle-commons': { src: '/src/assets/michelle-commons.webp', title: 'Michelle Commons - Admin Support', caption: 'Administrative support at Beyond Eating Recovery' },
@@ -75,7 +75,7 @@ export const routes: RouteConfig[] = [
   { path: '/about/bailey-benn', sourceFile: 'src/pages/about/BaileyBenn.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['bailey-benn']] },
   { path: '/about/kiandra-cole', sourceFile: 'src/pages/about/KiandraCole.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['kiandra-cole']] },
   { path: '/about/rachel-bennett', sourceFile: 'src/pages/about/RachelBennett.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['rachel-bennett']] },
-  { path: '/about/annie-calhoun-randall', sourceFile: 'src/pages/about/AnnieCalhounRandall.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['annie-calhoun-randall']] },
+  
   { path: '/about/sara-kranich', sourceFile: 'src/pages/about/SaraKranich.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['sara-kranich']] },
   { path: '/about/stephanie-okumura', sourceFile: 'src/pages/about/StephanieOkumura.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['stephanie-okumura']] },
   { path: '/about/michelle-commons', sourceFile: 'src/pages/about/MichelleCommons.tsx', priority: 0.7, changefreq: 'monthly', images: [teamImages['michelle-commons']] },

@@ -11,7 +11,7 @@ import saraImage from "@/assets/sara-kranich.webp";
 import alyssaImage from "@/assets/alyssa-pataki.webp";
 import kiandraImage from "@/assets/kiandra-cole.webp";
 import rachelImage from "@/assets/rachel-bennett.webp";
-import annieImage from "@/assets/annie-calhoun-randall.webp";
+
 import { Helmet } from "react-helmet";
 
 const SaraKranich = () => {
@@ -897,25 +897,6 @@ const SaraKranich = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-6 text-center">
-                <div className="w-32 h-32 mx-auto mb-4">
-                  <img 
-                    src={annieImage} 
-                    alt="Annie Calhoun Randall"
-                    className="w-full h-full rounded-full object-cover border-3 border-[#f49a39]"
-                  />
-                </div>
-                <h3 className="text-base font-bold text-[#1a428a] mb-1">Annie Calhoun Randall</h3>
-                <p className="text-xs text-[#666666] mb-2">MA, NTP</p>
-                <p className="text-sm text-[#333333] mb-4">Athlete Specialist</p>
-                <Link to="/about/annie-calhoun-randall">
-                  <Button className="bg-[#f49a39] hover:bg-[#e88b28] text-white text-sm">
-                    View Profile
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
           </div>
 
           <div className="text-center mt-8">
