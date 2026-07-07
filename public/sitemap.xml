@@ -60,11 +60,6 @@
         <image:caption>Eating disorder therapist with recovery experience</image:caption>
       </image:image>
       <image:image>
-        <image:loc>https://www.beyondeatingrecovery.com/assets/annie-calhoun-randall-new.jpg</image:loc>
-        <image:title>Annie Calhoun Randall, MA, NTP - Professional Counselor Associate</image:title>
-        <image:caption>Eating disorder therapist specializing in athletes</image:caption>
-      </image:image>
-      <image:image>
         <image:loc>https://www.beyondeatingrecovery.com/assets/sara-kranich.webp</image:loc>
         <image:title>Sara Kranich, MA - Associate Therapist</image:title>
         <image:caption>Mindfulness-based eating disorder therapist</image:caption>
@@ -282,20 +277,6 @@
         <image:loc>https://www.beyondeatingrecovery.com/assets/rachel-bennett.webp</image:loc>
         <image:title>Rachel Bennett, MA - Professional Counselor Associate</image:title>
         <image:caption>Eating disorder therapist with recovery experience</image:caption>
-      </image:image>
-  </url>
-  <url>
-    <loc>https://www.beyondeatingrecovery.com/about/annie-calhoun-randall</loc>
-    <lastmod>2026-01-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en-US" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.beyondeatingrecovery.com/about/annie-calhoun-randall" />
-      <image:image>
-        <image:loc>https://www.beyondeatingrecovery.com/assets/annie-calhoun-randall-new.jpg</image:loc>
-        <image:title>Annie Calhoun Randall, MA, NTP - Professional Counselor Associate</image:title>
-        <image:caption>Eating disorder therapist specializing in athletes</image:caption>
       </image:image>
   </url>
   <url>
