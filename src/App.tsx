@@ -71,7 +71,7 @@ const App = () => (
           <Route path="/about/bailey-benn" element={<BaileyBenn />} />
           <Route path="/about/kiandra-cole" element={<KiandraCole />} />
           <Route path="/about/rachel-bennett" element={<RachelBennett />} />
-          <Route path="/about/annie-calhoun-randall" element={<AnnieCalhounRandall />} />
+          
           <Route path="/about/sara-kranich" element={<SaraKranich />} />
           <Route path="/about/stephanie-okumura" element={<StephanieOkumura />} />
           <Route path="/about/michelle-commons" element={<MichelleCommons />} />
