@@ -18,17 +18,17 @@ const SaraKranich = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Sara Kranich, MA | Associate Therapist at Beyond Eating Recovery</title>
-        <meta name="description" content="Sara Kranich is an Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
+        <title>Sara Kranich, MA | Professional Counselor Associate at Beyond Eating Recovery</title>
+        <meta name="description" content="Sara Kranich is a Professional Counselor Associate specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
         <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/sara-kranich" />
-        <meta property="og:title" content="Sara Kranich, MA | Associate Therapist at Beyond Eating Recovery" />
-        <meta property="og:description" content="Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
+        <meta property="og:title" content="Sara Kranich, MA | Professional Counselor Associate at Beyond Eating Recovery" />
+        <meta property="og:description" content="Professional Counselor Associate specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
         <meta property="og:type" content="profile" />
         <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/sara-kranich" />
         <meta property="og:image" content="https://www.beyondeatingrecovery.com/sara-kranich.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Sara Kranich, MA | Associate Therapist at Beyond Eating Recovery" />
-        <meta name="twitter:description" content="Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
+        <meta name="twitter:title" content="Sara Kranich, MA | Professional Counselor Associate at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="Professional Counselor Associate specializing in eating disorders, mindfulness, and trauma-informed care in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/sara-kranich.webp" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -36,8 +36,8 @@ const SaraKranich = () => {
             "@type": "Person",
             "name": "Sara Kranich",
             "honorificSuffix": "MA",
-            "jobTitle": "Associate Therapist | Mindfulness Specialist",
-            "description": "Associate Therapist specializing in eating disorders, mindfulness, and trauma-informed care with personal recovery experience.",
+            "jobTitle": "Professional Counselor Associate",
+            "description": "Professional Counselor Associate specializing in eating disorders, mindfulness, and trauma-informed care with personal recovery experience.",
             "url": "https://www.beyondeatingrecovery.com/about/sara-kranich",
             "image": "https://www.beyondeatingrecovery.com/sara-kranich.webp",
             "worksFor": {
@@ -103,7 +103,7 @@ const SaraKranich = () => {
             <div className="md:col-span-2">
               <img 
                 src={saraImage}
-                alt="Sara Kranich, MA - Associate Therapist at Beyond Eating Recovery"
+                alt="Sara Kranich, MA - Professional Counselor Associate at Beyond Eating Recovery"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />
             </div>
@@ -115,7 +115,7 @@ const SaraKranich = () => {
               </h1>
               
               <p className="text-xl md:text-2xl text-[#f49a39] font-medium">
-                Associate Therapist | Mindfulness Specialist | HAES Advocate
+                Professional Counselor Associate
               </p>
               
               <div className="flex flex-wrap gap-3">
@@ -166,7 +166,7 @@ const SaraKranich = () => {
                 <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Education</h3>
                 <ul className="space-y-2 text-[#333333]">
                   <li>Master of Arts</li>
-                  <li>Associate Therapist</li>
+                  <li>Professional Counselor Associate</li>
                   <li>Specialized training in eating disorders</li>
                   <li>Mindfulness-based interventions</li>
                   <li>Trauma-informed care</li>
@@ -184,7 +184,7 @@ const SaraKranich = () => {
                 </div>
                 <h3 className="text-xl font-bold text-[#1a428a] mb-4 text-center">Licenses & Certifications</h3>
                 <ul className="space-y-2 text-[#333333]">
-                  <li>Associate Therapist - Oregon & Washington</li>
+                  <li>Professional Counselor Associate - Oregon & Washington</li>
                   <li className="mt-3 font-medium">Supervised by Anne Cuthbert, MA, LPC, LMHC</li>
                   <li>Working toward full licensure</li>
                   <li>Mindfulness and meditation training</li>

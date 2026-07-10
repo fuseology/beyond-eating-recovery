@@ -147,7 +147,7 @@ const About = () => {
     },
     {
       name: "Kiandra Cole, MA",
-      title: "Associate Therapist",
+      title: "Professional Counselor Associate",
       image: kiandraCole,
       link: "/about/kiandra-cole",
       bio: "Kiandra brings warmth and authenticity to therapy, specializing in eating disorders, body image, and LGBTQIA+ affirming care. Personal recovery experience informs her compassionate approach."
@@ -161,7 +161,7 @@ const About = () => {
     },
     {
       name: "Sara Kranich, MA",
-      title: "Associate Therapist | Mindfulness Specialist",
+      title: "Professional Counselor Associate",
       image: saraKranich,
       link: "/about/sara-kranich",
       bio: "Sara integrates mindfulness and meditation into trauma-informed, person-centered therapy. Drawing from personal recovery experience, she guides clients toward self-awareness and self-acceptance through HAES principles."

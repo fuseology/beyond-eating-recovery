@@ -22,10 +22,10 @@ export const SITE_URL = 'https://www.beyondeatingrecovery.com';
 const teamImages: Record<string, ImageInfo> = {
   'anne-cuthbert': { src: '/src/assets/anne-cuthbert.jpg', title: 'Anne Cuthbert, MA, LPC, LMHC - Founder & Clinical Director', caption: 'Eating disorder therapist and founder of Beyond Eating Recovery' },
   'bailey-benn': { src: '/src/assets/bailey-benn-new.webp', title: 'Bailey Benn, MA, LPC, LMHC - Licensed Professional Counselor', caption: 'LGBTQIA+ affirming eating disorder therapist' },
-  'kiandra-cole': { src: '/src/assets/kiandra-cole.webp', title: 'Kiandra Cole, MA - Associate Therapist', caption: 'Eating disorder and body image therapist' },
+  'kiandra-cole': { src: '/src/assets/kiandra-cole.webp', title: 'Kiandra Cole, MA - Professional Counselor Associate', caption: 'Eating disorder and body image therapist' },
   'rachel-bennett': { src: '/src/assets/rachel-bennett.webp', title: 'Rachel Bennett, MA - Professional Counselor Associate', caption: 'Eating disorder therapist with recovery experience' },
   
-  'sara-kranich': { src: '/src/assets/sara-kranich.webp', title: 'Sara Kranich, MA - Associate Therapist', caption: 'Mindfulness-based eating disorder therapist' },
+  'sara-kranich': { src: '/src/assets/sara-kranich.webp', title: 'Sara Kranich, MA - Professional Counselor Associate', caption: 'Mindfulness-based eating disorder therapist' },
   'stephanie-okumura': { src: '/src/assets/stephanie-okumura.webp', title: 'Stephanie Okumura, MS, RDN - Registered Dietitian Nutritionist', caption: 'HAES dietitian for eating disorder recovery' },
   'michelle-commons': { src: '/src/assets/michelle-commons.webp', title: 'Michelle Commons - Admin Support', caption: 'Administrative support at Beyond Eating Recovery' },
   'michelle-meredith': { src: '/src/assets/michelle-meredith.png', title: 'Michelle Meredith - Billing Support', caption: 'Certified Professional Medical Coder' },

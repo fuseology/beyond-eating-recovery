@@ -17,16 +17,16 @@ const KiandraCole = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Kiandra Cole, MA | Professional Counselor at Beyond Eating Recovery</title>
+        <title>Kiandra Cole, MA | Professional Counselor Associate at Beyond Eating Recovery</title>
         <meta name="description" content="Kiandra Cole is a Professional Counselor Associate specializing in eating disorders, LGBTQIA+ affirming care, and social justice advocacy in Portland and Vancouver." />
         <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/kiandra-cole" />
-        <meta property="og:title" content="Kiandra Cole, MA | Professional Counselor at Beyond Eating Recovery" />
+        <meta property="og:title" content="Kiandra Cole, MA | Professional Counselor Associate at Beyond Eating Recovery" />
         <meta property="og:description" content="Professional Counselor Associate specializing in eating disorders, LGBTQIA+ affirming care, and social justice advocacy in Portland and Vancouver." />
         <meta property="og:type" content="profile" />
         <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/kiandra-cole" />
         <meta property="og:image" content="https://www.beyondeatingrecovery.com/kiandra-cole.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Kiandra Cole, MA | Professional Counselor at Beyond Eating Recovery" />
+        <meta name="twitter:title" content="Kiandra Cole, MA | Professional Counselor Associate at Beyond Eating Recovery" />
         <meta name="twitter:description" content="Professional Counselor Associate specializing in eating disorders, LGBTQIA+ affirming care, and social justice advocacy in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/kiandra-cole.webp" />
         <script type="application/ld+json">
