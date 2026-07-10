@@ -16,17 +16,17 @@ const RachelBennett = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>Rachel Bennett, MA | QMHP-A Therapist at Beyond Eating Recovery</title>
-        <meta name="description" content="Rachel Bennett is a QMHP-A Therapist specializing in eating disorders, body positivity, and person-centered care in Portland and Vancouver." />
+        <title>Rachel Bennett, MA | QMHP-A Therapist | Professional Counselor Associate at Beyond Eating Recovery</title>
+        <meta name="description" content="Rachel Bennett is a QMHP-A Therapist and Professional Counselor Associate specializing in eating disorders, body positivity, and person-centered care in Portland and Vancouver." />
         <link rel="canonical" href="https://www.beyondeatingrecovery.com/about/rachel-bennett" />
-        <meta property="og:title" content="Rachel Bennett, MA | QMHP-A Therapist at Beyond Eating Recovery" />
-        <meta property="og:description" content="QMHP-A Therapist specializing in eating disorders, body positivity, and person-centered care in Portland and Vancouver." />
+        <meta property="og:title" content="Rachel Bennett, MA | QMHP-A Therapist | Professional Counselor Associate at Beyond Eating Recovery" />
+        <meta property="og:description" content="QMHP-A Therapist and Professional Counselor Associate specializing in eating disorders, body positivity, and person-centered care in Portland and Vancouver." />
         <meta property="og:type" content="profile" />
         <meta property="og:url" content="https://www.beyondeatingrecovery.com/about/rachel-bennett" />
         <meta property="og:image" content="https://www.beyondeatingrecovery.com/rachel-bennett.webp" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Rachel Bennett, MA | QMHP-A Therapist at Beyond Eating Recovery" />
-        <meta name="twitter:description" content="QMHP-A Therapist specializing in eating disorders, body positivity, and person-centered care in Portland and Vancouver." />
+        <meta name="twitter:title" content="Rachel Bennett, MA | QMHP-A Therapist | Professional Counselor Associate at Beyond Eating Recovery" />
+        <meta name="twitter:description" content="QMHP-A Therapist and Professional Counselor Associate specializing in eating disorders, body positivity, and person-centered care in Portland and Vancouver." />
         <meta name="twitter:image" content="https://www.beyondeatingrecovery.com/rachel-bennett.webp" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -159,7 +159,7 @@ const RachelBennett = () => {
             <div className="md:col-span-2">
               <img 
                 src={rachelImage}
-                alt="Rachel Bennett, MA - QMHP-A Therapist at Beyond Eating Recovery"
+                alt="Rachel Bennett, MA - QMHP-A Therapist | Professional Counselor Associate at Beyond Eating Recovery"
                 className="w-full max-w-md mx-auto rounded-lg shadow-lg"
               />
             </div>
